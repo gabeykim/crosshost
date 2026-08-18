@@ -1,0 +1,13 @@
+pair,readout,n_total,spearman_shift_vs_reference
+EC_to_BS,transcription,3589,-0.7070693638760427
+EC_to_BS,translation,830,-0.6680015024947221
+EC_to_PA,transcription,9609,0.11355368988365439
+EC_to_PA,translation,3720,-0.7052984095914673
+BS_to_EC,transcription,3589,-0.4191645569824961
+BS_to_EC,translation,830,-0.5635799625483788
+BS_to_PA,transcription,2040,-0.2703158124218778
+BS_to_PA,translation,294,-0.6431374626055856
+PA_to_EC,transcription,9609,-0.648649994091251
+PA_to_EC,translation,3720,0.14750358128104957
+PA_to_BS,transcription,2040,-0.812424835499268
+PA_to_BS,translation,294,-0.5016235569674472

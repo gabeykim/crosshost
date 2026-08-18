@@ -915,9 +915,26 @@
     "task1_bs_translation_feasibility": {
       "premise_correction": "The N=3000 H-MAIN/B2 arm for BS translation WAS computable and WAS already run in Gate 3 -- it draws nominal N from the tl_usable pool (9,300/fold), not the smaller tl_usable_for_regression pool (943/fold train-pool, 1,101 fold-wide). The '1,101 usable regression examples' figure describes a different, downstream quantity (rows that turn out non-floor/regression-informative given N measured), not a cap on N itself.",
       "per_fold_usable_n": {
-        "tl_usable_per_fold": [2264, 2357, 2280, 2268, 2395],
-        "tl_usable_for_regression_per_fold": [158, 270, 164, 221, 288],
-        "fold_wide_totals": {"tl_usable": 11564, "tl_usable_for_regression": 1101, "active": 1101, "inactive": 10463}
+        "tl_usable_per_fold": [
+          2264,
+          2357,
+          2280,
+          2268,
+          2395
+        ],
+        "tl_usable_for_regression_per_fold": [
+          158,
+          270,
+          164,
+          221,
+          288
+        ],
+        "fold_wide_totals": {
+          "tl_usable": 11564,
+          "tl_usable_for_regression": 1101,
+          "active": 1101,
+          "inactive": 10463
+        }
       },
       "n3000_arm_computability": {
         "classification_discovery_arm": "COMPUTABLE on all 5 folds (pool 9169-9300, all >3000)",
@@ -926,11 +943,26 @@
       },
       "bs_translation_activity_discovery_rate_pct": 10.1,
       "direct_regression_learning_curve": {
-        "N10": {"rho": 0.070, "std": 0.209},
-        "N30": {"rho": 0.155, "std": 0.201},
-        "N100": {"rho": 0.283, "std": 0.012},
-        "N300": {"rho": 0.290, "std": 0.009},
-        "N943_full_pool": {"rho": 0.289, "std": 0.0}
+        "N10": {
+          "rho": 0.07,
+          "std": 0.209
+        },
+        "N30": {
+          "rho": 0.155,
+          "std": 0.201
+        },
+        "N100": {
+          "rho": 0.283,
+          "std": 0.012
+        },
+        "N300": {
+          "rho": 0.29,
+          "std": 0.009
+        },
+        "N943_full_pool": {
+          "rho": 0.289,
+          "std": 0.0
+        }
       },
       "headroom_interpretation": {
         "discovery_classification_subtask": "GENUINE HEADROOM -- low ~10% activity rate makes small-N per-host samples uninformative; a cross-host model could plausibly predict activity probability better using patterns from other hosts",
@@ -949,40 +981,92 @@
       "method": "B1/B2/B3/B4 re-run with each of the 5 folds as held-out test set, using Gate 3's exact scripts (TEST_FOLD monkey-patched per fold, not re-implemented); k-mer/linear substitute throughout, same as Gate 3",
       "wall_clock_sec": 13.8,
       "headline_b2_fold_resolved": {
-        "EC_transcription": {"rho_N100": "0.614+/-0.060", "rho_N3000": "0.623+/-0.060"},
-        "EC_translation": {"rho_N100": "0.481+/-0.045", "rho_N3000": "0.497+/-0.045"},
-        "BS_transcription": {"rho_N100": "0.107+/-0.043", "rho_N3000": "0.218+/-0.060"},
-        "BS_translation": {"rho_N100": "0.107+/-0.061", "rho_N3000": "0.255+/-0.058"},
-        "PA_transcription": {"rho_N100": "0.431+/-0.059", "rho_N3000": "0.447+/-0.059"},
-        "PA_translation": {"rho_N100": "0.206+/-0.035", "rho_N3000": "0.258+/-0.040"}
+        "EC_transcription": {
+          "rho_N100": "0.614+/-0.060",
+          "rho_N3000": "0.623+/-0.060"
+        },
+        "EC_translation": {
+          "rho_N100": "0.481+/-0.045",
+          "rho_N3000": "0.497+/-0.045"
+        },
+        "BS_transcription": {
+          "rho_N100": "0.107+/-0.043",
+          "rho_N3000": "0.218+/-0.060"
+        },
+        "BS_translation": {
+          "rho_N100": "0.107+/-0.061",
+          "rho_N3000": "0.255+/-0.058"
+        },
+        "PA_transcription": {
+          "rho_N100": "0.431+/-0.059",
+          "rho_N3000": "0.447+/-0.059"
+        },
+        "PA_translation": {
+          "rho_N100": "0.206+/-0.035",
+          "rho_N3000": "0.258+/-0.040"
+        }
       },
       "gate3_single_fold_finding_confirmed": "BS still shows the largest N=100->N=3000 gap of the 3 hosts on both readouts under full 5-fold rotation -- not a fold-0-specific fluke",
       "fold_vs_draw_variance_finding": {
         "headline": "fold-to-fold std exceeds within-fold draw-to-draw std in 15/23 (host,readout,N) B2 combinations checked, ratio growing sharply with N",
         "examples": {
-          "EC_transcription_N3000": {"fold_std": 0.0601, "draw_std": 0.0007, "ratio": 91.1},
-          "PA_transcription_N3000": {"fold_std": 0.0586, "draw_std": 0.0014, "ratio": 41.5},
-          "BS_translation_N100": {"fold_std": 0.0611, "draw_std": 0.1551, "ratio": 0.39, "note": "draw variance dominates at small N"}
+          "EC_transcription_N3000": {
+            "fold_std": 0.0601,
+            "draw_std": 0.0007,
+            "ratio": 91.1
+          },
+          "PA_transcription_N3000": {
+            "fold_std": 0.0586,
+            "draw_std": 0.0014,
+            "ratio": 41.5
+          },
+          "BS_translation_N100": {
+            "fold_std": 0.0611,
+            "draw_std": 0.1551,
+            "ratio": 0.39,
+            "note": "draw variance dominates at small N"
+          }
         },
         "implication": "single-fold results (as Gate 3 used) are precise (tight draw-to-draw error bars) but not necessarily accurate, especially at large N -- recorded as standing rule SR5"
       },
       "b3_rs241_extension": {
         "sequence_availability": "207/241 (85.9%) RS241 ids have recoverable regulatory sequence text in any released table -- 34 are not reconstructable; reduces usable N by ~14-15% for sequence-based baselines",
         "results_primary_config_transcription": {
-          "SE": {"n_test": 125, "auc": 0.791, "rho": 0.433},
-          "VN": {"n_test": 99, "auc": 0.757, "rho": 0.627},
-          "CG": {"n_test": 118, "auc": 0.820, "rho": 0.695}
+          "SE": {
+            "n_test": 125,
+            "auc": 0.791,
+            "rho": 0.433
+          },
+          "VN": {
+            "n_test": 99,
+            "auc": 0.757,
+            "rho": 0.627
+          },
+          "CG": {
+            "n_test": 118,
+            "auc": 0.82,
+            "rho": 0.695
+          }
         },
         "finding": "free per-host embedding under its documented fallback transfers real predictive signal even to genuinely-unseen RS241 hosts with no fold structure",
         "file": "out/baselines/baseline3_rs241_extension.json"
       },
-      "files": ["out/baselines/fold_rotation_all_baselines.json", "out/baselines/fold_rotation_b2_raw.json",
-                "out/baselines/master_baseline_results.csv", "out/baselines/calibration_curve_transcription_fold_resolved.png",
-                "out/baselines/calibration_curve_translation_fold_resolved.png"]
+      "files": [
+        "out/baselines/fold_rotation_all_baselines.json",
+        "out/baselines/fold_rotation_b2_raw.json",
+        "out/baselines/master_baseline_results.csv",
+        "out/baselines/calibration_curve_transcription_fold_resolved.png",
+        "out/baselines/calibration_curve_translation_fold_resolved.png"
+      ]
     },
     "task3_cnn_compute_path": {
       "major_finding": "torch.backends.mps.is_available()==True -- Apple Silicon GPU available and unused throughout Gate 3; Gate 3's 'no acceleration' finding was CPU-specific and incomplete",
-      "device_info": {"cuda_available": false, "mps_available": true, "mkl_available": false, "mkldnn_available": false},
+      "device_info": {
+        "cuda_available": false,
+        "mps_available": true,
+        "mkl_available": false,
+        "mkldnn_available": false
+      },
       "benchmark_at_gate4_scale_n45000": {
         "cpu_60epoch_fit_min": 327.9,
         "mps_60epoch_fit_min": 11.25,
@@ -994,10 +1078,22 @@
         "speedup": 17.6
       },
       "extrapolation_hours": {
-        "12_fits": {"cpu_days": 2.75, "mps_hr": 2.2},
-        "24_fits": {"cpu_days": 5.5, "mps_hr": 4.5},
-        "60_fits": {"cpu_days": 13.75, "mps_hr": 11.2},
-        "120_fits": {"cpu_days": 27.5, "mps_hr": 22.5}
+        "12_fits": {
+          "cpu_days": 2.75,
+          "mps_hr": 2.2
+        },
+        "24_fits": {
+          "cpu_days": 5.5,
+          "mps_hr": 4.5
+        },
+        "60_fits": {
+          "cpu_days": 13.75,
+          "mps_hr": 11.2
+        },
+        "120_fits": {
+          "cpu_days": 27.5,
+          "mps_hr": 22.5
+        }
       },
       "network_reachable_for_cloud_gpu": true,
       "cloud_gpu_provisioned": false,
@@ -1028,7 +1124,11 @@
     "outcome": "PASS",
     "preregistration_file": "out/PREREGISTRATION.md",
     "task1_architecture": {
-      "param_counts": {"genomic_variant": 227844, "physiology_variant": 226852, "no_film_control": 213956},
+      "param_counts": {
+        "genomic_variant": 227844,
+        "physiology_variant": 226852,
+        "no_film_control": 213956
+      },
       "architecture": "4 conv (128/128/64/64 ch, k=15/9/5/3) + BN, FiLM at layers 2&3, residual wrapping conv4 (skip=conv3 output), 2 joint output heads (tx/tl) each two-stage (active+strength)",
       "compute_efficient_grid_design": "joint dual-head architecture means 3 hosts x 2 variants x 5 folds = 30 actual fits produce all 12 (host,readout,variant) reported rows, not 60 independent fits",
       "bugs_found_and_fixed": [
@@ -1036,32 +1136,69 @@
         "np.nan_to_num default posinf (~3.4e38) silently corrupted +Inf-valued masked-out targets (398 EC / 613 PA tx_norm rows), causing NaN loss from epoch 0 despite every tensor individually 'finite' -- fixed by explicitly zeroing nan/posinf/neginf"
       ],
       "mps_batch_size_cliff": {
-        "batch1024_ms_per_example": 0.52, "batch2048_ms_per_example": 1.00,
-        "batch4096_ms_per_example": 18.18, "batch8192_ms_per_example": 16.41,
+        "batch1024_ms_per_example": 0.52,
+        "batch2048_ms_per_example": 1.0,
+        "batch4096_ms_per_example": 18.18,
+        "batch8192_ms_per_example": 16.41,
         "note": "sharp non-monotonic cliff above ~2048, not the usual CUDA/CPU larger-batch-amortizes-overhead curve; batch_size=1024 used throughout"
       },
       "film_sanity_check": {
         "verdict": "FiLM IS CONDITIONING",
         "host_vector_swap_sensitivity": {
-          "tx_active_logit": {"film_enabled": 1.544, "film_disabled": 0.0},
-          "tx_strength": {"film_enabled": 0.552, "film_disabled": 0.0},
-          "tl_active_logit": {"film_enabled": 1.544, "film_disabled": 0.0},
-          "tl_strength": {"film_enabled": 0.298, "film_disabled": 0.0}
+          "tx_active_logit": {
+            "film_enabled": 1.544,
+            "film_disabled": 0.0
+          },
+          "tx_strength": {
+            "film_enabled": 0.552,
+            "film_disabled": 0.0
+          },
+          "tl_active_logit": {
+            "film_enabled": 1.544,
+            "film_disabled": 0.0
+          },
+          "tl_strength": {
+            "film_enabled": 0.298,
+            "film_disabled": 0.0
+          }
         },
         "gamma_beta_stats": {
-          "gamma2": {"mean": -0.006, "std": 0.373}, "beta2": {"mean": -0.139, "std": 0.310},
-          "gamma3": {"mean": -0.023, "std": 0.476}, "beta3": {"mean": 0.062, "std": 0.380}
+          "gamma2": {
+            "mean": -0.006,
+            "std": 0.373
+          },
+          "beta2": {
+            "mean": -0.139,
+            "std": 0.31
+          },
+          "gamma3": {
+            "mean": -0.023,
+            "std": 0.476
+          },
+          "beta3": {
+            "mean": 0.062,
+            "std": 0.38
+          }
         },
         "file": "out/gate4_film_sanity_check.json"
       },
-      "mps_timing": {"sec_per_epoch_n58084": 32.0, "full_30fit_grid_wall_clock_hr": 9.37}
+      "mps_timing": {
+        "sec_per_epoch_n58084": 32.0,
+        "full_30fit_grid_wall_clock_hr": 9.37
+      }
     },
     "task2_loho_training": {
-      "n_fits": 30, "epochs_per_fit": 35, "early_stop_triggered": false,
+      "n_fits": 30,
+      "epochs_per_fit": 35,
+      "early_stop_triggered": false,
       "wall_clock_sec": 33745.9,
       "fold_stability_finding": {
-        "most_stable_host": "BS", "least_stable_host": "PA",
-        "bs_std_range": [0.027, 0.152],
+        "most_stable_host": "BS",
+        "least_stable_host": "PA",
+        "bs_std_range": [
+          0.027,
+          0.152
+        ],
         "pa_physiology_transcription_fold_std": 0.398,
         "pa_physiology_transcription_worst_fold_auc": 0.228,
         "note": "PA instability plausibly connects to independently-established weak PA physiology data quality (Gate 1/1.5), though PA-genomic is also more variable than BS-genomic so it is not purely a physiology-feature effect"
@@ -1072,32 +1209,49 @@
       },
       "results_table": "out/gate4_loho_results_table.csv",
       "results_raw": "out/gate4_loho_results.json",
-      "figures": ["out/figures/hscience_genomic_vs_physiology.png"]
+      "figures": [
+        "out/figures/hscience_genomic_vs_physiology.png"
+      ]
     },
     "task3_calibration_curves": {
-      "n_finetune_fits": 2100, "wall_clock_sec": 9900.4,
+      "n_finetune_fits": 2100,
+      "wall_clock_sec": 9900.4,
       "transfer_mechanism_finding": "frozen-trunk (head_only) fine-tuning inherits and cannot fix a bad LOHO base model's calibration (e.g. PA-physiology fold2 transcription pinned ~-0.32 for N=10-300 frozen); unfreezing conv4 (top_conv) at the SAME N=300 recovers to ~+0.41, climbing to +0.47 by N=3000",
       "small_n_physiology_degradation_finding": "BS-physiology-transcription N=0 zero-shot rho=0.239 (good) DROPS to slightly negative (-0.02 to -0.04) under frozen-trunk fine-tuning at N=10-300, recovering only once top_conv unfreezes -- genomic variant does not show this dip; checked against a bug (per-draw values are genuinely noisy in both directions, not a broken pipeline) but not root-caused further",
       "results_table": "out/gate4_calibration_results_table.csv",
       "results_raw": "out/gate4_calibration_curves.json",
-      "figures": ["out/figures/calibration_curve_EC_transcription.png", "calibration_curve_EC_translation.png",
-                  "calibration_curve_BS_transcription.png", "calibration_curve_BS_translation.png",
-                  "calibration_curve_PA_transcription.png", "calibration_curve_PA_translation.png"]
+      "figures": [
+        "out/figures/calibration_curve_EC_transcription.png",
+        "calibration_curve_EC_translation.png",
+        "calibration_curve_BS_transcription.png",
+        "calibration_curve_BS_translation.png",
+        "calibration_curve_PA_transcription.png",
+        "calibration_curve_PA_translation.png"
+      ]
     },
     "task4_cnn_fold_variance_spotcheck": {
       "configuration": "BS held out, transcription, genomic, N=100",
-      "cnn_fold_to_fold_std": 0.0683, "cnn_draw_to_draw_std": 0.0329, "cnn_ratio": 2.08,
-      "kmer_fold_to_fold_std": 0.0426, "kmer_draw_to_draw_std": 0.1142, "kmer_ratio": 0.373,
+      "cnn_fold_to_fold_std": 0.0683,
+      "cnn_draw_to_draw_std": 0.0329,
+      "cnn_ratio": 2.08,
+      "kmer_fold_to_fold_std": 0.0426,
+      "kmer_draw_to_draw_std": 0.1142,
+      "kmer_ratio": 0.373,
       "narrow_spot_check_decision_needed": false,
       "broader_grid_decision_needed": true,
       "decision_needed_reason": "the literal spot-check config (BS) is the CNN's most stable host and does not trigger the 2x threshold, but PA-physiology-transcription's fold std (0.398) is ~9x worse than typical k-mer baseline variance -- Gate 5 should re-check this ratio specifically for the BS-translation H-MAIN arm before trusting the pre-registered CI-based decision rule there",
       "file": "out/gate4_cnn_fold_variance_spotcheck.json"
     },
     "imputed_data_gap": {
-      "host": "BS", "feature": "growth_rate_mu_h", "method": "mean_of_other_5_hosts", "value": 1.852,
+      "host": "BS",
+      "feature": "growth_rate_mu_h",
+      "method": "mean_of_other_5_hosts",
+      "value": 1.852,
       "reason": "Zhu et al. 2025 PNAS supplementary value inaccessible since Gate 1, still unresolved"
     },
-    "audit_leakage_final_rerun": {"all_checks_passed": true},
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    },
     "h_main_evaluation": "NOT COMPUTED IN THIS GATE -- deferred to Gate 5 per out/PREREGISTRATION.md"
   },
   "gate_4_5": {
@@ -1125,19 +1279,52 @@
         "phys5_not_trained_reason": "Task 1a succeeded with a real independently-sourced value, substantially dissolving the problem PHYS-5 hedges against; full 3rd training grid judged disproportionate to residual risk",
         "decision_needed": "Whether the visual-figure-read confidence tier is sufficient, or whether PHYS-5 should still be trained as a robustness check"
       },
-      "data_files_updated": ["data/hosts_physiology.parquet", "data/hosts_physiology_final.csv", "data/MANIFEST.json"],
-      "new_columns_added": ["growth_rate_confidence", "growth_rate_imputed (all False now)"]
+      "data_files_updated": [
+        "data/hosts_physiology.parquet",
+        "data/hosts_physiology_final.csv",
+        "data/MANIFEST.json"
+      ],
+      "new_columns_added": [
+        "growth_rate_confidence",
+        "growth_rate_imputed (all False now)"
+      ]
     },
     "task2_mechanism_reporting_n100": {
       "preregistration_amendment": "Amendment 1, dated before results computed",
       "primary_mechanism_unchanged": "frozen-trunk (head_only) remains pre-registered primary for H-MAIN",
       "results_transcription_frozen_vs_topconv": {
-        "EC_genomic": {"frozen": 0.602, "topconv": 0.626, "gap": 0.023},
-        "EC_physiology": {"frozen": 0.620, "topconv": 0.666, "gap": 0.045},
-        "BS_genomic": {"frozen": 0.213, "topconv": 0.170, "gap": -0.043},
-        "BS_physiology": {"frozen": -0.059, "topconv": 0.118, "gap": 0.177, "note": "frozen (primary) is NEGATIVE at N=100 -- quantifies the Gate 4 internal-inconsistency concern directly"},
-        "PA_genomic": {"frozen": 0.104, "topconv": 0.481, "gap": 0.376, "note": "largest gap of all 6 cells"},
-        "PA_physiology": {"frozen": 0.244, "topconv": 0.444, "gap": 0.199}
+        "EC_genomic": {
+          "frozen": 0.602,
+          "topconv": 0.626,
+          "gap": 0.023
+        },
+        "EC_physiology": {
+          "frozen": 0.62,
+          "topconv": 0.666,
+          "gap": 0.045
+        },
+        "BS_genomic": {
+          "frozen": 0.213,
+          "topconv": 0.17,
+          "gap": -0.043
+        },
+        "BS_physiology": {
+          "frozen": -0.059,
+          "topconv": 0.118,
+          "gap": 0.177,
+          "note": "frozen (primary) is NEGATIVE at N=100 -- quantifies the Gate 4 internal-inconsistency concern directly"
+        },
+        "PA_genomic": {
+          "frozen": 0.104,
+          "topconv": 0.481,
+          "gap": 0.376,
+          "note": "largest gap of all 6 cells"
+        },
+        "PA_physiology": {
+          "frozen": 0.244,
+          "topconv": 0.444,
+          "gap": 0.199
+        }
       },
       "file": "out/gate4_5_n100_topconv_supplement.json"
     },
@@ -1148,7 +1335,9 @@
       "widening_direction": "conservative -- harder to declare MET",
       "bs_translation_fold_variance_spotcheck": {
         "configuration": "BS held out, translation, genomic, N=100, head_only",
-        "cnn_fold_to_fold_std": 0.0921, "cnn_draw_to_draw_std": 0.0430, "cnn_ratio": 2.141,
+        "cnn_fold_to_fold_std": 0.0921,
+        "cnn_draw_to_draw_std": 0.043,
+        "cnn_ratio": 2.141,
         "kmer_ratio_gate3_5": 0.374,
         "ratio_vs_kmer": 5.44,
         "vs_transcription_arm_ratio_gate4": 2.076,
@@ -1166,8 +1355,23 @@
         "film_gamma_beta": "not collapsed/degenerate in summary statistics",
         "pa_vector_outlier": "CONFIRMED -- PA/[EC,BS] extrapolation degree=3.687 z-units (largest of 3 hosts), driven by chaperones_fraction alone (1.61 units); BS/[EC,PA]=2.245; EC/[BS,PA]=1.022 (smallest)"
       },
-      "prediction_structure": {"spearman_rho": -0.4487, "p_value": 4.4e-190, "n": 3850, "note": "statistically overwhelming, rules out pure noise"},
-      "bimodal_pattern": {"inverted_folds": [0, 2, 4], "correct_sign_folds": [1, 3]},
+      "prediction_structure": {
+        "spearman_rho": -0.4487,
+        "p_value": 4.4e-190,
+        "n": 3850,
+        "note": "statistically overwhelming, rules out pure noise"
+      },
+      "bimodal_pattern": {
+        "inverted_folds": [
+          0,
+          2,
+          4
+        ],
+        "correct_sign_folds": [
+          1,
+          3
+        ]
+      },
       "best_hypothesis": "[INFERRED, medium-high confidence] FiLM-generator extrapolation instability at far out-of-distribution held-out-host feature vectors, sign direction sensitive to random seed",
       "not_fully_resolved": "exact per-fold inversion-direction mechanism not traced at individual-weight level",
       "retraining_triggered": false,
@@ -1175,29 +1379,78 @@
       "file": "out/gate4_5_pa_investigation.json"
     },
     "task5_retraining": {
-      "loho_retrain": {"n_fits": 15, "scope": "physiology variant only, 3 hosts x 5 folds", "wall_clock_sec": 9969.8, "all_completed_full_epoch_budget": true},
-      "calibration_curve_regen": {"n_draws": 1050, "scope": "physiology variant only", "wall_clock_sec": 15535.5},
-      "n100_topconv_supplement": {"n_fits": 300, "scope": "both variants, all 12 configs", "wall_clock_sec": 388.6},
+      "loho_retrain": {
+        "n_fits": 15,
+        "scope": "physiology variant only, 3 hosts x 5 folds",
+        "wall_clock_sec": 9969.8,
+        "all_completed_full_epoch_budget": true
+      },
+      "calibration_curve_regen": {
+        "n_draws": 1050,
+        "scope": "physiology variant only",
+        "wall_clock_sec": 15535.5
+      },
+      "n100_topconv_supplement": {
+        "n_fits": 300,
+        "scope": "both variants, all 12 configs",
+        "wall_clock_sec": 388.6
+      },
       "genomic_variant_retrained": false,
       "genomic_variant_retrain_reason": "unaffected by Task 1 fix (confirmed, vector diff max 0.019 z-units); Task 4 verdict was not a bug, no wider retraining triggered",
       "pa_sign_inversion_persists_after_retrain": true,
       "same_seeds_folds_architecture_as_gate4": true
     },
-    "audit_leakage_final_rerun": {"all_checks_passed": true}
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    }
   },
   "gate_5": {
     "date_run": "2026-08-05/06",
     "outcome": "PASS (gate produced an honest answer -- a NOT MET hypothesis verdict is a pass for this gate per its own FAIL condition)",
     "gate_decision": "NEGATIVE RESULT -- benchmark ships as-is per charter's third branch. H-MAIN NOT MET on both B. subtilis (official) and P. aeruginosa (partial-pass check) under the pre-registered primary (frozen-trunk) mechanism, all readouts, all variants -- 8/8 primary-host-primary-mechanism comparisons are NOT MET, all but one (BS-physiology-TX) as 'point estimate favors baseline' not merely overlapping intervals.",
     "h_main": {
-      "tx_baseline_n100": {"mean": 0.107, "lower90": 0.066, "upper90": 0.150},
-      "tx_baseline_n3000": {"mean": 0.218, "lower90": 0.160, "upper90": 0.251},
-      "tl_baseline_ceiling_n300": {"mean": 0.253, "lower90": 0.208, "upper90": 0.298},
+      "tx_baseline_n100": {
+        "mean": 0.107,
+        "lower90": 0.066,
+        "upper90": 0.15
+      },
+      "tx_baseline_n3000": {
+        "mean": 0.218,
+        "lower90": 0.16,
+        "upper90": 0.251
+      },
+      "tl_baseline_ceiling_n300": {
+        "mean": 0.253,
+        "lower90": 0.208,
+        "upper90": 0.298
+      },
       "primary_mechanism_results": {
-        "TX_genomic": {"mean": 0.213, "lower90": 0.154, "upper90": 0.260, "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE", "overlap": 0.091},
-        "TX_physiology": {"mean": -0.059, "lower90": -0.122, "upper90": 0.004, "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE", "overlap": 0.0},
-        "TL_genomic": {"mean": 0.205, "lower90": 0.132, "upper90": 0.272, "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"},
-        "TL_physiology": {"mean": 0.161, "lower90": 0.044, "upper90": 0.266, "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"}
+        "TX_genomic": {
+          "mean": 0.213,
+          "lower90": 0.154,
+          "upper90": 0.26,
+          "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE",
+          "overlap": 0.091
+        },
+        "TX_physiology": {
+          "mean": -0.059,
+          "lower90": -0.122,
+          "upper90": 0.004,
+          "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE",
+          "overlap": 0.0
+        },
+        "TL_genomic": {
+          "mean": 0.205,
+          "lower90": 0.132,
+          "upper90": 0.272,
+          "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+        },
+        "TL_physiology": {
+          "mean": 0.161,
+          "lower90": 0.044,
+          "upper90": 0.266,
+          "verdict": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+        }
       },
       "closest_call": "BS transcription genomic frozen-trunk: model=0.213 vs baseline=0.218, overlap=0.091 -- nearest miss in the whole gate",
       "pa_ec_context": "every primary-mechanism cell for PA and EC also NOT MET, several by wide margins (PA-genomic-TX: 0.104 vs 0.447)",
@@ -1207,7 +1460,11 @@
     },
     "h_science": {
       "overall_verdict": "host-dependent, mostly statistically indistinguishable at 90% CI",
-      "point_estimate_winner_count": {"physiology": 4, "genomic": 2, "of_6_host_readout_combos": 6},
+      "point_estimate_winner_count": {
+        "physiology": 4,
+        "genomic": 2,
+        "of_6_host_readout_combos": 6
+      },
       "distinguishable_at_90pct_ci": 1,
       "distinguishable_cell": "BS transcription: genomic (0.213) clearly beats physiology (-0.059), no CI overlap",
       "bernstein_claim_interpretation": "the one distinguishable cell weakly CHALLENGES the Bernstein claim (genomic beats physiology where a confident distinction exists); elsewhere the data does not resolve the question",
@@ -1216,8 +1473,16 @@
         "genomic_monotonic_both_readouts": true,
         "physiology_monotonic_translation_only": true,
         "physiology_transcription_non_monotonic": "BS underperforms despite lower extrapolation distance than PA -- substantive representation-robustness finding",
-        "genomic_extrap_by_host": {"EC": 11.446, "BS": 12.207, "PA": 29.820},
-        "physiology_extrap_by_host": {"EC": 1.022, "BS": 2.245, "PA": 3.687}
+        "genomic_extrap_by_host": {
+          "EC": 11.446,
+          "BS": 12.207,
+          "PA": 29.82
+        },
+        "physiology_extrap_by_host": {
+          "EC": 1.022,
+          "BS": 2.245,
+          "PA": 3.687
+        }
       },
       "file": "out/results/gate5_hscience_results.json"
     },
@@ -1231,8 +1496,34 @@
     },
     "rs241": {
       "n_corrected_to_207_sequences": true,
-      "n_per_host_primary_config": {"SE": {"tx": 125, "tl": 121}, "VN": {"tx": 99, "tl": 115}, "CG": {"tx": 118, "tl": 110}},
-      "n_per_host_secondary_config": {"SE": {"tx": 191, "tl": 196}, "VN": {"tx": 146, "tl": 188}, "CG": {"tx": 176, "tl": 182}},
+      "n_per_host_primary_config": {
+        "SE": {
+          "tx": 125,
+          "tl": 121
+        },
+        "VN": {
+          "tx": 99,
+          "tl": 115
+        },
+        "CG": {
+          "tx": 118,
+          "tl": 110
+        }
+      },
+      "n_per_host_secondary_config": {
+        "SE": {
+          "tx": 191,
+          "tl": 196
+        },
+        "VN": {
+          "tx": 146,
+          "tl": 188
+        },
+        "CG": {
+          "tx": 176,
+          "tl": 182
+        }
+      },
       "zeroshot_performance_range": "0.10 to 0.65 (mostly 0.4-0.6), decisively above zero in all but one cell",
       "genomic_beats_physiology_most_cells": true,
       "secondary_config_beats_primary_most_cells": true,
@@ -1249,7 +1540,9 @@
       "Whether to lead H-SCIENCE with the bare 4/6 point-estimate-winner count -- reported alongside the 1/6 distinguishability count, not alone",
       "Whether to report only per-dimension-normalized extrapolation distance (looks more cross-vector-comparable) -- reported both total and per-dim"
     ],
-    "audit_leakage_final_rerun": {"all_checks_passed": true}
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    }
   },
   "gate_5_5": {
     "date_run": "2026-08-06",
@@ -1257,29 +1550,51 @@
     "post_hoc_disclaimer": "This entire gate is post-hoc, generated after seeing Gate 5 results. No Gate 5 verdict (H-MAIN, H-SCIENCE, H-DIAGNOSTIC) is revisited or changed anywhere in this gate's work.",
     "task1_seqonly_ablation": {
       "verdict": "sequence-only matches or exceeds conditioned models; where distinguishable, sequence-only usually wins -- stronger than the pre-specified INDISTINGUISHABLE category anticipated",
-      "primary_hosts_grid": {"n_total_comparisons": 36, "n_distinguishable": 18, "n_seqonly_wins": 17, "n_conditioning_wins": 1},
+      "primary_hosts_grid": {
+        "n_total_comparisons": 36,
+        "n_distinguishable": 18,
+        "n_seqonly_wins": 17,
+        "n_conditioning_wins": 1
+      },
       "exception_cell": "BS transcription N=100 top_conv: genomic 0.170 beats seqonly 0.081 -- flagged as likely noise (seqonly's own N=100 frozen result, 0.234, is higher than its top_conv result, an internal inconsistency)",
-      "rs241_grid": {"n_cells": 12, "seqonly_top_performer_count": 10},
+      "rs241_grid": {
+        "n_cells": 12,
+        "seqonly_top_performer_count": 10
+      },
       "architecture_note": "SequenceOnlyCNN has no host_vec parameter anywhere and no FiLMGenerator import -- categorically distinct from Gate 4's FiLM-disabled control, though numerically identical (213956 params both) confirming that control already had zero conditioning parameters",
       "wall_clock_sec": 26918.6,
       "file": "out/results/gate5_5_fourway_comparison.json"
     },
     "task2_signal_location": {
       "crosshost_measurement_correlation": {
-        "EC_PA_transcription": 0.754, "EC_PA_translation": 0.742,
-        "EC_BS_transcription": 0.258, "EC_BS_translation": 0.161,
-        "BS_PA_transcription": 0.257, "BS_PA_translation": 0.263,
+        "EC_PA_transcription": 0.754,
+        "EC_PA_translation": 0.742,
+        "EC_BS_transcription": 0.258,
+        "EC_BS_translation": 0.161,
+        "BS_PA_transcription": 0.257,
+        "BS_PA_translation": 0.263,
         "note": "computed directly from raw data, no model involved -- the single most explanatory number in the investigation; should have been computed at Gate 2",
         "file": "out/results/gate5_5_crosshost_measurement_correlation.json"
       },
       "per_host_ceiling": {
-        "transcription_pct_of_ceiling_reached": {"EC": 49.2, "BS": 50.7, "PA": 44.8, "note": "remarkably consistent across hosts regardless of absolute ceiling height"},
-        "translation_pct_of_ceiling_reached": {"EC": 20.9, "BS": 57.4, "PA": 17.6, "note": "translation systematically weaker relative to ceiling for EC/PA specifically, unexplained"},
+        "transcription_pct_of_ceiling_reached": {
+          "EC": 49.2,
+          "BS": 50.7,
+          "PA": 44.8,
+          "note": "remarkably consistent across hosts regardless of absolute ceiling height"
+        },
+        "translation_pct_of_ceiling_reached": {
+          "EC": 20.9,
+          "BS": 57.4,
+          "PA": 17.6,
+          "note": "translation systematically weaker relative to ceiling for EC/PA specifically, unexplained"
+        },
         "file": "out/results/gate5_5_per_host_ceiling.json"
       },
       "sigma70_revisit": {
         "verdict": "DOES NOT TRACK",
-        "seqonly_zeroshot_tx_mean": 0.370, "seqonly_zeroshot_tl_mean": 0.415,
+        "seqonly_zeroshot_tx_mean": 0.37,
+        "seqonly_zeroshot_tl_mean": 0.415,
         "note": "translation transfer is NOT lower than transcription for the CNN, opposite of the sigma70-specific univariate-feature asymmetry from Gate 3 -- CNN finds transferable translation signal simple biophysical proxies did not capture",
         "file": "out/results/gate5_5_sigma70_revisit.json"
       }
@@ -1305,7 +1620,9 @@
       "Whether cross-host correlation findings could be used to explain away or soften Gate 5's H-MAIN negative result -- explicitly declined, the two are different questions (cross-host ceiling vs per-host data-efficiency)",
       "Whether to state the CNN-capacity explanation for the sigma-70 non-match as established fact rather than hedged speculation -- kept explicitly hedged"
     ],
-    "audit_leakage_final_rerun": {"all_checks_passed": true}
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    }
   },
   "gate_6": {
     "date_run": "2026-08-07",
@@ -1327,39 +1644,93 @@
     },
     "task2_models_evaluated": {
       "primary": {
-        "name": "DNABERT-2", "hf_id": "zhihan1996/DNABERT-2-117M", "n_params": 117068544,
+        "name": "DNABERT-2",
+        "hf_id": "zhihan1996/DNABERT-2-117M",
+        "n_params": 117068544,
         "pretraining": "135 species, 6 clades incl. bacteria, 32.5B bases",
-        "compatibility_patches": ["bypassed stale triton pre-check (model's own code already try/excepts it)",
-                                    "fetched bert_padding.py the pre-check had blocked", "forced ALiBi tensors onto cpu explicitly (meta-device fast-init default mismatch)"],
+        "compatibility_patches": [
+          "bypassed stale triton pre-check (model's own code already try/excepts it)",
+          "fetched bert_padding.py the pre-check had blocked",
+          "forced ALiBi tensors onto cpu explicitly (meta-device fast-init default mismatch)"
+        ],
         "named_in_charter": true
       },
       "supplementary": {
-        "name": "PromoGen2", "hf_id": "jinyuan22/promogen2-base", "n_params": 147877120,
+        "name": "PromoGen2",
+        "hf_id": "jinyuan22/promogen2-base",
+        "n_params": 147877120,
         "pretraining": "prokaryotic promoter/regulatory sequence ONLY, 17000 bacterial genomes, 59M promoters -> 1.4M curated training seqs",
         "compatibility_patches": [],
         "not_charter_required": true,
         "mps_oom_bug_found_and_fixed": "output_hidden_states=True retained all 31 layers' tensors, unreleased across batches on MPS caching allocator, crashed at ~800 batches (8.69GiB); fixed via model.transformer(...) direct call + torch.mps.empty_cache() per batch + smaller batch_size"
       },
-      "ntv3": {"evaluated": false, "reason": "base corpus includes bacteria but post-training/architecture eukaryote-specialized (24 species, 1Mb-context U-Net); non-standard loader, unconfirmed CPU/MPS compat; INFERRED medium-high confidence from model card, not directly load-tested"},
+      "ntv3": {
+        "evaluated": false,
+        "reason": "base corpus includes bacteria but post-training/architecture eukaryote-specialized (24 species, 1Mb-context U-Net); non-standard loader, unconfirmed CPU/MPS compat; INFERRED medium-high confidence from model card, not directly load-tested"
+      },
       "protocol": "frozen mean-pooled embeddings (attention-masked) cached once per unique sequence (29042 library + 207 RS241), FMHeadMLP (embedding->64->4 heads) trained per LOHO fold/N-cell/RS241-seed using scripts/40's compute_loss and scripts/42's evaluate() unchanged -- identical metrics to every other system. One documented mechanism (no top_conv equivalent -- no trunk to unfreeze)."
     },
     "task3_full_comparison": {
       "file": "out/results/gate6_full_comparison.json",
-      "verdict_primary_hosts": {"n_total": 24, "n_distinguishable": 14, "n_fm_wins": 2, "n_seqonly_wins": 12},
-      "verdict_rs241": {"n_total": 24, "n_distinguishable": 23, "n_fm_wins": 0, "n_seqonly_wins": 23},
-      "verdict_combined": {"n_total": 48, "n_distinguishable": 37, "n_fm_wins": 2, "n_seqonly_wins": 35},
+      "verdict_primary_hosts": {
+        "n_total": 24,
+        "n_distinguishable": 14,
+        "n_fm_wins": 2,
+        "n_seqonly_wins": 12
+      },
+      "verdict_rs241": {
+        "n_total": 24,
+        "n_distinguishable": 23,
+        "n_fm_wins": 0,
+        "n_seqonly_wins": 23
+      },
+      "verdict_combined": {
+        "n_total": 48,
+        "n_distinguishable": 37,
+        "n_fm_wins": 2,
+        "n_seqonly_wins": 35
+      },
       "fm_win_cells": "EC transcription zero-shot only, both DNABERT-2 and PromoGen2",
       "ceiling_correction": {
         "finding": "out/results/gate5_5_per_host_ceiling.json's actual_zeroshot_mean does not match the project's own officially bootstrapped sequence-only zero-shot rho (out/results/gate5_5_fourway_comparison.json) in 5 of 6 host x readout cells; no script for the original file exists anywhere in scripts/ -- unsaved ad-hoc computation, root cause not traceable",
         "ceiling_values_themselves": "VERIFIED reproducible bit-for-bit via re-running scripts/57",
         "corrected_file": "out/results/gate5_5_per_host_ceiling_CORRECTED.json",
-        "old_headline_transcription_pct": {"EC": 49.2, "BS": 50.7, "PA": 44.8, "characterization": "remarkably consistent -- RETRACTED"},
-        "corrected_transcription_pct_seqonly": {"EC": 48.7, "BS": 102.1, "PA": 63.6},
-        "corrected_transcription_pct_dnabert2": {"EC": 60.8, "BS": 84.2, "PA": 61.6},
-        "corrected_transcription_pct_promogen2": {"EC": 65.7, "BS": 94.2, "PA": 65.0},
-        "corrected_translation_pct_seqonly": {"EC": 75.8, "BS": 110.6, "PA": 52.5},
-        "corrected_translation_pct_dnabert2": {"EC": 67.3, "BS": 104.0, "PA": 39.8},
-        "corrected_translation_pct_promogen2": {"EC": 70.3, "BS": 101.1, "PA": 45.1},
+        "old_headline_transcription_pct": {
+          "EC": 49.2,
+          "BS": 50.7,
+          "PA": 44.8,
+          "characterization": "remarkably consistent -- RETRACTED"
+        },
+        "corrected_transcription_pct_seqonly": {
+          "EC": 48.7,
+          "BS": 102.1,
+          "PA": 63.6
+        },
+        "corrected_transcription_pct_dnabert2": {
+          "EC": 60.8,
+          "BS": 84.2,
+          "PA": 61.6
+        },
+        "corrected_transcription_pct_promogen2": {
+          "EC": 65.7,
+          "BS": 94.2,
+          "PA": 65.0
+        },
+        "corrected_translation_pct_seqonly": {
+          "EC": 75.8,
+          "BS": 110.6,
+          "PA": 52.5
+        },
+        "corrected_translation_pct_dnabert2": {
+          "EC": 67.3,
+          "BS": 104.0,
+          "PA": 39.8
+        },
+        "corrected_translation_pct_promogen2": {
+          "EC": 70.3,
+          "BS": 101.1,
+          "PA": 45.1
+        },
         "bs_exceeds_ceiling_note": "interpreted as small-N/subset-mismatch artifact of the ceiling estimate (n=2099/314 for BS pairs vs n=9741/3826 for EC-PA), not a paradox",
         "consequence": "FMs track same host-by-host shape as sequence-only rather than uniformly over/undershooting -- mild evidence pattern is data-driven not model-driven, but framing far weaker than original 'remarkably consistent' claim"
       },
@@ -1377,7 +1748,9 @@
       "Whether to keep waiting indefinitely for the Evo2 API key before delivering the gate -- not done, charter FAIL condition already cleared by 2 evaluated FMs, Evo2 left addable as addendum",
       "Whether to reframe Task 0's prediction after the fact to match the correction more comfortably -- not done, Section 1 left as originally written, correction appended as dated addendum"
     ],
-    "audit_leakage_final_rerun": {"all_checks_passed": true}
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    }
   },
   "gate_7": {
     "date_run": "2026-08-14",
@@ -1395,9 +1768,18 @@
     "taskA_batching_bug": {
       "bug": "predict_seqonly/predict_film ran a single unbatched forward pass; measured 5810 rows=28.5s, 23232 rows=8454s (2.35hr) -- ~300x cost for 4x data, not linear",
       "fix": "internal chunking at batch_size=1024 (overridable) added to both scripts/58 and scripts/40",
-      "identity_verification": {"max_abs_diff": 7.15e-07, "verdict": "NUMERICALLY IDENTICAL (float32 precision)", "file": "out/results/gate7_batching_fix_verification.json"},
-      "benchmark": {"chunked_5810_rows_sec": 26.25, "chunked_23232_rows_sec": 114.83, "speedup_at_23232_rows": 73.6,
-                     "scaling_check": "4x rows -> 4.37x time (linear=4.00x)", "mps_chunked_sec": "~1.3s regardless of size in this range"},
+      "identity_verification": {
+        "max_abs_diff": 7.15e-07,
+        "verdict": "NUMERICALLY IDENTICAL (float32 precision)",
+        "file": "out/results/gate7_batching_fix_verification.json"
+      },
+      "benchmark": {
+        "chunked_5810_rows_sec": 26.25,
+        "chunked_23232_rows_sec": 114.83,
+        "speedup_at_23232_rows": 73.6,
+        "scaling_check": "4x rows -> 4.37x time (linear=4.00x)",
+        "mps_chunked_sec": "~1.3s regardless of size in this range"
+      },
       "call_site_audit": "every Gate 1-6 call site passes <=5818 rows (single LOHO fold, 207-row RS241 set, or 500-row sanity slice) -- zero prior-gate results affected; only this gate's new conformal-calibration script (23232-row calibration pool) ever exceeded the safe zone",
       "standing_rule_added": "SR7, out/CHARTER_AMENDMENTS.md"
     },
@@ -1409,19 +1791,33 @@
       "data_uncited": 0,
       "all_data_cited_verified": true,
       "pre_registered_verdicts_at_risk": false,
-      "prioritized_verified": ["gate5_hmain_table.csv", "gate5_hscience_table.csv", "gate5_hdiagnostic_table.csv"]
+      "prioritized_verified": [
+        "gate5_hmain_table.csv",
+        "gate5_hscience_table.csv",
+        "gate5_hdiagnostic_table.csv"
+      ]
     },
     "taskC_conformal_calibration": {
       "file": "out/results/gate7_conformal_calibration.json",
       "regression_coverage": "close to nominal both systems -- sequence_only 77-94%, b2_n3000 78-94%, against 80%/90% targets",
       "classifier_ece_finding": "sequence-only zero-shot classifier well-calibrated on EC (ECE 0.053 tx/0.099 tl) but severely miscalibrated on BS (0.429/0.344) and PA (0.474/0.431) -- 4-8x worse; B2 baseline calibrates far better throughout (ECE 0.03-0.23)",
       "interpretation": "rank-correlation win (rho) does not imply trustworthy cross-host probability calibration -- distinct properties",
-      "figures": ["out/figures/gate7_reliability_diagrams.png", "out/figures/gate7_conformal_coverage.png"]
+      "figures": [
+        "out/figures/gate7_reliability_diagrams.png",
+        "out/figures/gate7_conformal_coverage.png"
+      ]
     },
     "taskD_host_feature_ablation": {
       "file": "out/results/gate7_host_feature_ablation.json",
       "configuration": "genomic variant, BS held out, 5 folds, mean-ablation at inference (no retraining)",
-      "groups": {"sigma_factor": 4, "anti_SD": 1, "tAI_codon": 24, "RNAP": 1, "chaperone_heme": 2, "always_retained_ungrouped": 5},
+      "groups": {
+        "sigma_factor": 4,
+        "anti_SD": 1,
+        "tAI_codon": 24,
+        "RNAP": 1,
+        "chaperone_heme": 2,
+        "always_retained_ungrouped": 5
+      },
       "verdict": "NO FEATURE GROUP CARRIES DETECTABLE SIGNAL -- max |delta| 0.089, all within 1 baseline fold-std",
       "suggestive_not_significant_pattern": "dropping sigma_factor increased rho both readouts (+0.089 tx, +0.053 tl), largest/most consistent delta, does not clear noise threshold",
       "figure": "out/figures/gate7_feature_ablation.png"
@@ -1438,8 +1834,14 @@
       "Whether to upgrade the sigma-factor ablation's suggestive pattern to a real finding -- not done, stays below the pre-stated noise threshold",
       "Whether to keep a patched-together partial ceiling framing to avoid a second reversal -- not done, retired outright for both models as the more honest resolution"
     ],
-    "audit_leakage_final_rerun": {"all_checks_passed": true},
-    "audit_provenance_final_rerun": {"orphans": 23, "all_cited": true, "all_data_cited_verified": true}
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    },
+    "audit_provenance_final_rerun": {
+      "orphans": 23,
+      "all_cited": true,
+      "all_data_cited_verified": true
+    }
   },
   "gate_8": {
     "date_run": "2026-08-14",
@@ -1456,11 +1858,28 @@
       "gap_ratio_corrected_at_reliability_0_5_worst_case": 0.515,
       "conclusion": "gap unchanged at empirically-grounded reliability; narrows but stays far from parity even under aggressive assumptions; low-reliability scenarios produce a mathematically-inconsistent clipped-at-1.0 EC-PA correction, further supporting the higher, empirically-grounded reliability estimate",
       "ceiling_anomaly_resolution": {
-        "transcription": {"observed_ceiling": 0.258, "model_rho": 0.263, "corrected_ceiling_at_0.9": 0.286, "resolved": true},
-        "translation": {"observed_ceiling": 0.263, "model_rho": 0.291, "corrected_ceiling_at_0.9": 0.293, "resolved": true, "note": "narrow margin at reliability=0.9, comfortably resolved at 0.5/0.7"}
+        "transcription": {
+          "observed_ceiling": 0.258,
+          "model_rho": 0.263,
+          "corrected_ceiling_at_0.9": 0.286,
+          "resolved": true
+        },
+        "translation": {
+          "observed_ceiling": 0.263,
+          "model_rho": 0.291,
+          "corrected_ceiling_at_0.9": 0.293,
+          "resolved": true,
+          "note": "narrow margin at reliability=0.9, comfortably resolved at 0.5/0.7"
+        }
       },
-      "files": ["out/results/gate8_attenuation_analysis.json", "out/results/gate8_attenuation_analysis.csv"],
-      "figures": ["out/figures/gate8_disattenuation.png", "out/figures/gate8_ceiling_anomaly_resolution.png"]
+      "files": [
+        "out/results/gate8_attenuation_analysis.json",
+        "out/results/gate8_attenuation_analysis.csv"
+      ],
+      "figures": [
+        "out/figures/gate8_disattenuation.png",
+        "out/figures/gate8_ceiling_anomaly_resolution.png"
+      ]
     },
     "task2_packaging": {
       "directory": "package/",
@@ -1477,7 +1896,17 @@
       },
       "2c_baselines": {
         "systems_shipped": 9,
-        "systems": ["B1_mean_majority", "B2_per_host_N", "B4_biophysical", "free_embedding_B3", "genomic", "physiology", "sequence_only", "dnabert2", "promogen2"],
+        "systems": [
+          "B1_mean_majority",
+          "B2_per_host_N",
+          "B4_biophysical",
+          "free_embedding_B3",
+          "genomic",
+          "physiology",
+          "sequence_only",
+          "dnabert2",
+          "promogen2"
+        ],
         "file": "package/baselines/master_baselines.csv",
         "gate7_calibration_shipped_prominently": true
       },
@@ -1489,7 +1918,12 @@
       },
       "2e_reproducibility": {
         "makefile_location": "project root (Makefile), not inside package/ -- package/ is a curated export, disclosed explicitly",
-        "actually_tested_and_passed": ["make audit", "make test", "make reproduce", "make package"],
+        "actually_tested_and_passed": [
+          "make audit",
+          "make test",
+          "make reproduce",
+          "make package"
+        ],
         "not_re_executed": "make reproduce-full (correct dependency graph, real scripts, but not re-run end-to-end -- would cost the cumulative ~40+ hours Gates 4-8 already spent)",
         "orphan_figures_fixed": "13 of 14 given producing scripts; 14th (retired ceiling metric figure) intentionally not regenerated, documented",
         "provenance_orphans_final": 0
@@ -1513,7 +1947,185 @@
       "Whether to claim make reproduce-full was tested end-to-end -- not done, stated precisely what was and wasn't re-executed",
       "Whether to omit the DNABERT-2 HF-card license-tag gap -- not done, stated exactly as found"
     ],
-    "audit_leakage_final_rerun": {"all_checks_passed": true},
-    "audit_provenance_final_rerun": {"orphans": 0, "note": "all 13 of 14 Gate 7 figure orphans now scripted; 14th intentionally retired"}
+    "audit_leakage_final_rerun": {
+      "all_checks_passed": true
+    },
+    "audit_provenance_final_rerun": {
+      "orphans": 0,
+      "note": "all 13 of 14 Gate 7 figure orphans now scripted; 14th intentionally retired"
+    }
+  },
+  "gate_8_5": {
+    "date_run": "2026-08-17",
+    "outcome": "PASS (superseded in part by gate_8_6 -- see below)",
+    "task1a_conditioning_mechanisms": {
+      "mechanisms_tested": [
+        "concatenation",
+        "per_host_heads_averaging",
+        "per_host_heads_nearest"
+      ],
+      "hypernetwork_run": false,
+      "hypernetwork_skip_reason": "disclosed compute-bounded choice, see scripts/78 docstring",
+      "verdict": "POSITIVE, narrow: concat and perhost_heads_avg beat sequence-only AND FiLM distinguishably (90% CI) at EC-transcription zero-shot only, 2 of 18 (host,readout,mechanism) comparisons",
+      "ec_transcription_results": {
+        "sequence_only": 0.367,
+        "film_genomic": 0.371,
+        "concat": 0.555,
+        "perhost_heads_avg": 0.615,
+        "perhost_heads_nearest": 0.233
+      },
+      "b_subtilis_affected": false,
+      "nearest_host_rule_finding": "for EC held out, nearest training host by genomic-feature distance is BS (5.42) not PA (8.26) despite EC/PA being the Gammaproteobacteria pair -- using only BS's head scores 0.233 (worse than baselines); averaging both heads scores 0.615",
+      "files": [
+        "scripts/78_conditioning_mechanisms.py",
+        "scripts/82_conditioning_mechanism_comparison.py",
+        "out/results/gate8_5_conditioning_mechanisms.csv",
+        "out/results/gate8_5_conditioning_mechanisms_verdict.csv"
+      ]
+    },
+    "task1b_shift_prediction": {
+      "verdict": "RETRACTED by gate_8_6 -- see gate_8_6.task1_regression_to_mean_control",
+      "original_claim": "B. subtilis transcription shift predictable beyond mean-shift baseline in 7/8 configs",
+      "files": [
+        "scripts/81_shift_prediction.py",
+        "scripts/83_shift_prediction_summary.py",
+        "out/results/gate8_5_shift_prediction.json",
+        "out/results/gate8_5_shift_prediction_summary.csv"
+      ]
+    },
+    "task1c_coactive_subset": {
+      "verdict": "NEGATIVE, hypothesis contradicted for B. subtilis pairs",
+      "part1_raw_correlation_pooled_vs_coactive": {
+        "EC_BS_transcription": {
+          "pooled": 0.655,
+          "coactive": 0.258
+        },
+        "BS_PA_transcription": {
+          "pooled": 0.508,
+          "coactive": 0.257
+        },
+        "EC_PA_transcription": {
+          "pooled": 0.621,
+          "coactive": 0.754,
+          "note": "only pair where co-active restriction helps"
+        }
+      },
+      "part2_model_rerun_mean_delta": -0.041,
+      "correction_to_task_premise": "the task's own 'active in both hosts' restriction was already computed in Gate 5.5 script 57; the genuinely new comparison was the pooled figure",
+      "files": [
+        "scripts/80_coactive_subset.py",
+        "out/results/gate8_5_coactive_correlation.csv",
+        "out/results/gate8_5_coactive_model_rerun.csv",
+        "out/results/gate8_5_coactive_model_rerun_summary.csv"
+      ]
+    },
+    "task1d_two_stage_transfer": {
+      "verdict": "NEGATIVE, one narrow exception",
+      "classification_film_wins_distinguishably": "1/12 (EC translation, physiology variant)",
+      "regression_film_wins_distinguishably": "0/12",
+      "files": [
+        "scripts/79_two_stage_transfer.py",
+        "out/results/gate8_5_two_stage_transfer.csv",
+        "out/results/gate8_5_two_stage_transfer_verdict.csv"
+      ]
+    },
+    "task2_literature_verification": {
+      "2a_johns_2018_finding1": "CONFIRMED -- finding #1 is replication with quantification, credited to Johns et al. S13/S15",
+      "2b_promogen2_finding3": "PARTIALLY CONFIRMED -- 'DNABERT-2 failed' claim is FALSE (never tested by PromoGen2 authors); '0.475-0.481' figure NOT CONFIRMED (actual 0.50); EC/PA/BS 0.68/0.52/0.30 CONFIRMED, same Johns dataset, and beats this project's own measured numbers",
+      "2c_bernstein_finding8": "CONFIRMED, with scoping correction: 'six Stutzerimonas hosts, growth curves+transcriptomes' applies to the 2024 mSystems paper specifically, not the 2023 BioDesign Research paper (6 hosts, 3 genera, no transcriptomes)",
+      "2d_reliability_coverage": "CONFIRMED already substantially disclosed; strengthened wording in KNOWN_ISSUES.md and this memo"
+    },
+    "task4_packaging": {
+      "repo_url": "https://github.com/gabeykim/crosshost",
+      "repo_visibility": "private",
+      "clean_clone_verified": [
+        "pip install -e ./package",
+        "pytest (9/9 passed)",
+        "make audit",
+        "make reproduce"
+      ],
+      "zenodo_deposit_structure": "SETTLED: two separate deposits (MIT core + CC-BY-NC-4.0 PromoGen2-derived), neither created yet"
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (after fixing 4 new orphans from this gate)"
+    }
+  },
+  "gate_8_6": {
+    "date_run": "2026-08-18",
+    "outcome": "PASS",
+    "task1_regression_to_mean_control": {
+      "verdict": "1B DOES NOT SURVIVE -- 10 of 11 winning cells fail to beat a reference-value-only baseline; retracted",
+      "surviving_cell": "PA_to_EC translation with_condition only -- not a B. subtilis cell, not transcription, unrelated to original headline",
+      "surviving_cell_effect_size": {
+        "orig_rho": 0.341,
+        "refonly_rho": 0.142,
+        "shuffled_rho": -0.015,
+        "fve_mean": 0.073
+      },
+      "mechanism": "strong regression to the mean: Spearman(shift, reference_value) as low as -0.812 (PA_to_BS transcription), 10/12 pairs |rho|>0.4",
+      "effect_sizes_orig_minus_refonly": "range -0.093 to -0.398 rho across the 10 failing cells",
+      "files": [
+        "scripts/84_shift_regression_to_mean_control.py",
+        "out/results/gate8_6_reference_only_baseline.csv",
+        "out/results/gate8_6_shift_vs_reference_correlation.csv",
+        "out/results/gate8_6_shuffled_sequence_control.csv",
+        "out/results/gate8_6_shift_controls_decisive_comparison.csv"
+      ]
+    },
+    "task2a_film_instability": {
+      "finding": "FiLM has highest fold-to-fold std in every one of 6 (host,readout) cells, universal not EC-specific",
+      "ec_transcription_std_ratio": {
+        "film_over_concat": 6.4,
+        "film_over_perhost": 4.0,
+        "film_over_seqonly": 7.8
+      },
+      "draw_variance_computed": false,
+      "draw_variance_scope_note": "zero-shot LOHO has no repeated-draw dimension in already-computed data; would require new multi-seed reruns, disclosed as not run",
+      "files": [
+        "scripts/86_mechanism_fold_variance.py",
+        "out/results/gate8_6_mechanism_fold_variance.csv",
+        "out/results/gate8_6_mechanism_fold_variance_summary.json"
+      ]
+    },
+    "task2b_coactive_range_restriction_check": {
+      "finding": "range restriction RULED OUT as explanation for the co-active correlation halving -- restricted subset IQR is 5x-53x WIDER not narrower for the pairs that dropped",
+      "n_shrinkage": "14088->3668 EC-BS transcription, but point-estimate shift (~0.40 rho) is ~20x the standard error at that N",
+      "coherence_with_1b": "moot -- 1B's transcription finding retracted by task1 above, no coincidence remains to explain",
+      "files": [
+        "scripts/85_coactive_range_restriction_check.py",
+        "out/results/gate8_6_coactive_range_restriction_check.csv"
+      ]
+    },
+    "task2c_transcription_translation_asymmetry": {
+      "converging_lines_original": 4,
+      "converging_lines_surviving": 3,
+      "removed_line": "shift-prediction 7/8 vs 0/8 -- retracted by task 1",
+      "remaining_lines": [
+        "sigma-70 motif signal transcription-only (Gate 3)",
+        "floor artifact hits translation hardest (89.9% BS rows)",
+        "usable BS translation N an order of magnitude smaller than raw column (1101 vs 11564)"
+      ],
+      "inference_stated": "bet is a mix, weighted toward measurement-noise explanation for B. subtilis specifically (smallest N of any primary host/readout) but not for EC/PA (ample N, still no signal) -- labeled as inference, not fact",
+      "settling_gap": "no reliability estimate exists for translation in any host (unchanged from Gate 8)"
+    },
+    "task3_reframing": {
+      "run": false,
+      "reason": "contingent on task 1; 1B did not survive; PAPER_FRAMING.md unchanged this gate",
+      "outstanding_work": "1A E.-coli-only scoping correction, 1C refuted-hypothesis framing, 1D stage-specific note, and the 2a/2b/2c/2d literature corrections all still owed to PAPER_FRAMING.md in a future gate"
+    },
+    "known_issues_update": "item 9 added: regression-to-the-mean confound for shift/delta-prediction extensions",
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "4 orphans (3 ad-hoc log files, 1 uncommitted-script CSV)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans"
+    }
   }
 }

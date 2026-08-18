@@ -1,0 +1,272 @@
+[
+  {
+    "host": "EC",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.3671303061184982,
+    "rho_lower90": 0.3475102749500403,
+    "rho_upper90": 0.38654426230357974,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "transcription",
+    "system": "film_genomic",
+    "rho_mean": 0.37116617011573333,
+    "rho_lower90": 0.2154115050094531,
+    "rho_upper90": 0.5161862645044263,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "transcription",
+    "system": "concat",
+    "rho_mean": 0.5552709301789368,
+    "rho_lower90": 0.5332445720285957,
+    "rho_upper90": 0.5802613972887094,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "transcription",
+    "system": "perhost_heads_avg",
+    "rho_mean": 0.6154284426334791,
+    "rho_lower90": 0.5770997226770945,
+    "rho_upper90": 0.6537571625898636,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "transcription",
+    "system": "perhost_heads_nearest",
+    "rho_mean": 0.23339141631441743,
+    "rho_lower90": 0.1706718745374352,
+    "rho_upper90": 0.299305639882891,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.5624707499475539,
+    "rho_lower90": 0.5481046361111801,
+    "rho_upper90": 0.5742294922351594,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "translation",
+    "system": "film_genomic",
+    "rho_mean": 0.1547424016254527,
+    "rho_lower90": -0.05910172498667228,
+    "rho_upper90": 0.346222363679838,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "translation",
+    "system": "concat",
+    "rho_mean": 0.575851646287738,
+    "rho_lower90": 0.5547670482077284,
+    "rho_upper90": 0.5989586861418899,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "translation",
+    "system": "perhost_heads_avg",
+    "rho_mean": 0.5235139259769157,
+    "rho_lower90": 0.5057621456115119,
+    "rho_upper90": 0.5426686542594967,
+    "n_folds": 5
+  },
+  {
+    "host": "EC",
+    "readout": "translation",
+    "system": "perhost_heads_nearest",
+    "rho_mean": 0.42332736472998167,
+    "rho_lower90": 0.3774302118134315,
+    "rho_upper90": 0.466125596191408,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.2630011797277185,
+    "rho_lower90": 0.24591585394598564,
+    "rho_upper90": 0.28154837471333216,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "transcription",
+    "system": "film_genomic",
+    "rho_mean": 0.130505065714771,
+    "rho_lower90": 0.007934950761025544,
+    "rho_upper90": 0.2381174838949535,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "transcription",
+    "system": "concat",
+    "rho_mean": 0.27059065690105866,
+    "rho_lower90": 0.25219782502813576,
+    "rho_upper90": 0.29091843198015344,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "transcription",
+    "system": "perhost_heads_avg",
+    "rho_mean": 0.2765165249247541,
+    "rho_lower90": 0.25712532684155415,
+    "rho_upper90": 0.2968374564182944,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "transcription",
+    "system": "perhost_heads_nearest",
+    "rho_mean": 0.278653704703732,
+    "rho_lower90": 0.2586761662772668,
+    "rho_upper90": 0.2986312431301973,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.29121012536276536,
+    "rho_lower90": 0.2598186360345417,
+    "rho_upper90": 0.32662951867134654,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "translation",
+    "system": "film_genomic",
+    "rho_mean": 0.15117358142153775,
+    "rho_lower90": 0.11121229397404134,
+    "rho_upper90": 0.1914846487941811,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "translation",
+    "system": "concat",
+    "rho_mean": 0.29829960334566896,
+    "rho_lower90": 0.26258150935224267,
+    "rho_upper90": 0.3311460996708805,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "translation",
+    "system": "perhost_heads_avg",
+    "rho_mean": 0.2955417996656576,
+    "rho_lower90": 0.2667347390622848,
+    "rho_upper90": 0.3259393580356326,
+    "n_folds": 5
+  },
+  {
+    "host": "BS",
+    "readout": "translation",
+    "system": "perhost_heads_nearest",
+    "rho_mean": 0.3027111982932114,
+    "rho_lower90": 0.2738198768215442,
+    "rho_upper90": 0.3329219178710184,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.4794356688101278,
+    "rho_lower90": 0.4557437877887396,
+    "rho_upper90": 0.5002489575254054,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "transcription",
+    "system": "film_genomic",
+    "rho_mean": 0.33754725611430614,
+    "rho_lower90": 0.23687970271054004,
+    "rho_upper90": 0.43435760051570227,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "transcription",
+    "system": "concat",
+    "rho_mean": 0.4695690815387688,
+    "rho_lower90": 0.43303328515511613,
+    "rho_upper90": 0.5056025968875413,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "transcription",
+    "system": "perhost_heads_avg",
+    "rho_mean": 0.30849399401418975,
+    "rho_lower90": 0.28184778918850506,
+    "rho_upper90": 0.3372379309576264,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "transcription",
+    "system": "perhost_heads_nearest",
+    "rho_mean": 0.4810791618202896,
+    "rho_lower90": 0.4545276911402819,
+    "rho_upper90": 0.5062194357493206,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.3898897331129521,
+    "rho_lower90": 0.36584350892819956,
+    "rho_upper90": 0.4168335870180747,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "translation",
+    "system": "film_genomic",
+    "rho_mean": 0.13068987882217079,
+    "rho_lower90": 0.049506417059794736,
+    "rho_upper90": 0.2089250592825073,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "translation",
+    "system": "concat",
+    "rho_mean": 0.4146891322495111,
+    "rho_lower90": 0.3904441587850585,
+    "rho_upper90": 0.44764188228435564,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "translation",
+    "system": "perhost_heads_avg",
+    "rho_mean": 0.3763202453407478,
+    "rho_lower90": 0.35125535768131766,
+    "rho_upper90": 0.40159945617645515,
+    "n_folds": 5
+  },
+  {
+    "host": "PA",
+    "readout": "translation",
+    "system": "perhost_heads_nearest",
+    "rho_mean": 0.3965469961001574,
+    "rho_lower90": 0.369948766212579,
+    "rho_upper90": 0.4246136018714714,
+    "n_folds": 5
+  }
+]

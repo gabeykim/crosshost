@@ -35,6 +35,10 @@ raw/PMC6065261.tar.gz
 # scripts/19_mmseqs_clustering.py, not read by any fast-path script.
 raw/mmseqs/
 
+# Ad-hoc background-job stdout logs, not committed artifacts
+out/gate8_5_*.log
+out/gate8_6_*.log
+
 # macOS
 .DS_Store
 

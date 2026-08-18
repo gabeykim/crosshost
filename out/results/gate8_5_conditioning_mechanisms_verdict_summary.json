@@ -1,0 +1,28 @@
+{
+  "n_total": 18,
+  "n_wins_vs_both": 2,
+  "winning_cells": [
+    {
+      "host": "EC",
+      "readout": "transcription",
+      "mechanism": "concat",
+      "mech_mean": 0.5552709301789368,
+      "seqonly_mean": 0.3671303061184982,
+      "film_mean": 0.37116617011573333,
+      "beats_seqonly_distinguishably": true,
+      "beats_film_distinguishably": true,
+      "beats_both_distinguishably": true
+    },
+    {
+      "host": "EC",
+      "readout": "transcription",
+      "mechanism": "perhost_heads_avg",
+      "mech_mean": 0.6154284426334791,
+      "seqonly_mean": 0.3671303061184982,
+      "film_mean": 0.37116617011573333,
+      "beats_seqonly_distinguishably": true,
+      "beats_film_distinguishably": true,
+      "beats_both_distinguishably": true
+    }
+  ]
+}

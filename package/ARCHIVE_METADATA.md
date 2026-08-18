@@ -2,6 +2,17 @@
 
 Per Gate 8 Task 2f: artifacts prepared for review. **Nothing has been submitted or published to Zenodo or Hugging Face.** Everything below is a draft for the maintainer to check, edit, and actually submit.
 
+**Gate 8.5 update:** the source repository now exists and is pushed —
+`https://github.com/gabeykim/crosshost` (**currently private**; the
+maintainer has not authorized making it public). The Zenodo
+single-vs-split-deposit question flagged below as "DECISION NEEDED FROM
+MAINTAINER" in Gate 8 is now **settled**: **two separate Zenodo deposits**
+— one for the MIT-licensed core benchmark (`data/core/`, `crosshost/`,
+baselines, held-out eval), one for the CC-BY-NC-4.0 PromoGen2-derived
+embeddings (`data/licensed/promogen2_derived/`) — keeping the core
+benchmark cleanly licensed for downstream commercial use. Neither has
+actually been created yet; this remains prepared-not-submitted.
+
 ## Zenodo
 
 Suggested metadata for a Zenodo deposit (upload type: dataset + software, since this package bundles both):
@@ -23,12 +34,10 @@ creators:
   - name: "[MAINTAINER NAME -- fill in]"
     affiliation: "[fill in]"
 license: MIT
-  # NOTE: Zenodo's license field applies to the DEPOSIT as a whole. The
-  # licensing quarantine (data/licensed/promogen2_derived under CC-BY-NC-4.0)
-  # must be described in the deposit description since Zenodo does not support
-  # per-file licenses within one deposit -- consider a SEPARATE deposit for
-  # data/licensed/ content, or prominent in-description disclosure. DECISION
-  # NEEDED FROM MAINTAINER.
+  # NOTE (SETTLED, Gate 8.5): this deposit covers data/core/ and crosshost/
+  # ONLY. data/licensed/promogen2_derived/ (CC-BY-NC-4.0) ships as a SEPARATE
+  # Zenodo deposit -- see below -- so this deposit's MIT license applies
+  # cleanly to everything in it, with no per-file exception needed.
 keywords:
   - genomics
   - synthetic biology
@@ -42,9 +51,33 @@ related_identifiers:
 communities: []  # e.g. add a "bioinformatics" or "synthetic-biology" community if desired
 ```
 
+### Second deposit — CC-BY-NC-4.0 PromoGen2-derived embeddings (SETTLED, Gate 8.5)
+
+```yaml
+title: "CROSSHOST: PromoGen2 zero-shot embeddings (CC-BY-NC-4.0, non-commercial)"
+upload_type: dataset
+description: >
+  Frozen PromoGen2 (jinyuan22/promogen2-base) embeddings for the CROSSHOST
+  three-host library and RS241, used as one of two genomic foundation-model
+  baselines in the CROSSHOST benchmark (see the core deposit / repository
+  for the benchmark itself). Distributed separately under CC-BY-NC-4.0
+  (non-commercial), matching PromoGen2's own license, so the core CROSSHOST
+  deposit can remain MIT-licensed and commercially reusable without
+  entanglement. Requires the core CROSSHOST deposit's data/splits to be
+  useful on its own.
+creators:
+  - name: "[MAINTAINER NAME -- fill in, same as core deposit]"
+    affiliation: "[fill in]"
+license: "CC-BY-NC-4.0"
+related_identifiers:
+  - relation: isPartOf
+    identifier: "[core CROSSHOST deposit DOI -- fill in once minted]"
+communities: []
+```
+
 **What remains for the maintainer:**
-1. Fill in creator name/affiliation/ORCID.
-2. Decide the single-deposit-vs-split-deposit question for the CC-BY-NC-4.0 PromoGen2 content (see note above).
+1. Fill in creator name/affiliation/ORCID (both deposits).
+2. ~~Decide the single-deposit-vs-split-deposit question~~ — **done**: two deposits, per above.
 3. Verify the Johns et al. 2018 DOI is exactly right before citing it as `related_identifiers`.
 4. Actually create the Zenodo deposit, upload `package/` (or a zip of it), and mint the DOI.
 5. Once minted, add the DOI badge to `README.md` and cite it in any future paper.

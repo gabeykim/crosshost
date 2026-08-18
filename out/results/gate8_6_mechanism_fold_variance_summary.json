@@ -1,0 +1,12 @@
+{
+  "ec_transcription_fold_to_fold_std": {
+    "film_genomic": 0.19971056547573013,
+    "concat": 0.03122525039727325,
+    "perhost_heads_avg": 0.049687095990988875,
+    "sequence_only": 0.025603321637315286
+  },
+  "film_std_over_concat_std": 6.395803490279453,
+  "film_std_over_perhost_std": 4.019364816811776,
+  "film_std_over_seqonly_std": 7.800181878927151,
+  "note": "Draw-level (weight-init) variance not computed -- Task 1A's zero-shot LOHO protocol trains one model per (host,fold); a true fold-vs-draw ratio comparable to scripts/44 would require repeated same-data reruns not part of the original protocol. Fold-to-fold std reported directly instead."
+}
