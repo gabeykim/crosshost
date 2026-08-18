@@ -1,46 +1,329 @@
-# CROSSHOST — Paper Framing (FINAL, post-Gate-8 — locked for Gate 9)
+# CROSSHOST — Paper Framing (LOCKED, Gate 9 — for the manuscript and all downstream outreach)
+
+**This file is locked.** It supersedes every prior version. It was written
+after four independent attempts to recover a positive cross-host signal
+(Gate 8.5's Tasks 1A–1D) and a control that caught one of the two that
+initially looked real (Gate 8.6). No further rescue attempts are
+authorized against this framing — running a fifth would be the anti-retrofit
+failure the charter warns against (Part V, rule 9), not diligence.
 
 ## The central claim, in one sentence
 
-**Host conditioning — whether via 37 genome-encoded features, 6 proteome-derived physiology proxies, a free per-host identity embedding with no biological content, or two genomic foundation models two to three orders of magnitude larger than this project's own architecture — does not measurably improve cross-host bacterial regulatory-activity prediction over a host-agnostic sequence model, on this benchmark; and the underlying reason is visible directly in the raw data, independent of any model: hosts that are phylogenetically close (Gammaproteobacteria) share far more of their regulatory-activity signal than hosts that are not, which both explains why cross-host transfer works at all without host-specific calibration and why no host-descriptor vector this project tried added anything a sequence-only model didn't already capture.**
+**Cross-host regulatory activity prediction in bacteria is bounded by
+cross-host measurement agreement rather than by model capacity or host
+representation. Host conditioning — via genomic annotation, proteome-derived
+physiology, or an arbitrary host identifier — provides no detectable benefit
+over a sequence-only model for absolute-level prediction, under three
+distinct conditioning mechanisms, and helps only in the single host×readout
+cell with the highest measurement reliability. Two attempts to recover
+signal by reframing the prediction target failed under controls that
+identified their mechanisms.**
 
 ## Evidence hierarchy, strongest first
 
-1. **[POST-HOC, mechanistic, strongest] Cross-host measurement correlation, computed directly from the raw 2018 data — no model involved.** *E. coli* and *P. aeruginosa* activity measurements correlate at ρ≈0.75 (transcription, n=9,741; translation, n=3,826); *B. subtilis* correlates with either at only ρ≈0.16–0.26 (n=314–3,668). Independently reproduced bit-for-bit (`scripts/57`, re-verified in both Gate 6 and Gate 7). This is a property of the dataset, not of anything this project built, and it is the explanatory mechanism behind every other finding below: it sets the ceiling on how much cross-host signal exists to find, before any model gets involved. **Gate 8 checked whether this gap is a measurement-noise artifact rather than biology, and it is not:** disattenuation correction (Spearman's classical measurement-error correction), anchored by an empirically-measured *E. coli* transcription reliability of 0.91 (from five independent growth-condition measurements of the same sequences, `raw/NIHMS945382-supplement-5.xlsx`, cross-validated by a second, independent estimation method to within 0.02), leaves the EC–PA-vs-BS-pairs ratio **unchanged** (0.341 observed, 0.341 corrected, transcription). Even under deliberately aggressive assumptions about *B. subtilis*'s reliability specifically (as low as 0.5, a coin-flip-level value chosen to be generous to the measurement-noise explanation, not because it is likely), the corrected BS-pair correlations never exceed ~53% of EC–PA's — nowhere near parity. **The central mechanism claim survives intact.** Full analysis: `out/GATE8_MEMO.md` Task 1, `out/results/gate8_attenuation_analysis.json`. One direct consequence: this same correction, at any of the three tested reliability levels, resolves Gate 7's *B. subtilis* >100%-of-ceiling anomaly — the corrected ceiling meets or exceeds the sequence-only model's actual performance in every scenario tested, closing the question Gate 7 left open.
-2. **[POST-HOC, strong] Sequence-only wins 17 of 18 statistically distinguishable comparisons against the genomic- and physiology-conditioned models** (Gate 5.5), across primary hosts and RS241 (35 of 36 comparisons total, distinguishable or not). A model architecturally incapable of receiving host information matches or beats both conditioned variants almost everywhere tested.
-3. **[GATE-6-PREDICTED-IN-ADVANCE, strong] Sequence-only wins 35 of 37 statistically distinguishable comparisons against two genomic foundation models** (DNABERT-2, 117M params; PromoGen2, 148M params — 547× and 692× the sequence-only model's 214K parameters), across primary hosts and RS241. `out/GATE6_EXPECTATIONS.md` committed a specific falsifiable threshold before either foundation model was evaluated; neither came close to it. This directly defends the negative H-MAIN result against the strongest available objection — that the demonstration model was simply too small.
-4. **[PRE-REGISTERED, strongest by design] H-MAIN: NOT MET on all 8 primary comparisons.** The FiLM-conditioned model at N=100 calibration examples does not beat a simple per-host baseline at N=3,000 (transcription) or its data-saturation ceiling (translation), on *B. subtilis* or *P. aeruginosa*, under either host-feature vector, under the pre-registered evaluation mechanism. This is the project's kill gate. 7 of 8 primary comparisons show the model's point estimate below the baseline's outright, not merely statistically indistinguishable from it.
-5. **[PRE-REGISTERED, strong] H-DIAGNOSTIC: NOT MET on all 12 cells.** A free per-host lookup embedding — pure identity, zero biological content — matches or beats both biological host-feature vectors at zero-shot, everywhere tested.
-6. **[PRE-REGISTERED, moderate] H-SCIENCE: mostly statistically indistinguishable.** Genomic and physiology features differ in point estimate in most cells but are distinguishable at 90% confidence in only 1 of 6 host×readout combinations — *B. subtilis*-transcription, where genomic clearly beats physiology. Direction was not predicted in advance.
-7. **[POST-HOC, diagnostic, Gate 7] Where host-conditioning does show a rank-correlation advantage, its classifier probabilities are severely miscalibrated on the hosts furthest from the training distribution.** Split-conformal + reliability-diagram analysis of the sequence-only model's zero-shot active/inactive classifier found Expected Calibration Error of 0.05–0.10 on *E. coli* but 0.34–0.47 on *B. subtilis* and *P. aeruginosa* — roughly 4–8× worse — while the simple per-host-trained baseline (B2, N=3,000) calibrates far better throughout (ECE 0.03–0.23). Split-conformal *interval* coverage for the strength regressor stayed close to nominal (77–94% empirical against 80/90% targets) regardless, because conformal intervals are constructed to guarantee marginal coverage independent of the underlying model's calibration — the ECE failure is specifically a point-probability problem, not a symptom that would show up in the interval-coverage numbers. This adds a caveat to finding 2 above: "sequence-only wins on rank correlation" does not mean "sequence-only's probabilities are trustworthy cross-host," and a benchmark shipping this model as a baseline should ship this calibration failure alongside it, not just the win.
-8. **[POST-HOC, supporting, Gate 7] A bounded five-group ablation of the genomic feature vector found no feature group carrying a rank-correlation change exceeding fold-to-fold noise.** Sigma-factor complement, anti-Shine-Dalgarno free energy, tAI/codon usage, RNAP subunit count, and chaperone/heme gene counts were each zeroed out in turn (mean-ablation at inference, no retraining) on the *B. subtilis*-held-out genomic model, all 5 folds. Baseline rho = 0.131 (tx, fold-std 0.152) / 0.151 (tl, fold-std 0.056); every group's delta on dropping it was smaller than one fold-to-fold standard deviation, in both directions (max |delta| = 0.089, dropping sigma-factor on transcription). **The one mildly suggestive-but-not-significant pattern:** dropping the sigma-factor group *increased* rho in both readouts (+0.089 tx, +0.053 tl) — the largest and most consistent delta of the five, and in the "removing it helps" direction, not "removing it hurts." Reported as an observation, not a finding — it does not clear the noise threshold and no further claim is built on it. This is a clean, expected supporting result given finding 2 above: a benchmark whose conditioned model doesn't beat sequence-only should also show its host features aren't individually carrying detectable signal, and that is what this ablation found.
+1. **[PRE-REGISTERED, strongest by design] H-MAIN: NOT MET on all 8 primary
+   comparisons.** Hypotheses committed in `out/PREREGISTRATION.md` before
+   Gate 4 training began, amended twice (both dated, both before the
+   affected result was computed — widened N=100 mechanism reporting;
+   widened the decision interval from an 80% t-interval to a 90% percentile
+   bootstrap, a strictly conservative change that raised the bar). The
+   FiLM-conditioned model at N=100 calibration examples does not beat a
+   simple per-host baseline at N=3,000 (transcription) or its own
+   measured N≈300 saturation ceiling (translation), on *B. subtilis* or
+   *P. aeruginosa*, under the pre-registered frozen-trunk mechanism. The
+   closest call in the entire gate — *B. subtilis* transcription, genomic
+   features — still lost: model 0.213 [0.154, 0.260] vs. baseline 0.218
+   [0.160, 0.251], and was not revisited under any other mechanism for the
+   headline number. **The pre-registration, not any individual result, is
+   this project's principal credibility asset** — every number below was
+   generated by a plan committed before it was seen.
+2. **[POST-HOC, Gate 7, cleanest and most actionable] Off-distribution
+   calibration collapse.** The sequence-only model's zero-shot
+   active/inactive classifier is well-calibrated on *E. coli* (Expected
+   Calibration Error 0.05–0.10) but severely miscalibrated on *B. subtilis*
+   and *P. aeruginosa* (ECE 0.34–0.47) — a 4–9× degradation. A model that
+   wins on rank correlation is not automatically trustworthy in absolute
+   probability terms cross-host. This is the most directly actionable
+   finding for anyone deploying a model from this suite: recalibrate on any
+   available target-host data before trusting raw predicted probabilities.
+3. **[PRE-REGISTERED + Gate 8.5, LOAD-BEARING] Conditioning fails for
+   absolute-level prediction under three distinct mechanisms.** FiLM
+   (Gate 4, pre-registered), concatenation, and per-host output heads
+   (Gate 8.5 Task 1A, run specifically to test whether FiLM's own
+   underdetermined-generator weakness — not conditioning per se — explained
+   the negative result) all fail to beat sequence-only for *B. subtilis*,
+   every mechanism, both readouts. **Conditioning helps in exactly one of
+   18 (host, readout, mechanism) comparisons tested across all three
+   mechanisms: *E. coli* transcription** — the one primary host/readout
+   combination with the largest usable N and the only measured (not
+   sensitivity-bounded) reliability estimate (0.912, Gate 8). Two
+   mechanisms (concatenation: ρ=0.555; per-host-heads-averaging: ρ=0.615)
+   beat both sequence-only (0.367) and FiLM (0.371) distinguishably there.
+   *B. subtilis* is unaffected by any of the three mechanisms — every
+   *B. subtilis* cell is statistically indistinguishable across
+   sequence-only, concat, and per-host-heads. **Frame as "conditioning can
+   help where measurement is reliable and training data is plentiful," not
+   as a general property of these mechanisms.**
+4. **[POST-HOC, Gate 8.5/8.6] FiLM is measurably unstable in the
+   few-domain regime.** FiLM's fold-to-fold standard deviation of zero-shot
+   Spearman ρ exceeds every alternative mechanism's in all 6 (host,
+   readout) cells tested — 4.0–7.8× higher than concatenation, per-host
+   heads, and sequence-only at *E. coli* transcription specifically (FiLM
+   std=0.200 vs. 0.031/0.050/0.026). This is not EC-specific; it holds
+   universally. A γ/β generator fit from only two training-host feature
+   vectors is a measurably unstable choice in this regime, independent of
+   whether conditioning helps at all — a methodological finding useful to
+   anyone building a host-conditioned model on a handful of domains,
+   regardless of this paper's own negative result.
+5. **[PRE-REGISTERED, strong] H-DIAGNOSTIC: NOT MET on all 12 cells.** A
+   free per-host lookup embedding — pure identity, zero biological content
+   — matches or beats both the 37-D genomic and 6-D physiology
+   host-feature vectors at zero-shot in every one of 12 (host, readout,
+   variant) cells (0 clean model wins, 10 cells where the free embedding's
+   point estimate wins outright). **The biological features carry no
+   detectable advantage over an arbitrary host tag.** Caveated explicitly:
+   n_hosts ≤ 6, so this is a strong result within a small evaluation, not
+   a claim about host-feature engineering in general.
+6. **[POST-HOC, Gate 8.5/8.6, refuted hypothesis with direction named]
+   Co-activity, not magnitude, carries what transferable signal exists.**
+   The hypothesis tested was that activity is host-specific while strength
+   above threshold is conserved. The data says the opposite for
+   *B. subtilis* pairs: restricting cross-host measurement correlation to
+   sequences active in *both* hosts **roughly halves** it (EC-BS
+   transcription: 0.655→0.258; BS-PA transcription: 0.508→0.257). Range
+   restriction was checked directly and ruled out as the explanation — the
+   restricted subset's interquartile range is 5×–53× *wider*, not
+   narrower, than the pooled set's, which if anything should preserve or
+   increase correlation, making the observed drop more notable, not an
+   artifact. **Implication: what shared cross-host signal exists for
+   *B. subtilis* pairs lives predominantly in whether a sequence fires at
+   all, not in how strongly it fires once it does** — magnitude agreement
+   drops sharply, not strengthens, once both hosts are firing.
+7. **[POST-HOC, Gate 3 + Gate 8.6, three converging lines] The
+   transcription/translation asymmetry is a result, not a limitation.**
+   (i) A sigma-70 promoter-motif match score carries real transcription
+   signal (ρ=0.24–0.43 across primary hosts, Gate 3) but essentially none
+   for translation from ΔG folding energy alone (|ρ|<0.02). (ii) The
+   translation floor/detection-limit artifact is concentrated in
+   translation and is worst for *B. subtilis* (89.9% of nominally usable
+   rows pinned at a floor pseudo-value). (iii) *B. subtilis*'s real,
+   floor-corrected usable translation N is 1,101 — an order of magnitude
+   smaller than the raw column implies (11,564) and the smallest of any
+   primary host/readout combination in this project. **A fourth candidate
+   line — that shift-prediction recovered transcription-specific signal —
+   was tested and did NOT survive its own control (see finding 9 below);
+   it is explicitly removed from this convergent-evidence list, not
+   silently dropped.** On the three lines that do survive: transcription
+   carries recoverable cross-host structure in this dataset; translation
+   does not. Stated as inference, not fact: this project cannot separate
+   "translation is fundamentally less cross-host-conserved" from "the
+   FACS-seq translation readout in this dataset is too noisy to support
+   this class of analysis" — no measurement-reliability estimate exists
+   for translation in any host (see finding 8). The honest bet is a mix,
+   weighted toward the noise explanation for *B. subtilis* specifically
+   (smallest N of any primary cell) but not for *E. coli*/*P. aeruginosa*
+   (ample N — 9,146/17,630 floor-corrected — where every model in this
+   project still found no translation signal either).
+8. **[POST-HOC, Gate 8, your addition to a known result] Disattenuated
+   cross-host measurement agreement bounds achievable model performance.**
+   Raw cross-host correlation is ρ≈0.75 (*E. coli*–*P. aeruginosa*,
+   transcription) vs. ρ≈0.16–0.26 for any *B. subtilis* pair — itself a
+   replication of Johns et al. 2018's own reported result (finding 10
+   below), not a new observation. What this project adds: a
+   disattenuation correction (Spearman's classical measurement-error
+   correction), anchored by an empirically-measured *E. coli* transcription
+   reliability of 0.912 (five independent growth-condition replicates,
+   cross-checked to 0.929 by an independent method), leaves the gap ratio
+   **unchanged** — 0.341 observed, 0.341 corrected at reliability 0.9, and
+   still only 0.515 under a deliberately pessimistic reliability of 0.5.
+   **The gap survives measurement-noise correction at every tested level.**
+   This connects measurement agreement directly to the ceiling on what any
+   downstream model could achieve — a link Johns et al. did not make.
+9. **[POST-HOC, Gate 8.5/8.6, TWO DOCUMENTED FAILED RESCUE ATTEMPTS —
+   reported in the results, not buried]**
+   - **Shift-prediction (RETRACTED).** Reframing the target as the
+     cross-host *shift*, given a reference host's measured value, initially
+     appeared to recover real *B. subtilis*-transcription signal (7 of 8
+     configurations beat a mean-shift baseline). A regression-to-the-mean
+     control found this did not survive: Spearman(shift, reference value)
+     is as strongly negative as −0.812 (PA→BS transcription) across most
+     host pairs, meaning a high reference-host value mechanically predicts
+     a larger downward shift with zero sequence information required. A
+     reference-value-only baseline (no sequence at all) matched or beat the
+     original model in 10 of 11 winning cells. A second, independent
+     control — retraining the identical architecture with sequences
+     randomly shuffled relative to their targets — reproduced most of the
+     original performance (e.g. EC→BS transcription: original ρ=0.432,
+     shuffled-sequence ρ=0.557, **higher** with no real sequence
+     information at all). **Retracted, with the retraction disclosed in
+     place, not erased** (`out/GATE8_5_MEMO.md` Task 1B carries a dated
+     correction notice; `out/GATE8_6_MEMO.md` has the full control).
+   - **Co-active restriction (refuted in the informative direction).** See
+     finding 6.
+   - **A negative result that survived four independent, controlled
+     rescue attempts — three alternative conditioning mechanisms, a target
+     reframing, and a subset-restriction hypothesis — is harder to dismiss
+     than one that was never tested this way.** Reported as evidence for
+     the central claim's robustness, not as a series of failures to hide.
+10. **[POST-HOC, replication credited to the original source] Raw
+    cross-host measurement correlation.** *E. coli* and *P. aeruginosa*
+    activity measurements correlate at ρ≈0.75 (transcription); any
+    *B. subtilis* pair correlates at only ρ≈0.16–0.26. **This replicates
+    Johns et al. 2018's own reported result** (their Supplementary Fig.
+    S13, n=212, three hosts; Supplementary Fig. S15, n=241, RS241 six
+    hosts) — their main text states plainly: *"between recipients, only
+    E. coli and P. aeruginosa showed significant correlations between
+    regulatory sequences in terms of transcription levels and translation
+    efficiencies."* Verified against the primary source directly, not
+    assumed (`out/GATE8_5_MEMO.md` Task 2a). This project's addition is
+    methodological, not the raw contrast itself: a different translation
+    operationalization (raw protein level vs. Johns's translation-efficiency
+    ratio), a different, more robust statistic on far larger per-pair N
+    (Spearman on pairwise-co-active subsets vs. Johns's Pearson on a
+    three-way-intersected n=212), and the disattenuation link in finding 8,
+    which does not exist in Johns et al. at all.
+11. **[APPENDIX-LEVEL] Foundation-model comparison and feature ablation.**
+    Two genomic foundation models (DNABERT-2, 117M params; PromoGen2, 148M
+    params) were evaluated via frozen-embedding + shallow-head, uniformly
+    with each other, and lost to sequence-only in 35 of 37 statistically
+    distinguishable comparisons — **but this comparison protocol did not
+    give either model its best shot.** PromoGen2's own published native
+    zero-shot protocol (direct likelihood scoring, the same Johns et al.
+    dataset) scores 0.68/0.52/0.30 (EC/PA/BS transcription) — higher than
+    both this project's measured PromoGen2-embedding numbers (0.495/0.490/
+    0.243) and sequence-only itself (0.367/0.479/0.263) at every host.
+    **Demoted to appendix; the "model was too small" capacity-limit framing
+    is dropped — the issue is protocol fairness, not model size**
+    (`out/GATE8_5_MEMO.md` Task 2b). A separate five-group genomic-feature
+    ablation (sigma-factor, anti-SD, tAI/codon, RNAP, chaperone/heme) found
+    no group carrying a rank-correlation change exceeding fold-to-fold
+    noise (max |Δ|=0.089) — **scoped strictly to this project's own setup**
+    (6 coarse, reference-genome-derived proxy features, 3-primary-host
+    regime spanning two phyla) and explicitly not framed as testing or
+    refuting the Bernstein-lab physiology hypothesis, since the ablation
+    never touched the physiology feature vector at all and even that vector
+    is a reference-proteome-derived proxy, categorically different from
+    either Bernstein paper's direct wet-lab measurement
+    (`out/GATE8_5_MEMO.md` Task 2c).
 
 ## Scope limits, stated without hedging
 
-Three primary bacterial hosts with dense coverage (*E. coli*, *B. subtilis*, *P. aeruginosa*), plus three at greatly reduced N (~207 recoverable sequences) via RS241 (*S. enterica*, *V. natriegens*, *C. glutamicum*). **n_hosts ≤ 6, and the abstract states this ceiling explicitly.** One architecture (a ~214–228K-parameter FiLM-conditioned CNN, plus a sequence-only variant of the same trunk). One dataset: Johns et al. 2018, 165bp regulatory-sequence library, the only dataset of its kind and eight years old. Two specific host-feature vectors (37-D genomic, 6-D depth-matched proteomic physiology proxy) — not exhaustive of what "genome-encoded" or "physiological" could mean. Two genomic foundation models at 117M and 148M parameters, not the field's largest.
-
-This establishes: for this specific operationalization, host conditioning did not produce a detectable improvement in cross-host regulatory-activity prediction, and in most cases a model with no host-conditioning mechanism at all did at least as well.
-
-This does not establish: that host conditioning can never help this class of problem; that a differently-designed or larger host-feature vector would fail identically; that the Bernstein claim is resolved in general; or — see below — that capacity was fully ruled out as an explanation, since the field's largest genomic foundation model (Evo 2, up to 40B parameters) was not evaluated.
+Three primary bacterial hosts with dense coverage (*E. coli*, *B. subtilis*,
+*P. aeruginosa*), plus three at greatly reduced N (~207 recoverable
+sequences of 241 nominal — 34 RS241 oligo IDs have no recoverable sequence
+text in the released tables) via RS241 (*S. enterica*, *V. natriegens*,
+*C. glutamicum*). **n_hosts ≤ 6, and the abstract states this ceiling
+explicitly.** Two of the three primary hosts (*E. coli*, *P. aeruginosa*)
+are Gammaproteobacteria — **one of the three held-out-host tests in this
+project's own primary evaluation is therefore a substantially easier
+phylogenetic hop than the other two**, and this project's own raw-correlation
+finding (10, above) shows exactly that pair has the highest cross-host
+measurement agreement. Held-out-host results should be read per-host, not
+pooled, for this reason — a pattern this project's own results (finding 3)
+independently confirm (conditioning helps only at the Gammaproteobacteria
+pair). One architecture family (a ~214–228K-parameter CNN trunk, tested
+with three conditioning mechanisms and a sequence-only ablation). One
+dataset: Johns et al. 2018, 165bp regulatory-sequence library, the only
+dataset of its kind and eight years old. Two specific host-feature vectors
+(37-D genomic, 6-D depth-matched proteomic physiology proxy) — not
+exhaustive of what "genome-encoded" or "physiological" could mean. Two
+genomic foundation models at 117M and 148M parameters, evaluated via one
+protocol (frozen-embedding + shallow head) that this project's own
+follow-up work found is not necessarily either model's best protocol.
+Measurement reliability is directly estimated for exactly one
+host×readout combination — *E. coli* transcription (0.912) — and
+sensitivity-bounded (not measured) everywhere else, including for
+*B. subtilis*, the host the central claim depends on most.
 
 ## Evo 2 — documented infrastructure limitation, not a gap in effort
 
-Evo 2 could not be evaluated at any released size in this environment. This is a **verified hard technical constraint**, not an unexplored option: the official `evo2` package requires CUDA, Flash Attention, and (for the 1B/20B/40B checkpoints) Transformer Engine with FP8 on a Hopper GPU — confirmed against the ArcInstitute repository's own README and GitHub issue #67, which shows the library raising `ValueError: Expected a cuda device, but got: cpu` at initialization on non-CUDA hardware. No HuggingFace `transformers`-compatible port exists (unlike Evo 1). This project's compute environment is Apple Silicon (MPS only, no CUDA). A free hosted-API path (NVIDIA Build's Evo2-40B NIM endpoint) was identified, and using it was authorized, but execution requires an external account this agent cannot create without browser automation it does not have, and remains pending. **The capacity objection to the central claim is weakened by findings 2–3 above but not fully closed** — the paper should say plainly that the largest, most directly relevant genomic foundation model was not tested, and why, rather than let two mid-size models stand in silently for the strongest possible test.
+Unchanged from the prior locked version: Evo 2 (up to 40B parameters, the
+largest and most directly relevant genomic foundation model) could not be
+evaluated in this project's environment — a verified hard constraint
+(`evo2` requires CUDA/Flash Attention/Transformer Engine, confirmed against
+the ArcInstitute repository README and GitHub issue #67; this project's
+environment is Apple Silicon, MPS-only). A free hosted-API path was
+identified but requires external account creation this project's tooling
+could not perform. The capacity objection to the central claim is weakened
+by findings 3–4 and 11 above (three conditioning mechanisms tested, not
+one; the FM comparison itself demoted with its capacity framing dropped)
+but not fully closed by any model actually run at that scale.
 
-## The percent-of-ceiling metric — RETIRED
+## The percent-of-ceiling metric — RETIRED (unchanged)
 
-An earlier percent-of-ceiling metric (model zero-shot rho ÷ raw cross-host measurement correlation, as a "how much of the achievable signal did the model capture" figure) is **retired and does not appear anywhere in this paper — this stands regardless of the Gate 8 attenuation finding below.** History, for the record: a Gate 5.5 computation (genomic CNN, all values ≤100%, "remarkably consistent ~50%" for transcription) was correct and reproducible, but a Gate 6 "correction" mistakenly diffed it against the wrong baseline model (sequence-only instead of genomic) and published an incorrect fix. Gate 7 caught that error, restored the original genomic numbers as valid, and separately discovered the real, non-buggy reason the metric cannot be trusted as a general framing: the sequence-only model (Gate 5.5's *strongest* model) genuinely exceeds the same, correctly-computed ceiling for *B. subtilis* on both readouts (102–111%) — a real result, not a bug, traceable to the raw pairwise correlation being attenuated by measurement noise in a way a model trained on thousands of pooled examples is not. A ceiling a valid model can exceed is not functioning as a ceiling. **Gate 8 explains *why* — see finding 1 above — but explaining an anomaly is not the same as rehabilitating the metric that produced it; a ratio whose denominator requires an unverifiable per-host reliability correction to be meaningful is not a metric worth shipping, even once the specific anomaly is understood.** Finding 1 above (raw cross-host measurement correlation, now with the disattenuation check completed) carries the full interpretive weight this metric was meant to carry, on its own, without a derived ratio. Full derivation and both corrections: `out/GATE5_5_MEMO.md`'s dated correction, `out/GATE6_MEMO.md`'s dated addendum, `out/GATE7_MEMO.md` Task 1, `out/GATE8_MEMO.md` Task 1.
+Retired in Gate 7, reconfirmed retired here. Does not appear anywhere in
+this paper. Full history: `out/GATE5_5_MEMO.md`'s dated correction,
+`out/GATE6_MEMO.md`'s dated addendum, `out/GATE7_MEMO.md` Task 1,
+`out/GATE8_MEMO.md` Task 1. Raw cross-host measurement correlation
+(finding 10) and its disattenuated form (finding 8) carry the full
+interpretive weight this metric was meant to carry, without a derived
+ratio.
 
-## Relationship to the Bernstein claim
+## Relationship to the Bernstein-lab claim — corrected attribution
 
-The Bernstein lab argued that chassis effects cannot be explained by genome-encoded features **without experimental physiological insight** — i.e., that physiology beats genomics. **This project's result is a stronger and different claim than either side of that debate anticipated: neither genomic nor physiology-proxy conditioning is detectably better than no host information at all**, for this architecture and dataset. This does not confirm the Bernstein claim (where a confident distinction existed, genomic beat physiology, the opposite direction) and does not straightforwardly refute it either (their physiological measurements are direct; this project's physiology proxy is a coarse 6-feature proteome-derived stand-in).
+The charter's Part I quotes two sentences together as one claim from "the
+Bernstein lab." Verified directly against primary sources (`out/GATE8_5_MEMO.md`
+Task 2c): they are from two different papers with two different host
+panels, and must be attributed separately.
 
-**A scoping observation, not a refutation, worth stating precisely:** the Bernstein lab's own chassis-effect work tests *E. coli* alongside various Pseudomonads, Halopseudomonads, and *Stutzerimonas* species — every one of which, like *E. coli* itself, is a Gammaproteobacterium. This project's data shows cross-host measurement correlation is *highest* (ρ≈0.75) precisely within that same clade (*E. coli*–*P. aeruginosa*, both Gammaproteobacteria) and drops sharply (ρ≈0.16–0.26) only once a more distant phylum enters the comparison (*B. subtilis*, a Firmicute). Put plainly: **the Bernstein claim was tested in the regime where this project's data shows chassis effects are smallest to begin with.** That does not make their finding wrong — it makes it a claim about closely related organisms, not yet tested against the harder, more phylogenetically distant case this project's *B. subtilis* comparisons probe. This is exactly the kind of precise, good-faith scoping note that makes outreach to that group worth sending, not a gotcha.
+- *"Hosts exhibiting more similar metrics of growth and molecular
+  physiology also exhibit more similar performance of the genetic
+  inverter, indicating that specific bacterial physiology underpins
+  measurable chassis effects"* — Chan, Baldwin & Bernstein 2023,
+  *BioDesign Research* 5:0016, Abstract. Host panel: 6 hosts across 3
+  genera (*E. coli*, two *Halopseudomonas*, three *Pseudomonas* species),
+  zero *Stutzerimonas*. Physiology measured directly (plate-reader
+  growth/fluorescence, qPCR plasmid copy number, computed codon adaptation
+  index) — no transcriptomes.
+- *"It is impractical to postulate that the observable chassis-effect
+  between a given set of hosts can be explained by a single or even a set
+  of predictable genome-encoded functions without experimental insight"* —
+  Chan & Bernstein 2024, *mSystems* 9(9):e00849-24, Discussion. Host panel:
+  6 hosts, **all** *Stutzerimonas* (closely related within one genus).
+  Physiology measured directly via plate-reader growth curves **and**
+  RNA-seq transcriptomes.
+
+**This project's result is a stronger and different claim than either
+paper's own scope anticipated: neither genomic nor physiology-proxy
+conditioning is detectably better than no host information at all**, for
+this architecture, this dataset, and — critically — a coarse,
+reference-database-derived proxy for physiology, not either paper's direct
+wet-lab measurement. This does not test, confirm, or refute either paper's
+claim in its own terms. **The scoping observation worth stating precisely:**
+the 2024 paper's tested regime — closely related *Stutzerimonas* strains —
+is exactly the kind of phylogenetically close comparison this project's own
+data (findings 3, 10) shows has the *highest* cross-host measurement
+agreement and the one case where conditioning showed any benefit at all.
+Their finding and this project's negative result are not in tension; they
+were tested in different, non-overlapping regimes of host similarity. This
+is precise good-faith scoping, not a gotcha, and is exactly what makes
+outreach to that group worth sending (see `out/OUTREACH_DRAFTS.md`).
 
 ## Provenance of every finding
 
-**Pre-registered**, evaluated exactly as committed before any host-conditioned model result was seen (`out/PREREGISTRATION.md`, committed before Gate 4 training, amended twice, both dated and both before the affected result was computed): H-MAIN (both arms), H-SCIENCE, H-DIAGNOSTIC.
+**Pre-registered**, evaluated exactly as committed before any
+host-conditioned model result was seen (`out/PREREGISTRATION.md`, committed
+2026-08-04, amended twice — 2026-08-05 both times, both dated and both
+before the affected result was computed): H-MAIN (both arms), H-SCIENCE,
+H-DIAGNOSTIC.
 
-**Post-hoc**, generated after Gate 5's results and labeled as such everywhere: the sequence-only ablation, the cross-host measurement-correlation analysis, the conformal-calibration/ECE finding, and the feature-group ablation. This is what makes the pre-registered results credible, not a weakness — report H-MAIN/H-SCIENCE/H-DIAGNOSTIC as the hypothesis-testing core, and the rest as a post-hoc mechanistic investigation.
+**Post-hoc**, generated after Gate 5's results and labeled as such
+everywhere: the sequence-only ablation, the cross-host measurement-
+correlation analysis, the conformal-calibration/ECE finding, the
+feature-group ablation, the alternative conditioning mechanisms (1A), the
+co-active-subset analysis (1C), the two-stage transfer analysis (1D), the
+disattenuation analysis, and the shift-prediction attempt and its
+retraction (1B).
 
-**Predicted-in-advance-and-then-corrected**: the Gate 6 foundation-model comparison. `out/GATE6_EXPECTATIONS.md` committed a specific threshold before evaluation; the directional prediction (foundation models would roughly match or underperform sequence-only) came out correct, but a specific piece of its framing (the original "~50%-ceiling" premise it was partly hung on) was later found to rest on a mistaken comparison and was corrected in Gate 7. The paper should show this working — a wrong premise caught and fixed in public — rather than present only the clean final numbers, because the correction process is itself evidence the project's verification discipline holds up under its own scrutiny, not just when checking other people's numbers.
+**Predicted-in-advance-and-then-corrected**: the Gate 6 foundation-model
+comparison (a specific falsifiable threshold committed in
+`out/GATE6_EXPECTATIONS.md` before evaluation; the directional prediction
+was correct, one piece of its framing was later found wrong and corrected
+in Gate 7).
+
+**Attempted-and-retracted, disclosed with the mechanism, not hidden**: the
+shift-prediction reframe (finding 9). This is the second such
+correction-in-public this project has made (after the Gate 6→7 ceiling-metric
+correction) and is treated as evidence of verification discipline, not
+embarrassment — the manuscript's "what I could not do" and Discussion
+sections say this plainly.

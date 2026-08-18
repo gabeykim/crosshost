@@ -2127,5 +2127,61 @@
       "leakage": "6/6 PASS",
       "provenance": "0 orphans"
     }
+  },
+  "gate_9": {
+    "date_run": "2026-08-18",
+    "outcome": "PASS",
+    "task1_paper_framing_locked": {
+      "central_claim": "cross-host prediction bounded by measurement agreement, not model capacity or host representation; conditioning helps only at the single highest-reliability cell; two rescue attempts failed under controls",
+      "evidence_hierarchy_items": 11,
+      "no_further_rescue_attempts_authorized": true,
+      "file": "out/PAPER_FRAMING.md"
+    },
+    "task2_manuscript": {
+      "file": "out/MANUSCRIPT.md",
+      "sections": [
+        "Abstract",
+        "Introduction",
+        "Methods",
+        "Results",
+        "Discussion",
+        "Limitations",
+        "What I could not do",
+        "References"
+      ],
+      "gaps_flagged_not_written_around": [
+        "active-fraction percentages use a different denominator than Johns et al.'s own headline figure (per-host-usable vs three-host-union-set) -- both now stated explicitly with denominators, not conflated",
+        "the claim that BEND/Genomic Benchmarks/DART-Eval/DNALONGBENCH/NT-suite are predominantly human/animal/plant was never independently verified in any gate -- carried from charter planning-stage text, now disclosed as unverified working understanding rather than fact",
+        "DNABERT-2, DART-Eval, and ICLR-2025-baseline citations not independently re-verified against primary sources (only Johns 2018, PromoGen2/Xia et al., and both Bernstein-lab papers were verified with exact DOIs)"
+      ]
+    },
+    "task3_outreach_drafts": {
+      "file": "out/OUTREACH_DRAFTS.md",
+      "drafts": [
+        "de Boer lab (GAME)",
+        "Bernstein lab",
+        "Wang lab (DeepCROSS)",
+        "Johns et al. authors"
+      ],
+      "sent": false,
+      "note": "each draft flags unverified recipient contact info and requires a live preprint URL before sending"
+    },
+    "task4_submission_checklist": {
+      "file": "out/SUBMISSION_CHECKLIST.md",
+      "primary_venue": "MLCB or NeurIPS/ICLR workshop",
+      "secondary_venue": "Scientific Data",
+      "preprint": "bioRxiv, immediately, not yet posted",
+      "main_track_neurips_db": "explicitly flagged as a reach, not the plan",
+      "zenodo_structure": "two separate deposits (MIT core + CC-BY-NC-4.0 PromoGen2), neither created",
+      "repo_public": false
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans"
+    }
   }
 }
