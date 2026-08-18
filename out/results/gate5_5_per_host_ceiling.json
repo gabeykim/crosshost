@@ -1,0 +1,44 @@
+{
+  "EC": {
+    "transcription": {
+      "ceiling_max": 0.753750672912612,
+      "ceiling_mean_pair": 0.5056341267393366,
+      "actual_zeroshot_mean": 0.3711661701157333,
+      "pct_of_max_ceiling": 49.2425656724774
+    },
+    "translation": {
+      "ceiling_max": 0.7420946148344976,
+      "ceiling_mean_pair": 0.45139195963906176,
+      "actual_zeroshot_mean": 0.15474240162545266,
+      "pct_of_max_ceiling": 20.85211218787289
+    }
+  },
+  "BS": {
+    "transcription": {
+      "ceiling_max": 0.2575175805660613,
+      "ceiling_mean_pair": 0.25728433679734625,
+      "actual_zeroshot_mean": 0.13050506571477102,
+      "pct_of_max_ceiling": 50.678118918289705
+    },
+    "translation": {
+      "ceiling_max": 0.26326902314611467,
+      "ceiling_mean_pair": 0.21197916379487033,
+      "actual_zeroshot_mean": 0.15117358142153775,
+      "pct_of_max_ceiling": 57.4217124426508
+    }
+  },
+  "PA": {
+    "transcription": {
+      "ceiling_max": 0.753750672912612,
+      "ceiling_mean_pair": 0.5054008829706216,
+      "actual_zeroshot_mean": 0.33754725611430614,
+      "pct_of_max_ceiling": 44.7823488913078
+    },
+    "translation": {
+      "ceiling_max": 0.7420946148344976,
+      "ceiling_mean_pair": 0.5026818189903062,
+      "actual_zeroshot_mean": 0.13068987882217079,
+      "pct_of_max_ceiling": 17.61094558694747
+    }
+  }
+}

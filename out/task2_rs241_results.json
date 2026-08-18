@@ -1,0 +1,43 @@
+{
+  "n_sequences": 241,
+  "transcription": {
+    "per_host_usable": {
+      "EC": 219,
+      "BS": 149,
+      "PA": 240,
+      "SE": 237,
+      "VN": 166,
+      "CG": 211
+    },
+    "all_6_hosts_usable": 111,
+    "ec_bs_pa_usable": 146,
+    "n_hosts_distribution": {
+      "2": 11,
+      "3": 16,
+      "4": 29,
+      "5": 74,
+      "6": 111
+    }
+  },
+  "translation": {
+    "per_host_usable": {
+      "EC": 230,
+      "BS": 149,
+      "PA": 235,
+      "SE": 237,
+      "VN": 229,
+      "CG": 218
+    },
+    "all_6_hosts_usable": 126,
+    "ec_bs_pa_usable": 142,
+    "n_hosts_distribution": {
+      "2": 1,
+      "3": 6,
+      "4": 18,
+      "5": 90,
+      "6": 126
+    }
+  },
+  "rs241_ids_in_main_library": 207,
+  "rs241_ids_not_in_main_library": 34
+}

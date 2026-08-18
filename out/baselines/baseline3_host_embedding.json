@@ -1,0 +1,86 @@
+{
+  "EC": {
+    "transcription": {
+      "held_out_host": "EC",
+      "train_hosts": [
+        "BS",
+        "PA"
+      ],
+      "n_train": 29636,
+      "n_test": 4954,
+      "mcc": 0.2845985339183683,
+      "auc": 0.7241654122022492,
+      "spearman_rho": 0.5274629457565831,
+      "rmse_log_strength": 0.9745621297083694
+    },
+    "translation": {
+      "held_out_host": "EC",
+      "train_hosts": [
+        "BS",
+        "PA"
+      ],
+      "n_train": 24819,
+      "n_test": 5621,
+      "mcc": 0.1709046978755625,
+      "auc": 0.6813171774376876,
+      "spearman_rho": 0.4562222857517886,
+      "rmse_log_strength": 0.6190025584795065
+    }
+  },
+  "BS": {
+    "transcription": {
+      "held_out_host": "BS",
+      "train_hosts": [
+        "EC",
+        "PA"
+      ],
+      "n_train": 36384,
+      "n_test": 2987,
+      "mcc": 0.1413986266175901,
+      "auc": 0.7507196822611806,
+      "spearman_rho": 0.23582795882623753,
+      "rmse_log_strength": 1.0620352906866797
+    },
+    "translation": {
+      "held_out_host": "BS",
+      "train_hosts": [
+        "EC",
+        "PA"
+      ],
+      "n_train": 37919,
+      "n_test": 2264,
+      "mcc": 0.15392000542058404,
+      "auc": 0.7347136571820116,
+      "spearman_rho": 0.2784990075780844,
+      "rmse_log_strength": 0.5602115332484993
+    }
+  },
+  "PA": {
+    "transcription": {
+      "held_out_host": "PA",
+      "train_hosts": [
+        "EC",
+        "BS"
+      ],
+      "n_train": 32168,
+      "n_test": 4380,
+      "mcc": 0.08610621727492505,
+      "auc": 0.6995568511854101,
+      "spearman_rho": 0.33822802046425854,
+      "rmse_log_strength": 1.0549086727369112
+    },
+    "translation": {
+      "held_out_host": "PA",
+      "train_hosts": [
+        "EC",
+        "BS"
+      ],
+      "n_train": 31700,
+      "n_test": 4057,
+      "mcc": 0.0,
+      "auc": 0.5999905874556174,
+      "spearman_rho": 0.17285706929740158,
+      "rmse_log_strength": 0.2939634095764557
+    }
+  }
+}

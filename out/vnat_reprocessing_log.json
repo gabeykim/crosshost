@@ -1,0 +1,15 @@
+{
+  "source": "PRIDE PXD027874, ALL 81 samples pooled (all TP/salinity/temp conditions)",
+  "n_raw_protein_groups": 1082,
+  "n_after_qc": 1046,
+  "n_final_usable_any_sample_detected": 1032,
+  "comparison_to_single_condition_version": {
+    "single_condition_TP1_S300_T37_n_proteins": 665,
+    "pooled_all_81_samples_n_proteins": 1032,
+    "depth_gain": 367
+  },
+  "other_prd_datasets_checked": {
+    "PXD045789": "only raw MS zip available, no processed protein table -- not used",
+    "PXD049476": "not evaluated further once PXD027874 pooled depth (1032) proved sufficient"
+  }
+}

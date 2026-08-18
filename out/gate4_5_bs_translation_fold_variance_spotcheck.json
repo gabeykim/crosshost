@@ -1,0 +1,29 @@
+{
+  "configuration": "BS held out, TRANSLATION, genomic features, N=100, head_only mechanism",
+  "cnn": {
+    "fold_means": [
+      0.3168487121353163,
+      0.2804322577120227,
+      0.05186531295147685,
+      0.1785763350084116,
+      0.1994947154252193
+    ],
+    "fold_to_fold_std": 0.0920629428204587,
+    "mean_within_fold_draw_to_draw_std": 0.04300256402655585,
+    "ratio_fold_std_over_draw_std": 2.140871013263443
+  },
+  "kmer_linear_baseline_gate3_5": {
+    "fold_to_fold_std_of_rho": 0.06108190314663722,
+    "mean_within_fold_draw_to_draw_std_of_rho": 0.15511410738431816,
+    "ratio_fold_std_over_draw_std": 0.39378689776615716,
+    "fold_variance_dominates": false
+  },
+  "comparison_to_transcription_arm": {
+    "transcription_cnn_ratio": 2.0763842759508626,
+    "translation_cnn_ratio": 2.140871013263443,
+    "translation_worse": true
+  },
+  "ratio_vs_kmer_baseline": 5.436623273674175,
+  "decision_needed": true,
+  "decision_needed_reason": "CNN's fold/draw ratio for BS translation (2.141) is 5.44x the k-mer baseline's (0.394), and is itself HIGHER than the transcription arm's ratio (2.076) checked in Gate 4 -- the translation arm of H-MAIN, not just transcription, shows CNN fold variance substantially exceeding baseline-level variance. Both H-MAIN arms now show elevated fold variance; the pre-registered decision rule's robustness should be treated with this in mind."
+}

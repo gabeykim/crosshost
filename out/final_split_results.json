@@ -1,0 +1,69 @@
+{
+  "identity_merge_threshold": 0.85,
+  "n_candidate_pairs_checked_allpairs": 255684,
+  "n_pairs_merged": 795,
+  "n_connected_components": 28683,
+  "n_multi_member_components": 447,
+  "largest_component_size": 11,
+  "n_components_spanning_multiple_folds_before_fix": 295,
+  "n_oligos_reassigned_layer2": 344,
+  "final_fold_loads": [
+    5848,
+    5854,
+    5848,
+    5838,
+    5861
+  ],
+  "final_per_fold_max_identity": [
+    {
+      "test_fold": 0,
+      "test_n": 5848,
+      "train_n": 23401,
+      "max_identity": 0.8484848484848485,
+      "pair": [
+        "16338",
+        "21523"
+      ]
+    },
+    {
+      "test_fold": 1,
+      "test_n": 5854,
+      "train_n": 23395,
+      "max_identity": 0.8395061728395061,
+      "pair": [
+        "15343",
+        "26925"
+      ]
+    },
+    {
+      "test_fold": 2,
+      "test_n": 5848,
+      "train_n": 23401,
+      "max_identity": 0.8484848484848485,
+      "pair": [
+        "37886",
+        "19806"
+      ]
+    },
+    {
+      "test_fold": 3,
+      "test_n": 5838,
+      "train_n": 23411,
+      "max_identity": 0.8484848484848485,
+      "pair": [
+        "21523",
+        "16338"
+      ]
+    },
+    {
+      "test_fold": 4,
+      "test_n": 5861,
+      "train_n": 23388,
+      "max_identity": 0.8414634146341463,
+      "pair": [
+        "32095",
+        "18520"
+      ]
+    }
+  ]
+}

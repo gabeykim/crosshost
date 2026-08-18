@@ -1,0 +1,74 @@
+{
+  "EC": {
+    "transcription": {
+      "n_train_usable": 19458,
+      "n_test_usable": 4954,
+      "majority_active_rate_train": 0.610699969164354,
+      "mcc": 0.0,
+      "auc": 0.5,
+      "n_train_actives_for_regression": 11883,
+      "n_test_actives_for_regression": 2990,
+      "spearman_rho": null,
+      "rmse_log_strength": 1.0471448408207293
+    },
+    "translation": {
+      "n_train_usable": 22400,
+      "n_test_usable": 5621,
+      "majority_active_rate_train": 0.3345982142857143,
+      "mcc": 0.0,
+      "auc": 0.5,
+      "n_train_actives_for_regression": 7495,
+      "n_test_actives_for_regression": 1651,
+      "spearman_rho": null,
+      "rmse_log_strength": 0.6243373457405798
+    }
+  },
+  "BS": {
+    "transcription": {
+      "n_train_usable": 12710,
+      "n_test_usable": 2987,
+      "majority_active_rate_train": 0.2837922895357986,
+      "mcc": 0.0,
+      "auc": 0.5,
+      "n_train_actives_for_regression": 3607,
+      "n_test_actives_for_regression": 744,
+      "spearman_rho": null,
+      "rmse_log_strength": 0.8967159196616541
+    },
+    "translation": {
+      "n_train_usable": 9300,
+      "n_test_usable": 2264,
+      "majority_active_rate_train": 0.10139784946236559,
+      "mcc": 0.0,
+      "auc": 0.5,
+      "n_train_actives_for_regression": 943,
+      "n_test_actives_for_regression": 158,
+      "spearman_rho": null,
+      "rmse_log_strength": 0.5974539370717471
+    }
+  },
+  "PA": {
+    "transcription": {
+      "n_train_usable": 16926,
+      "n_test_usable": 4380,
+      "majority_active_rate_train": 0.8211627082594825,
+      "mcc": 0.0,
+      "auc": 0.5,
+      "n_train_actives_for_regression": 13899,
+      "n_test_actives_for_regression": 3826,
+      "spearman_rho": null,
+      "rmse_log_strength": 0.9986884635998471
+    },
+    "translation": {
+      "n_train_usable": 15519,
+      "n_test_usable": 4057,
+      "majority_active_rate_train": 0.5863135511308718,
+      "mcc": 0.0,
+      "auc": 0.5,
+      "n_train_actives_for_regression": 9099,
+      "n_test_actives_for_regression": 2493,
+      "spearman_rho": null,
+      "rmse_log_strength": 0.27142664069057293
+    }
+  }
+}

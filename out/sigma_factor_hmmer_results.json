@@ -1,0 +1,906 @@
+{
+  "EC": {
+    "n_sigma_factors": 7,
+    "proteins": {
+      "NP_417539.1": {
+        "best_evalue": 1.6e-76,
+        "matching_hmms": [
+          "Sigma70_ner",
+          "Sigma70_r1_1",
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_417221.1": {
+        "best_evalue": 1.1e-23,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_417918.1": {
+        "best_evalue": 6.2e-19,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_417068.1": {
+        "best_evalue": 3.2e-20,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_416432.3": {
+        "best_evalue": 2e-19,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_418713.1": {
+        "best_evalue": 3.1e-16,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_417669.1": {
+        "best_evalue": 3.6e-71,
+        "matching_hmms": [
+          "Sigma54_CBD",
+          "Sigma54_DBD"
+        ]
+      }
+    },
+    "excluded_region4_only": [
+      {
+        "protein_id": "NP_415739.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.1e-09
+      },
+      {
+        "protein_id": "NP_417977.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.6e-08
+      },
+      {
+        "protein_id": "NP_416697.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.2e-07
+      },
+      {
+        "protein_id": "NP_416424.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3.3e-06
+      }
+    ]
+  },
+  "BS": {
+    "n_sigma_factors": 16,
+    "proteins": {
+      "NP_390399.2": {
+        "best_evalue": 1.6e-33,
+        "matching_hmms": [
+          "Sigma70_r1_1",
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_388054.1": {
+        "best_evalue": 8.4e-23,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_388833.1": {
+        "best_evalue": 9.8e-21,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_389415.2": {
+        "best_evalue": 5.8e-20,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_389416.1": {
+        "best_evalue": 1.1e-18,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_390226.1": {
+        "best_evalue": 3.3e-18,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_390191.2": {
+        "best_evalue": 5.5e-18,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_389356.1": {
+        "best_evalue": 2e-17,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_389529.1": {
+        "best_evalue": 1.9e-16,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_387979.1": {
+        "best_evalue": 8.1e-16,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_391749.1": {
+        "best_evalue": 3.8e-15,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_388354.2": {
+        "best_evalue": 3.6e-20,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_390590.1": {
+        "best_evalue": 1.6e-17,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_390561.1": {
+        "best_evalue": 2.4e-16,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_389228.1": {
+        "best_evalue": 3.8e-12,
+        "matching_hmms": [
+          "Sigma70_r2"
+        ]
+      },
+      "NP_391300.1": {
+        "best_evalue": 1.1e-66,
+        "matching_hmms": [
+          "Sigma54_CBD",
+          "Sigma54_DBD"
+        ]
+      }
+    },
+    "excluded_region4_only": [
+      {
+        "protein_id": "NP_391203.2",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.7e-14
+      },
+      {
+        "protein_id": "NP_390719.2",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.9e-12
+      },
+      {
+        "protein_id": "NP_389138.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.1e-15
+      },
+      {
+        "protein_id": "NP_389801.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 5.1e-09
+      },
+      {
+        "protein_id": "NP_391822.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3e-06
+      },
+      {
+        "protein_id": "NP_389479.1",
+        "hmms": [
+          "Sigma70_r4"
+        ],
+        "evalue": 6e-06
+      },
+      {
+        "protein_id": "NP_391770.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.5e-07
+      },
+      {
+        "protein_id": "NP_388814.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 4.8e-07
+      }
+    ]
+  },
+  "PA": {
+    "n_sigma_factors": 22,
+    "proteins": {
+      "NP_249267.1": {
+        "best_evalue": 1.9e-67,
+        "matching_hmms": [
+          "Sigma70_ner",
+          "Sigma70_r1_1",
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_252312.1": {
+        "best_evalue": 4.4e-24,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_250467.1": {
+        "best_evalue": 9e-22,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_250146.1": {
+        "best_evalue": 8.2e-21,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_249453.1": {
+        "best_evalue": 7.5e-20,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_251586.1": {
+        "best_evalue": 3.1e-18,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_249067.1": {
+        "best_evalue": 4.5e-18,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_251158.1": {
+        "best_evalue": 3.3e-16,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_252588.1": {
+        "best_evalue": 3.4e-16,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_250602.1": {
+        "best_evalue": 7.6e-18,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_249991.1": {
+        "best_evalue": 4.4e-17,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_250740.1": {
+        "best_evalue": 2.7e-14,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_252100.1": {
+        "best_evalue": 2.3e-17,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_249163.1": {
+        "best_evalue": 6.7e-17,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_251116.1": {
+        "best_evalue": 9.3e-14,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_251975.1": {
+        "best_evalue": 2.1e-13,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_250783.1": {
+        "best_evalue": 8.8e-14,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_248839.1": {
+        "best_evalue": 4.6e-17,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_250042.1": {
+        "best_evalue": 2.7e-11,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_251077.1": {
+        "best_evalue": 5.1e-16,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_253583.1": {
+        "best_evalue": 1.7e-14,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_253152.1": {
+        "best_evalue": 2e-70,
+        "matching_hmms": [
+          "Sigma54_CBD",
+          "Sigma54_DBD"
+        ]
+      }
+    },
+    "excluded_region4_only": [
+      {
+        "protein_id": "NP_249366.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 9.3e-15
+      },
+      {
+        "protein_id": "NP_250054.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.4e-15
+      },
+      {
+        "protein_id": "NP_252568.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.1e-09
+      },
+      {
+        "protein_id": "NP_252769.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.5e-06
+      },
+      {
+        "protein_id": "NP_250450.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.6e-06
+      },
+      {
+        "protein_id": "NP_249827.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.9e-08
+      },
+      {
+        "protein_id": "NP_251066.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2e-08
+      },
+      {
+        "protein_id": "NP_252885.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 6.9e-09
+      },
+      {
+        "protein_id": "NP_250670.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3.2e-06
+      },
+      {
+        "protein_id": "NP_252294.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.8e-07
+      },
+      {
+        "protein_id": "NP_251281.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.2e-06
+      },
+      {
+        "protein_id": "NP_252460.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 6.2e-07
+      },
+      {
+        "protein_id": "NP_249224.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.1e-06
+      }
+    ]
+  },
+  "SE": {
+    "n_sigma_factors": 6,
+    "proteins": {
+      "NP_462126.3": {
+        "best_evalue": 1e-76,
+        "matching_hmms": [
+          "Sigma70_ner",
+          "Sigma70_r1_1",
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_461845.1": {
+        "best_evalue": 1.2e-23,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_462469.1": {
+        "best_evalue": 6.6e-19,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4"
+        ]
+      },
+      "NP_461575.1": {
+        "best_evalue": 3.4e-20,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_460909.1": {
+        "best_evalue": 3.7e-19,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "NP_462230.1": {
+        "best_evalue": 3.8e-71,
+        "matching_hmms": [
+          "Sigma54_CBD",
+          "Sigma54_DBD"
+        ]
+      }
+    },
+    "excluded_region4_only": [
+      {
+        "protein_id": "NP_460723.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 4.1e-09
+      },
+      {
+        "protein_id": "NP_462507.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3.4e-07
+      },
+      {
+        "protein_id": "NP_461189.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.5e-07
+      },
+      {
+        "protein_id": "NP_462039.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 2.1e-06
+      },
+      {
+        "protein_id": "NP_460900.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3.5e-06
+      },
+      {
+        "protein_id": "NP_460352.3",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.8e-07
+      }
+    ]
+  },
+  "CG": {
+    "n_sigma_factors": 7,
+    "proteins": {
+      "WP_011265837.1": {
+        "best_evalue": 2.4e-28,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "WP_011014752.1": {
+        "best_evalue": 5.3e-26,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "WP_003855001.1": {
+        "best_evalue": 1.6e-21,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_003858163.1": {
+        "best_evalue": 2.6e-20,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_011013508.1": {
+        "best_evalue": 7.1e-16,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_011013755.1": {
+        "best_evalue": 2.1e-11,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_003855298.1": {
+        "best_evalue": 3.2e-16,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      }
+    },
+    "excluded_region4_only": [
+      {
+        "protein_id": "WP_227747673.1",
+        "hmms": [
+          "Sigma70_r4"
+        ],
+        "evalue": 4.5e-06
+      },
+      {
+        "protein_id": "WP_011015360.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 5.3e-07
+      },
+      {
+        "protein_id": "WP_011015089.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.8e-07
+      }
+    ]
+  },
+  "VN": {
+    "n_sigma_factors": 8,
+    "proteins": {
+      "WP_014230751.1": {
+        "best_evalue": 4.3e-70,
+        "matching_hmms": [
+          "Sigma70_ner",
+          "Sigma70_r1_1",
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "WP_061778639.1": {
+        "best_evalue": 1.8e-23,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4"
+        ]
+      },
+      "WP_014233001.1": {
+        "best_evalue": 9e-20,
+        "matching_hmms": [
+          "Sigma70_ECF",
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_014233310.1": {
+        "best_evalue": 2.4e-19,
+        "matching_hmms": [
+          "Sigma70_r1_2",
+          "Sigma70_r2",
+          "Sigma70_r4"
+        ]
+      },
+      "WP_014232801.1": {
+        "best_evalue": 2.5e-18,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_373423024.1": {
+        "best_evalue": 1.8e-17,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_020333594.1": {
+        "best_evalue": 5.1e-19,
+        "matching_hmms": [
+          "Sigma70_r2",
+          "Sigma70_r3",
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ]
+      },
+      "WP_020334488.1": {
+        "best_evalue": 4.7e-72,
+        "matching_hmms": [
+          "Sigma54_CBD",
+          "Sigma54_DBD"
+        ]
+      }
+    },
+    "excluded_region4_only": [
+      {
+        "protein_id": "WP_014232024.1",
+        "hmms": [
+          "Sigma70_r4"
+        ],
+        "evalue": 2e-06
+      },
+      {
+        "protein_id": "WP_020334165.1",
+        "hmms": [
+          "Sigma70_r4",
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3.6e-06
+      },
+      {
+        "protein_id": "WP_014233621.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 7.5e-09
+      },
+      {
+        "protein_id": "WP_020335456.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 6.8e-07
+      },
+      {
+        "protein_id": "WP_020334444.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 9.5e-11
+      },
+      {
+        "protein_id": "WP_020333677.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 1.4e-06
+      },
+      {
+        "protein_id": "WP_014234091.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3e-06
+      },
+      {
+        "protein_id": "WP_014234118.1",
+        "hmms": [
+          "Sigma70_r4_2"
+        ],
+        "evalue": 3.5e-06
+      }
+    ]
+  }
+}

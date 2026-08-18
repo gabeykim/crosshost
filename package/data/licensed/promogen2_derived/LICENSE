@@ -1,0 +1,17 @@
+CC-BY-NC-4.0 (non-commercial)
+
+These files (`promogen2_library.npz`, `promogen2_rs241.npz`) are frozen
+embeddings extracted by running the `jinyuan22/promogen2-base` model
+(CC-BY-NC-4.0) on CROSSHOST's regulatory sequence library. Quarantined
+here, separate from the MIT-licensed core benchmark, because they are a
+direct output of a non-commercially-licensed model.
+
+**Non-commercial use only.** Commercial use requires clarifying terms with
+the PromoGen2 model authors, not with the CROSSHOST project — we are not in
+a position to grant rights we do not hold. See
+https://huggingface.co/jinyuan22/promogen2-base for the model's own license.
+
+DNABERT-2 embeddings (`data/core/` is NOT where these live — see
+README.md's licensing quarantine table) are believed permissively licensed
+(Apache 2.0-style) but this was NOT independently re-verified during Gate 8
+packaging — confirm before treating them as unrestricted. See KNOWN_ISSUES.md.

@@ -1,0 +1,67 @@
+{
+  "device": "mps",
+  "epochs_requested": 15,
+  "epochs_run_film_on": 15,
+  "epochs_run_film_off": 15,
+  "wall_clock_sec_film_on": 479.6886420249939,
+  "wall_clock_sec_film_off": 526.1930530071259,
+  "sec_per_epoch_film_on": 31.97924280166626,
+  "n_train_examples": 58084,
+  "param_counts": {
+    "film_enabled": 227844,
+    "film_disabled": 213956
+  },
+  "host_vector_swap_sensitivity": {
+    "tx_active_logit": {
+      "film_enabled_mean_abs_diff": 1.543839454650879,
+      "film_disabled_mean_abs_diff": 0.0
+    },
+    "tx_strength": {
+      "film_enabled_mean_abs_diff": 0.5521261096000671,
+      "film_disabled_mean_abs_diff": 0.0
+    },
+    "tl_active_logit": {
+      "film_enabled_mean_abs_diff": 1.543485403060913,
+      "film_disabled_mean_abs_diff": 0.0
+    },
+    "tl_strength": {
+      "film_enabled_mean_abs_diff": 0.2984212338924408,
+      "film_disabled_mean_abs_diff": 0.0
+    }
+  },
+  "film_gamma_beta_stats_after_training": {
+    "gamma2": {
+      "mean": -0.005567444488406181,
+      "std": 0.37342017889022827,
+      "min": -1.1210296154022217,
+      "max": 1.007417917251587
+    },
+    "beta2": {
+      "mean": -0.13894037902355194,
+      "std": 0.31027474999427795,
+      "min": -1.7108173370361328,
+      "max": 0.5708441734313965
+    },
+    "gamma3": {
+      "mean": -0.02291872166097164,
+      "std": 0.47573113441467285,
+      "min": -1.5410466194152832,
+      "max": 1.5407408475875854
+    },
+    "beta3": {
+      "mean": 0.06207330897450447,
+      "std": 0.38038456439971924,
+      "min": -1.0069104433059692,
+      "max": 1.1233843564987183
+    }
+  },
+  "verdict": "FiLM IS CONDITIONING",
+  "imputed_host_feature_cells": [
+    {
+      "host": "BS",
+      "feature": "growth_rate_mu_h",
+      "imputed_value": 1.8519999999999999,
+      "method": "mean_of_other_5_hosts"
+    }
+  ]
+}

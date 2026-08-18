@@ -1,0 +1,84 @@
+{
+  "EC": {
+    "n_proteins": 4300,
+    "n_with_gene_symbol": 4300,
+    "gene_symbol_ratio": 1.0,
+    "n_hypothetical_or_uncharacterized": 335,
+    "hypothetical_ratio": 0.07790697674418605,
+    "feature_counts": {
+      "ribosomal_proteins": 57,
+      "rnap_core": 4,
+      "chaperones": 7,
+      "heme_biosynthesis": 16
+    }
+  },
+  "BS": {
+    "n_proteins": 4237,
+    "n_with_gene_symbol": 4177,
+    "gene_symbol_ratio": 0.9858390370545197,
+    "n_hypothetical_or_uncharacterized": 727,
+    "hypothetical_ratio": 0.1715836676894029,
+    "feature_counts": {
+      "ribosomal_proteins": 51,
+      "rnap_core": 4,
+      "chaperones": 6,
+      "heme_biosynthesis": 14
+    }
+  },
+  "PA": {
+    "n_proteins": 5572,
+    "n_with_gene_symbol": 1753,
+    "gene_symbol_ratio": 0.3146087580760948,
+    "n_hypothetical_or_uncharacterized": 2255,
+    "hypothetical_ratio": 0.40470208183776024,
+    "feature_counts": {
+      "ribosomal_proteins": 56,
+      "rnap_core": 4,
+      "chaperones": 6,
+      "heme_biosynthesis": 12
+    }
+  },
+  "SE": {
+    "n_proteins": 4554,
+    "n_with_gene_symbol": 3308,
+    "gene_symbol_ratio": 0.7263943785682916,
+    "n_hypothetical_or_uncharacterized": 38,
+    "hypothetical_ratio": 0.00834431269213878,
+    "feature_counts": {
+      "ribosomal_proteins": 61,
+      "rnap_core": 4,
+      "chaperones": 4,
+      "heme_biosynthesis": 14
+    }
+  },
+  "CG": {
+    "n_proteins": 2941,
+    "n_with_gene_symbol": 614,
+    "gene_symbol_ratio": 0.20877252635158108,
+    "n_hypothetical_or_uncharacterized": 623,
+    "hypothetical_ratio": 0.21183270996259776,
+    "feature_counts": {
+      "ribosomal_proteins": 55,
+      "rnap_core": 4,
+      "chaperones": 8,
+      "heme_biosynthesis": 11
+    }
+  },
+  "VN": {
+    "n_proteins": 4504,
+    "n_with_gene_symbol": 1462,
+    "gene_symbol_ratio": 0.32460035523978686,
+    "n_hypothetical_or_uncharacterized": 550,
+    "hypothetical_ratio": 0.12211367673179396,
+    "feature_counts": {
+      "ribosomal_proteins": 58,
+      "rnap_core": 4,
+      "chaperones": 6,
+      "heme_biosynthesis": 20
+    }
+  },
+  "correlation_gene_ratio_vs_n_ribosomal": -0.17605490865578355,
+  "correlation_gene_ratio_vs_n_rnap": null,
+  "correlation_gene_ratio_vs_n_chaperone": -0.26543374949813536,
+  "correlation_gene_ratio_vs_n_heme": 0.15948032697485018
+}

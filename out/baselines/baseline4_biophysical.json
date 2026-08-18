@@ -1,0 +1,45 @@
+{
+  "EC": {
+    "transcription": {
+      "feature": "best_sigma70_match_score",
+      "n": 2011,
+      "spearman_rho": 0.43375274093248695
+    },
+    "translation": {
+      "feature": "delta_G",
+      "n": 2968,
+      "spearman_rho": -0.0035951650542041438,
+      "note": "delta_G is folding free energy; more negative = more stable secondary structure = typically lower translation initiation rate, so a NEGATIVE rho is the biophysically expected direction, not a sign error"
+    }
+  },
+  "BS": {
+    "transcription": {
+      "feature": "best_sigma70_match_score",
+      "n": 539,
+      "spearman_rho": 0.2392559394484529
+    },
+    "translation": {
+      "feature": "delta_G",
+      "n": 549,
+      "spearman_rho": -0.015974655581050698,
+      "note": "delta_G is folding free energy; more negative = more stable secondary structure = typically lower translation initiation rate, so a NEGATIVE rho is the biophysically expected direction, not a sign error"
+    }
+  },
+  "PA": {
+    "transcription": {
+      "feature": "best_sigma70_match_score",
+      "n": 3457,
+      "spearman_rho": 0.3638381032003085
+    },
+    "translation": {
+      "feature": "delta_G",
+      "n": 3546,
+      "spearman_rho": 0.006715418683859733,
+      "note": "delta_G is folding free energy; more negative = more stable secondary structure = typically lower translation initiation rate, so a NEGATIVE rho is the biophysically expected direction, not a sign error"
+    }
+  },
+  "not_attempted": {
+    "salis_rbs_calculator_v1_fresh_run": "not attempted -- Python 2 + bundled NuPACK build, judged not worth the setup time given the paper's own released biophysical scores (computed with an RBS-Calculator-family method on these exact sequences) were available",
+    "salis_promoter_calculator_fresh_run": "not attempted, same reasoning"
+  }
+}

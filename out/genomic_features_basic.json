@@ -1,0 +1,3389 @@
+{
+  "EC": {
+    "genome_size_bp": 4641652,
+    "gc_content": 0.5079070985933456,
+    "n_replicons": 1,
+    "n_cds": 4317,
+    "n_proteins": 4300,
+    "codon_counts": {
+      "ATG": 37392,
+      "AAA": 45202,
+      "CGC": 29648,
+      "ATT": 40912,
+      "AGC": 21579,
+      "ACC": 31533,
+      "ATC": 33906,
+      "ACA": 9276,
+      "GGT": 33328,
+      "AAC": 29047,
+      "GCG": 45507,
+      "GGC": 40012,
+      "TGA": 1253,
+      "CGA": 4682,
+      "GTG": 35331,
+      "TTG": 18301,
+      "AAG": 13725,
+      "TTC": 22232,
+      "TCA": 9461,
+      "GCA": 27069,
+      "AAT": 23487,
+      "GAA": 53326,
+      "CGT": 28337,
+      "TTT": 29844,
+      "CTG": 71305,
+      "GTT": 24604,
+      "GCC": 34417,
+      "GAT": 43045,
+      "AGG": 1460,
+      "CAG": 38835,
+      "GGG": 14721,
+      "GTC": 20535,
+      "CTC": 14955,
+      "TCT": 11304,
+      "CCC": 7292,
+      "CAC": 13030,
+      "GCT": 20487,
+      "TTA": 18506,
+      "CTT": 14732,
+      "ACG": 19320,
+      "GGA": 10493,
+      "CCG": 31344,
+      "CAA": 20627,
+      "ACT": 11930,
+      "ATA": 5591,
+      "CAT": 17227,
+      "AGT": 11642,
+      "TGC": 8650,
+      "GAG": 23896,
+      "TCG": 11949,
+      "GTA": 14646,
+      "TAC": 16386,
+      "TCC": 11561,
+      "GAC": 25724,
+      "TGT": 6868,
+      "TGG": 20397,
+      "TAT": 21528,
+      "CCT": 9310,
+      "CCA": 11274,
+      "CGG": 7133,
+      "CTA": 5203,
+      "TAA": 2763,
+      "AGA": 2630,
+      "TAG": 306
+    },
+    "codon_freqs": {
+      "ATG": 0.027862559015689826,
+      "AAA": 0.033682161762601935,
+      "CGC": 0.02209213601030092,
+      "ATT": 0.030485478563593876,
+      "AGC": 0.01607954003529019,
+      "ACC": 0.023496739234107493,
+      "ATC": 0.025264974486146216,
+      "ACA": 0.006911989126806238,
+      "GGT": 0.02483427917401879,
+      "AAC": 0.021644302303400257,
+      "GCG": 0.03390943178024703,
+      "GGC": 0.02981484572464114,
+      "TGA": 0.0009336699413419811,
+      "CGA": 0.0034887810577519194,
+      "GTG": 0.026326809814488053,
+      "TTG": 0.013636946206304545,
+      "AAG": 0.01022715079402928,
+      "TTC": 0.016566121417330344,
+      "TCA": 0.007049841432590968,
+      "GCA": 0.020170400352901904,
+      "AAT": 0.01750128165387,
+      "GAA": 0.039735740855548665,
+      "CGT": 0.02111524750822643,
+      "TTT": 0.02223818493967285,
+      "CTG": 0.0531327495350279,
+      "GTT": 0.01833361152177023,
+      "GCC": 0.025645744909151606,
+      "GAT": 0.03207487839191187,
+      "AGG": 0.0010879154943011112,
+      "CAG": 0.02893780700081072,
+      "GGG": 0.010969317802470313,
+      "GTC": 0.015301605942105011,
+      "CTC": 0.011143682340598026,
+      "TCT": 0.008423148457246411,
+      "CCC": 0.005433616290714865,
+      "CAC": 0.009709273212837998,
+      "GCT": 0.015265838857360867,
+      "TTA": 0.013789701464066002,
+      "CTT": 0.010977514426057513,
+      "ACG": 0.014396251609518813,
+      "GGA": 0.00781883375459011,
+      "CCG": 0.023355906337927418,
+      "CAA": 0.01537015952119796,
+      "ACT": 0.008889610854117984,
+      "ATA": 0.004166120225094187,
+      "CAT": 0.012836657685154275,
+      "AGT": 0.008675008345653107,
+      "TGC": 0.006445526729934666,
+      "GAG": 0.017806047021794075,
+      "TCG": 0.008903768658495875,
+      "GTA": 0.010913431732557585,
+      "TAC": 0.012209988554532881,
+      "TCC": 0.00861465139014736,
+      "GAC": 0.019168176832466976,
+      "TGT": 0.005117673708808241,
+      "TGG": 0.015198775573465592,
+      "TAT": 0.016041537507749535,
+      "CCT": 0.006937324145166675,
+      "CCA": 0.00840079402928132,
+      "CGG": 0.005315137822499881,
+      "CTA": 0.0038770029567456723,
+      "TAA": 0.002058842815584911,
+      "AGA": 0.001959738184939673,
+      "TAG": 0.00022801516524393153
+    },
+    "gene_family_hits": {
+      "ribosomal_proteins": [
+        {
+          "gene": "rpsT",
+          "protein_id": "NP_414564.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsB",
+          "protein_id": "NP_414711.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "ykgM",
+          "protein_id": "NP_414830.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsA",
+          "protein_id": "NP_415431.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmF",
+          "protein_id": "NP_415607.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "roxA",
+          "protein_id": "NP_415646.4",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rplT",
+          "protein_id": "NP_416231.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmI",
+          "protein_id": "NP_416232.3",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplY",
+          "protein_id": "NP_416690.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplS",
+          "protein_id": "NP_417097.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsP",
+          "protein_id": "NP_417100.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsU",
+          "protein_id": "NP_417537.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsO",
+          "protein_id": "NP_417634.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmA",
+          "protein_id": "NP_417652.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplU",
+          "protein_id": "NP_417653.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsI",
+          "protein_id": "NP_417697.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplM",
+          "protein_id": "NP_417698.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplQ",
+          "protein_id": "NP_417753.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsD",
+          "protein_id": "NP_417755.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsK",
+          "protein_id": "NP_417756.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsM",
+          "protein_id": "NP_417757.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmJ",
+          "protein_id": "NP_417758.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplO",
+          "protein_id": "NP_417760.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmD",
+          "protein_id": "NP_417761.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsE",
+          "protein_id": "NP_417762.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplR",
+          "protein_id": "NP_417763.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplF",
+          "protein_id": "NP_417764.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsH",
+          "protein_id": "NP_417765.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsN",
+          "protein_id": "NP_417766.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplE",
+          "protein_id": "NP_417767.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplX",
+          "protein_id": "NP_417768.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplN",
+          "protein_id": "NP_417769.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsQ",
+          "protein_id": "NP_417770.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmC",
+          "protein_id": "NP_417771.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplP",
+          "protein_id": "NP_417772.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsC",
+          "protein_id": "NP_417773.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplV",
+          "protein_id": "NP_417774.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsS",
+          "protein_id": "NP_417775.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplB",
+          "protein_id": "NP_417776.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplW",
+          "protein_id": "NP_417777.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplD",
+          "protein_id": "NP_417778.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplC",
+          "protein_id": "NP_417779.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsJ",
+          "protein_id": "NP_417780.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsG",
+          "protein_id": "NP_417800.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsL",
+          "protein_id": "NP_417801.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmG",
+          "protein_id": "NP_418093.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmB",
+          "protein_id": "NP_418094.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmH",
+          "protein_id": "NP_418158.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmE",
+          "protein_id": "NP_418371.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplK",
+          "protein_id": "NP_418410.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplA",
+          "protein_id": "NP_418411.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplJ",
+          "protein_id": "NP_418412.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplL",
+          "protein_id": "NP_418413.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsF",
+          "protein_id": "NP_418621.5",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsR",
+          "protein_id": "NP_418623.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplI",
+          "protein_id": "NP_418624.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "ykgO",
+          "protein_id": "YP_588437.1",
+          "rule": "annotation_keyword"
+        }
+      ],
+      "rnap_core": [
+        {
+          "gene": "rpoA",
+          "protein_id": "NP_417754.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoZ",
+          "protein_id": "NP_418106.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoB",
+          "protein_id": "NP_418414.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoC",
+          "protein_id": "NP_418415.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "chaperones": [
+        {
+          "gene": "dnaK",
+          "protein_id": "NP_414555.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "NP_414556.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "tig",
+          "protein_id": "NP_414970.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "eutJ",
+          "protein_id": "NP_416949.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "grpE",
+          "protein_id": "NP_417104.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groS",
+          "protein_id": "NP_418566.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groL",
+          "protein_id": "NP_418567.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "heme_biosynthesis": [
+        {
+          "gene": "hemL",
+          "protein_id": "NP_414696.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemB",
+          "protein_id": "NP_414903.4",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemH",
+          "protein_id": "NP_415008.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "cydC",
+          "protein_id": "NP_415406.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "cydD",
+          "protein_id": "NP_415407.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "efeB",
+          "protein_id": "NP_415538.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemA",
+          "protein_id": "NP_415728.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemF",
+          "protein_id": "NP_416931.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemW",
+          "protein_id": "NP_417430.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemY",
+          "protein_id": "NP_418246.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemX",
+          "protein_id": "NP_418247.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemD",
+          "protein_id": "NP_418248.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemG",
+          "protein_id": "NP_418292.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemN",
+          "protein_id": "NP_418303.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemE",
+          "protein_id": "NP_418425.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemC",
+          "protein_id": "YP_026260.1",
+          "rule": "gene_symbol"
+        }
+      ]
+    },
+    "sixteen_s_sequences": [
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGAAGCTTGCTTCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCTTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAGCTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAATGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTTGTTGGTGGGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAACAGCTTGCTGTTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCCTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTTGTTGGTGGGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAACAGCTTGCTGTTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGAAGCTTGCTTCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGTACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGAAGCTTGCTTCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGAAGCTTGCTTCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA"
+    ],
+    "sixteen_s_copy_number": 7
+  },
+  "BS": {
+    "genome_size_bp": 4215606,
+    "gc_content": 0.43514408130171556,
+    "n_replicons": 1,
+    "n_cds": 4237,
+    "n_proteins": 4237,
+    "codon_counts": {
+      "ATG": 33365,
+      "GAA": 60708,
+      "AAT": 27499,
+      "ATA": 11619,
+      "TTA": 23665,
+      "GAC": 22949,
+      "CTG": 28686,
+      "TGG": 12722,
+      "AAC": 21134,
+      "CAA": 24201,
+      "GCC": 19592,
+      "CTT": 28582,
+      "GCT": 23388,
+      "ATC": 33304,
+      "AAA": 61016,
+      "AAG": 25943,
+      "TTG": 19018,
+      "AGC": 17429,
+      "CCG": 19582,
+      "AGT": 8168,
+      "TTT": 37929,
+      "GAG": 28594,
+      "ACT": 10761,
+      "TCA": 18267,
+      "ACC": 10596,
+      "CAC": 9124,
+      "GGC": 28905,
+      "GAT": 40833,
+      "ACA": 27484,
+      "ACG": 17875,
+      "CCC": 4003,
+      "AGA": 13238,
+      "TCC": 9831,
+      "TAC": 14862,
+      "CAT": 18812,
+      "ATT": 45780,
+      "GCA": 26724,
+      "TAT": 28079,
+      "GGG": 13778,
+      "GTC": 21390,
+      "CCT": 12907,
+      "GTT": 23705,
+      "GCG": 24868,
+      "TCT": 15838,
+      "CTC": 13425,
+      "CCA": 8598,
+      "GGA": 26788,
+      "CGA": 4969,
+      "GTA": 16457,
+      "GTG": 21866,
+      "TTC": 17452,
+      "CGC": 10408,
+      "CAG": 23007,
+      "CGG": 7857,
+      "CGT": 9149,
+      "CTA": 6088,
+      "AGG": 4712,
+      "GGT": 15644,
+      "TAG": 602,
+      "TGC": 5297,
+      "TCG": 7738,
+      "TAA": 2675,
+      "TGA": 960,
+      "TGT": 4386
+    },
+    "codon_freqs": {
+      "ATG": 0.02701989179086045,
+      "GAA": 0.04916300287245785,
+      "AAT": 0.022269444158755328,
+      "ATA": 0.009409384766012515,
+      "TTA": 0.01916456583937397,
+      "GAC": 0.018584729408315792,
+      "CTG": 0.023230709303540324,
+      "TGG": 0.010302624407712473,
+      "AAC": 0.017114892645228374,
+      "CAA": 0.019598633335249926,
+      "GCC": 0.015866138767167328,
+      "CTT": 0.023146487252101704,
+      "GCT": 0.018940243644676884,
+      "ATC": 0.02697049231838203,
+      "AAA": 0.04941242971710299,
+      "AAG": 0.021009352696846777,
+      "TTG": 0.015401297829419573,
+      "AGC": 0.014114482062727612,
+      "CCG": 0.015858040492990538,
+      "AGT": 0.006614670347602223,
+      "TTT": 0.030715944125147488,
+      "GAG": 0.023156205181113852,
+      "ACT": 0.008714552841643916,
+      "TCA": 0.014793117438742629,
+      "ACC": 0.00858093131772688,
+      "CAC": 0.007388865358903364,
+      "GGC": 0.02340806150801203,
+      "GAT": 0.03306768294608736,
+      "ACA": 0.022257296747490142,
+      "ACG": 0.014475665091012455,
+      "CCC": 0.003241739152969111,
+      "AGA": 0.010720495355234845,
+      "TCC": 0.00796141334320243,
+      "TAC": 0.012035655081545572,
+      "CAT": 0.015234473381377695,
+      "ATT": 0.03707389918134547,
+      "GCA": 0.02164182791005409,
+      "TAT": 0.02273914406100916,
+      "GGG": 0.011157802160781516,
+      "GTC": 0.017322208464154203,
+      "CCT": 0.01045244247998309,
+      "GTT": 0.019196958936081133,
+      "GCG": 0.02013878822284183,
+      "TCT": 0.012826046641200293,
+      "CTC": 0.010871933082340822,
+      "CCA": 0.006962896137204201,
+      "GGA": 0.021693656864785544,
+      "CGA": 0.004024032438447043,
+      "GTA": 0.013327329812743606,
+      "GTG": 0.017707686314969415,
+      "TTC": 0.01413310809333423,
+      "CGC": 0.008428683763203224,
+      "CAG": 0.018631699398541177,
+      "CGG": 0.0063628140207040475,
+      "CGT": 0.007409111044345339,
+      "CTA": 0.004930229318829864,
+      "AGG": 0.0038159067921035347,
+      "GGT": 0.012668940122170564,
+      "TAG": 0.0004875161054427691,
+      "TGC": 0.00428965583144576,
+      "TCG": 0.0062664445580002445,
+      "TAA": 0.0021662883422913742,
+      "TGA": 0.0007774343209718577,
+      "TGT": 0.0035519030539401747
+    },
+    "gene_family_hits": {
+      "ribosomal_proteins": [
+        {
+          "gene": "rplK",
+          "protein_id": "NP_387983.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplA",
+          "protein_id": "NP_387984.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplJ",
+          "protein_id": "NP_387985.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplL",
+          "protein_id": "NP_387986.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsL",
+          "protein_id": "NP_387991.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsG",
+          "protein_id": "NP_387992.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsJ",
+          "protein_id": "NP_387996.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplC",
+          "protein_id": "NP_387997.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplD",
+          "protein_id": "NP_387998.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplW",
+          "protein_id": "NP_387999.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplB",
+          "protein_id": "NP_388000.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsS",
+          "protein_id": "NP_388001.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplV",
+          "protein_id": "NP_388002.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsC",
+          "protein_id": "NP_388003.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplP",
+          "protein_id": "NP_388004.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmC",
+          "protein_id": "NP_388005.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsQ",
+          "protein_id": "NP_388006.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplNA",
+          "protein_id": "NP_388007.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplX",
+          "protein_id": "NP_388008.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplE",
+          "protein_id": "NP_388009.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsNA",
+          "protein_id": "NP_388010.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsH",
+          "protein_id": "NP_388011.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplF",
+          "protein_id": "NP_388012.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplR",
+          "protein_id": "NP_388013.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsE",
+          "protein_id": "NP_388014.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmD",
+          "protein_id": "NP_388015.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplO",
+          "protein_id": "NP_388016.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmJ",
+          "protein_id": "NP_388021.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsM",
+          "protein_id": "NP_388022.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsK",
+          "protein_id": "NP_388023.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplQ",
+          "protein_id": "NP_388025.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplM",
+          "protein_id": "NP_388030.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsI",
+          "protein_id": "NP_388031.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsNB",
+          "protein_id": "NP_388768.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmF",
+          "protein_id": "NP_389391.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmB",
+          "protein_id": "NP_389464.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsP",
+          "protein_id": "NP_389481.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplS",
+          "protein_id": "NP_389486.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsB",
+          "protein_id": "NP_389531.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsO",
+          "protein_id": "NP_389550.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsU",
+          "protein_id": "NP_390419.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsT",
+          "protein_id": "NP_390433.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmA",
+          "protein_id": "NP_390672.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplU",
+          "protein_id": "NP_390674.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplT",
+          "protein_id": "NP_390763.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmI",
+          "protein_id": "NP_390764.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsD",
+          "protein_id": "NP_390844.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplI",
+          "protein_id": "NP_391930.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsR",
+          "protein_id": "NP_391969.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsF",
+          "protein_id": "NP_391971.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmH",
+          "protein_id": "NP_391986.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "rnap_core": [
+        {
+          "gene": "rpoB",
+          "protein_id": "NP_387988.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoC",
+          "protein_id": "NP_387989.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoA",
+          "protein_id": "NP_388024.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoZ",
+          "protein_id": "NP_389451.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "chaperones": [
+        {
+          "gene": "groES",
+          "protein_id": "NP_388483.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groEL",
+          "protein_id": "NP_388484.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "NP_390424.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaK",
+          "protein_id": "NP_390425.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "grpE",
+          "protein_id": "NP_390426.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "tig",
+          "protein_id": "NP_390701.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "heme_biosynthesis": [
+        {
+          "gene": "hemZ",
+          "protein_id": "NP_388865.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemE",
+          "protein_id": "NP_388893.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemH",
+          "protein_id": "NP_388894.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemY",
+          "protein_id": "NP_388895.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "sumT",
+          "protein_id": "NP_389444.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "sirB",
+          "protein_id": "NP_389445.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemN",
+          "protein_id": "NP_390428.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemL",
+          "protein_id": "NP_390690.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemB",
+          "protein_id": "NP_390691.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemD",
+          "protein_id": "NP_390692.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemC",
+          "protein_id": "NP_390693.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemX",
+          "protein_id": "NP_390694.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemA",
+          "protein_id": "NP_390695.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemQ",
+          "protein_id": "NP_391647.3",
+          "rule": "gene_symbol"
+        }
+      ]
+    },
+    "sixteen_s_sequences": [
+      "ATTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCGACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTGCCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCGACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTGCAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAATGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTGCCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAATGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCTTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAACGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACCTAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCCGGCCACACTGGGACTGAGACACGGCCCAGACTCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTAGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACTGTCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "ATTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGAACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAATGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGAAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "ATTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGATGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGGTTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAATAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA",
+      "ATTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAGCGGACAGGTGGGAGCTTGCTCCCTGATGTTAGCGGCGGACGGGTGAGTAACACGTGGGTAACCTGCCTGTAAGACTGGGATAACTCCGGGAAACCGGGGCTAATACCGGATGGTTGTTTGAACCGCATGATTCAAACATAAAAGGTGGCTTCGGCTACCACTTACAGATGGACCCGCGGCGCATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATGCGTAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGAAGGTTTTCGGATCGTAAAGCTCTGTTGTTAGGGAAGAACAAGTACCGTTCGAACAGGGCGGTACCTTGACGGTACCTAACCAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTTTCCGGAATTATTGGGCGTAAAGGGCTCGCAGGCGGTTTCTTAAGTCTGATGTGAAAGCCCCCGGCTCAACCGGGGAGGGTCATTGGAAACTGGGGAACTTGAGTGCAGAAGAGGAGAGTGGAATTCCACGTGTAGCGGTGAAATGCGTAGAGATGTGGAGGAACACCAGTGGCGAAGGCGACTCTCTGGTCTGTAACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAAGTGTTAGGGGGTTTCCGCCCCTTAGTGCTGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCTCTGACAATCCTAGAGATAGGACGTCCCCTTCGGGGGCAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGATCTTAGTTGCCAGCATTCAGTTGGGCACTCTAAGGTGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGACAGAACAAAGGGCAGCGAAACCGCGAGGTTAAGCCAATCCCACAAATCTGTTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGCTGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTAGGAGCCAGCCGCCGAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAGGTAGCCGTATCGGAAGGTGCGGCTGGATCACCTCCTTTCTA"
+    ],
+    "sixteen_s_copy_number": 10
+  },
+  "PA": {
+    "genome_size_bp": 6264404,
+    "gc_content": 0.6655573299550923,
+    "n_replicons": 1,
+    "n_cds": 5572,
+    "n_proteins": 5572,
+    "codon_counts": {
+      "GTG": 62328,
+      "TCC": 22453,
+      "GAA": 43576,
+      "CTT": 5722,
+      "TGG": 27690,
+      "CAG": 67419,
+      "TGC": 16828,
+      "GAT": 19466,
+      "CTC": 51854,
+      "CGC": 91768,
+      "GAG": 69566,
+      "CTG": 154947,
+      "CCG": 62122,
+      "CAA": 11613,
+      "TTC": 62924,
+      "AAC": 42229,
+      "ACC": 61162,
+      "ATC": 70550,
+      "CGT": 14760,
+      "CCC": 24351,
+      "TTG": 16306,
+      "GTC": 53748,
+      "GCC": 126432,
+      "GGC": 115472,
+      "GAC": 79538,
+      "TAT": 9768,
+      "GCA": 8967,
+      "AAA": 6654,
+      "TAC": 37469,
+      "GGT": 15327,
+      "CGG": 26187,
+      "GCG": 72409,
+      "TTA": 508,
+      "ATA": 1730,
+      "AGC": 48430,
+      "AAG": 46685,
+      "ACG": 11774,
+      "CCA": 3966,
+      "TCG": 24260,
+      "CAC": 28676,
+      "GCT": 8863,
+      "CCT": 3906,
+      "GTT": 4992,
+      "GTA": 7362,
+      "ATG": 37758,
+      "GGA": 7682,
+      "CAT": 11684,
+      "AAT": 6925,
+      "ATT": 5293,
+      "TGT": 1856,
+      "AGG": 3695,
+      "ACA": 1475,
+      "TGA": 4420,
+      "GGG": 18405,
+      "CGA": 4344,
+      "ACT": 3044,
+      "AGT": 4875,
+      "TCT": 1515,
+      "TAA": 522,
+      "TCA": 1054,
+      "TTT": 3179,
+      "AGA": 860,
+      "CTA": 2581,
+      "TAG": 631
+    },
+    "codon_freqs": {
+      "GTG": 0.03342781521596306,
+      "TCC": 0.012042015387049456,
+      "GAA": 0.02337072384563609,
+      "CTT": 0.0030688287553866742,
+      "TGG": 0.01485072845799668,
+      "CAG": 0.03615822542107902,
+      "TGC": 0.009025209768550674,
+      "GAT": 0.010440024563501748,
+      "CTC": 0.02781038907406861,
+      "CGC": 0.049217105421937135,
+      "GAG": 0.037309706605597584,
+      "CTG": 0.08310132980791664,
+      "CCG": 0.03331733309020115,
+      "CAA": 0.006228295759578023,
+      "TTC": 0.03374746253127422,
+      "AAC": 0.022648299460192915,
+      "ACC": 0.032802464931310685,
+      "ATC": 0.0378374464684603,
+      "CGT": 0.00791609794294081,
+      "CCC": 0.013059952642855801,
+      "TTG": 0.008745250207153986,
+      "GTC": 0.02882618104587958,
+      "GCC": 0.06780813652587346,
+      "GGC": 0.06193005837854072,
+      "GAC": 0.042657899606072226,
+      "TAT": 0.005238783516710421,
+      "GCA": 0.004809190396636195,
+      "AAA": 0.0035686799263094948,
+      "TAC": 0.02009541150569439,
+      "GGT": 0.008220191949285487,
+      "CGG": 0.014044637996733805,
+      "GCG": 0.038834467205311723,
+      "TTA": 0.00027245106741286793,
+      "ATA": 0.0009278353280005149,
+      "AGC": 0.025974025974025976,
+      "AAG": 0.025038145831042795,
+      "ACG": 0.006314643440391943,
+      "CCA": 0.002127049081416209,
+      "TCG": 0.013011147431960978,
+      "CAC": 0.01537954096285709,
+      "GCT": 0.004753413012756395,
+      "CCT": 0.0020948698214855554,
+      "GTT": 0.0026773144262303874,
+      "GTA": 0.003948395193491209,
+      "ATG": 0.02025040827436037,
+      "GGA": 0.004120017913121362,
+      "CAT": 0.006266374550495963,
+      "AAT": 0.0037140229169962805,
+      "ATT": 0.0028387470468825,
+      "TGT": 0.0009954117738548876,
+      "AGG": 0.0019817060907294233,
+      "ACA": 0.0007910734732952367,
+      "TGA": 0.0023705388148914886,
+      "GGG": 0.00987098798372802,
+      "CGA": 0.0023297784189793276,
+      "ACT": 0.0016325611204818307,
+      "AGT": 0.0026145648693656127,
+      "TCT": 0.0008125263132490058,
+      "TAA": 0.00027995956139668715,
+      "TCA": 0.0005652823327818166,
+      "TTT": 0.0017049644553258016,
+      "AGA": 0.0004612360590060363,
+      "CTA": 0.0013842444980169532,
+      "TAG": 0.000338418550270708
+    },
+    "gene_family_hits": {
+      "ribosomal_proteins": [
+        {
+          "gene": "rpsU",
+          "protein_id": "NP_249270.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplT",
+          "protein_id": "NP_251431.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmI",
+          "protein_id": "NP_251432.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmF",
+          "protein_id": "NP_251660.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsA",
+          "protein_id": "NP_251852.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "NP_252290.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "NP_252291.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsB",
+          "protein_id": "NP_252346.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplS",
+          "protein_id": "NP_252431.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsP",
+          "protein_id": "NP_252434.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplQ",
+          "protein_id": "NP_252927.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsD",
+          "protein_id": "NP_252929.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsK",
+          "protein_id": "NP_252930.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsM",
+          "protein_id": "NP_252931.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmJ",
+          "protein_id": "NP_252932.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplO",
+          "protein_id": "NP_252934.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmD",
+          "protein_id": "NP_252935.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsE",
+          "protein_id": "NP_252936.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplR",
+          "protein_id": "NP_252937.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplF",
+          "protein_id": "NP_252938.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsH",
+          "protein_id": "NP_252939.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsN",
+          "protein_id": "NP_252940.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplE",
+          "protein_id": "NP_252941.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplX",
+          "protein_id": "NP_252942.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplN",
+          "protein_id": "NP_252943.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsQ",
+          "protein_id": "NP_252944.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmC",
+          "protein_id": "NP_252945.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplP",
+          "protein_id": "NP_252946.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsC",
+          "protein_id": "NP_252947.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplV",
+          "protein_id": "NP_252948.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsS",
+          "protein_id": "NP_252949.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplB",
+          "protein_id": "NP_252950.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplW",
+          "protein_id": "NP_252951.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplD",
+          "protein_id": "NP_252952.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplC",
+          "protein_id": "NP_252953.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsJ",
+          "protein_id": "NP_252954.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsG",
+          "protein_id": "NP_252957.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsL",
+          "protein_id": "NP_252958.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplL",
+          "protein_id": "NP_252961.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplJ",
+          "protein_id": "NP_252962.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplA",
+          "protein_id": "NP_252963.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplK",
+          "protein_id": "NP_252964.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsI",
+          "protein_id": "NP_253122.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplM",
+          "protein_id": "NP_253123.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsT",
+          "protein_id": "NP_253253.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmA",
+          "protein_id": "NP_253257.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplU",
+          "protein_id": "NP_253258.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "NP_253360.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsO",
+          "protein_id": "NP_253429.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplI",
+          "protein_id": "NP_253619.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsR",
+          "protein_id": "NP_253621.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsF",
+          "protein_id": "NP_253622.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmE",
+          "protein_id": "NP_253736.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmG",
+          "protein_id": "NP_254002.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmB",
+          "protein_id": "NP_254003.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmH",
+          "protein_id": "NP_254257.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "rnap_core": [
+        {
+          "gene": "rpoA",
+          "protein_id": "NP_252928.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoC",
+          "protein_id": "NP_252959.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoB",
+          "protein_id": "NP_252960.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoZ",
+          "protein_id": "NP_254024.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "chaperones": [
+        {
+          "gene": "tig",
+          "protein_id": "NP_250491.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groEL",
+          "protein_id": "NP_253075.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groES",
+          "protein_id": "NP_253076.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "NP_253448.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaK",
+          "protein_id": "NP_253449.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "grpE",
+          "protein_id": "NP_253450.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "heme_biosynthesis": [
+        {
+          "gene": "hemF",
+          "protein_id": "NP_248714.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "NP_249077.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemO",
+          "protein_id": "NP_249363.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemN",
+          "protein_id": "NP_250237.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemL",
+          "protein_id": "NP_252666.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemH",
+          "protein_id": "NP_253344.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemK",
+          "protein_id": "NP_253353.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemA",
+          "protein_id": "NP_253355.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemE",
+          "protein_id": "NP_253721.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemB",
+          "protein_id": "NP_253930.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemD",
+          "protein_id": "NP_253946.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemC",
+          "protein_id": "NP_253947.1",
+          "rule": "gene_symbol"
+        }
+      ]
+    },
+    "sixteen_s_sequences": [
+      "GAACTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGATGAAGGGAGCTTGCTCCTGGATTCAGCGGCGGACGGGTGAGTAATGCCTAGGAATCTGCCTGGTAGTGGGGGATAACGTCCGGAAACGGGCGCTAATACCGCATACGTCCTGAGGGAGAAAGTGGGGGATCTTCGGACCTCACGCTATCAGATGAGCCTAGGTCGGATTAGCTAGTTGGTGGGGTAAAGGCCTACCAAGGCGACGATCCGTAACTGGTCTGAGAGGATGATCAGTCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGGACAATGGGCGAAAGCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGTCTTCGGATTGTAAAGCACTTTAAGTTGGGAGGAAGGGCAGTAAGTTAATACCTTGCTGTTTTGACGTTACCAACAGAATAAGCACCGGCTAACTTCGTGCCAGCAGCCGCGGTAATACGAAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCGCGTAGGTGGTTCAGCAAGTTGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCCAAAACTACTGAGCTAGAGTACGGTAGAGGGTGGTGGAATTTCCTGTGTAGCGGTGAAATGCGTAGATATAGGAAGGAACACCAGTGGCGAAGGCGACCACCTGGACTGATACTGACACTGAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTAGCCGTTGGGATCCTTGAGATCTTAGTGGCGCAGCTAACGCGATAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGGCCTTGACATGCTGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCAGACACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGTAACGAGCGCAACCCTTGTCCTTAGTTACCAGCACCTCGGGTGGGCACTCTAAGGAGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGGCCAGGGCTACACACGTGCTACAATGGTCGGTACAAAGGGTTGCCAAGCCGCGAGGTGGAGCTAATCCCATAAAACCGATCGTAGTCCGGATCGCAGTCTGCAACTCGACTGCGTGAAGTCGGAATCGCTAGTAATCGTGAATCAGAATGTCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCTCCAGAAGTAGCTAGTCTAACCGCAAGGGGGACGGTTACCACGGAGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAGCCGTAGGGGAACCTGCGGCTGGATCACCTCCTTA",
+      "AACTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGATGAAGGGAGCTTGCTCCTGGATTCAGCGGCGGACGGGTGAGTAATGCCTAGGAATCTGCCTGGTAGTGGGGGATAACGTCCGGAAACGGGCGCTAATACCGCATACGTCCTGAGGGAGAAAGTGGGGGATCTTCGGACCTCACGCTATCAGATGAGCCTAGGTCGGATTAGCTAGTTGGTGGGGTAAAGGCCTACCAAGGCGACGATCCGTAACTGGTCTGAGAGGATGATCAGTCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGGACAATGGGCGAAAGCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGTCTTCGGATTGTAAAGCACTTTAAGTTGGGAGGAAGGGCAGTAAGTTAATACCTTGCTGTTTTGACGTTACCAACAGAATAAGCACCGGCTAACTTCGTGCCAGCAGCCGCGGTAATACGAAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCGCGTAGGTGGTTCAGCAAGTTGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCCAAAACTACTGAGCTAGAGTACGGTAGAGGGTGGTGGAATTTCCTGTGTAGCGGTGAAATGCGTAGATATAGGAAGGAACACCAGTGGCGAAGGCGACCACCTGGACTGATACTGACACTGAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTAGCCGTTGGGATCCTTGAGATCTTAGTGGCGCAGCTAACGCGATAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGGCCTTGACATGCTGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCAGACACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGTAACGAGCGCAACCCTTGTCCTTAGTTACCAGCACCTCGGGTGGGCACTCTAAGGAGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGGCCAGGGCTACACACGTGCTACAATGGTCGGTACAAAGGGTTGCCAAGCCGCGAGGTGGAGCTAATCCCATAAAACCGATCGTAGTCCGGATCGCAGTCTGCAACTCGACTGCGTGAAGTCGGAATCGCTAGTAATCGTGAATCAGAATGTCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCTCCAGAAGTAGCTAGTCTAACCGCAAGGGGGACGGTTACCACGGAGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAGCCGTAGGGGAACCTGCGGCTGGATCACCTCCTTAA",
+      "AACTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGATGAAGGGAGCTTGCTCCTGGATTCAGCGGCGGACGGGTGAGTAATGCCTAGGAATCTGCCTGGTAGTGGGGGATAACGTCCGGAAACGGGCGCTAATACCGCATACGTCCTGAGGGAGAAAGTGGGGGATCTTCGGACCTCACGCTATCAGATGAGCCTAGGTCGGATTAGCTAGTTGGTGGGGTAAAGGCCTACCAAGGCGACGATCCGTAACTGGTCTGAGAGGATGATCAGTCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGGACAATGGGCGAAAGCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGTCTTCGGATTGTAAAGCACTTTAAGTTGGGAGGAAGGGCAGTAAGTTAATACCTTGCTGTTTTGACGTTACCAACAGAATAAGCACCGGCTAACTTCGTGCCAGCAGCCGCGGTAATACGAAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCGCGTAGGTGGTTCAGCAAGTTGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCCAAAACTACTGAGCTAGAGTACGGTAGAGGGTGGTGGAATTTCCTGTGTAGCGGTGAAATGCGTAGATATAGGAAGGAACACCAGTGGCGAAGGCGACCACCTGGACTGATACTGACACTGAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTAGCCGTTGGGATCCTTGAGATCATAGTGGCGCAGCTAACGCGATAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGGCCTTGACATGCTGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCAGACACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGTAACGAGCGCAACCCTTGTCCTTAGTTACCAGCACCTCGGGTGGGCACTCTAAGGAGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGGCCAGGGCTACACACGTGCTACAATGGTCGGTACAAAGGGTTGCCAAGCCGCGAGGTGGAGCTAATCCCATAAAACCGATCGTAGTCCGGATCGCAGTCTGCAACTCGACTGCGTGAAGTCGGAATCGCTAGTAATCGTGAATCAGAATGTCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCTCCAGAAGTAGCTAGTCTAACCGCAAGGGGGACGGTTACCACGGAGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAGCCGTAGGGGAACCTGCGGCTGGATCACCTCCTTAA",
+      "AACTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGATGAAGGGAGCTTGCTCCTGGATTCAGCGGCGGACGGGTGAGTAATGCCTAGGAATCTGCCTGGTAGTGGGGGATAACGTCCGGAAACGGGCGCTAATACCGCATACGTCCTGAGGGAGAAAGTGGGGGATCTTCGGACCTCACGCTATCAGATGAGCCTAGGTCGGATTAGCTAGTTGGTGGGGTAAAGGCCTACCAAGGCGACGATCCGTAACTGGTCTGAGAGGATGATCAGTCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGGACAATGGGCGAAAGCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGTCTTCGGATTGTAAAGCACTTTAAGTTGGGAGGAAGGGCAGTAAGTTAATACCTTGCTGTTTTGACGTTACCAACAGAATAAGCACCGGCTAACTTCGTGCCAGCAGCCGCGGTAATACGAAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCGCGTAGGTGGTTCAGCAAGTTGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCCAAAACTACTGAGCTAGAGTACGGTAGAGGGTGGTGGAATTTCCTGTGTAGCGGTGAAATGCGTAGATATAGGAAGGAACACCAGTGGCGAAGGCGACCACCTGGACTGATACTGACACTGAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTAGCCGTTGGGATCCTTGAGATCATAGTGGCGCAGCTAACGCGATAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGGCCTTGACATGCTGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCAGACACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGTAACGAGCGCAACCCTTGTCCTTAGTTACCAGCACCTCGGGTGGGCACTCTAAGGAGACTGCCGGTGACAAACCGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGGCCAGGGCTACACACGTGCTACAATGGTCGGTACAAAGGGTTGCCAAGCCGCGAGGTGGAGCTAATCCCATAAAACCGATCGTAGTCCGGATCGCAGTCTGCAACTCGACTGCGTGAAGTCGGAATCGCTAGTAATCGTGAATCAGAATGTCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCTCCAGAAGTAGCTAGTCTAACCGCAAGGGGGACGGTTACCACGGAGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAGCCGTAGGGGAACCTGCGGCTGGATCACCTCCTTAA"
+    ],
+    "sixteen_s_copy_number": 4
+  },
+  "SE": {
+    "genome_size_bp": 4951383,
+    "gc_content": 0.5223887952113582,
+    "n_replicons": 2,
+    "n_cds": 4554,
+    "n_proteins": 4554,
+    "codon_counts": {
+      "ATG": 39275,
+      "AAC": 28775,
+      "CGC": 33228,
+      "ATC": 34885,
+      "AGC": 25038,
+      "ACC": 33469,
+      "ATT": 42040,
+      "ACA": 8286,
+      "GGT": 24821,
+      "GCG": 60845,
+      "GGC": 50590,
+      "TGA": 1418,
+      "CGA": 5130,
+      "GTG": 36090,
+      "TTG": 17709,
+      "AAG": 16102,
+      "TTC": 21800,
+      "TCA": 8966,
+      "GCA": 18621,
+      "AAT": 25600,
+      "GAA": 50319,
+      "CGT": 26589,
+      "TTT": 33341,
+      "CTG": 76504,
+      "GTT": 22166,
+      "GCC": 41793,
+      "GAT": 45340,
+      "AGG": 2383,
+      "CAA": 18266,
+      "GGG": 17263,
+      "CAG": 44275,
+      "GTA": 16224,
+      "CTT": 16956,
+      "TCC": 14508,
+      "CCC": 9962,
+      "AAA": 45435,
+      "CAT": 19058,
+      "ACT": 9630,
+      "GCT": 18259,
+      "CCG": 35254,
+      "TCT": 10341,
+      "GAC": 29029,
+      "CTC": 14975,
+      "GGA": 12520,
+      "CGG": 9959,
+      "GTC": 26088,
+      "TGC": 9546,
+      "TCG": 13640,
+      "GAG": 29595,
+      "ACG": 27005,
+      "TAC": 16529,
+      "CAC": 13690,
+      "TAT": 24561,
+      "TGT": 6963,
+      "TTA": 18959,
+      "TGG": 21770,
+      "CCT": 10278,
+      "CCA": 8272,
+      "AGT": 10520,
+      "CTA": 7047,
+      "TAA": 2707,
+      "ATA": 7695,
+      "AGA": 3387,
+      "TAG": 432
+    },
+    "codon_freqs": {
+      "ATG": 0.027432020624129982,
+      "AAC": 0.020098189521561814,
+      "CGC": 0.02320843236915572,
+      "ATC": 0.02436578076315148,
+      "AGC": 0.017488044109152553,
+      "ACC": 0.023376761254462287,
+      "ATT": 0.02936326281447293,
+      "ACA": 0.0057874404300837946,
+      "GGT": 0.017336478266366143,
+      "GCG": 0.04249780508912002,
+      "GGC": 0.03533509671227844,
+      "TGA": 0.000990416428899206,
+      "CGA": 0.003583100338683305,
+      "GTG": 0.0252074251896843,
+      "TTG": 0.01236902999955997,
+      "AAG": 0.011246604610814536,
+      "TTC": 0.01522643028914153,
+      "TCA": 0.006262393301488209,
+      "GCA": 0.013006025615325892,
+      "AAT": 0.0178805786881662,
+      "GAA": 0.03514581402382168,
+      "CGT": 0.01857135573201762,
+      "TTT": 0.023287358361021457,
+      "CTG": 0.05343499187341668,
+      "GTT": 0.015482066687573905,
+      "GCC": 0.02919074316853633,
+      "GAT": 0.03166818116099435,
+      "AGG": 0.001664430430230471,
+      "CAA": 0.012758072278048586,
+      "GGG": 0.012057516792727074,
+      "CAG": 0.03092432114916244,
+      "GTA": 0.01133181674362533,
+      "CTT": 0.01184308954049008,
+      "TCC": 0.010133259203434188,
+      "CCC": 0.006958059566074675,
+      "AAA": 0.03173453487096997,
+      "CAT": 0.013311252681213729,
+      "ACT": 0.00672617081121252,
+      "GCT": 0.01275318305731354,
+      "CCG": 0.024623512541898877,
+      "TCT": 0.007222775945872136,
+      "GAC": 0.02027559838823346,
+      "CTC": 0.010459440072472221,
+      "GGA": 0.008744720514681283,
+      "CGG": 0.006955964185759655,
+      "GTC": 0.018221427219409368,
+      "TGC": 0.006667500162391975,
+      "TCG": 0.009526995832288554,
+      "GAG": 0.020670926807667137,
+      "ACG": 0.018861915135700322,
+      "TAC": 0.01154484707565231,
+      "CAC": 0.009561918837538878,
+      "TAT": 0.017154878639064456,
+      "TGT": 0.004863377711160205,
+      "TTA": 0.013242105130818086,
+      "TGG": 0.015205476485991335,
+      "CCT": 0.007178772959256727,
+      "CCA": 0.005777661988613703,
+      "AGT": 0.007347800304668298,
+      "CTA": 0.00492204835998075,
+      "TAA": 0.0018907315042525743,
+      "ATA": 0.005374650508024957,
+      "AGA": 0.002365684375656989,
+      "TAG": 0.0003017347653628046
+    },
+    "gene_family_hits": {
+      "ribosomal_proteins": [
+        {
+          "gene": "",
+          "protein_id": "NP_448379.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsT",
+          "protein_id": "NP_459048.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsB",
+          "protein_id": "NP_459221.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmE2",
+          "protein_id": "NP_459464.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmJ2",
+          "protein_id": "NP_459465.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsA",
+          "protein_id": "NP_459956.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rimJ",
+          "protein_id": "NP_460138.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpmF",
+          "protein_id": "NP_460161.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmI",
+          "protein_id": "NP_460301.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplT",
+          "protein_id": "NP_460302.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsV",
+          "protein_id": "NP_460524.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplY",
+          "protein_id": "NP_461168.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplS",
+          "protein_id": "NP_461603.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsP",
+          "protein_id": "NP_461606.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsU",
+          "protein_id": "NP_462124.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsO",
+          "protein_id": "NP_462196.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmA",
+          "protein_id": "NP_462213.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplU",
+          "protein_id": "NP_462214.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsI",
+          "protein_id": "NP_462254.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplM",
+          "protein_id": "NP_462255.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "prmA",
+          "protein_id": "NP_462293.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rplQ",
+          "protein_id": "NP_462318.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsD",
+          "protein_id": "NP_462320.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsK",
+          "protein_id": "NP_462321.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsM",
+          "protein_id": "NP_462322.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmJ",
+          "protein_id": "NP_462323.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplO",
+          "protein_id": "NP_462325.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmD",
+          "protein_id": "NP_462326.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsE",
+          "protein_id": "NP_462327.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplR",
+          "protein_id": "NP_462328.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplF",
+          "protein_id": "NP_462329.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsH",
+          "protein_id": "NP_462330.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsN",
+          "protein_id": "NP_462331.3",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplE",
+          "protein_id": "NP_462332.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplX",
+          "protein_id": "NP_462333.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplN",
+          "protein_id": "NP_462334.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsQ",
+          "protein_id": "NP_462335.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmC",
+          "protein_id": "NP_462336.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplP",
+          "protein_id": "NP_462337.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsC",
+          "protein_id": "NP_462338.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplV",
+          "protein_id": "NP_462339.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsS",
+          "protein_id": "NP_462340.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplB",
+          "protein_id": "NP_462341.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplW",
+          "protein_id": "NP_462342.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplD",
+          "protein_id": "NP_462343.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplC",
+          "protein_id": "NP_462344.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsJ",
+          "protein_id": "NP_462345.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsG",
+          "protein_id": "NP_462351.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsL",
+          "protein_id": "NP_462352.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmG",
+          "protein_id": "NP_462627.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmB",
+          "protein_id": "NP_462628.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmH",
+          "protein_id": "NP_462739.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmE",
+          "protein_id": "NP_462977.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplK",
+          "protein_id": "NP_463018.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplA",
+          "protein_id": "NP_463019.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplJ",
+          "protein_id": "NP_463020.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplL",
+          "protein_id": "NP_463021.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsF",
+          "protein_id": "NP_463252.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsR",
+          "protein_id": "NP_463254.2",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplI",
+          "protein_id": "NP_463255.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rimI",
+          "protein_id": "NP_463414.1",
+          "rule": "annotation_keyword"
+        }
+      ],
+      "rnap_core": [
+        {
+          "gene": "rpoA",
+          "protein_id": "NP_462319.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoZ",
+          "protein_id": "NP_462641.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoB",
+          "protein_id": "NP_463022.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoC",
+          "protein_id": "NP_463023.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "chaperones": [
+        {
+          "gene": "dnaK",
+          "protein_id": "NP_459017.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "NP_459018.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "tig",
+          "protein_id": "NP_459443.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "grpE",
+          "protein_id": "NP_461611.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "heme_biosynthesis": [
+        {
+          "gene": "hemL",
+          "protein_id": "NP_459207.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemB",
+          "protein_id": "NP_459367.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemH",
+          "protein_id": "NP_459484.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemK",
+          "protein_id": "NP_460731.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemA",
+          "protein_id": "NP_460733.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemF",
+          "protein_id": "NP_461386.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemY",
+          "protein_id": "NP_462821.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemX",
+          "protein_id": "NP_462822.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemD",
+          "protein_id": "NP_462823.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemC",
+          "protein_id": "NP_462824.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemG",
+          "protein_id": "NP_462872.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemN",
+          "protein_id": "NP_462884.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "NP_462892.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemE",
+          "protein_id": "NP_463036.2",
+          "rule": "gene_symbol"
+        }
+      ]
+    },
+    "sixteen_s_sequences": [
+      "GTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGTGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTTAGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTACCTTAAAGAAGC",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTTGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGCGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGATTAGGTCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTAC",
+      "AATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTTGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGTGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGATTAGGTCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTACCT",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTTGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGTGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAAGAATCCAGAGATGGATTTGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGATTAGGTCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTACC",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTTGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGTGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAAGAATCCAGAGATGGATTTGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGATTAGGTCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTTGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGTGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAAGAATCCAGAGATGGATTTGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGATTAGGTCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTACC",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGCAGCTTGCTGCTTCGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTGGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCAGATGTGCCCAGATGGGATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGTGTTGTGGTTAATAACCGCAGCAATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTCTGTCAAGTCGGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATTCGAAACTGGCAGGCTTGAGTCTTGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGATTAGGTCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAAACCTGCGGTTGGATCACCTCCTTACC"
+    ],
+    "sixteen_s_copy_number": 7
+  },
+  "CG": {
+    "genome_size_bp": 3309401,
+    "gc_content": 0.5381025146242477,
+    "n_replicons": 1,
+    "n_cds": 2980,
+    "n_proteins": 2941,
+    "codon_counts": {
+      "GTG": 27467,
+      "AGC": 9815,
+      "CAG": 19758,
+      "AAC": 20851,
+      "TCA": 7772,
+      "TCT": 10487,
+      "TTG": 18431,
+      "CTC": 20870,
+      "GAA": 34225,
+      "ACC": 31141,
+      "TGG": 13248,
+      "CGC": 23904,
+      "CAA": 12296,
+      "GTT": 19834,
+      "GCC": 25974,
+      "GAT": 31652,
+      "ACA": 7211,
+      "ACT": 11952,
+      "GCG": 22096,
+      "GAC": 25295,
+      "AGT": 4601,
+      "GGA": 14370,
+      "TTC": 21620,
+      "CCA": 16038,
+      "ACG": 8281,
+      "CGT": 13047,
+      "GCA": 30057,
+      "TAT": 7086,
+      "CTG": 26456,
+      "AAG": 19890,
+      "CCG": 9902,
+      "ATT": 20744,
+      "ATC": 32638,
+      "GTC": 21234,
+      "GGC": 32535,
+      "TAC": 13979,
+      "TCC": 20392,
+      "CCC": 9232,
+      "ATG": 21015,
+      "AAA": 13057,
+      "AAT": 10398,
+      "GCT": 24367,
+      "TCG": 7145,
+      "CGA": 6203,
+      "GAG": 26570,
+      "CCT": 10716,
+      "TTT": 12636,
+      "GGT": 23136,
+      "CGG": 4570,
+      "CAC": 13506,
+      "GGG": 6229,
+      "GTA": 7709,
+      "CAT": 6363,
+      "TTA": 4741,
+      "AGG": 2951,
+      "TGC": 3769,
+      "CTT": 15814,
+      "TAA": 1627,
+      "TGT": 2131,
+      "CTA": 5533,
+      "AGA": 2035,
+      "ATA": 1603,
+      "TGA": 464,
+      "TAG": 902
+    },
+    "codon_freqs": {
+      "GTG": 0.02886489815263391,
+      "AGC": 0.010314521985222333,
+      "CAG": 0.02076355836821425,
+      "AAC": 0.02191218521791858,
+      "TCA": 0.008167546089571877,
+      "TCT": 0.011020722573512644,
+      "TTG": 0.0193690223850874,
+      "CTC": 0.021932152198837502,
+      "GAA": 0.035966837997374865,
+      "ACC": 0.03272588172611397,
+      "TGG": 0.013922240169151855,
+      "CGC": 0.025120563783469652,
+      "CAA": 0.01292178933574058,
+      "GTT": 0.020843426291889938,
+      "GCC": 0.027295913809899628,
+      "GAT": 0.03326288842345973,
+      "ACA": 0.007577994705597375,
+      "ACT": 0.012560281891734826,
+      "GCG": 0.02322054791497429,
+      "GAC": 0.026582356965481294,
+      "AGT": 0.004835162063576969,
+      "GGA": 0.015101342937100857,
+      "TTC": 0.022720322498268653,
+      "CCA": 0.01685423368303574,
+      "ACG": 0.008702450999452485,
+      "CGT": 0.013711010528904307,
+      "GCA": 0.03158671292000281,
+      "TAT": 0.007446632989025517,
+      "CTG": 0.027802444589000715,
+      "AAG": 0.02090227634091413,
+      "CCG": 0.010405949739956346,
+      "ATT": 0.021799739588533068,
+      "ATC": 0.03429906964377855,
+      "GTC": 0.022314677517494753,
+      "GGC": 0.03419082758932334,
+      "TAC": 0.014690443487664084,
+      "TCC": 0.021429824994666714,
+      "CCC": 0.009701850939131184,
+      "ATG": 0.022084531790060858,
+      "AAA": 0.013721519466230056,
+      "AAT": 0.010927193031313481,
+      "GCT": 0.025607127581651817,
+      "TCG": 0.007508635719247434,
+      "CGA": 0.006518693823161908,
+      "GAG": 0.027922246474514252,
+      "CCT": 0.011261377238272289,
+      "TTT": 0.013279093204816036,
+      "GGT": 0.024313477396852152,
+      "CGG": 0.004802584357867148,
+      "CAC": 0.014193370752156171,
+      "GGG": 0.006546017060208855,
+      "GTA": 0.00810133978441966,
+      "CAT": 0.006686836820373887,
+      "TTA": 0.00498228718613745,
+      "AGG": 0.0031011874048284364,
+      "TGC": 0.0039608184780746784,
+      "CTT": 0.016618833486938968,
+      "TAA": 0.0017098041028993107,
+      "TGT": 0.0022394545441170445,
+      "CTA": 0.005814595022336747,
+      "AGA": 0.002138568745789857,
+      "ATA": 0.0016845826533175138,
+      "TGA": 0.00048761469191473887,
+      "TAG": 0.0009479061467825312
+    },
+    "gene_family_hits": {
+      "ribosomal_proteins": [
+        {
+          "gene": "rplL",
+          "protein_id": "WP_003854210.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsL",
+          "protein_id": "WP_003854221.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsG",
+          "protein_id": "WP_003854222.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsJ",
+          "protein_id": "WP_003854291.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplC",
+          "protein_id": "WP_003854292.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplD",
+          "protein_id": "WP_003854293.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplW",
+          "protein_id": "WP_003854294.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplB",
+          "protein_id": "WP_003854295.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsS",
+          "protein_id": "WP_003854296.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplV",
+          "protein_id": "WP_003854297.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsC",
+          "protein_id": "WP_003854298.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplP",
+          "protein_id": "WP_003854302.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmC",
+          "protein_id": "WP_003854304.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsQ",
+          "protein_id": "WP_003854306.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplN",
+          "protein_id": "WP_003854312.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplX",
+          "protein_id": "WP_003854314.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplE",
+          "protein_id": "WP_003854317.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsH",
+          "protein_id": "WP_003854344.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplR",
+          "protein_id": "WP_003854346.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsE",
+          "protein_id": "WP_003854347.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsM",
+          "protein_id": "WP_003854425.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsK",
+          "protein_id": "WP_003854428.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplM",
+          "protein_id": "WP_003854535.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsI",
+          "protein_id": "WP_003854537.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsF",
+          "protein_id": "WP_003855074.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmH",
+          "protein_id": "WP_003855320.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_003855542.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsO",
+          "protein_id": "WP_003857482.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "ykgO",
+          "protein_id": "WP_003857945.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsR",
+          "protein_id": "WP_003858407.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmG",
+          "protein_id": "WP_003858439.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmB",
+          "protein_id": "WP_003858441.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_003858446.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpmF",
+          "protein_id": "WP_003858448.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplT",
+          "protein_id": "WP_003858719.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmI",
+          "protein_id": "WP_003858721.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplU",
+          "protein_id": "WP_003859302.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmA",
+          "protein_id": "WP_003859304.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsT",
+          "protein_id": "WP_003859343.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplF",
+          "protein_id": "WP_003860588.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmD",
+          "protein_id": "WP_003860590.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplK",
+          "protein_id": "WP_011013679.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplA",
+          "protein_id": "WP_011013680.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplJ",
+          "protein_id": "WP_011013688.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplO",
+          "protein_id": "WP_011013717.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsD",
+          "protein_id": "WP_011013730.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplQ",
+          "protein_id": "WP_011013732.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsN",
+          "protein_id": "WP_011013938.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011013990.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsA",
+          "protein_id": "WP_011014303.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsB",
+          "protein_id": "WP_011014831.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplS",
+          "protein_id": "WP_011014838.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsP",
+          "protein_id": "WP_011014848.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplI",
+          "protein_id": "WP_011015544.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_020948532.1",
+          "rule": "annotation_keyword"
+        }
+      ],
+      "rnap_core": [
+        {
+          "gene": "rpoZ",
+          "protein_id": "WP_003855993.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011013691.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011013731.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011265569.1",
+          "rule": "annotation_keyword"
+        }
+      ],
+      "chaperones": [
+        {
+          "gene": "groES",
+          "protein_id": "WP_003854559.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groL",
+          "protein_id": "WP_003862917.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "tig",
+          "protein_id": "WP_004567596.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groL",
+          "protein_id": "WP_011013754.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "WP_011015015.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "WP_011015388.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "grpE",
+          "protein_id": "WP_011015389.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaK",
+          "protein_id": "WP_011015390.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "heme_biosynthesis": [
+        {
+          "gene": "",
+          "protein_id": "WP_011013622.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemC",
+          "protein_id": "WP_011013637.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011013645.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemB",
+          "protein_id": "WP_011013646.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011013650.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_011014434.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemQ",
+          "protein_id": "WP_011014738.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "cobA",
+          "protein_id": "WP_011014811.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemW",
+          "protein_id": "WP_011015017.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemE",
+          "protein_id": "WP_011265560.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemL",
+          "protein_id": "WP_011265562.1",
+          "rule": "gene_symbol"
+        }
+      ]
+    },
+    "sixteen_s_sequences": [
+      "TTTGTGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGCTGAAACCAGAGCTTGCTTTGGTGGATGAGTGGCGAACGGGTGAGTAACACGTGGGTGATCTGCCCTACACTTTGGGATAAGCCTGGGAAACTGGGTCTAATACCGAATATTCACACCACCGTAGGGGTGGTGTGGAAAGCTTTATGCGGTGTGGGATGAGCCTGCGGCCTATCAGCTTGTTGGTGGGGTAATGGCCTACCAAGGCGTCGACGGGTAGCCGGCCTGAGAGGGTGTACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGGGGGATGAAGGCCTTCGGGTTGTAAACTCCTTTCGCTAGGGACGAAGCCTTATGGTGACGGTACCTGGAGAAGAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTGTCCGGAATTACTGGGCGTAAAGAGCTCGTAGGTGGTTTGTCGCGTCGTCTGTGAAATCCCGGGGCTTAACTTCGGGCGTGCAGGCGATACGGGCATAACTTGAGTGCTGTAGGGGAGACTGGAATTCCTGGTGTAGCGGTGAAATGCGCAGATATCAGGAGGAACACCAATGGCGAAGGCAGGTCTCTGGGCAGTAACTGACGCTGAGGAGCGAAAGCATGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGGTGGGCGCTAGGTGTAGGGGTCTTCCACGACTTCTGTGCCGCAGCTAACGCATTAAGCGCCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGTGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGGACCGGATCGGCGTAGAGATACGTTTTCCCTTGTGGTCGGTTCACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGTCTTATGTTGCCAGCACATTGTGGTGGGTACTCATGAGAGACTGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGTCCAGGGCTTCACACATGCTACAATGGTCGGTACAGCGAGTTGCCACACCGTGAGGTGGAGCTAATCTCTTAAAGCCGGCCTCAGTTCGGATTGGGGTCTGCAACTCGACCCCATGAAGTCGGAGTCGCTAGTAATCGCAGATCAGCAACGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACGTCATGAAAGTTGGTAACACCCGAAGCCAGTGGCCCAACCTTTTAGGGGGGAGCTGTCGAAGGTGGGATCGGCGATTGGGACGAAGTCGTAACAAGGTAGCCGTACCGGAAGGTGCGGCTGGATCACCTCCTTT",
+      "TTTGTGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGCTGAAACCGGAGCTTGCTTTGGTGGATGAGTGGCGAACGGGTGAGTAACACGTGGGTGATCTGCCCTACACTTTGGGATAAGCCTGGGAAACTGGGTCTAATACCGAATATTCACACCACCGTAGGGGTGGTGTGGAAAGCCTTGTGCGGTGTGGGATGAGCCTGCGGCCTATCAGCTTGTTGGTGGGGTAATGGCCTACCAAGGCGTCGACGGGTAGCCGGCCTGAGAGGGTGTACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGGGGGATGAAGGCCTTCGGGTTGTAAACTCCTTTCGCTAGGGACGAAGCCTTTTAGGTGACGGTACCTGGAGAAGAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTGTCCGGAATTACTGGGCGTAAAGAGCTCGTAGGTGGTTTGTCGCGTCGTCTGTGAAATCCCGGGGCTTAACTTCGGGCGTGCAGGCGATACGGGCATAACTTGAGTGCTGTAGGGGAGACTGGAATTCCTGGTGTAGCGGTGAAATGCGCAGATATCAGGAGGAACACCAATGGCGAAGGCAGGTCTCTGGGCAGTAACTGACGCTGAGGAGCGAAAGCATGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGGTGGGCGCTAGGTGTAGGGGTCTTCCACGACTTCTGTGCCGCAGCTAACGCATTAAGCGCCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGTGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGGACCGGATCGGCGTAGAGATACGTTTTCCCTTGTGGTCGGTTCACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGTCTTATGTTGCCAGCACATTGTGGTGGGTACTCATGAGAGACTGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGTCCAGGGCTTCACACATGCTACAATGGTCGGTACAGCGAGTTGCCACACCGTGAGGTGGAGCTAATCTCTTAAAGCCGGCCTCAGTTCGGATTGGGGTCTGCAACTCGACCCCATGAAGTCGGAGTCGCTAGTAATCGCAGATCAGCAACGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACGTCATGAAAGTTGGTAACACCCGAAGCCAGTGGCCCAACCTTTTAGGGGGGAGCTGTCGAAGGTGGGATCGGCGATTGGGACGAAGTCGTAACAAGGTAGCCGTACCGGAAGGTGCGGCTGGATCACCTCCTTT",
+      "TTTGTGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGCTGAAACCGGAGCTTGCTTTGGTGGATGAGTGGCGAACGGGTGAGTAACACGTGGGTGATCTGCCCTACACTTTGGGATAAGCCTGGGAAACTGGGTCTAATACCGAATATTCACACCACCGTAGGGGTGGTGTGGAAAGCTTTATGCGGTGTGGGATGAGCCTGCGGCCTATCAGCTTGTTGGTGGGGTAATGGCCTACCAAGGCGTCGACGGGTAGCCGGCCTGAGAGGGTGTACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGGGGGATGAAGGCCTTCGGGTTGTAAACTCCTTTCGCTAGGGACGAAGCCTTATGGTGACGGTACCTGGAGAAGAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTGTCCGGAATTACTGGGCGTAAAGAGCTCGTAGGTGGTTTGTCGCGTCGTCTGTGAAATCCCGGGGCTTAACTTCGGGCGTGCAGGCGATACGGGCATAACTTGAGTGCTGTAGGGGAGACTGGAATTCCTGGTGTAGCGGTGAAATGCGCAGATATCAGGAGGAACACCAATGGCGAAGGCAGGTCTCTGGGCAGTAACTGACGCTGAGGAGCGAAAGCATGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGGTGGGCGCTAGGTGTAGGGGTCTTCCACGACTTCTGTGCCGCAGCTAACGCATTAAGCGCCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGTGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGGACCGGATCGGCGTAGAGATACGTTTTCCCTTGTGGTCGGTTCACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGTCTTATGTTGCCAGCACATTATGGTGGGTACTCATGAGAGACTGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGTCCAGGGCTTCACACATGCTACAATGGTCGGTACAGCGAGTTGCCACACCGTGAGGTGGAGCTAATCTCTTAAAGCCGGCCTCAGTTCGGATTGGGGTCTGCAACTCGACCCCATGAAGTCGGAGTCGCTAGTAATCGCAGATCAGCAACGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACGTCATGAAAGTTGGTAACACCCGAAGCCAGTGGCCCAACCTTTTAGGGGGGAGCTGTCGAAGGTGGGATCGGCGATTGGGACGAAGTCGTAACAAGGTAGCCGTACCGGAAGGTGCGGCTGGATCACCTCCTTT",
+      "TTTGTGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGCTGAAACCGGAGCTTGCTTTGGTGGATGAGTGGCGAACGGGTGAGTAACACGTGGGTGATCTGCCCTACACTTTGGGATAAGCCTGGGAAACTGGGTCTAATACCGAATATTCACACCACCGTAGGGGTGGTGTGGAAAGCCTTGTGCGGTGTGGGATGAGCCTGCGGCCTATCAGCTTGTTGGTGGGGTAATGGCCTACCAAGGCGTCGACGGGTAGCCGGCCTGAGAGGGTGTACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGGGGGATGAAGGCCTTCGGGTTGTAAACTCCTTTCGCTAGGGACGAAGCCTTATGGTGACGGTACCTGGAGAAGAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTGTCCGGAATTACTGGGCGTAAAGAGCTCGTAGGTGGTTTGTCGCGTCGTCTGTGAAATCCCGGGGCTTAACTTCGGGCGTGCAGGCGATACGGGCATAACTTGAGTGCTGTAGGGGAGACTGGAATTCCTGGTGTAGCGGTGAAATGCGCAGATATCAGGAGGAACACCAATGGCGAAGGCAGGTCTCTGGGCAGTAACTGACGCTGAGGAGCGAAAGCATGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGGTGGGCGCTAGGTGTAGGGGTCTTCCACGACTTCTGTGCCGCAGCTAACGCATTAAGCGCCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGTGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGGACCGGATCGGCGTAGAGATACGTTTTCCCTTGTGGTCGGTTCACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGTCTTATGTTGCCAGCACATTATGGTGGGTACTCATGAGAGACTGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGTCCAGGGCTTCACACATGCTACAATGGTCGGTACAGCGAGTTGCCACACCGTGAGGTGGAGCTAATCTCTTAAAGCCGGCCTCAGTTCGGATTGGGGTCTGCAACTCGACCCCATGAAGTCGGAGTCGCTAGTAATCGCAGATCAGCAACGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACGTCATGAAAGTTGGTAACACCCGAAGCCAGTGGCCCAACCTTTTAGGGGGGAGCTGTCGAAGGTGGGATCGGCGATTGGGACGAAGTCGTAACAAGGTAGCCGTACCGGAAGGTGCGGCTGGATCACCTCCTTT",
+      "TTTGTGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGCTGAAACCGGAGCTTGCTTTGGTGGATGAGTGGCGAACGGGTGAGTAACACGTGGGTGATCTGCCCTACACTTTGGGATAAGCCTGGGAAACTGGGTCTAATACCGAATATTCACACCACCGTAGGGGTGGTGTGGAAAGCCTTGTGCGGTGTGGGATGAGCCTGCGGCCTATCAGCTTGTTGGTGGGGTAATGGCCTACCAAGGCGTCGACGGGTAGCCGGCCTGAGAGGGTGTACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGGGGGATGAAGGCCTTCGGGTTGTAAACTCCTTTCGCTAGGGACGAAGCCTTATGGTGACGGTACCTGGAGAAGAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTGTCCGGAATTACTGGGCGTAAAGAGCTCGTAGGTGGTTTGTCGCGTCGTCTGTGAAATCCCGGGGCTTAACTTCGGGCGTGCAGGCGATACGGGCATAACTTGAGTGCTGTAGGGGAGACTGGAATTCCTGGTGTAGCGGTGAAATGCGCAGATATCAGGAGGAACACCAATGGCGAAGGCAGGTCTCTGGGCAGTAACTGACGCTGAGGAGCGAAAGCATGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGGTGGGCGCTAGGTGTAGGGGTCTTCCACGACTTCTGTGCCGCAGCTAACGCATTAAGCGCCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGTGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGGACCGGATCGGCGTAGAGATACGTTTTCCCTTGTGGTCGGTTCACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGTCTTATGTTGCCAGCACATTATGGTGGGTACTCATGAGAGACTGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGTCCAGGGCTTCACACATGCTACAATGGTCGGTACAGCGAGTTGCCACACCGTGAGGTGGAGCTAATCTCTTAAAGCCGGCCTCAGTTCGGATTGGGGTCTGCAACTCGACCCCATGAAGTCGGAGTCGCTAGTAATCGCAGATCAGCAACGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACGTCATGAAAGTTGGTAACACCCGAAGCCAGTGGCCCAACCTTTTAGGGGGGAGCTGTCGAAGGTGGGATCGGCGATTGGGACGAAGTCGTAACAAGGTAGCCGTACCGGAAGGTGCGGCTGGATCACCTCCTTT",
+      "TTTGTGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGCTGAAACCGGAGCTTGCTTTGGTGGATGAGTGGCGAACGGGTGAGTAACACGTGGGTGATCTGCCCTACACTTTGGGATAAGCCTGGGAAACTGGGTCTAATACCGAATATTCACACCACCGTAGGGGTGGTGTGGAAAGCTTTATGCGGTGTGGGATGAGCCTGCGGCCTATCAGCTTGTTGGTGGGGTAATGGCCTACCAAGGCGTCGACGGGTAGCCGGCCTGAGAGGGTGTACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGGGGGATGAAGGCCTTCGGGTTGTAAACTCCTTTCGCTAGGGACGAAGCCTTATGGTGACGGTACCTGGAGAAGAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTGTCCGGAATTACTGGGCGTAAAGAGCTCGTAGGTGGTTTGTCGCGTCGTCTGTGAAATCCCGGGGCTTAACTTCGGGCGTGCAGGCGATACGGGCATAACTTGAGTGCTGTAGGGGAGACTGGAATTCCTGGTGTAGCGGTGAAATGCGCAGATATCAGGAGGAACACCAATGGCGAAGGCAGGTCTCTGGGCAGTAACTGACGCTGAGGAGCGAAAGCATGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGGTGGGCGCTAGGTGTAGGGGTCTTCCACGACTTCTGTGCCGCAGCTAACGCATTAAGCGCCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGTGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGGACCGGATCGGCGTAGAGATACGTTTTCCCTTGTGGTCGGTTCACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGTCTTATGTTGCCAGCACATTGTGGTGGGTACTCATGAGAGACTGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGTCCAGGGCTTCACACATGCTACAATGGTCGGTACAGCGAGTTGCCACACCGTGAGGTGGAGCTAATCTCTTAAAGCCGGCCTCAGTTCGGATTGGGGTCTGCAACTCGACCCCATGAAGTCGGAGTCGCTAGTAATCGCAGATCAGCAACGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACGTCATGAAAGTTGGTAACACCCGAAGCCAGTGGCCCAACCTTTTAGGGGGGAGCTGTCGAAGGTGGGATCGGCGATTGGGACGAAGTCGTAACAAGGTAGCCGTACCGGAAGGTGCGGCTGGATCACCTCCTTT"
+    ],
+    "sixteen_s_copy_number": 6
+  },
+  "VN": {
+    "genome_size_bp": 5175153,
+    "gc_content": 0.45087014818692317,
+    "n_replicons": 2,
+    "n_cds": 4514,
+    "n_proteins": 4504,
+    "codon_counts": {
+      "ATG": 39942,
+      "ATA": 9628,
+      "GTA": 23685,
+      "AGT": 17721,
+      "AGG": 1992,
+      "AAT": 26887,
+      "CCA": 23098,
+      "TTC": 24838,
+      "GAA": 62476,
+      "CAG": 26659,
+      "TTG": 27414,
+      "AGC": 18739,
+      "CTC": 13540,
+      "GCA": 37701,
+      "CCT": 18268,
+      "GAG": 33451,
+      "GAC": 31876,
+      "TTT": 36050,
+      "GTT": 36144,
+      "CTG": 33784,
+      "TAT": 19590,
+      "TCT": 23041,
+      "CAA": 38296,
+      "ACT": 21030,
+      "CGC": 17321,
+      "CTT": 27397,
+      "GAT": 48845,
+      "GCG": 35346,
+      "AAA": 52492,
+      "ACG": 18490,
+      "TCA": 18671,
+      "CGA": 9616,
+      "ATT": 44779,
+      "TCC": 7644,
+      "CTA": 19777,
+      "GTC": 20127,
+      "GCT": 33490,
+      "GGA": 12639,
+      "CGT": 27827,
+      "ACA": 17944,
+      "TAC": 24987,
+      "AAG": 24201,
+      "GGG": 10133,
+      "ATC": 38388,
+      "TGT": 10287,
+      "TGG": 18745,
+      "CAC": 16307,
+      "GGT": 47114,
+      "ACC": 21960,
+      "AAC": 34274,
+      "GGC": 33379,
+      "CCC": 4293,
+      "CAT": 16488,
+      "TTA": 29516,
+      "TCG": 12026,
+      "CCG": 13068,
+      "GTG": 27438,
+      "GCC": 20373,
+      "TGC": 5252,
+      "AGA": 6507,
+      "TAA": 2970,
+      "TAG": 881,
+      "CGG": 2200,
+      "TGA": 684
+    },
+    "codon_freqs": {
+      "ATG": 0.02699283516002287,
+      "ATA": 0.006506610007528421,
+      "GTA": 0.016006341714614732,
+      "AGT": 0.011975865802182297,
+      "AGG": 0.0013461951739713973,
+      "AAT": 0.018170255844663134,
+      "CCA": 0.015609646650798864,
+      "TTC": 0.016785540025653398,
+      "GAA": 0.042221330165179226,
+      "CAG": 0.018016173264509782,
+      "TTG": 0.018526402861070226,
+      "AGC": 0.012663831006551213,
+      "CTC": 0.009150342698580683,
+      "GCA": 0.02547836558930505,
+      "CCT": 0.012345528834392314,
+      "GAG": 0.02260621223118334,
+      "GAC": 0.021541825986702942,
+      "TTT": 0.024362618484773533,
+      "GTT": 0.024426143759047284,
+      "CTG": 0.022831253894302052,
+      "TAT": 0.0132389374789657,
+      "TCT": 0.015571126005760525,
+      "CAA": 0.025880467059442087,
+      "ACT": 0.014212090616776349,
+      "CGC": 0.011705545486123783,
+      "CTT": 0.018514914247637737,
+      "GAT": 0.033009489594695234,
+      "GCG": 0.02388685472851055,
+      "AAA": 0.03547413507635873,
+      "ACG": 0.012495556609804788,
+      "TCA": 0.012617876552821266,
+      "CGA": 0.006498500398046665,
+      "ATT": 0.030261683581960443,
+      "TCC": 0.005165821239878194,
+      "CTA": 0.013365312226723056,
+      "GTC": 0.013601842503274255,
+      "GCT": 0.022632568461999045,
+      "GGA": 0.008541446186658882,
+      "CGT": 0.01880550858740064,
+      "ACA": 0.012126569378384917,
+      "TAC": 0.016886234343385195,
+      "AAG": 0.016355054922330216,
+      "GGG": 0.006847889406552294,
+      "ATC": 0.025942640732135543,
+      "TGT": 0.006951962728234822,
+      "TGG": 0.012667885811292091,
+      "CAC": 0.01102028348491545,
+      "GGT": 0.03183967842695202,
+      "ACC": 0.014840585351612394,
+      "AAC": 0.02316239628147373,
+      "GGC": 0.022557554574292808,
+      "CCC": 0.0029012127920979964,
+      "CAT": 0.011142603427931929,
+      "TTA": 0.019946936121957713,
+      "TCG": 0.00812718030229921,
+      "CCG": 0.008831364725631638,
+      "GTG": 0.018542622080033735,
+      "GCC": 0.013768089497650241,
+      "TGC": 0.003549305749848283,
+      "AGA": 0.004397435741481869,
+      "TAA": 0.002007128346734463,
+      "TAG": 0.0005953804961188761,
+      "CGG": 0.0014867617383218245,
+      "TGA": 0.00046224774046005817
+    },
+    "gene_family_hits": {
+      "ribosomal_proteins": [
+        {
+          "gene": "rpsR",
+          "protein_id": "WP_000090472.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmD",
+          "protein_id": "WP_000201159.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmJ",
+          "protein_id": "WP_000868186.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsK",
+          "protein_id": "WP_001118870.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsU",
+          "protein_id": "WP_001145625.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsS",
+          "protein_id": "WP_004394525.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplW",
+          "protein_id": "WP_004398471.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsL",
+          "protein_id": "WP_004399892.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplN",
+          "protein_id": "WP_004410450.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsJ",
+          "protein_id": "WP_004410492.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmG",
+          "protein_id": "WP_004410866.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplT",
+          "protein_id": "WP_004727974.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsN",
+          "protein_id": "WP_004745888.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsE",
+          "protein_id": "WP_004745894.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmI",
+          "protein_id": "WP_005377932.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmH",
+          "protein_id": "WP_005378825.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsQ",
+          "protein_id": "WP_005379575.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmC",
+          "protein_id": "WP_005379576.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplP",
+          "protein_id": "WP_005379577.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsP",
+          "protein_id": "WP_005379962.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplS",
+          "protein_id": "WP_005379971.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "ykgO",
+          "protein_id": "WP_005380299.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpsG",
+          "protein_id": "WP_005382796.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmA",
+          "protein_id": "WP_005383095.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplU",
+          "protein_id": "WP_005383096.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplQ",
+          "protein_id": "WP_005383141.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsM",
+          "protein_id": "WP_005383154.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplO",
+          "protein_id": "WP_005383155.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmB",
+          "protein_id": "WP_005384783.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplM",
+          "protein_id": "WP_005396465.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplR",
+          "protein_id": "WP_005435088.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsH",
+          "protein_id": "WP_005450567.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplE",
+          "protein_id": "WP_005455660.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplK",
+          "protein_id": "WP_008078231.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmE",
+          "protein_id": "WP_014230662.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplC",
+          "protein_id": "WP_014230663.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplD",
+          "protein_id": "WP_014230664.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplB",
+          "protein_id": "WP_014230665.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplV",
+          "protein_id": "WP_014230666.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsC",
+          "protein_id": "WP_014230667.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplX",
+          "protein_id": "WP_014230668.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplF",
+          "protein_id": "WP_014230669.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsD",
+          "protein_id": "WP_014230671.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsI",
+          "protein_id": "WP_014230782.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsT",
+          "protein_id": "WP_014230864.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplY",
+          "protein_id": "WP_014231543.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsA",
+          "protein_id": "WP_014232467.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpmF",
+          "protein_id": "WP_014232495.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsB",
+          "protein_id": "WP_014232764.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsO",
+          "protein_id": "WP_014232882.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplI",
+          "protein_id": "WP_014233140.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpsF",
+          "protein_id": "WP_014233142.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplL",
+          "protein_id": "WP_014233284.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rplA",
+          "protein_id": "WP_014233286.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rimK",
+          "protein_id": "WP_014233536.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rplJ",
+          "protein_id": "WP_020334710.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_020335158.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rimK",
+          "protein_id": "WP_020335591.1",
+          "rule": "annotation_keyword"
+        }
+      ],
+      "rnap_core": [
+        {
+          "gene": "rpoZ",
+          "protein_id": "WP_005379346.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_014230672.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "rpoC",
+          "protein_id": "WP_014233282.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "rpoB",
+          "protein_id": "WP_020334708.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "chaperones": [
+        {
+          "gene": "dnaK",
+          "protein_id": "WP_014230984.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "tig",
+          "protein_id": "WP_014231219.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "grpE",
+          "protein_id": "WP_020333678.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "dnaJ",
+          "protein_id": "WP_020333682.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groL",
+          "protein_id": "WP_020334390.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "groL",
+          "protein_id": "WP_020336206.1",
+          "rule": "gene_symbol"
+        }
+      ],
+      "heme_biosynthesis": [
+        {
+          "gene": "",
+          "protein_id": "WP_014232641.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemL",
+          "protein_id": "WP_014232904.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_014233341.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_014233342.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_014233343.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "cydC",
+          "protein_id": "WP_020333013.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "cydD",
+          "protein_id": "WP_020333014.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "",
+          "protein_id": "WP_020333312.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemA",
+          "protein_id": "WP_020333322.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemH",
+          "protein_id": "WP_020333364.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemF",
+          "protein_id": "WP_020333539.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemG",
+          "protein_id": "WP_020333588.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemC",
+          "protein_id": "WP_020334065.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemE",
+          "protein_id": "WP_020334704.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "cobA",
+          "protein_id": "WP_020334837.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "cobA",
+          "protein_id": "WP_020335811.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemN",
+          "protein_id": "WP_020336290.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "cobA",
+          "protein_id": "WP_024372592.1",
+          "rule": "annotation_keyword"
+        },
+        {
+          "gene": "hemW",
+          "protein_id": "WP_024372823.1",
+          "rule": "gene_symbol"
+        },
+        {
+          "gene": "hemB",
+          "protein_id": "WP_031779279.1",
+          "rule": "gene_symbol"
+        }
+      ]
+    },
+    "sixteen_s_sequences": [
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTGTTTAATAGATGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGAACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTTTATGCGTTAATAGCGTATAGATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTCCAGAGATGGATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGAACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAATTTTCCAGAGATGGATTAGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTAGTGTAGTTAATAGCTGCATTATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA",
+      "AAATTGAAGAGTTTGATCATGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAGCGGAAACGAGTTAACTGAACCTTCGGGGGACGTTAACGGCGTCGAGCGGCGGACGGGTGAGTAATGCCTAGGAAATTGCCCTGATGTGGGGGATAACCATTGGAAACGATGGCTAATACCGCATGATGCCTACGGGCCAAAGAGGGGGACCTTCGGGCCTCTCGCGTCAGGATATGCCTAGGTGGGATTAGCTAGTTGGTGAGGTAAGGGCTCACCAAGGCGACGATCCCTAGCTGGTCTGAGAGGATGATCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTGTGAAGAAGGCCTTCGGGTTGTAAAGCACTTTCAGTCGTGAGGAAGGTTTATGCGTTAATAGCGTATAGATTTGACGTTAGCGACAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCGAGCGTTAATCGGAATTACTGGGCGTAAAGCGCATGCAGGTGGTTTGTTAAGTCAGATGTGAAAGCCCGGGGCTCAACCTCGGAATAGCATTTGAAACTGGCAGACTAGAGTACTGTAGAGGGGGGTAGAATTTCAGGTGTAGCGGTGAAATGCGTAGAGATCTGAAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACAGATACTGACACTCAGATGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCTACTTGGAGGTTGTGGCCTTGAGCCGTGGCTTTCGGAGCTAACGCGTTAAGTAGACCGCCTGGGGAGTACGGTCGCAAGATTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTACTCTTGACATCCAGAGAACTTTTCAGAGATGAATTGGTGCCTTCGGGAACTCTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTGTTTGCCAGCGAGTAATGTCGGGAACTCCAGGGAGACTGCCGGTGATAAACCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGGCCCTTACGAGTAGGGCTACACACGTGCTACAATGGCGCATACAGAGGGCGGCCAACTTGCGAAAGTGAGCGAATCCCAAAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGCTGCAAAAGAAGTAGGTAGTTTAACCTTCGGGGGGACGCTTACCACTTTGTGGTTCATGACTGGGGTGAAGTCGTAACAAGGTAGCGCTAGGGGAACCTGGCGCTGGATCACCTCCTTA"
+    ],
+    "sixteen_s_copy_number": 11
+  }
+}

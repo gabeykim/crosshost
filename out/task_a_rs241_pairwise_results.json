@@ -1,0 +1,658 @@
+{
+  "transcription": {
+    "per_host_usable": {
+      "EC": 219,
+      "BS": 149,
+      "PA": 240,
+      "SE": 237,
+      "VN": 166,
+      "CG": 211
+    },
+    "pairwise_matrix": {
+      "EC": {
+        "EC": 219,
+        "BS": 146,
+        "PA": 219,
+        "SE": 216,
+        "VN": 162,
+        "CG": 200
+      },
+      "BS": {
+        "EC": 146,
+        "BS": 149,
+        "PA": 148,
+        "SE": 149,
+        "VN": 113,
+        "CG": 139
+      },
+      "PA": {
+        "EC": 219,
+        "BS": 148,
+        "PA": 240,
+        "SE": 236,
+        "VN": 166,
+        "CG": 211
+      },
+      "SE": {
+        "EC": 216,
+        "BS": 149,
+        "PA": 236,
+        "SE": 237,
+        "VN": 164,
+        "CG": 209
+      },
+      "VN": {
+        "EC": 162,
+        "BS": 113,
+        "PA": 166,
+        "SE": 164,
+        "VN": 166,
+        "CG": 160
+      },
+      "CG": {
+        "EC": 200,
+        "BS": 139,
+        "PA": 211,
+        "SE": 209,
+        "VN": 160,
+        "CG": 211
+      }
+    },
+    "held_out_viability": {
+      "EC": {
+        "n_target_usable": 219,
+        "n_target_and_ge2_others": 218,
+        "n_target_and_ge3_others": 210,
+        "other_host_contribution_when_target_usable": {
+          "PA": 219,
+          "SE": 216,
+          "CG": 200,
+          "VN": 162,
+          "BS": 146
+        }
+      },
+      "BS": {
+        "n_target_usable": 149,
+        "n_target_and_ge2_others": 148,
+        "n_target_and_ge3_others": 147,
+        "other_host_contribution_when_target_usable": {
+          "SE": 149,
+          "PA": 148,
+          "EC": 146,
+          "CG": 139,
+          "VN": 113
+        }
+      },
+      "PA": {
+        "n_target_usable": 240,
+        "n_target_and_ge2_others": 230,
+        "n_target_and_ge3_others": 214,
+        "other_host_contribution_when_target_usable": {
+          "SE": 236,
+          "EC": 219,
+          "CG": 211,
+          "VN": 166,
+          "BS": 148
+        }
+      },
+      "SE": {
+        "n_target_usable": 237,
+        "n_target_and_ge2_others": 228,
+        "n_target_and_ge3_others": 213,
+        "other_host_contribution_when_target_usable": {
+          "PA": 236,
+          "EC": 216,
+          "CG": 209,
+          "VN": 164,
+          "BS": 149
+        }
+      },
+      "VN": {
+        "n_target_usable": 166,
+        "n_target_and_ge2_others": 166,
+        "n_target_and_ge3_others": 164,
+        "other_host_contribution_when_target_usable": {
+          "PA": 166,
+          "SE": 164,
+          "EC": 162,
+          "CG": 160,
+          "BS": 113
+        }
+      },
+      "CG": {
+        "n_target_usable": 211,
+        "n_target_and_ge2_others": 210,
+        "n_target_and_ge3_others": 204,
+        "other_host_contribution_when_target_usable": {
+          "PA": 211,
+          "SE": 209,
+          "EC": 200,
+          "VN": 160,
+          "BS": 139
+        }
+      }
+    },
+    "ranked_configs": [
+      {
+        "held_out": "EC",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 216
+      },
+      {
+        "held_out": "PA",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "EC",
+          "SE"
+        ],
+        "n": 216
+      },
+      {
+        "held_out": "SE",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "EC",
+          "PA"
+        ],
+        "n": 216
+      },
+      {
+        "held_out": "CG",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 209
+      },
+      {
+        "held_out": "VN",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 164
+      },
+      {
+        "held_out": "EC",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "PA",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 156
+      },
+      {
+        "held_out": "PA",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 156
+      },
+      {
+        "held_out": "SE",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "VN",
+          "CG"
+        ],
+        "n": 156
+      },
+      {
+        "held_out": "VN",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "CG"
+        ],
+        "n": 156
+      },
+      {
+        "held_out": "CG",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "VN"
+        ],
+        "n": 156
+      },
+      {
+        "held_out": "BS",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 148
+      },
+      {
+        "held_out": "BS",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "CG"
+        ],
+        "n": 138
+      },
+      {
+        "held_out": "EC",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "BS",
+          "PA",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 111
+      },
+      {
+        "held_out": "BS",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 111
+      },
+      {
+        "held_out": "PA",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 111
+      },
+      {
+        "held_out": "SE",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "PA",
+          "VN",
+          "CG"
+        ],
+        "n": 111
+      },
+      {
+        "held_out": "VN",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "PA",
+          "SE",
+          "CG"
+        ],
+        "n": 111
+      },
+      {
+        "held_out": "CG",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "PA",
+          "SE",
+          "VN"
+        ],
+        "n": 111
+      }
+    ]
+  },
+  "translation": {
+    "per_host_usable": {
+      "EC": 230,
+      "BS": 149,
+      "PA": 235,
+      "SE": 237,
+      "VN": 229,
+      "CG": 218
+    },
+    "pairwise_matrix": {
+      "EC": {
+        "EC": 230,
+        "BS": 143,
+        "PA": 227,
+        "SE": 228,
+        "VN": 218,
+        "CG": 213
+      },
+      "BS": {
+        "EC": 143,
+        "BS": 149,
+        "PA": 146,
+        "SE": 147,
+        "VN": 141,
+        "CG": 133
+      },
+      "PA": {
+        "EC": 227,
+        "BS": 146,
+        "PA": 235,
+        "SE": 233,
+        "VN": 223,
+        "CG": 214
+      },
+      "SE": {
+        "EC": 228,
+        "BS": 147,
+        "PA": 233,
+        "SE": 237,
+        "VN": 225,
+        "CG": 216
+      },
+      "VN": {
+        "EC": 218,
+        "BS": 141,
+        "PA": 223,
+        "SE": 225,
+        "VN": 229,
+        "CG": 210
+      },
+      "CG": {
+        "EC": 213,
+        "BS": 133,
+        "PA": 214,
+        "SE": 216,
+        "VN": 210,
+        "CG": 218
+      }
+    },
+    "held_out_viability": {
+      "EC": {
+        "n_target_usable": 230,
+        "n_target_and_ge2_others": 230,
+        "n_target_and_ge3_others": 228,
+        "other_host_contribution_when_target_usable": {
+          "SE": 228,
+          "PA": 227,
+          "VN": 218,
+          "CG": 213,
+          "BS": 143
+        }
+      },
+      "BS": {
+        "n_target_usable": 149,
+        "n_target_and_ge2_others": 149,
+        "n_target_and_ge3_others": 147,
+        "other_host_contribution_when_target_usable": {
+          "SE": 147,
+          "PA": 146,
+          "EC": 143,
+          "VN": 141,
+          "CG": 133
+        }
+      },
+      "PA": {
+        "n_target_usable": 235,
+        "n_target_and_ge2_others": 235,
+        "n_target_and_ge3_others": 232,
+        "other_host_contribution_when_target_usable": {
+          "SE": 233,
+          "EC": 227,
+          "VN": 223,
+          "CG": 214,
+          "BS": 146
+        }
+      },
+      "SE": {
+        "n_target_usable": 237,
+        "n_target_and_ge2_others": 237,
+        "n_target_and_ge3_others": 233,
+        "other_host_contribution_when_target_usable": {
+          "PA": 233,
+          "EC": 228,
+          "VN": 225,
+          "CG": 216,
+          "BS": 147
+        }
+      },
+      "VN": {
+        "n_target_usable": 229,
+        "n_target_and_ge2_others": 228,
+        "n_target_and_ge3_others": 222,
+        "other_host_contribution_when_target_usable": {
+          "SE": 225,
+          "PA": 223,
+          "EC": 218,
+          "CG": 210,
+          "BS": 141
+        }
+      },
+      "CG": {
+        "n_target_usable": 218,
+        "n_target_and_ge2_others": 217,
+        "n_target_and_ge3_others": 216,
+        "other_host_contribution_when_target_usable": {
+          "SE": 216,
+          "PA": 214,
+          "EC": 213,
+          "VN": 210,
+          "BS": 133
+        }
+      }
+    },
+    "ranked_configs": [
+      {
+        "held_out": "EC",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 225
+      },
+      {
+        "held_out": "PA",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "EC",
+          "SE"
+        ],
+        "n": 225
+      },
+      {
+        "held_out": "SE",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "EC",
+          "PA"
+        ],
+        "n": 225
+      },
+      {
+        "held_out": "VN",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 221
+      },
+      {
+        "held_out": "CG",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 214
+      },
+      {
+        "held_out": "EC",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "PA",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 203
+      },
+      {
+        "held_out": "PA",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 203
+      },
+      {
+        "held_out": "SE",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "VN",
+          "CG"
+        ],
+        "n": 203
+      },
+      {
+        "held_out": "VN",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "CG"
+        ],
+        "n": 203
+      },
+      {
+        "held_out": "CG",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "VN"
+        ],
+        "n": 203
+      },
+      {
+        "held_out": "BS",
+        "config": "best_subset_ge2_others",
+        "train_hosts": [
+          "PA",
+          "SE"
+        ],
+        "n": 145
+      },
+      {
+        "held_out": "BS",
+        "config": "best_4_of_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "VN"
+        ],
+        "n": 133
+      },
+      {
+        "held_out": "EC",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "BS",
+          "PA",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 126
+      },
+      {
+        "held_out": "BS",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "PA",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 126
+      },
+      {
+        "held_out": "PA",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "SE",
+          "VN",
+          "CG"
+        ],
+        "n": 126
+      },
+      {
+        "held_out": "SE",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "PA",
+          "VN",
+          "CG"
+        ],
+        "n": 126
+      },
+      {
+        "held_out": "VN",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "PA",
+          "SE",
+          "CG"
+        ],
+        "n": 126
+      },
+      {
+        "held_out": "CG",
+        "config": "train_on_all_5_others",
+        "train_hosts": [
+          "EC",
+          "BS",
+          "PA",
+          "SE",
+          "VN"
+        ],
+        "n": 126
+      }
+    ]
+  }
+}

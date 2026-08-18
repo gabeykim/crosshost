@@ -1,0 +1,66 @@
+{
+  "device_info": {
+    "cuda_available": false,
+    "mps_available": true,
+    "mkl_available": false,
+    "mkldnn_available": false,
+    "torch_version": "2.13.0"
+  },
+  "network_check": {
+    "generic_https": {
+      "url": "https://aws.amazon.com",
+      "http_code": "200"
+    }
+  },
+  "raw_step_benchmark_N": 45000,
+  "raw_step_benchmark": {
+    "cpu_batch256": {
+      "device": "cpu",
+      "batch_size": 256,
+      "N": 45000,
+      "n_batches": 176,
+      "epoch_time_sec": 330.0541887283325,
+      "sixty_epoch_fit_min": 330.0541887283325
+    },
+    "cpu_batch1024": {
+      "device": "cpu",
+      "batch_size": 1024,
+      "N": 45000,
+      "n_batches": 44,
+      "epoch_time_sec": 327.90965700149536,
+      "sixty_epoch_fit_min": 327.90965700149536
+    },
+    "mps_batch256": {
+      "device": "mps",
+      "batch_size": 256,
+      "N": 45000,
+      "n_batches": 176,
+      "epoch_time_sec": 12.809504985809326,
+      "sixty_epoch_fit_min": 12.809504985809326
+    },
+    "mps_batch1024": {
+      "device": "mps",
+      "batch_size": 1024,
+      "N": 45000,
+      "n_batches": 44,
+      "epoch_time_sec": 11.248055219650269,
+      "sixty_epoch_fit_min": 11.248055219650269
+    }
+  },
+  "real_end_to_end_benchmark_N": 2000,
+  "real_end_to_end_benchmark": {
+    "cpu": {
+      "N": 2000,
+      "wall_clock_sec": 824.0493948459625
+    },
+    "mps": {
+      "N": 2000,
+      "wall_clock_sec": 46.71309304237366
+    }
+  },
+  "gate4_realistic_pooled_n_per_loho_fit": {
+    "held_out_BS_train_EC_PA_tx": 45718,
+    "held_out_EC_train_BS_PA_tx": 37003,
+    "held_out_PA_train_EC_BS_tx": 40109
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "feature": "Anti-Shine-Dalgarno sequence",
+    "test": "E. coli/P. aeruginosa nonamer == ACCTCCTTA; B. subtilis == ACCTCCTTT",
+    "source": "Johns et al. 2018 manuscript Methods (Gate 1 primary source)",
+    "result": "PASS",
+    "detail": "exact match, all 3 hosts"
+  },
+  {
+    "feature": "tAI weight calculation",
+    "test": "Python get_ws() output matches R canonical dos Reis tAI package get.ws() exactly, on reference 87-tRNA E. coli vector",
+    "source": "github.com/mariodosreis/tai (author's own R package, run live via Rscript in this environment)",
+    "result": "PASS",
+    "detail": "max abs diff = 3.89e-16 (floating point precision limit)"
+  },
+  {
+    "feature": "tAI ranking sanity check",
+    "test": "E. coli AAA (Lys) codon has tAI weight = 1.0 (the maximum)",
+    "source": "Independently verified against R reference output (NOT a memorized claim -- an earlier draft wrongly asserted CTG=1.0 from memory and was caught by checking the real reference computation)",
+    "result": "PASS",
+    "detail": "exact match"
+  },
+  {
+    "feature": "Sigma factor complement (HMMER+Pfam)",
+    "test": "E. coli sigma factor count == 7 (RpoD, RpoS, RpoH, RpoE, RpoN, FliA, FecI)",
+    "source": "Gruber & Gross 2003 Annu Rev Microbiol; Paget 2015 (well-established literature count)",
+    "result": "PASS",
+    "detail": "exact match after excluding 4 region-4-only false positives (DNA-binding response regulators NarL/YhjB/NarP/UvrY sharing the HTH fold with sigma region 4 but lacking any sigma-specific core domain)"
+  },
+  {
+    "feature": "16S rRNA gene copy number",
+    "test": "plausibility check against published rrn operon counts",
+    "source": "well-established genome annotation facts (rrnDB-type consensus)",
+    "result": "PASS (plausibility)",
+    "detail": "EC=7, BS=10, PA=4, SE=7, CG=6, VN=11 -- all consistent with published rrn operon counts; V. natriegens 11 is the highest, consistent with its extreme growth rate"
+  },
+  {
+    "feature": "GC content",
+    "test": "plausibility check against well-known reference genome GC%",
+    "source": "well-established genome facts",
+    "result": "PASS (plausibility)",
+    "detail": "EC=50.8%, BS=43.5%, PA=66.6% (famously GC-rich), SE=52.2%, CG=53.8%, VN=45.1% -- all match expected values closely"
+  }
+]

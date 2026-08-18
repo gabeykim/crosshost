@@ -1,0 +1,344 @@
+{
+  "performance": {
+    "PRIMARY": {
+      "genomic": {
+        "SE": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.5028755760368664,
+              "lower": 0.4791066052227341,
+              "upper": 0.5221038402457757,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 125
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.48424468229237216,
+              "lower": 0.438603170302127,
+              "upper": 0.514557648015174,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 121
+          }
+        },
+        "VN": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.3433494124922696,
+              "lower": 0.04802968460111316,
+              "upper": 0.5696573902288188,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 99
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.38343709807157655,
+              "lower": 0.3454631536693496,
+              "upper": 0.4176652542168554,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 115
+          }
+        },
+        "CG": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.5962281653208871,
+              "lower": 0.5035523466231343,
+              "upper": 0.6917744933697078,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 118
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.5378382886639768,
+              "lower": 0.4972675427721299,
+              "upper": 0.5748060320537386,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 110
+          }
+        }
+      },
+      "physiology": {
+        "SE": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.26669738863287246,
+              "lower": 0.09852903225806449,
+              "upper": 0.42521781874039927,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 125
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.39426906923181126,
+              "lower": 0.1271562118954071,
+              "upper": 0.5490841349410648,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 121
+          }
+        },
+        "VN": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.42047247990105135,
+              "lower": 0.26328509585652443,
+              "upper": 0.5550624613481756,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 99
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.27232914329849095,
+              "lower": 0.14517750475875918,
+              "upper": 0.38782756907677135,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 115
+          }
+        },
+        "CG": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.09719778393756459,
+              "lower": -0.21528601010156345,
+              "upper": 0.43333077690006905,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 118
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.4886477469963708,
+              "lower": 0.3927029281157722,
+              "upper": 0.5844663345580777,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 110
+          }
+        }
+      }
+    },
+    "SECONDARY": {
+      "genomic": {
+        "SE": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.4631107054284927,
+              "lower": 0.4385832529622486,
+              "upper": 0.48613254340038575,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 191
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.559128847946832,
+              "lower": 0.5351267441767805,
+              "upper": 0.5840770107340088,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 196
+          }
+        },
+        "VN": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.5579410908473352,
+              "lower": 0.47825543754199573,
+              "upper": 0.6308169273737136,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 146
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.4083656648594035,
+              "lower": 0.3775553262978643,
+              "upper": 0.44487905311142145,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 188
+          }
+        },
+        "CG": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.648973805855162,
+              "lower": 0.5584419986792868,
+              "upper": 0.7156134712744884,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 176
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.5850715191785985,
+              "lower": 0.5509144989627254,
+              "upper": 0.6244695468088982,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 182
+          }
+        }
+      },
+      "physiology": {
+        "SE": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.39694268393496823,
+              "lower": 0.33125447781758055,
+              "upper": 0.45412303664921466,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 191
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.5019655906095355,
+              "lower": 0.46479771135318637,
+              "upper": 0.5348726980054029,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 196
+          }
+        },
+        "VN": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.25483175009781434,
+              "lower": 0.02363345756317905,
+              "upper": 0.48603004263244964,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 146
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.22726286394514691,
+              "lower": 0.13227723308946646,
+              "upper": 0.31941575256271354,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 188
+          }
+        },
+        "CG": {
+          "transcription": {
+            "rho_ci": {
+              "mean": 0.6251705921197448,
+              "lower": 0.562857142857143,
+              "upper": 0.6757807616112702,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 176
+          },
+          "translation": {
+            "rho_ci": {
+              "mean": 0.609450593965323,
+              "lower": 0.5895789965568612,
+              "upper": 0.6290172339747607,
+              "n_folds": 5,
+              "n_boot": 10000
+            },
+            "n_test_corrected_207": 182
+          }
+        }
+      }
+    }
+  },
+  "extrapolation_distance": {
+    "PRIMARY": {
+      "genomic": {
+        "SE": {
+          "total": 4.143788975171801,
+          "per_dim": 0.1119942966262649
+        },
+        "VN": {
+          "total": 28.777116210280408,
+          "per_dim": 0.7777598975751462
+        },
+        "CG": {
+          "total": 8.80045232125253,
+          "per_dim": 0.23785006273655487
+        }
+      },
+      "physiology": {
+        "SE": {
+          "total": 3.2021011970755886,
+          "per_dim": 0.5336835328459314
+        },
+        "VN": {
+          "total": 6.443700399923458,
+          "per_dim": 1.0739500666539097
+        },
+        "CG": {
+          "total": 2.466165569899699,
+          "per_dim": 0.4110275949832832
+        }
+      }
+    },
+    "SECONDARY": {
+      "genomic": {
+        "SE": {
+          "total": 4.143788975171801,
+          "per_dim": 0.1119942966262649
+        },
+        "VN": {
+          "total": 35.18551354519287,
+          "per_dim": 0.9509598255457532
+        },
+        "CG": {
+          "total": 11.741650905454646,
+          "per_dim": 0.31734191636363906
+        }
+      },
+      "physiology": {
+        "SE": {
+          "total": 3.9779758785544237,
+          "per_dim": 0.6629959797590707
+        },
+        "VN": {
+          "total": 6.443700399923458,
+          "per_dim": 1.0739500666539097
+        },
+        "CG": {
+          "total": 3.8150987620171906,
+          "per_dim": 0.6358497936695318
+        }
+      }
+    }
+  },
+  "n_seeds": 5,
+  "seed_uncertainty_note": "5 random-init/shuffle seeds on IDENTICAL training data -- training-stochasticity uncertainty, NOT partition-level fold uncertainty (RS241 has no fold structure, it is a wholly reserved evaluation set)"
+}

@@ -1,0 +1,31 @@
+{
+  "configuration_investigated": "PA held out, physiology, transcription, fold2 (AUC=0.228, rho=-0.448)",
+  "checks_performed": {
+    "label_orientation": "PASS -- construction of tx_active/tx_norm is fold-independent (same code path, same source columns for all folds); no evidence of a fold-specific label swap",
+    "class_distribution": "NOT degenerate -- fold2 active rate 81.9%, comparable to other 4 folds (80.0-87.4% range), not an outlier",
+    "film_gamma_beta_degenerate": "NOT collapsed/degenerate -- mean gamma/beta magnitudes for fold2 are comparable in scale to other PA folds and to BS folds; no obvious single-fold anomaly in summary statistics",
+    "pa_vector_outlier_check": "CONFIRMED real and quantifiable -- PA physiology vector has the LARGEST total extrapolation-beyond-training-pair-range of any (held_out,train_pair) combination tested: PA/[EC,BS]=3.687 z-score-units (driven by chaperones_fraction alone contributing 1.61), vs BS/[EC,PA]=2.245, vs EC/[BS,PA]=1.022 (smallest -- EC is closest to being bracketed by its training pair)"
+  },
+  "prediction_structure_check": {
+    "spearman_rho": -0.4487,
+    "p_value": 4.4e-190,
+    "n": 3850,
+    "note": "Statistically overwhelming significance rules out pure noise/random-variance explanation -- this is a real, structural (if inverted) learned relationship, not scatter"
+  },
+  "bimodal_fold_pattern": {
+    "inverted_sign_folds": [
+      0,
+      2,
+      4
+    ],
+    "correct_sign_folds": [
+      1,
+      3
+    ],
+    "note": "Not uniformly bad -- some folds land correct-sign, some inverted, consistent with extrapolation-direction sensitivity to random initialization rather than a deterministic pipeline bug (which would be expected to affect all folds identically)"
+  },
+  "verdict": "GENUINE VARIANCE, MECHANISTICALLY EXPLAINED -- not a bug, not simple noise",
+  "best_hypothesis": "[INFERRED, medium-high confidence] FiLM-generator extrapolation instability: PA physiology vector lies well outside the convex hull of its LOHO training pair (EC+BS), the worst case of any host/pair combination tested. The FiLM generator (small MLP) receives no training signal constraining its output there, so its near-linear extrapolation can go sign-preserving or sign-inverting depending on random seed -- producing the observed bimodal fold pattern. Consistent with (a) unfreezing conv4 rescuing every affected fold, (b) PAs independently-established (Gate 1.5) status as the most source-sensitive/statistically unusual host in this feature space, (c) EC (smallest extrapolation) showing the mildest instability of the 3 primary hosts.",
+  "not_fully_resolved": "The exact internal FiLM-generator mechanism (why THIS specific inversion direction per fold) was not traced at the individual-weight level -- would require additional controlled experiments (multi-seed sweeps, stronger FiLM-generator regularization) outside this ~1hr bounded investigation.",
+  "retraining_implication": "Genomic-variant results are NOT affected -- verdict is genuine variance specific to physiology features extrapolation, not a bug. No additional retraining triggered by this task beyond what Task 1 (growth-rate vector fix) already requires."
+}

@@ -1,0 +1,18 @@
+{
+  "source": "PRIDE PXD027874",
+  "condition": "TP1.S300.T37",
+  "replicate_labels": [
+    "Vnat85",
+    "Vnat86",
+    "Vnat87"
+  ],
+  "replicate_columns": [
+    "LFQ.intensity.85",
+    "LFQ.intensity.86",
+    "LFQ.intensity.87"
+  ],
+  "n_protein_groups_raw": 1082,
+  "n_after_qc_filters": 665,
+  "n_excluded_zero_lfq_all_reps": 381,
+  "n_final_usable": 665
+}

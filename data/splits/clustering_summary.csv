@@ -1,0 +1,4 @@
+min_seq_id,n_clusters,largest_cluster_size,n_singletons,mean_cluster_size,median_cluster_size
+0.3,27869,13,26893,1.0495173849079622,1.0
+0.5,27869,13,26893,1.0495173849079622,1.0
+0.7,28281,11,27543,1.0342279268767016,1.0

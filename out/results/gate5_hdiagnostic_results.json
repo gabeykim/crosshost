@@ -1,0 +1,446 @@
+{
+  "EC": {
+    "transcription": {
+      "b3_free_embedding": {
+        "spearman_rho": {
+          "mean": 0.6309564838067871,
+          "lower": 0.5844021775792697,
+          "upper": 0.6722792471523654,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.3785315603330209,
+          "lower": 0.3365401685234222,
+          "upper": 0.4139625875782117,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.7737031601972137,
+          "lower": 0.7506260846624364,
+          "upper": 0.7956764982631283,
+          "n_folds": 5,
+          "n_boot": 10000
+        }
+      },
+      "genomic": {
+        "spearman_rho": {
+          "mean": 0.37116617011573333,
+          "lower": 0.2154115050094531,
+          "upper": 0.5161862645044263,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.023566359169037696,
+          "lower": 0.0,
+          "upper": 0.07069907750711309,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.6171107358636173,
+          "lower": 0.4976635018785682,
+          "upper": 0.7230228206875577,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      },
+      "physiology": {
+        "spearman_rho": {
+          "mean": 0.12065213611188788,
+          "lower": 0.010265572018701213,
+          "upper": 0.240683358396713,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.07472804933185395,
+          "lower": 0.0,
+          "upper": 0.20836821750960316,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.6938326729338022,
+          "lower": 0.6619608799203688,
+          "upper": 0.7236488540240528,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      }
+    },
+    "translation": {
+      "b3_free_embedding": {
+        "spearman_rho": {
+          "mean": 0.5067849249677709,
+          "lower": 0.4732023575971935,
+          "upper": 0.537790894691405,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.19698113260140226,
+          "lower": 0.16855492840285818,
+          "upper": 0.22409368125161055,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.745227014092935,
+          "lower": 0.718666544943382,
+          "upper": 0.7682587291046079,
+          "n_folds": 5,
+          "n_boot": 10000
+        }
+      },
+      "genomic": {
+        "spearman_rho": {
+          "mean": 0.1547424016254527,
+          "lower": -0.05910172498667228,
+          "upper": 0.346222363679838,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.636713271346154,
+          "lower": 0.5286167458320928,
+          "upper": 0.73387000326842,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      },
+      "physiology": {
+        "spearman_rho": {
+          "mean": 0.20229891437501193,
+          "lower": -0.07872014757998737,
+          "upper": 0.41146545235100795,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.06160922182855942,
+          "lower": 0.0,
+          "upper": 0.1613220737148064,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.6659251217260207,
+          "lower": 0.5929975518619525,
+          "upper": 0.7180153408230237,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      }
+    }
+  },
+  "BS": {
+    "transcription": {
+      "b3_free_embedding": {
+        "spearman_rho": {
+          "mean": 0.21133892561322054,
+          "lower": 0.16027918824953105,
+          "upper": 0.24642623960112003,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.20120029573406834,
+          "lower": 0.17537663236773007,
+          "upper": 0.22458911045944513,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.8031173704020571,
+          "lower": 0.7805882892069309,
+          "upper": 0.8226965795241915,
+          "n_folds": 5,
+          "n_boot": 10000
+        }
+      },
+      "genomic": {
+        "spearman_rho": {
+          "mean": 0.130505065714771,
+          "lower": 0.007934950761025544,
+          "upper": 0.2381174838949535,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.0802904682484502,
+          "lower": 0.0,
+          "upper": 0.24087140474535057,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.8298682735234657,
+          "lower": 0.8064784883755521,
+          "upper": 0.8475759936158844,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      },
+      "physiology": {
+        "spearman_rho": {
+          "mean": 0.2244289763331376,
+          "lower": 0.21041864738164776,
+          "upper": 0.24050367805999456,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.11701729160258385,
+          "lower": 0.06288108050143595,
+          "upper": 0.17096690854256558,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.8437261470062657,
+          "lower": 0.8249844352764345,
+          "upper": 0.8582244735823086,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- INTERVALS OVERLAP"
+      }
+    },
+    "translation": {
+      "b3_free_embedding": {
+        "spearman_rho": {
+          "mean": 0.25754097822712263,
+          "lower": 0.21762434568991074,
+          "upper": 0.3006250583697563,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.23657087077353153,
+          "lower": 0.19556005936466914,
+          "upper": 0.27661080775450353,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.7855668531565685,
+          "lower": 0.7543682978757978,
+          "upper": 0.8214530319774414,
+          "n_folds": 5,
+          "n_boot": 10000
+        }
+      },
+      "genomic": {
+        "spearman_rho": {
+          "mean": 0.15117358142153775,
+          "lower": 0.11121229397404134,
+          "upper": 0.1914846487941811,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.013381053258734368,
+          "lower": 0.0,
+          "upper": 0.03569700819503417,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.7938509475578455,
+          "lower": 0.787558560238929,
+          "upper": 0.7994267151609448,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      },
+      "physiology": {
+        "spearman_rho": {
+          "mean": 0.23982946998822427,
+          "lower": 0.18180714621468191,
+          "upper": 0.2994661217978847,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.11843688820263705,
+          "lower": 0.0735461313865445,
+          "upper": 0.1643845796974306,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.8124719728229302,
+          "lower": 0.7913323252190988,
+          "upper": 0.8351637504516958,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      }
+    }
+  },
+  "PA": {
+    "transcription": {
+      "b3_free_embedding": {
+        "spearman_rho": {
+          "mean": 0.4529116478038711,
+          "lower": 0.400060199682727,
+          "upper": 0.4874233982390013,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.13670526989992757,
+          "lower": 0.11353949446796874,
+          "upper": 0.15705028857022854,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.7700934493427265,
+          "lower": 0.7390035343875383,
+          "upper": 0.7935100967701082,
+          "n_folds": 5,
+          "n_boot": 10000
+        }
+      },
+      "genomic": {
+        "spearman_rho": {
+          "mean": 0.33754725611430614,
+          "lower": 0.23687970271054004,
+          "upper": 0.43435760051570227,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.5952441231601749,
+          "lower": 0.49567735391207324,
+          "upper": 0.6966833724788617,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      },
+      "physiology": {
+        "spearman_rho": {
+          "mean": 0.110024202736274,
+          "lower": -0.16054423388930514,
+          "upper": 0.3767308401116066,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.0774788940820971,
+          "lower": 0.0,
+          "upper": 0.16514981809272827,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.5760322195336602,
+          "lower": 0.3908718332915919,
+          "upper": 0.7579867221286555,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      }
+    },
+    "translation": {
+      "b3_free_embedding": {
+        "spearman_rho": {
+          "mean": 0.2499989391556582,
+          "lower": 0.21613140687337196,
+          "upper": 0.27838628002417165,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.00788618355501634,
+          "lower": 0.002654582320689111,
+          "upper": 0.013115555427444872,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.641011344063991,
+          "lower": 0.6231217613212474,
+          "upper": 0.6559586399914955,
+          "n_folds": 5,
+          "n_boot": 10000
+        }
+      },
+      "genomic": {
+        "spearman_rho": {
+          "mean": 0.13068987882217079,
+          "lower": 0.049506417059794736,
+          "upper": 0.2089250592825073,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.04744904582989555,
+          "lower": 0.0,
+          "upper": 0.13735978163769852,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.5720523000664374,
+          "lower": 0.5325517182024186,
+          "upper": 0.6115528819304561,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- POINT ESTIMATE FAVORS BASELINE"
+      },
+      "physiology": {
+        "spearman_rho": {
+          "mean": 0.26672921546717676,
+          "lower": 0.19757424111072944,
+          "upper": 0.33444229973608747,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "mcc": {
+          "mean": 0.029961869243023964,
+          "lower": 0.0,
+          "upper": 0.05992373848604793,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "auc": {
+          "mean": 0.545726205441536,
+          "lower": 0.4617001533292829,
+          "upper": 0.6243410716129861,
+          "n_folds": 5,
+          "n_boot": 10000
+        },
+        "verdict_vs_b3": "NOT MET -- INTERVALS OVERLAP"
+      }
+    }
+  }
+}

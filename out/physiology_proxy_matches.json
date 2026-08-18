@@ -1,0 +1,2954 @@
+{
+  "EC_integrated": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "ykgM",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "rpoD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fliA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fecI",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "groL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tufB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  },
+  "BS_integrated": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsNA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplNA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsNB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplGA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplGB",
+        "rule": "gene_symbol"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "sigA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "ylaC",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "sigW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "xpf",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "sigY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigO",
+        "rule": "gene_symbol"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "groEL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  },
+  "BS_abele2025": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsNA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplNA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsNB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplGA",
+        "rule": "gene_symbol"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "sigA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "ylaC",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "sigD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "xpf",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "sigY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigX",
+        "rule": "gene_symbol"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groEL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  },
+  "PA_integrated": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE2",
+        "rule": "gene_symbol"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "rpoD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "algU",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rpoS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fliA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "PA2896",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA3285",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rpoH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "vreI",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA0472",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "foxI",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "pvdS",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "femI",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA2050",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA2093",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA3899",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA1363",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA4896",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA3410",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA0149",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA1300",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "groEL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tufB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA1",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "fusA2",
+        "rule": "annotation_keyword"
+      }
+    ]
+  },
+  "PA_abele2025": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE2",
+        "rule": "gene_symbol"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "rpoS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "algU",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "fliA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "vreI",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rpoN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "PA2896",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA0472",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "foxI",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "pvdS",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "femI",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA3285",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA2050",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA2093",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA3899",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA1363",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA4896",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA3410",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA0149",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "PA1300",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "groEL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tufB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA1",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "fusA2",
+        "rule": "annotation_keyword"
+      }
+    ]
+  },
+  "SE_integrated": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE2",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "prmA",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "STM1967",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rimI",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "rpoD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fliA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoN",
+        "rule": "gene_symbol"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tufB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  },
+  "SE_abele2025": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "prmA",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rimJ",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rimI",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "rpoS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoH",
+        "rule": "gene_symbol"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tufB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tufA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  },
+  "CG_integrated": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "pvdS1",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "sigA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "pvdS2",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "sigH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "sigB",
+        "rule": "gene_symbol"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groEL-3",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "groEL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groEL-2",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tuf",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  },
+  "VN_pride_pxd027874": {
+    "ribosomal_proteins": [
+      {
+        "gene_name": "rpsE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "BA894_09940",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "rplK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplV",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsM",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplX",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsR",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplW",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsP",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsS",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmH",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsU",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmG",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsQ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplY",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rplL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmI",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmF",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsT",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsN",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpsO",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpmE2",
+        "rule": "gene_symbol"
+      }
+    ],
+    "rnap_core": [
+      {
+        "gene_name": "rpoC",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoB",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "rpoZ",
+        "rule": "gene_symbol"
+      }
+    ],
+    "sigma_factors": [
+      {
+        "gene_name": "rpoD",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "crl",
+        "rule": "annotation_keyword"
+      }
+    ],
+    "chaperones": [
+      {
+        "gene_name": "dnaK",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "tig",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "grpE",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "dnaJ",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "groL",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "hslO",
+        "rule": "annotation_keyword"
+      },
+      {
+        "gene_name": "groES",
+        "rule": "gene_symbol"
+      }
+    ],
+    "elongation_factors": [
+      {
+        "gene_name": "tuf",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      },
+      {
+        "gene_name": "fusA",
+        "rule": "gene_symbol"
+      }
+    ]
+  }
+}

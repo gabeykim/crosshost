@@ -1,0 +1,134 @@
+{
+  "EC": {
+    "transcription": {
+      "ceiling_max": 0.753750672912612,
+      "ceiling_mean_pair": 0.5056341267393366,
+      "systems": {
+        "sequence_only": {
+          "actual_zeroshot_rho": 0.3671303061184982,
+          "pct_of_max_ceiling": 48.70712814090746,
+          "pct_of_mean_pair_ceiling": 72.60789703535188
+        },
+        "dnabert2": {
+          "actual_zeroshot_rho": 0.4579408228810963,
+          "pct_of_max_ceiling": 60.75494713809547,
+          "pct_of_mean_pair_ceiling": 90.56762561384092
+        },
+        "promogen2": {
+          "actual_zeroshot_rho": 0.4952637149340604,
+          "pct_of_max_ceiling": 65.7065701872322,
+          "pct_of_mean_pair_ceiling": 97.94902850562096
+        }
+      }
+    },
+    "translation": {
+      "ceiling_max": 0.7420946148344976,
+      "ceiling_mean_pair": 0.45139195963906176,
+      "systems": {
+        "sequence_only": {
+          "actual_zeroshot_rho": 0.5624707499475539,
+          "pct_of_max_ceiling": 75.79501841190378,
+          "pct_of_mean_pair_ceiling": 124.60805690852624
+        },
+        "dnabert2": {
+          "actual_zeroshot_rho": 0.49975578723519165,
+          "pct_of_max_ceiling": 67.34394472686579,
+          "pct_of_mean_pair_ceiling": 110.71437507101415
+        },
+        "promogen2": {
+          "actual_zeroshot_rho": 0.5215758248723056,
+          "pct_of_max_ceiling": 70.28427567671108,
+          "pct_of_mean_pair_ceiling": 115.54831975504473
+        }
+      }
+    }
+  },
+  "BS": {
+    "transcription": {
+      "ceiling_max": 0.2575175805660613,
+      "ceiling_mean_pair": 0.25728433679734625,
+      "systems": {
+        "sequence_only": {
+          "actual_zeroshot_rho": 0.2630011797277185,
+          "pct_of_max_ceiling": 102.1294076892162,
+          "pct_of_mean_pair_ceiling": 102.2219941569452
+        },
+        "dnabert2": {
+          "actual_zeroshot_rho": 0.2168213828388695,
+          "pct_of_max_ceiling": 84.19673032119377,
+          "pct_of_mean_pair_ceiling": 84.27305973532778
+        },
+        "promogen2": {
+          "actual_zeroshot_rho": 0.24252095991988648,
+          "pct_of_max_ceiling": 94.1764672480962,
+          "pct_of_mean_pair_ceiling": 94.26184389565528
+        }
+      }
+    },
+    "translation": {
+      "ceiling_max": 0.26326902314611467,
+      "ceiling_mean_pair": 0.21197916379487033,
+      "systems": {
+        "sequence_only": {
+          "actual_zeroshot_rho": 0.29121012536276536,
+          "pct_of_max_ceiling": 110.613137042387,
+          "pct_of_mean_pair_ceiling": 137.37676861701647
+        },
+        "dnabert2": {
+          "actual_zeroshot_rho": 0.2738150140140072,
+          "pct_of_max_ceiling": 104.00578493506981,
+          "pct_of_mean_pair_ceiling": 129.17072089168852
+        },
+        "promogen2": {
+          "actual_zeroshot_rho": 0.26628194643894754,
+          "pct_of_max_ceiling": 101.14442757329665,
+          "pct_of_mean_pair_ceiling": 125.61703785973293
+        }
+      }
+    }
+  },
+  "PA": {
+    "transcription": {
+      "ceiling_max": 0.753750672912612,
+      "ceiling_mean_pair": 0.5054008829706216,
+      "systems": {
+        "sequence_only": {
+          "actual_zeroshot_rho": 0.4794356688101278,
+          "pct_of_max_ceiling": 63.60666544515475,
+          "pct_of_mean_pair_ceiling": 94.86245176148552
+        },
+        "dnabert2": {
+          "actual_zeroshot_rho": 0.4643406188733408,
+          "pct_of_max_ceiling": 61.60400720825298,
+          "pct_of_mean_pair_ceiling": 91.8757039251814
+        },
+        "promogen2": {
+          "actual_zeroshot_rho": 0.48992823153461157,
+          "pct_of_max_ceiling": 64.9987123250519,
+          "pct_of_mean_pair_ceiling": 96.9385388990487
+        }
+      }
+    },
+    "translation": {
+      "ceiling_max": 0.7420946148344976,
+      "ceiling_mean_pair": 0.5026818189903062,
+      "systems": {
+        "sequence_only": {
+          "actual_zeroshot_rho": 0.3898897331129521,
+          "pct_of_max_ceiling": 52.539086703911146,
+          "pct_of_mean_pair_ceiling": 77.5619324956073
+        },
+        "dnabert2": {
+          "actual_zeroshot_rho": 0.29532446541522184,
+          "pct_of_max_ceiling": 39.79606636561906,
+          "pct_of_mean_pair_ceiling": 58.749780528847204
+        },
+        "promogen2": {
+          "actual_zeroshot_rho": 0.33449943682632494,
+          "pct_of_max_ceiling": 45.07503896938064,
+          "pct_of_mean_pair_ceiling": 66.54297493754703
+        }
+      }
+    }
+  }
+}

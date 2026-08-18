@@ -1,0 +1,44 @@
+{
+  "EC": {
+    "accession": "GCF_000005845.2",
+    "taxid": 511145,
+    "name": "Escherichia coli K-12 MG1655",
+    "directory_name": "GCF_000005845.2_ASM584v2",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2"
+  },
+  "BS": {
+    "accession": "GCF_000009045.1",
+    "taxid": 224308,
+    "name": "Bacillus subtilis 168",
+    "directory_name": "GCF_000009045.1_ASM904v1",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/009/045/GCF_000009045.1_ASM904v1"
+  },
+  "PA": {
+    "accession": "GCF_000006765.1",
+    "taxid": 208964,
+    "name": "Pseudomonas aeruginosa PAO1",
+    "directory_name": "GCF_000006765.1_ASM676v1",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/765/GCF_000006765.1_ASM676v1"
+  },
+  "SE": {
+    "accession": "GCF_000006945.2",
+    "taxid": 99287,
+    "name": "Salmonella enterica Typhimurium LT2",
+    "directory_name": "GCF_000006945.2_ASM694v2",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/945/GCF_000006945.2_ASM694v2"
+  },
+  "CG": {
+    "accession": "GCF_000011325.1",
+    "taxid": 196627,
+    "name": "Corynebacterium glutamicum ATCC 13032",
+    "directory_name": "GCF_000011325.1_ASM1132v1",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/011/325/GCF_000011325.1_ASM1132v1"
+  },
+  "VN": {
+    "accession": "GCF_001456255.1",
+    "taxid": 1219067,
+    "name": "Vibrio natriegens ATCC 14048",
+    "directory_name": "GCF_001456255.1_ASM145625v1",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/456/255/GCF_001456255.1_ASM145625v1"
+  }
+}

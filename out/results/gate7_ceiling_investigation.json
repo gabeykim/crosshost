@@ -1,0 +1,86 @@
+{
+  "test_d_genomic_vs_seqonly_vs_ceiling": {
+    "EC": {
+      "transcription": {
+        "ceiling_max": 0.753750672912612,
+        "genomic_rho": 0.37116617011573333,
+        "genomic_pct_of_ceiling": 49.242565672477404,
+        "seqonly_rho": 0.3671303061184982,
+        "seqonly_pct_of_ceiling": 48.70712814090746,
+        "seqonly_exceeds_ceiling": false
+      },
+      "translation": {
+        "ceiling_max": 0.7420946148344976,
+        "genomic_rho": 0.1547424016254527,
+        "genomic_pct_of_ceiling": 20.852112187872898,
+        "seqonly_rho": 0.5624707499475539,
+        "seqonly_pct_of_ceiling": 75.79501841190378,
+        "seqonly_exceeds_ceiling": false
+      }
+    },
+    "BS": {
+      "transcription": {
+        "ceiling_max": 0.2575175805660613,
+        "genomic_rho": 0.130505065714771,
+        "genomic_pct_of_ceiling": 50.67811891828969,
+        "seqonly_rho": 0.2630011797277185,
+        "seqonly_pct_of_ceiling": 102.1294076892162,
+        "seqonly_exceeds_ceiling": true
+      },
+      "translation": {
+        "ceiling_max": 0.26326902314611467,
+        "genomic_rho": 0.15117358142153775,
+        "genomic_pct_of_ceiling": 57.4217124426508,
+        "seqonly_rho": 0.29121012536276536,
+        "seqonly_pct_of_ceiling": 110.613137042387,
+        "seqonly_exceeds_ceiling": true
+      }
+    },
+    "PA": {
+      "transcription": {
+        "ceiling_max": 0.753750672912612,
+        "genomic_rho": 0.33754725611430614,
+        "genomic_pct_of_ceiling": 44.7823488913078,
+        "seqonly_rho": 0.4794356688101278,
+        "seqonly_pct_of_ceiling": 63.60666544515475,
+        "seqonly_exceeds_ceiling": false
+      },
+      "translation": {
+        "ceiling_max": 0.7420946148344976,
+        "genomic_rho": 0.13068987882217079,
+        "genomic_pct_of_ceiling": 17.61094558694747,
+        "seqonly_rho": 0.3898897331129521,
+        "seqonly_pct_of_ceiling": 52.539086703911146,
+        "seqonly_exceeds_ceiling": false
+      }
+    }
+  },
+  "test_a_subset_mismatch": {
+    "transcription": {
+      "n_full_eval_set": 4351,
+      "rho_full_eval_set": 0.22377052843669326,
+      "n_restricted_to_ceiling_subset": 3589,
+      "rho_restricted_to_ceiling_subset": 0.22776644664855228
+    },
+    "translation": {
+      "n_full_eval_set": 1101,
+      "rho_full_eval_set": 0.2959368453274257,
+      "n_restricted_to_ceiling_subset": 830,
+      "rho_restricted_to_ceiling_subset": 0.23269589611865824
+    }
+  },
+  "test_b_attenuation_indicators": {
+    "bs_tx_active_fraction_pct": 17.86,
+    "bs_tl_floor_fraction_pct": 89.9,
+    "bs_tl_usable_for_regression_n": 1101,
+    "double_active_subset_n_tx_ec_bs": 3668,
+    "double_active_subset_n_tx_ec_pa": 9741,
+    "double_active_subset_n_tl_bs_pa": 314,
+    "double_active_subset_n_tl_ec_pa": 3826,
+    "n_ratio_tx_ecpa_over_ecbs": 2.65567066521265,
+    "n_ratio_tl_ecpa_over_bspa": 12.184713375796179
+  },
+  "test_c_units_scale": {
+    "verdict": "NO SCALE/UNIT MISMATCH -- both are Spearman rho on identical target/active definitions, verified by direct code comparison, not merely assumed"
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "PRIMARY": {
+    "per_seed": {
+      "0": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 125,
+              "mcc": 0.2635616482318826,
+              "auc": 0.7419772256728778,
+              "spearman_rho": 0.493505376344086
+            },
+            "translation": {
+              "n_test": 121,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5124847581628503
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 99,
+              "mcc": 0.2822563988624442,
+              "auc": 0.797107438016529,
+              "spearman_rho": 0.6771181199752628
+            },
+            "translation": {
+              "n_test": 115,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.44842143472898244
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 118,
+              "mcc": 0.36018437196785297,
+              "auc": 0.8199597354040838,
+              "spearman_rho": 0.7062146892655369
+            },
+            "translation": {
+              "n_test": 110,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5490836958726867
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 1139.9303579330444,
+        "n_train": 87126
+      },
+      "1": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 125,
+              "mcc": 0.2778577440800875,
+              "auc": 0.7254140786749483,
+              "spearman_rho": 0.48737941628264203
+            },
+            "translation": {
+              "n_test": 121,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5180395610350899
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 99,
+              "mcc": 0.2994495188628666,
+              "auc": 0.7880165289256199,
+              "spearman_rho": 0.6577612863327149
+            },
+            "translation": {
+              "n_test": 115,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.46718588485542584
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 118,
+              "mcc": 0.37612137790922223,
+              "auc": 0.8167960885821111,
+              "spearman_rho": 0.6801901986348646
+            },
+            "translation": {
+              "n_test": 110,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5657642630119694
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 1679.8687748908997,
+        "n_train": 87126
+      },
+      "2": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 125,
+              "mcc": 0.2635616482318826,
+              "auc": 0.7072981366459627,
+              "spearman_rho": 0.44718279569892466
+            },
+            "translation": {
+              "n_test": 121,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.527753691911665
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 99,
+              "mcc": 0.2822563988624442,
+              "auc": 0.7979338842975207,
+              "spearman_rho": 0.6577983920841063
+            },
+            "translation": {
+              "n_test": 115,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.47361693063046845
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 118,
+              "mcc": 0.36018437196785297,
+              "auc": 0.8228357779695139,
+              "spearman_rho": 0.6924464701134692
+            },
+            "translation": {
+              "n_test": 110,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5871514550413632
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 1388.062566280365,
+        "n_train": 87126
+      },
+      "3": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 125,
+              "mcc": 0.2831688720108805,
+              "auc": 0.7171325051759835,
+              "spearman_rho": 0.44281413210445464
+            },
+            "translation": {
+              "n_test": 121,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5639953935781058
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 99,
+              "mcc": 0.30465575006951723,
+              "auc": 0.7971074380165291,
+              "spearman_rho": 0.6593320964749536
+            },
+            "translation": {
+              "n_test": 115,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5141522461475161
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 118,
+              "mcc": 0.3795551057127339,
+              "auc": 0.8075927523727351,
+              "spearman_rho": 0.6703807989949566
+            },
+            "translation": {
+              "n_test": 110,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6030205351306269
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 1502.6061322689056,
+        "n_train": 87126
+      },
+      "4": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 125,
+              "mcc": 0.3104921411506651,
+              "auc": 0.7256728778467909,
+              "spearman_rho": 0.4886144393241166
+            },
+            "translation": {
+              "n_test": 121,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5465113128302396
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 99,
+              "mcc": 0.3374804769007485,
+              "auc": 0.7822314049586778,
+              "spearman_rho": 0.6369944341372913
+            },
+            "translation": {
+              "n_test": 115,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.4598907905989511
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 118,
+              "mcc": 0.40972021799606584,
+              "auc": 0.8326143226919759,
+              "spearman_rho": 0.7244895350578303
+            },
+            "translation": {
+              "n_test": 110,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6111985212902644
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 1660.286516904831,
+        "n_train": 87126
+      }
+    }
+  },
+  "SECONDARY": {
+    "per_seed": {
+      "0": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 191,
+              "mcc": 0.17473292985936567,
+              "auc": 0.7697701149425287,
+              "spearman_rho": 0.5107484844309726
+            },
+            "translation": {
+              "n_test": 196,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6117827060539172
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 146,
+              "mcc": 0.19342505492432166,
+              "auc": 0.8221778221778222,
+              "spearman_rho": 0.6653241121934002
+            },
+            "translation": {
+              "n_test": 188,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.47495253554726713
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 176,
+              "mcc": 0.2163215273141076,
+              "auc": 0.8572721396250809,
+              "spearman_rho": 0.7408540611930442
+            },
+            "translation": {
+              "n_test": 182,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.60057697064046
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 863.1211829185486,
+        "n_train": 58084
+      },
+      "1": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 191,
+              "mcc": 0.19488808423789564,
+              "auc": 0.7644827586206897,
+              "spearman_rho": 0.48799600440892804
+            },
+            "translation": {
+              "n_test": 196,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5737347496593328
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 146,
+              "mcc": 0.21651423557507363,
+              "auc": 0.8023976023976024,
+              "spearman_rho": 0.6544731357404012
+            },
+            "translation": {
+              "n_test": 188,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.4556832060544042
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 176,
+              "mcc": 0.24209525131846565,
+              "auc": 0.8283128636069813,
+              "spearman_rho": 0.7103015628439358
+            },
+            "translation": {
+              "n_test": 182,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5662185033698792
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 682.5206739902496,
+        "n_train": 58084
+      },
+      "2": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 191,
+              "mcc": 0.20443371663984145,
+              "auc": 0.7649425287356322,
+              "spearman_rho": 0.5271906861394323
+            },
+            "translation": {
+              "n_test": 196,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6145176071209429
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 146,
+              "mcc": 0.18223996263343217,
+              "auc": 0.83996003996004,
+              "spearman_rho": 0.6535322550529344
+            },
+            "translation": {
+              "n_test": 188,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5057876165816544
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 176,
+              "mcc": 0.29499962112818084,
+              "auc": 0.8460245636716225,
+              "spearman_rho": 0.7406889720449044
+            },
+            "translation": {
+              "n_test": 182,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6583596297714481
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 1010.4897811412811,
+        "n_train": 58084
+      },
+      "3": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 191,
+              "mcc": 0.14086817693054135,
+              "auc": 0.7659770114942529,
+              "spearman_rho": 0.5133335629650041
+            },
+            "translation": {
+              "n_test": 196,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6125301819282967
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 146,
+              "mcc": 0.1548495223325208,
+              "auc": 0.8211788211788211,
+              "spearman_rho": 0.6624783337206521
+            },
+            "translation": {
+              "n_test": 188,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.5226260432676947
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 176,
+              "mcc": 0.23721094446219512,
+              "auc": 0.8619263089851326,
+              "spearman_rho": 0.7227096632181378
+            },
+            "translation": {
+              "n_test": 182,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6644030414126799
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 721.1280651092529,
+        "n_train": 58084
+      },
+      "4": {
+        "eval": {
+          "SE": {
+            "transcription": {
+              "n_test": 191,
+              "mcc": 0.1282120329916137,
+              "auc": 0.7657471264367816,
+              "spearman_rho": 0.4983242628823367
+            },
+            "translation": {
+              "n_test": 196,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.633768696857892
+            }
+          },
+          "VN": {
+            "transcription": {
+              "n_test": 146,
+              "mcc": 0.1404888468437301,
+              "auc": 0.8195804195804196,
+              "spearman_rho": 0.6581980978063561
+            },
+            "translation": {
+              "n_test": 188,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.4638807304527457
+            }
+          },
+          "CG": {
+            "transcription": {
+              "n_test": 176,
+              "mcc": 0.22436328281207693,
+              "auc": 0.8533936651583711,
+              "spearman_rho": 0.7624213075060533
+            },
+            "translation": {
+              "n_test": 182,
+              "mcc": null,
+              "auc": null,
+              "spearman_rho": 0.6090289883705887
+            }
+          }
+        },
+        "epochs_run": 35,
+        "wall_clock_sec": 538.88343501091,
+        "n_train": 58084
+      }
+    }
+  }
+}

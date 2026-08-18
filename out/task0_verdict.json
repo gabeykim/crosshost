@@ -1,0 +1,15 @@
+{
+  "common_depth_used": 1032,
+  "vn_reprocessed_depth": 1032,
+  "vn_original_gate1_5_depth": 665,
+  "per_metric_verdict": {
+    "ribosomal_proteins": "DEPTH-SENSITIVE, CORRECTABLE -- Spearman rho=1.000 full-vs-matched ranking, smooth monotonic depth curve, use depth-matched value",
+    "rnap_core": "DEPTH-SENSITIVE, CORRECTABLE -- Spearman rho=1.000, small absolute shifts, use depth-matched value",
+    "chaperones": "DEPTH-SENSITIVE, CORRECTABLE -- Spearman rho=1.000, P. aeruginosa shows largest correction, use depth-matched value",
+    "sigma_factors": "DEPTH-SENSITIVE, CORRECTABLE but LOW RELIABILITY -- Spearman rho=0.943, absolute values tiny (<0.2%), recommend reporting distinct-sigma-factor COUNT alongside fraction, treat fraction with caution",
+    "elongation_factors": "DEPTH-SENSITIVE, CORRECTABLE but WEAKEST rank-stability -- Spearman rho=0.829, some mid-ranking reorder between full and matched depth",
+    "growth_rate": "DEPTH-ROBUST -- not proteomics-derived, no depth confound applies (carries its own condition-matching caveats from Gate 1, unrelated to this audit)"
+  },
+  "n_metrics_surviving": 6,
+  "decision_needed_triggered": false
+}

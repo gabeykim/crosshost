@@ -1,0 +1,64 @@
+{
+  "part_length_bp_from_metadata_col": {
+    "n": 29249,
+    "min": 165,
+    "median": 165.0,
+    "max": 165,
+    "mean": 165.0,
+    "value_counts": {
+      "165": 29249
+    }
+  },
+  "part_length_variable": false,
+  "per_host_counts": {
+    "BS": {
+      "tx_usable_count": 15848,
+      "tx_usable_pct": 54.18304899312797,
+      "tx_active_gt0_count": 5223,
+      "tx_active_gt0_pct_of_nonnull": 17.85702075284625,
+      "tl_usable_count": 11689,
+      "tl_usable_pct": 39.96375944476734
+    },
+    "EC": {
+      "tx_usable_count": 24613,
+      "tx_usable_pct": 84.14988546616978,
+      "tx_active_gt0_count": 16575,
+      "tx_active_gt0_pct_of_nonnull": 56.668604054839484,
+      "tl_usable_count": 28226,
+      "tl_usable_pct": 96.50244452801805
+    },
+    "PA": {
+      "tx_usable_count": 21473,
+      "tx_usable_pct": 73.41447570857123,
+      "tx_active_gt0_count": 18564,
+      "tx_active_gt0_pct_of_nonnull": 63.46883654142022,
+      "tl_usable_count": 19735,
+      "tl_usable_pct": 67.47239221853738
+    }
+  },
+  "three_host_overlap": {
+    "oligo_level": {
+      "transcription": 11276,
+      "translation": 7887,
+      "n_total_oligos": 29249
+    },
+    "rs_level_any_barcode": {
+      "transcription": 11276,
+      "translation": 7887,
+      "n_total_rs": 29249
+    },
+    "rs_level_strict_all_barcodes": {
+      "transcription": 11276,
+      "translation": 7887,
+      "n_total_rs": 29249
+    }
+  },
+  "barcode_structure": {
+    "n_unique_rs": 29249,
+    "n_rs_single_barcode": 29249,
+    "n_rs_multi_barcode": 0,
+    "barcodes_per_rs_distribution": {
+      "1": 29249
+    }
+  }
+}

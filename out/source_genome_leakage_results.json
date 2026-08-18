@@ -1,0 +1,321 @@
+{
+  "n_source_genomes": 184,
+  "top10_genomes": {
+    "640069301": 578,
+    "637000304": 447,
+    "649633010": 445,
+    "646311958": 415,
+    "643348523": 405,
+    "640069308": 393,
+    "640753018": 383,
+    "641228474": 365,
+    "639633055": 361,
+    "641228494": 358
+  },
+  "top1_share_pct": 1.9761359362713256,
+  "top10_share_pct": 14.188519265615918,
+  "n_genomes_single_sequence": 0,
+  "phylum_counts": {
+    "Proteobacteria": 42,
+    "Firmicutes": 40,
+    "Bacteroidetes": 20,
+    "Actinobacteria": 20,
+    "Euryarchaeota": 10,
+    "Cyanobacteria": 6,
+    "Tenericutes": 6,
+    "Spirochaetes": 5,
+    "Crenarchaeota": 5,
+    "Chlamydiae": 4,
+    "Chloroflexi": 2,
+    "Chlorobi": 2,
+    "Aquificae": 2,
+    "Planctomycetes": 2,
+    "Acidobacteria": 2,
+    "Verrucomicrobia": 2,
+    "Synergistetes": 2,
+    "Thermi": 2,
+    "Thermotogae": 2,
+    "Chrysiogenetes": 1,
+    "Nitrospirae": 1,
+    "Elusimicrobia": 1,
+    "Fusobacteria": 1,
+    "Dictyoglomi": 1,
+    "Gemmatimonadetes": 1,
+    "Deferribacteres": 1,
+    "Host_associated": 1
+  },
+  "class_counts_top15": {
+    "Bacilli": 25,
+    "Actinobacteria": 20,
+    "Gammaproteobacteria": 16,
+    "Clostridia": 14,
+    "Betaproteobacteria": 10,
+    "Alphaproteobacteria": 10,
+    "Bacteroidia": 8,
+    "Mollicutes": 6,
+    "Synechococcophycidae": 5,
+    "Flavobacteria": 5,
+    "Spirochaetes": 5,
+    "Thermoprotei": 5,
+    "Deltaproteobacteria": 4,
+    "Cytophagia": 4,
+    "Chlamydiae": 4
+  },
+  "cross_genome_max_identity_by_threshold": {
+    "30": [
+      {
+        "test_fold": 0,
+        "max_cross_genome_identity": 0.9333333333333333,
+        "pair": [
+          "29542",
+          "29549",
+          637000108,
+          637000263
+        ],
+        "n_candidates": 30935,
+        "n_cross_genome_candidates": 28022
+      },
+      {
+        "test_fold": 1,
+        "max_cross_genome_identity": 0.7865853658536586,
+        "pair": [
+          "27873",
+          "27871",
+          637000016,
+          637000013
+        ],
+        "n_candidates": 31583,
+        "n_cross_genome_candidates": 28528
+      },
+      {
+        "test_fold": 2,
+        "max_cross_genome_identity": 0.896969696969697,
+        "pair": [
+          "23000",
+          "36094",
+          637000188,
+          639633045
+        ],
+        "n_candidates": 32386,
+        "n_cross_genome_candidates": 29337
+      },
+      {
+        "test_fold": 3,
+        "max_cross_genome_identity": 0.9333333333333333,
+        "pair": [
+          "29549",
+          "29542",
+          637000263,
+          637000108
+        ],
+        "n_candidates": 32606,
+        "n_cross_genome_candidates": 29359
+      },
+      {
+        "test_fold": 4,
+        "max_cross_genome_identity": 0.8209876543209876,
+        "pair": [
+          "15570",
+          "16291",
+          639633028,
+          646862332
+        ],
+        "n_candidates": 31748,
+        "n_cross_genome_candidates": 28830
+      }
+    ],
+    "50": [
+      {
+        "test_fold": 0,
+        "max_cross_genome_identity": 0.9333333333333333,
+        "pair": [
+          "29542",
+          "29549",
+          637000108,
+          637000263
+        ],
+        "n_candidates": 30935,
+        "n_cross_genome_candidates": 28022
+      },
+      {
+        "test_fold": 1,
+        "max_cross_genome_identity": 0.7865853658536586,
+        "pair": [
+          "27873",
+          "27871",
+          637000016,
+          637000013
+        ],
+        "n_candidates": 31583,
+        "n_cross_genome_candidates": 28528
+      },
+      {
+        "test_fold": 2,
+        "max_cross_genome_identity": 0.896969696969697,
+        "pair": [
+          "23000",
+          "36094",
+          637000188,
+          639633045
+        ],
+        "n_candidates": 32386,
+        "n_cross_genome_candidates": 29337
+      },
+      {
+        "test_fold": 3,
+        "max_cross_genome_identity": 0.9333333333333333,
+        "pair": [
+          "29549",
+          "29542",
+          637000263,
+          637000108
+        ],
+        "n_candidates": 32606,
+        "n_cross_genome_candidates": 29359
+      },
+      {
+        "test_fold": 4,
+        "max_cross_genome_identity": 0.8209876543209876,
+        "pair": [
+          "15570",
+          "16291",
+          639633028,
+          646862332
+        ],
+        "n_candidates": 31748,
+        "n_cross_genome_candidates": 28830
+      }
+    ],
+    "70": [
+      {
+        "test_fold": 0,
+        "max_cross_genome_identity": 0.8181818181818182,
+        "pair": [
+          "43242",
+          "42589",
+          637000253,
+          646311913
+        ],
+        "n_candidates": 31406,
+        "n_cross_genome_candidates": 28211
+      },
+      {
+        "test_fold": 1,
+        "max_cross_genome_identity": 0.9333333333333333,
+        "pair": [
+          "29542",
+          "29549",
+          637000108,
+          637000263
+        ],
+        "n_candidates": 32345,
+        "n_cross_genome_candidates": 29203
+      },
+      {
+        "test_fold": 2,
+        "max_cross_genome_identity": 0.9333333333333333,
+        "pair": [
+          "29549",
+          "29542",
+          637000263,
+          637000108
+        ],
+        "n_candidates": 32270,
+        "n_cross_genome_candidates": 28864
+      },
+      {
+        "test_fold": 3,
+        "max_cross_genome_identity": 0.8024691358024691,
+        "pair": [
+          "21472",
+          "35101",
+          640069334,
+          639633061
+        ],
+        "n_candidates": 32234,
+        "n_cross_genome_candidates": 28976
+      },
+      {
+        "test_fold": 4,
+        "max_cross_genome_identity": 0.79375,
+        "pair": [
+          "36457",
+          "32554",
+          637000016,
+          637000013
+        ],
+        "n_candidates": 32609,
+        "n_cross_genome_candidates": 29520
+      }
+    ]
+  },
+  "genome_blocked_fold_loads": [
+    5853,
+    5851,
+    5851,
+    5843,
+    5851
+  ],
+  "genome_blocked_max_identity": [
+    {
+      "test_fold": 0,
+      "test_n": 5853,
+      "train_n": 23396,
+      "max_identity": 1.0,
+      "pair": [
+        "38140",
+        "15026",
+        637000263,
+        646311926
+      ]
+    },
+    {
+      "test_fold": 1,
+      "test_n": 5851,
+      "train_n": 23398,
+      "max_identity": 0.9878787878787879,
+      "pair": [
+        "39894",
+        "37010",
+        637000108,
+        646311913
+      ]
+    },
+    {
+      "test_fold": 2,
+      "test_n": 5851,
+      "train_n": 23398,
+      "max_identity": 1.0,
+      "pair": [
+        "39013",
+        "14576",
+        637000263,
+        637000108
+      ]
+    },
+    {
+      "test_fold": 3,
+      "test_n": 5843,
+      "train_n": 23406,
+      "max_identity": 1.0,
+      "pair": [
+        "41269",
+        "14611",
+        637000108,
+        637000263
+      ]
+    },
+    {
+      "test_fold": 4,
+      "test_n": 5851,
+      "train_n": 23398,
+      "max_identity": 1.0,
+      "pair": [
+        "16849",
+        "14808",
+        640427123,
+        643692028
+      ]
+    }
+  ]
+}

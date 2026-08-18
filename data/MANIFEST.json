@@ -1,0 +1,59 @@
+{
+  "three_host.parquet": {
+    "sha256": "e906685fcf68464a0e8a8aea5994c05ea776b0d0527f9c30c58e12733422074b",
+    "size_bytes": 3911513,
+    "n_rows": 29249
+  },
+  "rs241.parquet": {
+    "sha256": "3a1cc7ed2356689508b13aac71168b8bee25a6c418abf4584acd57514e22d35d",
+    "size_bytes": 46146,
+    "n_rows": 241
+  },
+  "hosts_physiology.parquet": {
+    "sha256": "2a934f316456aa985ef8382c4258cbebd79b511f0576cde94fe2e316254069a4",
+    "size_bytes": 16042,
+    "n_rows": 6
+  },
+  "hosts_genomic.parquet": {
+    "sha256": "64cdfce51a570dfcbf8b75eeeca19a96646d3c4813b0877e13ff2d8b7f77edb1",
+    "size_bytes": 24670,
+    "n_rows": 6
+  },
+  "hosts_physiology_final.csv": {
+    "sha256": "abbe1dc0fcaa21778944a6b2fc1ddd8b50f6ef64c556beeb1dfe722254dfd22d",
+    "size_bytes": 2486,
+    "n_rows": null
+  },
+  "physiology_proxy_results.csv": {
+    "sha256": "7a40455de53e2014e3c1311fa103ac0d853b2fe83f751eb440a823fd6c492b93",
+    "size_bytes": 7856
+  },
+  "splits/fold_assignment_FINAL.parquet": {
+    "sha256": "2a087495db087e35f628d4c1eaf9a2e16a0faada661c9f743a6af6be5975cb27",
+    "size_bytes": 200869,
+    "n_rows": 29042
+  },
+  "splits/clusters_id30.parquet": {
+    "sha256": "c58119eff10f722998ac145e364f20d035302e4ef00df6697a7b7f4799e76f17",
+    "size_bytes": 371044,
+    "n_rows": 29249
+  },
+  "splits/clusters_id50.parquet": {
+    "sha256": "3e35289df8938d006ab798da3dc2de2a2889b5ab67b4d3f0bec71b32e8fcb755",
+    "size_bytes": 373509,
+    "n_rows": 29249
+  },
+  "splits/clusters_id70.parquet": {
+    "sha256": "a446e056baa0de85c1f6004132e91812bc4fc424dc0170c3f682a5126a943ec6",
+    "size_bytes": 375853,
+    "n_rows": 29249
+  },
+  "splits/rs241_configs.json": {
+    "sha256": "6b837befd3da2b207e37fe292432d3d02bcd8f61f013a68394ea6623eb7c3c03",
+    "size_bytes": 1184
+  },
+  "splits/clustering_summary.csv": {
+    "sha256": "7eac3ae423302c9fa5e72a0311fd616cee5b9c549856df164bafeac696a6abc0",
+    "size_bytes": 220
+  }
+}

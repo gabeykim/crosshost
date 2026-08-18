@@ -1,0 +1,324 @@
+{
+  "ec_cross_condition_reliability": {
+    "pairwise": {
+      "LB_exp_vs_NaCl_exp": {
+        "n": 11471,
+        "rho": 0.93730890031304
+      },
+      "LB_exp_vs_Fe_exp": {
+        "n": 12736,
+        "rho": 0.9306414452525136
+      },
+      "LB_exp_vs_LB-stat": {
+        "n": 10731,
+        "rho": 0.8828204804307949
+      },
+      "LB_exp_vs_M9-exp": {
+        "n": 12868,
+        "rho": 0.9084366066038937
+      },
+      "NaCl_exp_vs_Fe_exp": {
+        "n": 12412,
+        "rho": 0.9378338798659873
+      },
+      "NaCl_exp_vs_LB-stat": {
+        "n": 10480,
+        "rho": 0.8848935154368045
+      },
+      "NaCl_exp_vs_M9-exp": {
+        "n": 12368,
+        "rho": 0.9119302083687041
+      },
+      "Fe_exp_vs_LB-stat": {
+        "n": 11699,
+        "rho": 0.901930301234852
+      },
+      "Fe_exp_vs_M9-exp": {
+        "n": 14372,
+        "rho": 0.9192884140451454
+      },
+      "LB-stat_vs_M9-exp": {
+        "n": 11795,
+        "rho": 0.9042230411842106
+      }
+    },
+    "mean_pairwise_rho": 0.9119306792735944,
+    "implied_reliability_ec_tx": 0.9119306792735944,
+    "caveat": "growth conditions are not technical replicates; this bundles real condition-effects into the 'noise' term and therefore UNDERESTIMATES true single-condition reliability -- treat the implied reliability as a LOWER bound and any resulting disattenuation as an UPPER bound on how much of the cross-host gap measurement error alone could explain"
+  },
+  "robust_rs_icc_crosscheck": {
+    "n": 100,
+    "between_var": 4.106958520333768,
+    "mean_within_var": 0.31423993450713,
+    "icc": 0.9289242639259815,
+    "caveat": "this 100-sequence subset was selected FOR cross-condition robustness (low variance) -- reliability estimate from it is biased upward relative to the full population, reported as a secondary cross-check only"
+  },
+  "scenario1_ec_empirical_plus_sensitivity": {
+    "transcription": {
+      "EC_BS": {
+        "other_host_reliability_0.5": {
+          "rho_observed": 0.2575175805660613,
+          "rho_corrected": 0.3813651186033222,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.7": {
+          "rho_observed": 0.2575175805660613,
+          "rho_corrected": 0.32231235259264307,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.9": {
+          "rho_observed": 0.2575175805660613,
+          "rho_corrected": 0.28425277648143266,
+          "clipped_at_1": "False"
+        }
+      },
+      "EC_PA": {
+        "other_host_reliability_0.5": {
+          "rho_observed": 0.753750672912612,
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "other_host_reliability_0.7": {
+          "rho_observed": 0.753750672912612,
+          "rho_corrected": 0.9434041439839844,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.9": {
+          "rho_observed": 0.753750672912612,
+          "rho_corrected": 0.8320042502697982,
+          "clipped_at_1": "False"
+        }
+      },
+      "BS_PA": {
+        "other_host_reliability_0.5": {
+          "rho_observed": 0.2570510930286312,
+          "rho_corrected": 0.5141021860572624,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.7": {
+          "rho_observed": 0.2570510930286312,
+          "rho_corrected": 0.3672158471837589,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.9": {
+          "rho_observed": 0.2570510930286312,
+          "rho_corrected": 0.285612325587368,
+          "clipped_at_1": "False"
+        }
+      }
+    },
+    "translation": {
+      "EC_BS": {
+        "other_host_reliability_0.5": {
+          "rho_observed": 0.160689304443626,
+          "rho_corrected": 0.321378608887252,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.7": {
+          "rho_observed": 0.160689304443626,
+          "rho_corrected": 0.22955614920518003,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.9": {
+          "rho_observed": 0.160689304443626,
+          "rho_corrected": 0.1785436716040289,
+          "clipped_at_1": "False"
+        }
+      },
+      "EC_PA": {
+        "other_host_reliability_0.5": {
+          "rho_observed": 0.7420946148344976,
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "other_host_reliability_0.7": {
+          "rho_observed": 0.7420946148344976,
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "other_host_reliability_0.9": {
+          "rho_observed": 0.7420946148344976,
+          "rho_corrected": 0.8245495720383306,
+          "clipped_at_1": "False"
+        }
+      },
+      "BS_PA": {
+        "other_host_reliability_0.5": {
+          "rho_observed": 0.26326902314611467,
+          "rho_corrected": 0.5265380462922293,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.7": {
+          "rho_observed": 0.26326902314611467,
+          "rho_corrected": 0.37609860449444954,
+          "clipped_at_1": "False"
+        },
+        "other_host_reliability_0.9": {
+          "rho_observed": 0.26326902314611467,
+          "rho_corrected": 0.2925211368290163,
+          "clipped_at_1": "False"
+        }
+      }
+    }
+  },
+  "scenario2_symmetric_sensitivity_grid": {
+    "transcription": {
+      "EC_BS": {
+        "rho_observed": 0.2575175805660613,
+        "reliability_0.5": {
+          "rho_corrected": 0.5150351611321226,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.7": {
+          "rho_corrected": 0.36788225795151613,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.9": {
+          "rho_corrected": 0.2861306450734014,
+          "clipped_at_1": "False"
+        }
+      },
+      "EC_PA": {
+        "rho_observed": 0.753750672912612,
+        "reliability_0.5": {
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "reliability_0.7": {
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "reliability_0.9": {
+          "rho_corrected": 0.83750074768068,
+          "clipped_at_1": "False"
+        }
+      },
+      "BS_PA": {
+        "rho_observed": 0.2570510930286312,
+        "reliability_0.5": {
+          "rho_corrected": 0.5141021860572624,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.7": {
+          "rho_corrected": 0.3672158471837589,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.9": {
+          "rho_corrected": 0.285612325587368,
+          "clipped_at_1": "False"
+        }
+      }
+    },
+    "translation": {
+      "EC_BS": {
+        "rho_observed": 0.160689304443626,
+        "reliability_0.5": {
+          "rho_corrected": 0.321378608887252,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.7": {
+          "rho_corrected": 0.22955614920518003,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.9": {
+          "rho_corrected": 0.1785436716040289,
+          "clipped_at_1": "False"
+        }
+      },
+      "EC_PA": {
+        "rho_observed": 0.7420946148344976,
+        "reliability_0.5": {
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "reliability_0.7": {
+          "rho_corrected": 1.0,
+          "clipped_at_1": "True"
+        },
+        "reliability_0.9": {
+          "rho_corrected": 0.8245495720383306,
+          "clipped_at_1": "False"
+        }
+      },
+      "BS_PA": {
+        "rho_observed": 0.26326902314611467,
+        "reliability_0.5": {
+          "rho_corrected": 0.5265380462922293,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.7": {
+          "rho_corrected": 0.37609860449444954,
+          "clipped_at_1": "False"
+        },
+        "reliability_0.9": {
+          "rho_corrected": 0.2925211368290163,
+          "clipped_at_1": "False"
+        }
+      }
+    }
+  },
+  "gap_survival_check": {
+    "transcription": {
+      "ec_pa_observed": 0.753750672912612,
+      "bs_pairs_observed_range": [
+        0.2570510930286312,
+        0.2575175805660613
+      ],
+      "reliability_0.5": {
+        "ec_pa_corrected": 1.0,
+        "bs_pairs_corrected": [
+          0.5150351611321226,
+          0.5141021860572624
+        ],
+        "bs_over_ecpa_ratio": 0.5145686735946925
+      },
+      "reliability_0.7": {
+        "ec_pa_corrected": 1.0,
+        "bs_pairs_corrected": [
+          0.36788225795151613,
+          0.3672158471837589
+        ],
+        "bs_over_ecpa_ratio": 0.3675490525676375
+      },
+      "reliability_0.9": {
+        "ec_pa_corrected": 0.83750074768068,
+        "bs_pairs_corrected": [
+          0.2861306450734014,
+          0.285612325587368
+        ],
+        "bs_over_ecpa_ratio": 0.3413387822304142
+      }
+    },
+    "translation": {
+      "ec_pa_observed": 0.7420946148344976,
+      "bs_pairs_observed_range": [
+        0.160689304443626,
+        0.26326902314611467
+      ],
+      "reliability_0.5": {
+        "ec_pa_corrected": 1.0,
+        "bs_pairs_corrected": [
+          0.321378608887252,
+          0.5265380462922293
+        ],
+        "bs_over_ecpa_ratio": 0.42395832758974067
+      },
+      "reliability_0.7": {
+        "ec_pa_corrected": 1.0,
+        "bs_pairs_corrected": [
+          0.22955614920518003,
+          0.37609860449444954
+        ],
+        "bs_over_ecpa_ratio": 0.30282737684981476
+      },
+      "reliability_0.9": {
+        "ec_pa_corrected": 0.8245495720383306,
+        "bs_pairs_corrected": [
+          0.1785436716040289,
+          0.2925211368290163
+        ],
+        "bs_over_ecpa_ratio": 0.285649780442277
+      }
+    }
+  }
+}

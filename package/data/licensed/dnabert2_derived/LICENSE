@@ -1,0 +1,15 @@
+Apache License 2.0
+
+These files (`dnabert2_library.npz`, `dnabert2_rs241.npz`) are frozen
+embeddings extracted by running `zhihan1996/DNABERT-2-117M` on CROSSHOST's
+regulatory sequence library. DNABERT-2's source repository
+(github.com/MAGICS-LAB/DNABERT_2) is Apache-2.0 licensed [VERIFIED via
+GitHub API, Gate 8 packaging] — permissive, commercial use allowed with
+attribution. Kept in a separate directory from data/core/ (MIT) for
+provenance clarity, not because of a use restriction like PromoGen2's.
+
+Note: the HuggingFace model card itself (huggingface.co/zhihan1996/DNABERT-2-117M)
+does not carry a `license` tag; Apache-2.0 was confirmed from the source
+GitHub repository, which is the authoritative statement of terms. If you
+plan to redistribute these embeddings commercially, verify this against the
+model authors directly rather than relying solely on this note.

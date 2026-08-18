@@ -1,0 +1,13 @@
+{
+  "rs241_total_ids": 241,
+  "rs241_ids_found_in_main_library_before_fix": 207,
+  "rows_removed": 207,
+  "final_fold_loads": {
+    "0": 5810,
+    "1": 5818,
+    "2": 5809,
+    "3": 5792,
+    "4": 5813
+  },
+  "verification": "zero RS241 ids remain in fold_assignment_FINAL.parquet, confirmed by set intersection"
+}

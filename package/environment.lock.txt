@@ -1,0 +1,20 @@
+# Pinned dependency versions this project's own results were produced with.
+# Generated via `pip freeze` in the working environment, Gate 8 (2026-08-14).
+# Install with: pip install -r environment.lock.txt
+# (pyproject.toml's `dependencies` pins the same core versions for `pip install -e .`;
+#  this file additionally covers the optional `[models]` extras and their transitive deps
+#  actually observed in the working environment, for exact reproduction.)
+
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+pyarrow==24.0.0
+matplotlib==3.11.0
+torch==2.13.0
+transformers==5.14.1
+einops==0.8.2
+
+# Python 3.14.2 (this project's working environment). Platform: macOS,
+# Apple Silicon (MPS backend available; CUDA not available -- see
+# out/GATE6_MEMO.md for why this matters for the Evo 2 baseline).

@@ -1,0 +1,72 @@
+{
+  "n_duplicate_sequence_groups": 181,
+  "n_oligos_involved": 413,
+  "n_pairwise_relationships": 336,
+  "matches_gate1_181_groups_413_oligos": true,
+  "same_genome_groups": 47,
+  "different_genome_groups": 134,
+  "per_threshold_cluster_split": {
+    "30": {
+      "n_split_groups": 1,
+      "n_split_oligos": 3,
+      "examples": [
+        {
+          "members": [
+            "17650",
+            "21865",
+            "37869"
+          ],
+          "clusters": [
+            "37869",
+            "21865"
+          ],
+          "genomes": [
+            637000188
+          ]
+        }
+      ]
+    },
+    "50": {
+      "n_split_groups": 1,
+      "n_split_oligos": 3,
+      "examples": [
+        {
+          "members": [
+            "17650",
+            "21865",
+            "37869"
+          ],
+          "clusters": [
+            "37869",
+            "21865"
+          ],
+          "genomes": [
+            637000188
+          ]
+        }
+      ]
+    },
+    "70": {
+      "n_split_groups": 1,
+      "n_split_oligos": 3,
+      "examples": [
+        {
+          "members": [
+            "17650",
+            "21865",
+            "37869"
+          ],
+          "clusters": [
+            "37869",
+            "21865"
+          ],
+          "genomes": [
+            637000188
+          ]
+        }
+      ]
+    }
+  },
+  "safety_net_mechanism": "majority-fold consolidation: minority members of a split exact-duplicate group are reassigned to the fold holding the largest share of the group; no oligo dropped, no cluster merged",
+  "confidence_verdict": "Clustering is NOT sufficient alone -- different-genome exact duplicates that clustering missed imply near-duplicate (non-exact) cross-genome pairs are also being missed, undetectably. Per-fold max-identity audit is the authoritative check."
+}

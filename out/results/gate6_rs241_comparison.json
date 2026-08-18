@@ -1,0 +1,542 @@
+[
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.4718992319508448,
+    "rho_lower90": 0.4538261136712749,
+    "rho_upper90": 0.4893456221198155
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "genomic",
+    "rho_mean": 0.5028755760368664,
+    "rho_lower90": 0.4791066052227341,
+    "rho_upper90": 0.5221038402457757
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "physiology",
+    "rho_mean": 0.26669738863287246,
+    "rho_lower90": 0.09852903225806449,
+    "rho_upper90": 0.42521781874039927
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "dnabert2",
+    "rho_mean": 0.4381996927803379,
+    "rho_lower90": 0.4350402457757296,
+    "rho_upper90": 0.4414439324116743
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "promogen2",
+    "rho_mean": 0.4062463901689707,
+    "rho_lower90": 0.40329462365591395,
+    "rho_upper90": 0.40909615975422425
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.5337569435035902,
+    "rho_lower90": 0.5197032922368241,
+    "rho_upper90": 0.5478105947703562
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "genomic",
+    "rho_mean": 0.48424468229237216,
+    "rho_lower90": 0.438603170302127,
+    "rho_upper90": 0.514557648015174
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "physiology",
+    "rho_mean": 0.39426906923181126,
+    "rho_lower90": 0.1271562118954071,
+    "rho_upper90": 0.5490841349410648
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "dnabert2",
+    "rho_mean": 0.4088822652757078,
+    "rho_lower90": 0.4074610486383958,
+    "rho_upper90": 0.41045522286952985
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "promogen2",
+    "rho_mean": 0.49206069638260386,
+    "rho_lower90": 0.4869787291694891,
+    "rho_upper90": 0.4975044031973986
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.6578008658008658,
+    "rho_lower90": 0.6494619666048237,
+    "rho_upper90": 0.6661323438466296
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "genomic",
+    "rho_mean": 0.3433494124922696,
+    "rho_lower90": 0.04802968460111316,
+    "rho_upper90": 0.5696573902288188
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "physiology",
+    "rho_mean": 0.42047247990105135,
+    "rho_lower90": 0.26328509585652443,
+    "rho_upper90": 0.5550624613481756
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "dnabert2",
+    "rho_mean": 0.5934149659863944,
+    "rho_lower90": 0.5868002473716759,
+    "rho_upper90": 0.598599876314162
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "promogen2",
+    "rho_mean": 0.5878119975262832,
+    "rho_lower90": 0.5819789734075448,
+    "rho_upper90": 0.5922622139764997
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.4726534573922688,
+    "rho_lower90": 0.4580482762572671,
+    "rho_upper90": 0.4901537927540963
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "genomic",
+    "rho_mean": 0.38343709807157655,
+    "rho_lower90": 0.3454631536693496,
+    "rho_upper90": 0.4176652542168554
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "physiology",
+    "rho_mean": 0.27232914329849095,
+    "rho_lower90": 0.14517750475875918,
+    "rho_upper90": 0.38782756907677135
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "dnabert2",
+    "rho_mean": 0.30075594379492154,
+    "rho_lower90": 0.2988029575012736,
+    "rho_upper90": 0.30395647406039067
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "promogen2",
+    "rho_mean": 0.462240686834298,
+    "rho_lower90": 0.45653875594221727,
+    "rho_upper90": 0.46815961620345065
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.6947443384133314,
+    "rho_lower90": 0.6812025462075313,
+    "rho_upper90": 0.7092210547843649
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "genomic",
+    "rho_mean": 0.5962281653208871,
+    "rho_lower90": 0.5035523466231343,
+    "rho_upper90": 0.6917744933697078
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "physiology",
+    "rho_mean": 0.09719778393756459,
+    "rho_lower90": -0.21528601010156345,
+    "rho_upper90": 0.43333077690006905
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "dnabert2",
+    "rho_mean": 0.6670808088554849,
+    "rho_lower90": 0.6618379294351378,
+    "rho_upper90": 0.6718591478312315
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "promogen2",
+    "rho_mean": 0.6726494509146553,
+    "rho_lower90": 0.670781063403197,
+    "rho_upper90": 0.6743381576881078
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.5832436940693821,
+    "rho_lower90": 0.5665432905799878,
+    "rho_upper90": 0.5999440975587764
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "genomic",
+    "rho_mean": 0.5378382886639768,
+    "rho_lower90": 0.4972675427721299,
+    "rho_upper90": 0.5748060320537386
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "physiology",
+    "rho_mean": 0.4886477469963708,
+    "rho_lower90": 0.3927029281157722,
+    "rho_upper90": 0.5844663345580777
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "dnabert2",
+    "rho_mean": 0.4350355025584383,
+    "rho_lower90": 0.4310952821044564,
+    "rho_upper90": 0.4392426120866488
+  },
+  {
+    "config": "PRIMARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "promogen2",
+    "rho_mean": 0.4670333385929716,
+    "rho_lower90": 0.45954962468723937,
+    "rho_upper90": 0.4738516331176882
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.5075186001653347,
+    "rho_lower90": 0.4976140121245522,
+    "rho_upper90": 0.5178423808211629
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "genomic",
+    "rho_mean": 0.4631107054284927,
+    "rho_lower90": 0.4385832529622486,
+    "rho_upper90": 0.48613254340038575
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "physiology",
+    "rho_mean": 0.39694268393496823,
+    "rho_lower90": 0.33125447781758055,
+    "rho_upper90": 0.45412303664921466
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "dnabert2",
+    "rho_mean": 0.48925633783411404,
+    "rho_lower90": 0.4863950124001102,
+    "rho_upper90": 0.4920818407274731
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "transcription",
+    "system": "promogen2",
+    "rho_mean": 0.41569922843758605,
+    "rho_lower90": 0.4070108845411958,
+    "rho_upper90": 0.42385746762193444
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.6092667883240763,
+    "rho_lower90": 0.5938981105913668,
+    "rho_upper90": 0.6216710628023174
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "genomic",
+    "rho_mean": 0.559128847946832,
+    "rho_lower90": 0.5351267441767805,
+    "rho_upper90": 0.5840770107340088
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "physiology",
+    "rho_mean": 0.5019655906095355,
+    "rho_lower90": 0.46479771135318637,
+    "rho_upper90": 0.5348726980054029
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "dnabert2",
+    "rho_mean": 0.48422539027325107,
+    "rho_lower90": 0.4803767660910518,
+    "rho_upper90": 0.4873692514881783
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "SE",
+    "readout": "translation",
+    "system": "promogen2",
+    "rho_mean": 0.4906858768497638,
+    "rho_lower90": 0.4829175465578657,
+    "rho_upper90": 0.4974502466351631
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.6588011869027488,
+    "rho_lower90": 0.6555867682917965,
+    "rho_upper90": 0.6621914422323425
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "genomic",
+    "rho_mean": 0.5579410908473352,
+    "rho_lower90": 0.47825543754199573,
+    "rho_upper90": 0.6308169273737136
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "physiology",
+    "rho_mean": 0.25483175009781434,
+    "rho_lower90": 0.02363345756317905,
+    "rho_upper90": 0.48603004263244964
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "dnabert2",
+    "rho_mean": 0.6118597239486128,
+    "rho_lower90": 0.6085481324142007,
+    "rho_upper90": 0.6147394358232041
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "transcription",
+    "system": "promogen2",
+    "rho_mean": 0.5910886259522644,
+    "rho_lower90": 0.5834304741272267,
+    "rho_upper90": 0.5992712030785132
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.4845860263807532,
+    "rho_lower90": 0.4666699476108859,
+    "rho_upper90": 0.5041416100302888
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "genomic",
+    "rho_mean": 0.4083656648594035,
+    "rho_lower90": 0.3775553262978643,
+    "rho_upper90": 0.44487905311142145
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "physiology",
+    "rho_mean": 0.22726286394514691,
+    "rho_lower90": 0.13227723308946646,
+    "rho_upper90": 0.31941575256271354
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "dnabert2",
+    "rho_mean": 0.36038567555924506,
+    "rho_lower90": 0.35645704043615356,
+    "rho_upper90": 0.363880604029629
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "VN",
+    "readout": "translation",
+    "system": "promogen2",
+    "rho_mean": 0.43511155560017445,
+    "rho_lower90": 0.43010996404503743,
+    "rho_upper90": 0.4402121170467036
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "sequence_only",
+    "rho_mean": 0.735395113361215,
+    "rho_lower90": 0.7224895443539512,
+    "rho_upper90": 0.749414924058992
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "genomic",
+    "rho_mean": 0.648973805855162,
+    "rho_lower90": 0.5584419986792868,
+    "rho_upper90": 0.7156134712744884
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "physiology",
+    "rho_mean": 0.6251705921197448,
+    "rho_lower90": 0.562857142857143,
+    "rho_upper90": 0.6757807616112702
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "dnabert2",
+    "rho_mean": 0.7012727272727273,
+    "rho_lower90": 0.7000383006823686,
+    "rho_upper90": 0.7025282852740481
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "transcription",
+    "system": "promogen2",
+    "rho_mean": 0.6697349768875194,
+    "rho_lower90": 0.6615690072639226,
+    "rho_upper90": 0.6778683689192164
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "sequence_only",
+    "rho_mean": 0.6197174267130112,
+    "rho_lower90": 0.591904794370305,
+    "rho_upper90": 0.6492204626017433
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "genomic",
+    "rho_mean": 0.5850715191785985,
+    "rho_lower90": 0.5509144989627254,
+    "rho_upper90": 0.6244695468088982
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "physiology",
+    "rho_mean": 0.609450593965323,
+    "rho_lower90": 0.5895789965568612,
+    "rho_upper90": 0.6290172339747607
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "dnabert2",
+    "rho_mean": 0.5151054934632363,
+    "rho_lower90": 0.5109539324227377,
+    "rho_upper90": 0.5188889956063487
+  },
+  {
+    "config": "SECONDARY",
+    "held_out": "CG",
+    "readout": "translation",
+    "system": "promogen2",
+    "rho_mean": 0.5336487744724245,
+    "rho_lower90": 0.5257929365138865,
+    "rho_upper90": 0.5419407492855721
+  }
+]

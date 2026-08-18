@@ -1,0 +1,45 @@
+{
+  "identity": {
+    "predict_seqonly": {
+      "tx_active_logit": 3.5762786865234375e-07,
+      "tx_strength": 4.76837158203125e-07,
+      "tl_active_logit": 4.76837158203125e-07,
+      "tl_strength": 4.76837158203125e-07
+    },
+    "predict_film": {
+      "tx_active_logit": 7.152557373046875e-07,
+      "tx_strength": 8.940696716308594e-08,
+      "tl_active_logit": 2.384185791015625e-07,
+      "tl_strength": 3.5762786865234375e-07
+    },
+    "overall_max_abs_diff": 7.152557373046875e-07,
+    "verdict": "NUMERICALLY IDENTICAL (float32 precision)"
+  },
+  "benchmark": {
+    "5810_rows": {
+      "n_rows": 5810,
+      "chunked_sec": 26.249021291732788,
+      "unbatched_sec_measured_earlier": 28.474313020706177,
+      "speedup": 1.0847761790522168
+    },
+    "23232_rows": {
+      "n_rows": 23232,
+      "chunked_sec": 114.82751321792603,
+      "unbatched_sec_measured_earlier": 8454.029106855392,
+      "speedup": 73.62372370470888
+    },
+    "scaling_check": {
+      "row_ratio": 3.9986230636833047,
+      "time_ratio": 4.374544556984732,
+      "roughly_linear": true
+    },
+    "mps_5810_rows": {
+      "n_rows": 5810,
+      "chunked_sec": 1.2555251121520996
+    },
+    "mps_23232_rows": {
+      "n_rows": 23232,
+      "chunked_sec": 1.3427231311798096
+    }
+  }
+}

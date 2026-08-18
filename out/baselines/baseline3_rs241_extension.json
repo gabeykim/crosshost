@@ -1,0 +1,187 @@
+{
+  "sequence_availability": {
+    "n_total_rs241": 241,
+    "n_sequence_available": 207,
+    "pct_available": 85.9
+  },
+  "results": {
+    "PRIMARY": {
+      "SE": {
+        "transcription": {
+          "held_out_host": "SE",
+          "config": "PRIMARY",
+          "train_hosts": [
+            "EC",
+            "BS",
+            "PA"
+          ],
+          "n_train": 61415,
+          "n_test": 125,
+          "mcc": 0.29179383567063,
+          "auc": 0.7908902691511386,
+          "spearman_rho": 0.43289708141321037
+        },
+        "translation": {
+          "held_out_host": "SE",
+          "config": "PRIMARY",
+          "train_hosts": [
+            "EC",
+            "BS",
+            "PA"
+          ],
+          "n_train": 59161,
+          "n_test": 121,
+          "mcc": null,
+          "auc": null,
+          "spearman_rho": 0.4201192250372577
+        }
+      },
+      "VN": {
+        "transcription": {
+          "held_out_host": "VN",
+          "config": "PRIMARY",
+          "train_hosts": [
+            "EC",
+            "BS",
+            "PA"
+          ],
+          "n_train": 61415,
+          "n_test": 99,
+          "mcc": 0.31622776601683794,
+          "auc": 0.7566115702479339,
+          "spearman_rho": 0.6268893011750154
+        },
+        "translation": {
+          "held_out_host": "VN",
+          "config": "PRIMARY",
+          "train_hosts": [
+            "EC",
+            "BS",
+            "PA"
+          ],
+          "n_train": 59161,
+          "n_test": 115,
+          "mcc": null,
+          "auc": null,
+          "spearman_rho": 0.3527645606087937
+        }
+      },
+      "CG": {
+        "transcription": {
+          "held_out_host": "CG",
+          "config": "PRIMARY",
+          "train_hosts": [
+            "EC",
+            "BS",
+            "PA"
+          ],
+          "n_train": 61415,
+          "n_test": 118,
+          "mcc": 0.4070558367003201,
+          "auc": 0.8199597354040841,
+          "spearman_rho": 0.6950175115678605
+        },
+        "translation": {
+          "held_out_host": "CG",
+          "config": "PRIMARY",
+          "train_hosts": [
+            "EC",
+            "BS",
+            "PA"
+          ],
+          "n_train": 59161,
+          "n_test": 110,
+          "mcc": null,
+          "auc": null,
+          "spearman_rho": 0.3851092126321484
+        }
+      }
+    },
+    "SECONDARY": {
+      "SE": {
+        "transcription": {
+          "held_out_host": "SE",
+          "config": "SECONDARY",
+          "train_hosts": [
+            "EC",
+            "PA"
+          ],
+          "n_train": 45718,
+          "n_test": 191,
+          "mcc": 0.09977664783470418,
+          "auc": 0.7401149425287357,
+          "spearman_rho": 0.37323815100578667
+        },
+        "translation": {
+          "held_out_host": "SE",
+          "config": "SECONDARY",
+          "train_hosts": [
+            "EC",
+            "PA"
+          ],
+          "n_train": 47597,
+          "n_test": 196,
+          "mcc": null,
+          "auc": null,
+          "spearman_rho": 0.4075831347767534
+        }
+      },
+      "VN": {
+        "transcription": {
+          "held_out_host": "VN",
+          "config": "SECONDARY",
+          "train_hosts": [
+            "EC",
+            "PA"
+          ],
+          "n_train": 45718,
+          "n_test": 146,
+          "mcc": 0.1083027389350316,
+          "auc": 0.763036963036963,
+          "spearman_rho": 0.6044907772529194
+        },
+        "translation": {
+          "held_out_host": "VN",
+          "config": "SECONDARY",
+          "train_hosts": [
+            "EC",
+            "PA"
+          ],
+          "n_train": 47597,
+          "n_test": 188,
+          "mcc": null,
+          "auc": null,
+          "spearman_rho": 0.3535789670981503
+        }
+      },
+      "CG": {
+        "transcription": {
+          "held_out_host": "CG",
+          "config": "SECONDARY",
+          "train_hosts": [
+            "EC",
+            "PA"
+          ],
+          "n_train": 45718,
+          "n_test": 176,
+          "mcc": 0.19669550459875337,
+          "auc": 0.8078862314156432,
+          "spearman_rho": 0.6628791547435616
+        },
+        "translation": {
+          "held_out_host": "CG",
+          "config": "SECONDARY",
+          "train_hosts": [
+            "EC",
+            "PA"
+          ],
+          "n_train": 47597,
+          "n_test": 182,
+          "mcc": null,
+          "auc": null,
+          "spearman_rho": 0.4425475289145249
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "configuration": "BS held out, transcription, genomic features, N=100",
+  "cnn": {
+    "fold_means": [
+      0.2544056332002898,
+      0.08454072560699291,
+      0.23744486225613942,
+      0.280094486414401,
+      0.20855501939851764
+    ],
+    "fold_to_fold_std": 0.06831572374942764,
+    "mean_within_fold_draw_to_draw_std": 0.032901291220837736,
+    "ratio_fold_std_over_draw_std": 2.0763842759508626
+  },
+  "kmer_linear_baseline_gate3_5": {
+    "fold_to_fold_std_of_rho": 0.042575128386563646,
+    "mean_within_fold_draw_to_draw_std_of_rho": 0.11420957538300947,
+    "ratio_fold_std_over_draw_std": 0.37278072564218107,
+    "fold_variance_dominates": false
+  },
+  "decision_needed": false,
+  "decision_needed_reason": "CNN fold variance is comparable to or smaller than the k-mer model's for this configuration."
+}

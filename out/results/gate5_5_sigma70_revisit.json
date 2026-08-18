@@ -1,0 +1,13 @@
+{
+  "seqonly_zeroshot_tx_mean": 0.36985571821878144,
+  "seqonly_zeroshot_tl_mean": 0.41452353614109044,
+  "sigma70_gate3_tx_range": [
+    0.24,
+    0.43
+  ],
+  "sigma70_gate3_tl_abs_range": [
+    0.0,
+    0.02
+  ],
+  "verdict": "DOES NOT TRACK -- sequence-only tl zero-shot (0.41) exceeds tx (0.37) on average, opposite of the sigma-70-specific asymmetry; CNN finds real transferable translation signal that the simple sigma70/deltaG biophysical proxies from Gate 3 did not capture"
+}

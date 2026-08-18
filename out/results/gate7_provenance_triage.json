@@ -1,0 +1,70 @@
+{
+  "figures_regenerable": [
+    "out/baselines/calibration_curve_transcription.png",
+    "out/baselines/calibration_curve_transcription_fold_resolved.png",
+    "out/baselines/calibration_curve_translation.png",
+    "out/baselines/calibration_curve_translation_fold_resolved.png",
+    "out/figures/calibration_curve_BS_transcription.png",
+    "out/figures/calibration_curve_BS_translation.png",
+    "out/figures/calibration_curve_EC_transcription.png",
+    "out/figures/calibration_curve_EC_translation.png",
+    "out/figures/calibration_curve_PA_transcription.png",
+    "out/figures/calibration_curve_PA_translation.png",
+    "out/figures/gate5_5_fourway_comparison.png",
+    "out/figures/gate5_5_performance_vs_ceiling.png",
+    "out/figures/gate5_5_rs241_fourway.png",
+    "out/figures/gate5_rs241_zeroshot.png"
+  ],
+  "data_cited_verified": {
+    "gate5_hmain_table.csv (PRE-REGISTERED)": {
+      "checked_value": "H_MAIN_TX genomic frozen-trunk rho_mean",
+      "csv": 0.2130081453752682,
+      "json": 0.2130081453752682,
+      "match": true
+    },
+    "gate5_hscience_table.csv (PRE-REGISTERED)": {
+      "checked_value": "EC transcription genomic head_only rho_mean",
+      "csv": 0.6024746263101448,
+      "json": 0.6024746263101448,
+      "match": true
+    },
+    "gate5_hdiagnostic_table.csv (PRE-REGISTERED)": {
+      "checked_value": "EC transcription B3_free_embedding rho_mean",
+      "csv": 0.6309564838067871,
+      "json": 0.6309564838067871,
+      "match": true
+    },
+    "gate5_extrapolation_table.csv": {
+      "checked_value": "genomic PA extrapolation_total",
+      "csv": 29.820202018501305,
+      "json": 29.820202018501302,
+      "match": true
+    },
+    "gate5_5_sigma70_revisit.json": {
+      "checked_value": "seqonly zeroshot tx/tl means",
+      "match": true
+    },
+    "gate5_5_rs241_fourway.csv": {
+      "checked_value": "PRIMARY SE transcription seqonly_mean",
+      "match": true
+    },
+    "cnn_architecture_validation.json": {
+      "checked_value": "mcc, spearman_rho vs Gate 3 memo citation",
+      "note": "single non-repeatable training run; consistent with state.json gate_3 citation (mcc~0.219, rho~0.515) to reported precision",
+      "match": true
+    },
+    "gate4_bs_translation_ceiling_fold_resolved.json": {
+      "checked_value": "fold-0 N10..N943 direct regression curve vs gate_3_5 citation",
+      "note": "consistent with state.json gate_3_5.task1_bs_translation_feasibility.direct_regression_learning_curve to reported precision",
+      "match": true
+    },
+    "unit_test_summary.json": {
+      "checked_value": "all 6 unit test PASS results vs gate_2 citation",
+      "note": "exact match to state.json gate_2.task2_genomic_features.unit_tests",
+      "match": true
+    }
+  },
+  "data_uncited": [],
+  "all_data_cited_verified": true,
+  "pre_registered_verdicts_at_risk": false
+}

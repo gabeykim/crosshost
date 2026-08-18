@@ -1,0 +1,45 @@
+{
+  "PRIMARY": {
+    "description": "Train on EC+BS+PA (the three primary hosts), matched to the main-library configuration used for the core benchmark.",
+    "train_hosts": [
+      "EC",
+      "BS",
+      "PA"
+    ],
+    "per_held_out_host": {
+      "SE": {
+        "n_transcription": 146,
+        "n_translation": 141
+      },
+      "VN": {
+        "n_transcription": 113,
+        "n_translation": 134
+      },
+      "CG": {
+        "n_transcription": 138,
+        "n_translation": 130
+      }
+    }
+  },
+  "SECONDARY": {
+    "description": "Train on EC+PA only (drop weak-coverage B. subtilis). Higher N. Framed as the deeper-phylogenetic-distance variant: both training hosts are Gram-negative Proteobacteria, so held-out transfer to C. glutamicum (Actinobacteria, Gram-positive) tests a larger phylogenetic jump than the PRIMARY config.",
+    "train_hosts": [
+      "EC",
+      "PA"
+    ],
+    "per_held_out_host": {
+      "SE": {
+        "n_transcription": 216,
+        "n_translation": 225
+      },
+      "VN": {
+        "n_transcription": 162,
+        "n_translation": 215
+      },
+      "CG": {
+        "n_transcription": 200,
+        "n_translation": 211
+      }
+    }
+  }
+}
