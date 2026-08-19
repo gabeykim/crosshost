@@ -18,18 +18,22 @@
 
 PYTHON := python3
 
-.PHONY: all reproduce reproduce-full package audit test clean help
+.PHONY: all reproduce reproduce-full package audit verify-citations test clean help
 
 help:
-	@echo "make audit           - run both audit scripts (leakage + provenance), fast, VERIFIED"
-	@echo "make test            - run package tests (loaders, evaluate API, held-out scoring), VERIFIED"
-	@echo "make package         - (re)build package/ from data/ and out/, VERIFIED"
-	@echo "make reproduce       - regenerate all figures/tables from shipped intermediate results, fast"
-	@echo "make reproduce-full  - full pipeline from raw/ (MANY HOURS -- CNN/FM training) -- NOT re-tested this session"
+	@echo "make audit             - run both audit scripts (leakage + provenance), fast, offline, VERIFIED"
+	@echo "make verify-citations  - mechanically verify every manuscript citation against CrossRef/arXiv (live network, run on demand alongside the audits -- not part of 'audit' itself, which must stay fast and offline)"
+	@echo "make test              - run package tests (loaders, evaluate API, held-out scoring), VERIFIED"
+	@echo "make package           - (re)build package/ from data/ and out/, VERIFIED"
+	@echo "make reproduce         - regenerate all figures/tables from shipped intermediate results, fast"
+	@echo "make reproduce-full    - full pipeline from raw/ (MANY HOURS -- CNN/FM training) -- NOT re-tested this session"
 
 audit:
 	$(PYTHON) scripts/audit_leakage.py
 	$(PYTHON) scripts/audit_provenance.py
+
+verify-citations:
+	$(PYTHON) scripts/97_verify_citations.py
 
 test:
 	cd package && $(PYTHON) -m pytest tests/ -v

@@ -2597,5 +2597,63 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (165 files) -- unchanged despite figure renaming, since PREPRINT/ remains excluded via SR9"
     }
+  },
+  "gate_13": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS",
+    "task1_citation_verification": {
+      "script": "scripts/97_verify_citations.py",
+      "method": "CrossRef API by DOI where known, arXiv API otherwise; character-by-character author-surname comparison against canonical record",
+      "citations_checked": 16,
+      "verified_clean": 11,
+      "mismatch_unexplained": 0,
+      "mismatch_manually_reviewed_and_explained": 5,
+      "unresolved_or_skipped": 0,
+      "manually_reviewed_mismatches": [
+        "yim2019_drafts: CrossRef article-number 'MSB198875' vs citable 'e8875' -- benign EMBO Press format difference",
+        "dnabert2: arXiv-only lookup shows venue=arXiv/year=2023 vs stated ICLR 2024 -- ICLR 2024 acceptance independently confirmed via ICLR proceedings page",
+        "bend2024: same pattern -- ICLR 2024 acceptance independently confirmed via OpenReview",
+        "dart_eval2024: CrossRef formal venue name ('Advances in Neural Information Processing Systems 37') vs manuscript's informal-but-more-specific 'NeurIPS 2024 Datasets and Benchmarks Track' -- not an error",
+        "iclr2025_specialized_fm: same arXiv-only pattern; this citation was also found orphaned (not cited inline anywhere) and removed from References regardless"
+      ],
+      "second_fabrication_caught_and_fixed_this_gate": "drafted 'Feuer et al.' as the removed ICLR-2025 citation's author before cross-checking against the script's own JSON output -- caught immediately (real first author: Xu), corrected before commit. Second instance of exactly the Gate-12 failure mode; caught this time by mechanically cross-checking every author list in the manuscript against the script's canonical output before finalizing, not by chance.",
+      "dnabert2_resolution": "Zhou, Ji, Li, Dutta, Davuluri, Liu (2024). ICLR 2024, arXiv:2306.15006. Cite ICLR 2024 as the peer-reviewed venue; arXiv preprint predates acceptance.",
+      "makefile": "added 'verify-citations' target, listed alongside 'audit' in help text; NOT folded into 'audit' itself (which must stay fast/offline) since this is a live-network check"
+    },
+    "task2_benchmark_landscape": {
+      "file": "out/results/gate13_benchmark_landscape.md",
+      "suites_checked": [
+        "BEND",
+        "Genomic Benchmarks",
+        "DART-Eval",
+        "DNALONGBENCH",
+        "Nucleotide Transformer suite"
+      ],
+      "bacterial_task_found": false,
+      "cross_host_task_found": false,
+      "stop_condition_triggered": false,
+      "organisms_by_suite": {
+        "BEND": "human only",
+        "Genomic Benchmarks": "human, mouse, C. elegans, D. melanogaster",
+        "DART-Eval": "human only (ENCODE cCREs, 5 cell lines)",
+        "DNALONGBENCH": "human, mouse",
+        "Nucleotide Transformer suite": "human, mouse, yeast (18-task benchmark; pretraining corpus is broader but not the task suite)"
+      },
+      "old_claim": "no existing benchmark suite poses a cross-host prediction task (exhaustive negative over all suites that exist)",
+      "new_claim": "the benchmark suites we examined -- 5 named suites -- define tasks on human/mouse/C.elegans/D.melanogaster/yeast genomes; we found no bacterial cross-host regulatory activity task among them (bounded, checkable claim)"
+    },
+    "task3_what_we_could_not_do": {
+      "removed": "the benchmark-task-composition-not-verified bullet -- now genuinely closed by Task 2",
+      "kept_unchanged": "the Chappell/Sun citation-non-verification bullet (Gate 12) -- still open, unrelated to this gate's DNABERT-2/benchmark-suite work; the PromoGen2/DNABERT-2 native-protocol-not-used bullet -- still open, a protocol-fairness gap not a citation-accuracy gap"
+    },
+    "no_established_number_moved": true,
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (165 files)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (167 files -- +2 for gate13_citation_verification.json/.csv)"
+    }
   }
 }

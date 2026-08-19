@@ -1,0 +1,896 @@
+[
+  {
+    "key": "johns2018",
+    "stated_title": "Metagenomic mining of regulatory elements enables programmable species-selective gene expression",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match (checked against et al.-truncated list)"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Metagenomic mining of regulatory elements enables programmable species-selective gene expression' canonical='Metagenomic mining of regulatory elements enables programmable species-selective gene expression'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nature Methods' canonical='Nature Methods'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2018 canonical=2018"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='15' canonical='15'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='323-329' canonical='323-329'"
+      },
+      "doi": {
+        "ok": null,
+        "detail": "manuscript states none; canonical: '10.1038/nmeth.4633'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Johns",
+        "Gomes",
+        "Yim",
+        "Yang",
+        "Blazejewski",
+        "Smillie",
+        "Smith",
+        "Alm",
+        "Kosuri",
+        "Wang"
+      ],
+      "title": "Metagenomic mining of regulatory elements enables programmable species-selective gene expression",
+      "venue": "Nature Methods",
+      "volume": "15",
+      "pages": "323-329",
+      "year": 2018,
+      "doi": "10.1038/nmeth.4633"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "yim2019_drafts",
+    "stated_title": "Multiplex transcriptional characterizations across diverse bacterial species using cell-free systems",
+    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match (checked against et al.-truncated list)"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Multiplex transcriptional characterizations across diverse bacterial species using cell-free systems' canonical='Multiplex transcriptional characterizations across diverse bacterial species using cell\u2010free systems'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Molecular Systems Biology' canonical='Molecular Systems Biology'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2019 canonical=2019"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='15' canonical='15'"
+      },
+      "pages": {
+        "ok": false,
+        "detail": "manuscript='e8875' canonical='MSB198875'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.15252/msb.20198875' canonical='10.15252/msb.20198875'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Yim",
+        "Johns",
+        "Park",
+        "Gomes",
+        "McBee",
+        "Richardson",
+        "Ronda",
+        "Chen",
+        "Garenne",
+        "Noireaux",
+        "Wang"
+      ],
+      "title": "Multiplex transcriptional characterizations across diverse bacterial species using cell\u2010free systems",
+      "venue": "Molecular Systems Biology",
+      "volume": "15",
+      "pages": "MSB198875",
+      "year": 2019,
+      "doi": "10.15252/msb.20198875"
+    },
+    "error": null,
+    "mismatched_fields": [
+      "pages"
+    ],
+    "manual_review_note": "CrossRef article-number field returns 'MSB198875' (EMBO Press internal format); 'e8875' is the correct citable article number per the journal's own citation convention -- benign format difference, not an error."
+  },
+  {
+    "key": "chan2023",
+    "stated_title": "Revealing the Host-Dependent Nature of an Engineered Genetic Inverter in Concordance with Physiology",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Revealing the Host-Dependent Nature of an Engineered Genetic Inverter in Concordance with Physiology' canonical='Revealing the Host-Dependent Nature of an Engineered Genetic Inverter in Concordance with Physiology'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='BioDesign Research' canonical='BioDesign Research'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2023 canonical=2023"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='5' canonical='5'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='0016' canonical='0016'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.34133/bdr.0016' canonical='10.34133/bdr.0016'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Chan",
+        "Baldwin",
+        "Bernstein"
+      ],
+      "title": "Revealing the Host-Dependent Nature of an Engineered Genetic Inverter in Concordance with Physiology",
+      "venue": "BioDesign Research",
+      "volume": "5",
+      "pages": "0016",
+      "year": 2023,
+      "doi": "10.34133/bdr.0016"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "chan2024",
+    "stated_title": "Pangenomic landscapes shape performances of a synthetic genetic circuit across Stutzerimonas species",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Pangenomic landscapes shape performances of a synthetic genetic circuit across Stutzerimonas species' canonical='Pangenomic landscapes shape performances of a synthetic genetic circuit across\\n            <i>Stutzerimonas</i>\\n            species'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='mSystems' canonical='mSystems'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2024 canonical=2024"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='9(9)' canonical='9'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='e00849-24' canonical='e00849-24'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1128/msystems.00849-24' canonical='10.1128/msystems.00849-24'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Chan",
+        "Bernstein"
+      ],
+      "title": "Pangenomic landscapes shape performances of a synthetic genetic circuit across\n            <i>Stutzerimonas</i>\n            species",
+      "venue": "mSystems",
+      "volume": "9",
+      "pages": "e00849-24",
+      "year": 2024,
+      "doi": "10.1128/msystems.00849-24"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "el_houdaigui2019",
+    "stated_title": "Bacterial genome architecture shapes global transcriptional regulation by DNA supercoiling",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Bacterial genome architecture shapes global transcriptional regulation by DNA supercoiling' canonical='Bacterial genome architecture shapes global transcriptional regulation by DNA supercoiling'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nucleic Acids Research' canonical='Nucleic Acids Research'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2019 canonical=2019"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='47(11)' canonical='47'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='5648-5657' canonical='5648-5657'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1093/nar/gkz300' canonical='10.1093/nar/gkz300'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "El\u00a0Houdaigui",
+        "Forquet",
+        "Hindr\u00e9",
+        "Schneider",
+        "Nasser",
+        "Reverchon",
+        "Meyer"
+      ],
+      "title": "Bacterial genome architecture shapes global transcriptional regulation by DNA supercoiling",
+      "venue": "Nucleic Acids Research",
+      "volume": "47",
+      "pages": "5648-5657",
+      "year": 2019,
+      "doi": "10.1093/nar/gkz300"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "borkowski2018",
+    "stated_title": "Cell-free prediction of protein expression costs for growing cells",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Cell-free prediction of protein expression costs for growing cells' canonical='Cell-free prediction of protein expression costs for growing cells'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nature Communications' canonical='Nature Communications'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2018 canonical=2018"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='9' canonical='9'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='1457' canonical='1457'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1038/s41467-018-03970-x' canonical='10.1038/s41467-018-03970-x'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Borkowski",
+        "Bricio",
+        "Murgiano",
+        "Rothschild-Mancinelli",
+        "Stan",
+        "Ellis"
+      ],
+      "title": "Cell-free prediction of protein expression costs for growing cells",
+      "venue": "Nature Communications",
+      "volume": "9",
+      "pages": "1457",
+      "year": 2018,
+      "doi": "10.1038/s41467-018-03970-x"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "pandi2022",
+    "stated_title": "A versatile active learning workflow for optimization of genetic and metabolic networks",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match (checked against et al.-truncated list)"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='A versatile active learning workflow for optimization of genetic and metabolic networks' canonical='A versatile active learning workflow for optimization of genetic and metabolic networks'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nature Communications' canonical='Nature Communications'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2022 canonical=2022"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='13' canonical='13'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='3876' canonical='3876'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1038/s41467-022-31245-z' canonical='10.1038/s41467-022-31245-z'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Pandi",
+        "Diehl",
+        "Yazdizadeh Kharrazi",
+        "Scholz",
+        "Bobkova",
+        "Faure",
+        "Nattermann",
+        "Adam",
+        "Chapin",
+        "Foroughijabbari",
+        "Moritz",
+        "Paczia",
+        "Cortina",
+        "Faulon",
+        "Erb"
+      ],
+      "title": "A versatile active learning workflow for optimization of genetic and metabolic networks",
+      "venue": "Nature Communications",
+      "volume": "13",
+      "pages": "3876",
+      "year": 2022,
+      "doi": "10.1038/s41467-022-31245-z"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "lafleur2022",
+    "stated_title": "Automated model-predictive design of synthetic promoters to control transcriptional profiles in bacteria",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Automated model-predictive design of synthetic promoters to control transcriptional profiles in bacteria' canonical='Automated model-predictive design of synthetic promoters to control transcriptional profiles in bacteria'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nature Communications' canonical='Nature Communications'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2022 canonical=2022"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='13' canonical='13'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='5159' canonical='5159'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1038/s41467-022-32829-5' canonical='10.1038/s41467-022-32829-5'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "LaFleur",
+        "Hossain",
+        "Salis"
+      ],
+      "title": "Automated model-predictive design of synthetic promoters to control transcriptional profiles in bacteria",
+      "venue": "Nature Communications",
+      "volume": "13",
+      "pages": "5159",
+      "year": 2022,
+      "doi": "10.1038/s41467-022-32829-5"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "xia2026_promogen2",
+    "stated_title": "Design prokaryotic cis-regulatory elements using language model",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match (checked against et al.-truncated list)"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Design prokaryotic cis-regulatory elements using language model' canonical='Design prokaryotic cis-regulatory elements using language model'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nucleic Acids Research' canonical='Nucleic Acids Research'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2026 canonical=2026"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='54(4)' canonical='54'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='gkag122' canonical='gkag122'"
+      },
+      "doi": {
+        "ok": null,
+        "detail": "manuscript states none; canonical: '10.1093/nar/gkag122'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Xia",
+        "Sun",
+        "Du",
+        "Liang",
+        "Wu",
+        "Shi",
+        "Shao",
+        "Guo",
+        "Huo"
+      ],
+      "title": "Design prokaryotic cis-regulatory elements using language model",
+      "venue": "Nucleic Acids Research",
+      "volume": "54",
+      "pages": "gkag122",
+      "year": 2026,
+      "doi": "10.1093/nar/gkag122"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "dnabert2",
+    "stated_title": "DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species Genome",
+    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species Genome' canonical='DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome'"
+      },
+      "venue": {
+        "ok": false,
+        "detail": "manuscript='ICLR 2024' canonical='arXiv'"
+      },
+      "year": {
+        "ok": false,
+        "detail": "manuscript=2024 canonical=2023"
+      },
+      "volume": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "pages": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "doi": {
+        "ok": null,
+        "detail": "both absent"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Zhou",
+        "Ji",
+        "Li",
+        "Dutta",
+        "Davuluri",
+        "Liu"
+      ],
+      "title": "DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome",
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "year": 2023,
+      "doi": null,
+      "arxiv_id": "2306.15006"
+    },
+    "error": null,
+    "mismatched_fields": [
+      "venue",
+      "year"
+    ],
+    "manual_review_note": "No DOI exists; ICLR has none for accepted papers. Canonical lookup is arXiv-only (posted 2023, venue field literally 'arXiv'), so this will always show venue/year MISMATCH against the arXiv record even though ICLR 2024 acceptance is real -- independently confirmed via the ICLR 2024 proceedings page (proceedings.iclr.cc/paper_files/paper/2024/hash/b633e7052970b8f5aa1a69164d99e9e8-Abstract-Conference.html) during Gate 13 manual review. Cite both: ICLR 2024 as the peer-reviewed venue, arXiv:2306.15006 as the preprint."
+  },
+  {
+    "key": "bend2024",
+    "stated_title": "BEND: Benchmarking DNA Language Models on Biologically Meaningful Tasks",
+    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='BEND: Benchmarking DNA Language Models on Biologically Meaningful Tasks' canonical='BEND: Benchmarking DNA Language Models on biologically meaningful tasks'"
+      },
+      "venue": {
+        "ok": false,
+        "detail": "manuscript='ICLR 2024' canonical='arXiv'"
+      },
+      "year": {
+        "ok": false,
+        "detail": "manuscript=2024 canonical=2023"
+      },
+      "volume": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "pages": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "doi": {
+        "ok": null,
+        "detail": "both absent"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Marin",
+        "Teufel",
+        "Horlacher",
+        "Madsen",
+        "Pultz",
+        "Winther",
+        "Boomsma"
+      ],
+      "title": "BEND: Benchmarking DNA Language Models on biologically meaningful tasks",
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "year": 2023,
+      "doi": null,
+      "arxiv_id": "2311.12570"
+    },
+    "error": null,
+    "mismatched_fields": [
+      "venue",
+      "year"
+    ],
+    "manual_review_note": "Same pattern as DNABERT-2: no DOI, arXiv-only canonical lookup will always show venue=arXiv/year=2023 (original posting) even though ICLR 2024 acceptance is real -- independently confirmed via OpenReview (openreview.net/forum?id=uKB4cFNQFg, 'submitted November 21, 2023; final revision April 9, 2024') during Gate 13 manual review."
+  },
+  {
+    "key": "genomic_benchmarks2023",
+    "stated_title": "Genomic benchmarks: a collection of datasets for genomic sequence classification",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Genomic benchmarks: a collection of datasets for genomic sequence classification' canonical='Genomic benchmarks: a collection of datasets for genomic sequence classification'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='BMC Genomic Data' canonical='BMC Genomic Data'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2023 canonical=2023"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='24' canonical='24'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='25' canonical='25'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1186/s12863-023-01123-8' canonical='10.1186/s12863-023-01123-8'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Gre\u0161ov\u00e1",
+        "Martinek",
+        "\u010cech\u00e1k",
+        "\u0160ime\u010dek",
+        "Alexiou"
+      ],
+      "title": "Genomic benchmarks: a collection of datasets for genomic sequence classification",
+      "venue": "BMC Genomic Data",
+      "volume": "24",
+      "pages": "25",
+      "year": 2023,
+      "doi": "10.1186/s12863-023-01123-8"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "dart_eval2024",
+    "stated_title": "DART-Eval: A Comprehensive DNA Language Model Evaluation Benchmark on Regulatory DNA",
+    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='DART-Eval: A Comprehensive DNA Language Model Evaluation Benchmark on Regulatory DNA' canonical='DART-Eval: A Comprehensive DNA Language Model Evaluation Benchmark on Regulatory DNA'"
+      },
+      "venue": {
+        "ok": false,
+        "detail": "manuscript='NeurIPS 2024 Datasets and Benchmarks Track' canonical='Advances in Neural Information Processing Systems 37'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2024 canonical=2024"
+      },
+      "volume": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "pages": {
+        "ok": null,
+        "detail": "manuscript states none; canonical: '62024-62061'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.52202/079017-1981' canonical='10.52202/079017-1981'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Patel",
+        "Singhal",
+        "Wang",
+        "Pampari",
+        "Kasowski",
+        "Kundaje"
+      ],
+      "title": "DART-Eval: A Comprehensive DNA Language Model Evaluation Benchmark on Regulatory DNA",
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "volume": null,
+      "pages": "62024-62061",
+      "year": 2024,
+      "doi": "10.52202/079017-1981"
+    },
+    "error": null,
+    "mismatched_fields": [
+      "venue"
+    ],
+    "manual_review_note": "CrossRef's container-title is the formal NeurIPS proceedings name ('Advances in Neural Information Processing Systems 37', volume 37 = 2024); the manuscript's 'NeurIPS 2024 Datasets and Benchmarks Track' is the informal, more specific rendering (correctly identifying the D&B sub-track, which CrossRef does not capture) -- independently confirmed via the NeurIPS virtual site (nips.cc/virtual/2024/poster/97497) during Gate 13 manual review. Not an error."
+  },
+  {
+    "key": "dnalongbench2025",
+    "stated_title": "DNALONGBENCH: a benchmark suite for long-range DNA prediction tasks",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='DNALONGBENCH: a benchmark suite for long-range DNA prediction tasks' canonical='DNALONGBENCH: a benchmark suite for long-range DNA prediction tasks'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nature Communications' canonical='Nature Communications'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2025 canonical=2025"
+      },
+      "volume": {
+        "ok": null,
+        "detail": "manuscript states none; canonical: '16'"
+      },
+      "pages": {
+        "ok": null,
+        "detail": "manuscript states none; canonical: '10108'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1038/s41467-025-65077-4' canonical='10.1038/s41467-025-65077-4'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Cheng",
+        "Song",
+        "Zhang",
+        "Wang",
+        "Wang",
+        "Yang",
+        "Li",
+        "Ma"
+      ],
+      "title": "DNALONGBENCH: a benchmark suite for long-range DNA prediction tasks",
+      "venue": "Nature Communications",
+      "volume": "16",
+      "pages": "10108",
+      "year": 2025,
+      "doi": "10.1038/s41467-025-65077-4"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "nucleotide_transformer2025",
+    "stated_title": "Nucleotide Transformer: building and evaluating robust foundation models for human genomics",
+    "status": "VERIFIED",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match (checked against et al.-truncated list)"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Nucleotide Transformer: building and evaluating robust foundation models for human genomics' canonical='Nucleotide Transformer: building and evaluating robust foundation models for human genomics'"
+      },
+      "venue": {
+        "ok": true,
+        "detail": "manuscript='Nature Methods' canonical='Nature Methods'"
+      },
+      "year": {
+        "ok": true,
+        "detail": "manuscript=2025 canonical=2025"
+      },
+      "volume": {
+        "ok": true,
+        "detail": "manuscript='22(2)' canonical='22'"
+      },
+      "pages": {
+        "ok": true,
+        "detail": "manuscript='287-297' canonical='287-297'"
+      },
+      "doi": {
+        "ok": true,
+        "detail": "manuscript='10.1038/s41592-024-02523-z' canonical='10.1038/s41592-024-02523-z'"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Dalla-Torre",
+        "Gonzalez",
+        "Mendoza-Revilla",
+        "Lopez Carranza",
+        "Grzywaczewski",
+        "Oteri",
+        "Dallago",
+        "Trop",
+        "de Almeida",
+        "Sirelkhatim",
+        "Richard",
+        "Skwark",
+        "Beguir",
+        "Lopez",
+        "Pierrot"
+      ],
+      "title": "Nucleotide Transformer: building and evaluating robust foundation models for human genomics",
+      "venue": "Nature Methods",
+      "volume": "22",
+      "pages": "287-297",
+      "year": 2025,
+      "doi": "10.1038/s41592-024-02523-z"
+    },
+    "error": null,
+    "mismatched_fields": []
+  },
+  {
+    "key": "iclr2025_specialized_fm",
+    "stated_title": "Specialized Foundation Models Struggle to Beat Supervised Baselines",
+    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
+    "fields": {
+      "authors": {
+        "ok": null,
+        "detail": "no stated author list to compare"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='Specialized Foundation Models Struggle to Beat Supervised Baselines' canonical='Specialized Foundation Models Struggle to Beat Supervised Baselines'"
+      },
+      "venue": {
+        "ok": false,
+        "detail": "manuscript='ICLR 2025' canonical='arXiv'"
+      },
+      "year": {
+        "ok": false,
+        "detail": "manuscript=2025 canonical=2024"
+      },
+      "volume": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "pages": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "doi": {
+        "ok": null,
+        "detail": "both absent"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Xu",
+        "Gupta",
+        "Cheng",
+        "Shen",
+        "Shen",
+        "Talwalkar",
+        "Khodak"
+      ],
+      "title": "Specialized Foundation Models Struggle to Beat Supervised Baselines",
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "year": 2024,
+      "doi": null,
+      "arxiv_id": "2411.02796"
+    },
+    "error": null,
+    "mismatched_fields": [
+      "venue",
+      "year"
+    ],
+    "note": "not actually cited inline anywhere in the current manuscript body (checked directly) -- flagged for removal in Gate 13, not a mismatch on bibliographic fields",
+    "manual_review_note": "Same arXiv-only pattern: venue=arXiv/year=2024 (original posting) vs stated ICLR 2025 -- independently confirmed real acceptance via OpenReview (openreview.net/forum?id=JYTQ6ELUVO) and the ICLR 2025 virtual site (iclr.cc/virtual/2025/poster/30102) during Gate 13 manual review. Removed from References regardless, per the orphan note above -- this citation supports no claim actually made in the manuscript body."
+  }
+]

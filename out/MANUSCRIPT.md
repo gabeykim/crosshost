@@ -119,19 +119,18 @@ break it is more trustworthy than one presented without a fight.
 the abstract states it explicitly for a reason: the unit of generalization
 in this study is the host, not the sequence, and six is not many hosts.
 
-Existing genomic-sequence benchmarks (BEND, Genomic Benchmarks, DART-Eval,
-DNALONGBENCH, the Nucleotide Transformer suite among them) are, to our
-knowledge, predominantly built on human, animal, or plant genomes; **we
-have not independently re-verified the full task composition of each of
-these suites against their own primary sources** and state this as our
-working understanding, not a checked fact — a gap disclosed here rather
-than written around (Section 6). What we can state with confidence, having
-searched directly: no existing benchmark suite poses a cross-*host* (same
-sequence, multiple bacterial recipient species) prediction task, which is
-the specific gap this benchmark fills regardless of how the broader
-landscape claim above resolves. We built CROSSHOST — a frozen, versioned
-benchmark on the Johns et al. data, with a small demonstration model — to
-carry out this test and to leave a durable, reusable artifact behind it.
+**The benchmark suites we examined — BEND (Marin et al., 2024), Genomic
+Benchmarks (Grešová et al., 2023), DART-Eval (Patel et al., 2024),
+DNALONGBENCH (Cheng et al., 2025), and the Nucleotide Transformer suite
+(Dalla-Torre et al., 2025) — define tasks on human, mouse, *C. elegans*,
+*D. melanogaster*, and yeast genomes; we found no bacterial cross-host
+regulatory activity task among them.** This is a bounded claim about five
+named suites, each read directly rather than assumed — not a claim about
+every benchmark suite that exists, which no finite check could support.
+Full per-suite coverage, with sources: `out/results/gate13_benchmark_landscape.md`.
+We built CROSSHOST — a frozen, versioned benchmark on the Johns et al.
+data, with a small demonstration model — to carry out this test and to
+leave a durable, reusable artifact behind it.
 
 ---
 
@@ -997,17 +996,6 @@ distinct from properties of the released data.)*
   and verified working from a genuine clean git clone (Gate 8.5), and
   re-run in place, successfully, after being extended to cover Gates
   8.5–10.5 (Gate 11).
-- **We did not independently re-verify the task composition of the five
-  named comparison benchmarks in the Introduction** (BEND, Genomic
-  Benchmarks, DART-Eval, DNALONGBENCH, the Nucleotide Transformer suite)
-  against their own primary sources. The claim that they are "predominantly
-  human, animal, or plant" is carried from this project's own planning-stage
-  research (the charter), which itself flags several of its numbers as
-  inherited from secondary sources — this specific claim was never put
-  through this project's own primary-source verification pass the way the
-  Johns et al., PromoGen2, and Bernstein-lab claims were. Stated as working
-  understanding in the Introduction, not fact, and should be checked before
-  submission if a reviewer would reasonably expect it verified.
 - **We did not run a fifth attempt to recover a positive cross-host
   signal.** Four independent, pre-specified attempts (three conditioning
   mechanisms, a target reframing, a subset-restriction hypothesis) is the
@@ -1021,14 +1009,17 @@ distinct from properties of the released data.)*
 
 ## References
 
-**Verified directly against primary sources within this project** (exact
-DOI/venue/date confirmed by reading the actual paper, not carried from
-training-data memory — see `out/GATE8_5_MEMO.md` Task 2 and Gate 12's
-citation-verification pass for the record):
+**Every citation below is verified directly against a canonical source**
+(CrossRef for DOI-bearing works, the arXiv API for preprints, cross-checked
+against the peer-reviewed venue by direct search where no DOI exists) —
+mechanically, via `scripts/97_verify_citations.py`, and by hand where the
+script flagged something for manual review. Full comparison output:
+`out/results/gate13_citation_verification.json`/`.csv`. No citation in this
+manuscript remains unverified as of Gate 13.
 
 - Johns, N.I., Gomes, A.L.C., Yim, S.S., et al. (2018). Metagenomic mining
   of regulatory elements enables programmable species-selective gene
-  expression. *Nature Methods* 15, 323–329.
+  expression. *Nature Methods* 15, 323–329. DOI 10.1038/nmeth.4633.
 - Yim, S.S., Johns, N.I., et al. (2019). Multiplex transcriptional
   characterizations across diverse bacterial species using cell-free
   systems. *Molecular Systems Biology* 15, e8875. DOI 10.15252/msb.20198875.
@@ -1048,49 +1039,61 @@ citation-verification pass for the record):
 - El Houdaigui, B., Forquet, R., Hindré, T., Schneider, D., Nasser, W.,
   Reverchon, S. & Meyer, S. (2019). Bacterial genome architecture shapes
   global transcriptional regulation by DNA supercoiling. *Nucleic Acids
-  Research* 47(11), 5648–5657. DOI 10.1093/nar/gkz300. [Verified directly,
-  Gate 12, including the full author list: confirms the
-  discriminator-GC-content/supercoiling mechanism cited in Section 3.3.]
+  Research* 47(11), 5648–5657. DOI 10.1093/nar/gkz300.
 - Borkowski, O., Bricio, C., Murgiano, M., Rothschild-Mancinelli, B.,
   Stan, G.-B. & Ellis, T. (2018). Cell-free prediction of protein
   expression costs for growing cells. *Nature Communications* 9, 1457.
-  DOI 10.1038/s41467-018-03970-x. [Verified directly, Gate 12, including
-  the full author list: confirms the exact R²=0.74 in-vitro/in-vivo
-  capacity correlation cited in Section 3.3.]
+  DOI 10.1038/s41467-018-03970-x.
 - Pandi, A. et al. (2022). A versatile active learning workflow for
   optimization of genetic and metabolic networks. *Nature Communications*
-  13, 3876. DOI 10.1038/s41467-022-31245-z. [Verified directly, Gate 12:
-  confirms the exact 0.41 cell-free/in-vivo yield correlation and
-  "not necessarily directly transferable" language quoted in Section 3.2.]
+  13, 3876. DOI 10.1038/s41467-022-31245-z.
 - LaFleur, T.L., Hossain, A. & Salis, H.M. (2022). Automated
   model-predictive design of synthetic promoters to control
   transcriptional profiles in bacteria. *Nature Communications* 13, 5159.
-  DOI 10.1038/s41467-022-32829-5. [Verified directly, Gate 12: confirms
-  R²=0.80 on own data and R²=0.45–0.65 across three external datasets,
-  cited in Section 3.5 — corrects a slightly different pair of figures
-  (0.79 / 0.45–0.60) this project was initially given for this citation.]
+  DOI 10.1038/s41467-022-32829-5.
+- Zhou, Z., Ji, Y., Li, W., Dutta, P., Davuluri, R.V. & Liu, H. (2024).
+  DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species
+  Genome. *ICLR 2024*. arXiv:2306.15006. [The model itself was used
+  directly via its HuggingFace weights, `zhihan1996/DNABERT-2-117M`, which
+  is separately confirmed correct. No DOI exists for ICLR papers; the
+  arXiv preprint (2023) predates the ICLR 2024 acceptance — both dates are
+  real, ICLR 2024 is the peer-reviewed venue.]
+- Marin, F.I., Teufel, F., Horlacher, M., Madsen, D., Pultz, D., Winther,
+  O. & Boomsma, W. (2024). BEND: Benchmarking DNA Language Models on
+  Biologically Meaningful Tasks. *ICLR 2024*. arXiv:2311.12570. [Named in
+  Section 1's benchmark-landscape comparison — tasks defined on the human
+  genome only, `out/results/gate13_benchmark_landscape.md`.]
+- Grešová, K., Martinek, V., Čechák, D., Šimeček, P. & Alexiou, P. (2023).
+  Genomic benchmarks: a collection of datasets for genomic sequence
+  classification. *BMC Genomic Data* 24, 25. DOI 10.1186/s12863-023-01123-8.
+  [Named in Section 1 — tasks on human, mouse, *C. elegans*, and
+  *D. melanogaster*, `out/results/gate13_benchmark_landscape.md`.]
+- Patel, A., Singhal, A., Wang, A., Pampari, A., Kasowski, M. & Kundaje, A.
+  (2024). DART-Eval: A Comprehensive DNA Language Model Evaluation
+  Benchmark on Regulatory DNA. *Advances in Neural Information Processing
+  Systems* 37 (NeurIPS 2024 Datasets and Benchmarks Track). DOI
+  10.52202/079017-1981. arXiv:2412.05430. [Named in Section 1 — tasks
+  entirely on human ENCODE cis-regulatory elements,
+  `out/results/gate13_benchmark_landscape.md`.]
+- Cheng, W., Song, Z., Zhang, Y., Wang, S., Wang, D., Yang, M., Li, L. &
+  Ma, J. (2025). DNALONGBENCH: a benchmark suite for long-range DNA
+  prediction tasks. *Nature Communications*. DOI 10.1038/s41467-025-65077-4.
+  [Named in Section 1 — tasks on human and mouse only,
+  `out/results/gate13_benchmark_landscape.md`.]
+- Dalla-Torre, H., Gonzalez, L., Mendoza-Revilla, J. et al. (2025).
+  Nucleotide Transformer: building and evaluating robust foundation models
+  for human genomics. *Nature Methods* 22(2), 287–297. DOI
+  10.1038/s41592-024-02523-z. [Named in Section 1 — 18-task benchmark on
+  human, mouse, and yeast, `out/results/gate13_benchmark_landscape.md`.]
 
-**NOT independently verified within this project — carried from the
-charter's planning-stage research or general knowledge, and flagged here
-rather than presented with false confidence. Check against primary sources
-before submission:**
-
-- DNABERT-2 (Zhou, Z. et al., "DNABERT-2: Efficient Foundation Model and
-  Benchmark for Multi-Species Genome") — citation details (venue, exact
-  arXiv ID) not re-verified against the primary source in this project;
-  the model itself was used directly via its HuggingFace weights
-  (`zhihan1996/DNABERT-2-117M`), which is independently confirmed correct.
-- The DART-Eval (NeurIPS 2024 D&B) citation and the ICLR 2025
-  "Specialized Foundation Models Struggle to Beat Supervised Baselines"
-  citation, both referenced in Section 1/Discussion as prior evidence that
-  foundation models underperform supervised baselines on regulatory
-  tasks — inherited from the charter's own text, not independently
-  re-verified.
-- BEND, Genomic Benchmarks, DNALONGBENCH, and the Nucleotide Transformer
-  suite — named in Section 1 as comparison benchmarks; see Section 6 for
-  the explicit disclosure that their task composition was not
-  independently re-verified.
-
-None of the above affects this paper's own experimental results, all of
-which are independently computed and audited within this project; the gap
-is confined to background/related-work citations.
+**Removed in Gate 13, not carried forward:** a citation to "Specialized
+Foundation Models Struggle to Beat Supervised Baselines" (Xu, Gupta, Cheng,
+Shen, Shen, Talwalkar & Khodak, ICLR 2025, arXiv:2411.02796 — full author
+list confirmed via the arXiv API, not assumed) previously sat in this
+section's disclaimer, described as "referenced in Section 1/Discussion."
+Checked directly: it is not actually cited anywhere in the current
+manuscript body and supports no claim this paper makes. The paper itself
+is real and independently verified (arXiv:2411.02796, ICLR 2025 acceptance
+confirmed via OpenReview) — it was simply never load-bearing here, and
+keeping an unused reference around understates how thin the connection
+was. Removed rather than retrofitted into the text to justify keeping it.
