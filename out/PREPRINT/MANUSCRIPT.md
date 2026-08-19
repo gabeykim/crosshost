@@ -293,7 +293,7 @@ seeing results.
 
 ## 3. Results
 
-### 3.1 The pre-registered kill gate: H-MAIN failed on all 8 primary comparisons
+### 3.1 The pre-registered kill gate: H-MAIN failed on all 8 primary comparisons (Figure 1)
 
 Neither readout, neither host-feature variant, on either primary held-out
 host (*B. subtilis*, the official test; *P. aeruginosa*, the charter's
@@ -310,7 +310,7 @@ point estimate slightly exceeding the baseline's, but with overlapping
 intervals (NOT MET) and, per the pre-registration, this mechanism was never
 eligible to supply the headline verdict.
 
-### 3.2 The model is poorly calibrated off-distribution (post-hoc)
+### 3.2 The model is poorly calibrated off-distribution (post-hoc) (Figure 2)
 
 The sequence-only model's zero-shot active/inactive classifier is
 well-calibrated on *E. coli* (Expected Calibration Error 0.05–0.10) and
@@ -327,7 +327,7 @@ and any deployment of a model from this suite on a host meaningfully
 different from its training hosts should recalibrate before trusting raw
 predicted probabilities.
 
-### 3.3 Testing whether the mechanism was the problem: three conditioning mechanisms (FiLM pre-registered; concatenation, per-host heads, and the instability finding post-hoc)
+### 3.3 Testing whether the mechanism was the problem: three conditioning mechanisms (FiLM pre-registered; concatenation, per-host heads, and the instability finding post-hoc) (Figure 3)
 
 To address the objection that FiLM specifically — fit from only two
 training-host feature vectors per leave-one-host-out fold — is a
@@ -374,7 +374,7 @@ measurably poor default in this few-domain regime, independent of whether
 conditioning helps at all — useful to anyone conditioning a model on a
 handful of domains, regardless of this paper's negative result.
 
-### 3.4 An independent dataset (post-hoc, same library, different laboratory-run modality): cell-free lysates largely abolish the cross-host differences that dominate in-vivo measurements
+### 3.4 An independent dataset (post-hoc, same library, different laboratory-run modality): cell-free lysates largely abolish the cross-host differences that dominate in-vivo measurements (Figure 4)
 
 To test whether the *B. subtilis* cross-host discrepancy reflects transcriptional machinery or broader cellular context, we compared our in-vivo measurements against DRAFTS (Yim, Johns et al., 2019, *Molecular Systems Biology* 15:e8875), an independent dataset from the same laboratory that characterized transcription from the same 165 bp regulatory-sequence library using cell-free lysates across ten bacterial species. Cell-free transcription-translation (TXTL) systems retain core transcriptional machinery — RNA polymerase, sigma factors, ribonucleotides — but lack an intact membrane, native chromosomal supercoiling, macromolecular resource competition, and growth-phase-dependent physiology. If the chassis effect this project studies is substantially a property of transcriptional machinery, it should persist in a cell-free system built from that machinery; if it is not, cell-free measurements offer a natural test of what is missing.
 
@@ -425,7 +425,7 @@ the classification (AUC) metric in 1 of 12 cells, and on the regression
 negative result is uniform; the classifier has one narrow, isolated
 exception.
 
-### 3.7 A retracted rescue attempt: shift-prediction and the regression-to-the-mean control (post-hoc, attempted-and-retracted)
+### 3.7 A retracted rescue attempt: shift-prediction and the regression-to-the-mean control (post-hoc, attempted-and-retracted) (Figure 5)
 
 A fourth attempt reframed the prediction target: instead of absolute
 activity level, predict the *shift* from a reference host's measured value
@@ -456,7 +456,7 @@ reference-only ρ=0.142 vs. shuffled ρ=−0.015, non-overlapping) shares no
 host or readout with the retracted claim and is reported as an unrelated,
 minor, separately-scoped result, not partial vindication.
 
-### 3.8 What does explain the pattern: raw cross-host measurement agreement, and two independent robustness checks (post-hoc; replication of Johns et al. 2018 for the raw contrast itself)
+### 3.8 What does explain the pattern: raw cross-host measurement agreement, and two independent robustness checks (post-hoc; replication of Johns et al. 2018 for the raw contrast itself) (Figures 6-7)
 
 *E. coli* and *P. aeruginosa* activity measurements correlate at ρ≈0.75
 (transcription, n=9,741 co-active pairs); any *B. subtilis* pair correlates

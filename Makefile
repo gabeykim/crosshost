@@ -49,7 +49,24 @@ reproduce: audit
 	$(PYTHON) scripts/77_regen_remaining_figures.py
 	$(PYTHON) scripts/70_provenance_triage.py
 	$(PYTHON) scripts/75_master_baseline_export.py
+	@echo "=== Gates 8.5-10.5 additions (Gate 11: added to reproduce, previously only in reproduce-full's implicit scope) ==="
+	$(PYTHON) scripts/79_two_stage_transfer.py
+	$(PYTHON) scripts/82_conditioning_mechanism_comparison.py
+	$(PYTHON) scripts/83_shift_prediction_summary.py
+	$(PYTHON) scripts/85_coactive_range_restriction_check.py
+	$(PYTHON) scripts/86_mechanism_fold_variance.py
+	$(PYTHON) scripts/87_gate8_6_figures.py
+	$(PYTHON) scripts/88_parse_drafts.py
+	$(PYTHON) scripts/89_join_drafts_johns.py
+	$(PYTHON) scripts/90_drafts_crosshost_correlations.py
+	$(PYTHON) scripts/91_drafts_modality_comparison.py
+	$(PYTHON) scripts/92_drafts_gc_and_floor_check.py
+	$(PYTHON) scripts/93_drafts_feasibility.py
+	$(PYTHON) scripts/94_gate10_figures.py
+	$(PYTHON) scripts/95_gc_confound_invivo.py
+	$(PYTHON) scripts/96_gate10_5_figures.py
 	@echo "Fast reproduction complete -- all figures/tables regenerated from shipped intermediate results."
+	@echo "NOT included above (require trained-model checkpoints or a training run, not just cached results/tables -- see REPRODUCIBILITY.md): scripts/78 (conditioning mechanisms, trains models), scripts/80 (co-active subset Part 2, re-scores existing checkpoints via live inference), scripts/81 (shift prediction, trains a model), scripts/84 (imports scripts/81 as a module)."
 
 # ---------------------------------------------------------------------------
 # FULL PATH: the entire pipeline from raw/ tables. Real dependency order,

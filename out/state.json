@@ -2385,5 +2385,111 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (165 files)"
     }
+  },
+  "gate_11": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS",
+    "task1_manuscript_integration": {
+      "draft_section_folded_in": "Section 3.4 (new), between the conditioning-mechanisms section (3.3) and H-DIAGNOSTIC (3.5, renumbered from 3.4)",
+      "gc_control_added": "Section 3.8 (renumbered from 3.7), 'Robustness check 2', plus a new Discussion paragraph making the two-controls-survived point explicit",
+      "sections_renumbered": "3.4-3.8 -> 3.5-3.9 (old numbering), full cross-reference sweep performed",
+      "number_reconciliation": {
+        "method": "every load-bearing number in the manuscript checked against out/results/*.json and out/state.json directly, not re-derived by hand",
+        "discrepancies_found": 0,
+        "non_numeric_staleness_found_and_fixed": "package/README.md's Reproducibility section claimed a clean git clone was 'not yet tested' -- stale, predating Gate 8.5's actual clean-clone verification (out/state.json gate_8_5.task4_packaging); corrected"
+      },
+      "limitations_synced": "KNOWN_ISSUES.md items 11-12 (Pa collision, disjoint ID space) added to Limitations, bringing it from 10 to 12 items, matching KNOWN_ISSUES.md exactly",
+      "references_added": "Yim et al. 2019 (DRAFTS) added to the verified-primary-source reference list"
+    },
+    "task2_three_disclosures": {
+      "draft_population_not_paired": "stated in Section 3.4 itself (a dedicated paragraph), not only in Limitations, per instruction",
+      "reliability_ec_only": "reiterated in Section 3.8's robustness-check-1 paragraph and the new Discussion robustness paragraph, in addition to the pre-existing Limitations item 3",
+      "translation_attenuates_more": "reported separately in Section 3.8 (0.286->0.240 vs 0.341->0.308), explicit 'we report them separately rather than averaging them'"
+    },
+    "task3_abstract": {
+      "word_count": 245,
+      "leads_with": "pre-registered negative result, then off-distribution calibration collapse",
+      "states_n_hosts_le_6": true,
+      "includes_drafts_mechanistic_finding": true,
+      "credits_johns_2018_for_raw_structure": true
+    },
+    "task4_preprint_package": {
+      "directory": "out/PREPRINT/",
+      "files": [
+        "README.md",
+        "MANUSCRIPT.md",
+        "FIGURE_LEGENDS.md",
+        "FIGURE_AUDIT.md",
+        "SUPPLEMENTARY_TABLES.md",
+        "DATA_AND_CODE_AVAILABILITY.md",
+        "REPRODUCIBILITY.md",
+        "figures/ (9 main-text)",
+        "figures/supplementary/ (19)"
+      ],
+      "figure_audit": {
+        "candidates_checked": 31,
+        "included": 28,
+        "excluded_for_cause": 3,
+        "exclusion_reasons": [
+          "gate5_5_performance_vs_ceiling.png -- visualizes the retired percent-of-ceiling metric, deliberately not regenerated per scripts/77's own docstring",
+          "gate6_pct_of_ceiling_corrected.png -- also visualizes the retired metric (Gate 6's intermediate correction)",
+          "gate5_5_crosshost_measurement_correlation.png -- orphaned original (no live producing script), superseded by gate7_crosshost_measurement_correlation.png; NEW finding this gate, not previously disclosed"
+        ]
+      },
+      "resolution": "150 DPI throughout, disclosed as screen/preprint-appropriate not print-journal-standard (>=300 DPI), not changed this gate",
+      "make_reproduce_extended": {
+        "scripts_added": [
+          "79",
+          "82",
+          "83",
+          "85",
+          "86",
+          "87",
+          "88",
+          "89",
+          "90",
+          "91",
+          "92",
+          "93",
+          "94",
+          "95",
+          "96"
+        ],
+        "scripts_deliberately_excluded": [
+          "78 (trains models)",
+          "80 (live inference on checkpoints)",
+          "81 (trains a model)",
+          "84 (imports 81)"
+        ],
+        "verified_run_this_gate": "exit code 0, zero errors, numbers independently reproduced bit-for-bit against manuscript"
+      }
+    },
+    "task5_outreach_drafts": {
+      "file": "out/OUTREACH_DRAFTS.md",
+      "drafts": [
+        "Harris Wang lab (Columbia)",
+        "Sung Sun Yim (DRAFTS co-first author)",
+        "de Boer lab (GAME)",
+        "Bernstein lab",
+        "Wang lab (Tsinghua, DeepCROSS)"
+      ],
+      "superseded_gate9_drafts": true,
+      "sent": false,
+      "naming_collision_flagged": "Harris Wang (Columbia) vs Wang lab (Tsinghua) -- different people, same surname, flagged explicitly at file top and in draft 5"
+    },
+    "task6_ship_checklist": {
+      "file": "out/SHIP_CHECKLIST.md",
+      "items": 13,
+      "one_line_summary_included": true
+    },
+    "self_caused_regression_found_and_fixed": "adding out/PREPRINT/figures/*.png (renamed copies of already-audited figures) produced 28 false-positive orphans in audit_provenance.py; fixed by excluding the PREPRINT directory (SR9, out/CHARTER_AMENDMENTS.md), same mechanism already used for out/models/",
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (165 files)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (165 files, after SR9 fix)"
+    }
   }
 }

@@ -31,7 +31,14 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "out"
 SCRIPTS = ROOT / "scripts"
 
-EXCLUDE_DIRS = {"models"}  # binary checkpoints, not "results" files
+EXCLUDE_DIRS = {"models", "PREPRINT"}  # models: binary checkpoints, not "results" files.
+# PREPRINT (Gate 11, SR9): out/PREPRINT/figures/*.png are curated, RENAMED copies
+# of already-provenance-verified out/figures/*.png files (Figure1_*.png etc., for
+# submission numbering) -- their provenance is documented by filename mapping in
+# out/PREPRINT/FIGURE_AUDIT.md, not by direct basename match against scripts/, so
+# the textual-match heuristic below would always flag them. Excluding the whole
+# directory is deliberate, not a gap: every file under it is a copy or hand-written
+# document, never a fresh, only-here result.
 EXCLUDE_SUFFIXES = {".md"}  # memos are hand-written documents, not script outputs by design
 
 # Known dynamic-filename templates (model_tag / host / variant substitution)
