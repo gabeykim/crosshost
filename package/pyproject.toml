@@ -23,6 +23,14 @@ dependencies = [
   "scikit-learn==1.9.0",
   "pyarrow==24.0.0",
   "matplotlib==3.11.0",
+  "openpyxl==3.1.5",  # pandas' optional Excel engine, needed by
+                       # scripts/88_parse_drafts.py (part of the core
+                       # `make reproduce` path since Gate 11) -- pandas
+                       # imports it lazily inside read_excel(), so it never
+                       # appears as a top-level `import openpyxl` anywhere
+                       # and was missed by a plain import-statement grep;
+                       # found only by genuinely running `make reproduce`
+                       # in a fresh clone with nothing preinstalled (Gate 14)
 ]
 
 [project.optional-dependencies]

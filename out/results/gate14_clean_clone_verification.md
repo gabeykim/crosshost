@@ -90,4 +90,48 @@ RESULT: AT LEAST ONE CHECK FAILED
 
 ## Task 3 — Fixing defects in the real repo
 
-(populated below as each fix is made and re-verified)
+**Three fixes made in `~/Downloads/crosshosts`, committed as `9d6bda5`:**
+
+1. **Added `README.md` at the repository root** — states the actual setup path (`pip install -e ./package`, not `pip install -e .`), lists the `make` targets, points to `package/README.md` for the full project description and to `out/MANUSCRIPT.md`/`out/PREPRINT/MANUSCRIPT.md` for the writeup. This is the fix for undocumented-step findings #1–#3 (Task 1.4) — a documentation fix, no code changed, per the gate's own stated preference.
+2. **Fixed `package/README.md`'s "Install" section** to state explicitly which directory its code block assumes, and cross-reference the new root README for the repo-root path. Documentation-only.
+3. **Fixed `scripts/audit_leakage.py` check 6** (code change — documentation alone cannot fix this, since the check's own logic, not a missing instruction, was wrong) to read `.gitignore` and treat a gitignored manifest entry's absence as an expected skip rather than a failure, while still hash-verifying it if present. Also added `certifi` as a new `citations` extra in `package/pyproject.toml` (`scripts/97_verify_citations.py`'s own dependency, previously undeclared and masked by an incidental prior install on the original dev machine).
+
+**Deleted `/tmp/crosshost-verify`, cloned fresh again** (`git clone https://github.com/gabeykim/crosshost.git /tmp/crosshost-verify`, confirmed at commit `9d6bda5`) — **Iteration 2:**
+
+```
+python3 -m venv .venv && source .venv/bin/activate    # OK, confirmed inside the new clone
+pip install -e ./package                                # OK -- as now documented in the new root README
+pip install -e "./package[citations]"                    # OK -- installs certifi
+make audit                                                # PASSED, all 6 checks
+make verify-citations                                     # PASSED -- 11 verified, 5 explained, 0 real errors, 0 unresolved
+make reproduce                                            # (see below)
+```
+
+**`make audit`, full output, Iteration 2:**
+```
+[PASS] 1. No RS appears in more than one fold — 29042 rows, 0 duplicate OLIGO IDs
+[PASS] 2. No RS241 sequence appears in the main-library fold assignment — 241 RS241 ids checked, 0 found
+[PASS] 3. Max train-test identity per fold < 0.9 — worst=0.8485 (fold-by-fold: 0.8485/0.8395/0.8485/0.8485/0.8364)
+[PASS] 4. No exact-duplicate sequence pair is split across folds — 181 groups checked, 0 split
+[PASS] 5. Fold-local normalization — EC/BS/PA cached values all match training-pool-only fit
+[PASS] 6. Table hashes match data/MANIFEST.json — 24 files checked against manifest, 0 mismatches;
+       2 gitignored and skipped: [msb198875_SourceData_Appendix.zip, PMC6692573.tar.gz]
+RESULT: ALL CHECKS PASSED
+```
+
+**Deviation from the real repo's own numbers, reported rather than smoothed over, per instruction:** the real repo reports "26 files checked against manifest, 0 mismatches" (all 26 physically present there); the clone reports "24 files checked... 0 mismatches; 2 gitignored and skipped." **This is an expected, explained difference, not an unexplained one** — 24 + 2 = 26, the same total set of manifest entries, and the 2 that differ are exactly the two files Gate 10 deliberately excluded from git. Every number that is expected to be identical between environments (rows, identities, checked-file count among files that ARE present, 0 mismatches) *is* identical. `audit_provenance.py`: 167 files, 0 orphans — matches exactly.
+
+**`make verify-citations`, Iteration 2: matches Gate 13's own reported values exactly** — 11 verified, 0 unexplained mismatches, 5 manually-reviewed-and-explained mismatches (same 5, same explanations), 0 unresolved, 16 total.
+
+**`make reproduce`, Iteration 2: progressed much further than Iteration 1 (which never got past `audit`), then failed on a fourth defect.** Every script through `scripts/87_gate8_6_figures.py` ran cleanly, and every number printed matches the real repo's established values exactly (spot-checked: `EC transcription concat: mean=0.555 vs seqonly=0.367`, `film_std_over_seqonly_std: 7.800`, the two-stage-transfer table, the shift-prediction summary table, the co-active range-restriction IQR ratios, the fold-variance table — all identical to the manuscript's own stated figures). Then:
+
+```
+python3 scripts/88_parse_drafts.py
+...
+ImportError: `Import openpyxl` failed. Use pip or conda to install the openpyxl package.
+make: *** [reproduce] Error 1
+```
+
+**Root cause identified, not guessed:** `scripts/88_parse_drafts.py` calls `pd.read_excel(...)` to parse the DRAFTS source-data spreadsheets — part of the core `make reproduce` path since Gate 11 added the Gate-10/10.5 scripts to it. Pandas imports its Excel engine (`openpyxl`) lazily, inside `read_excel()` itself, so it never appears as a top-level `import openpyxl` statement anywhere in the script — a plain grep for import statements across all 23 `reproduce`-path scripts (run before this fix, to check for further hidden gaps in one pass) found nothing, confirming this is a real blind spot in that kind of check, not a scan that was run carelessly. `openpyxl` was never declared in `package/pyproject.toml`. On the original dev machine it was present incidentally (used directly, via `import openpyxl`, during Gates 12–13's own ad-hoc Excel-sheet-structure checks) — masked exactly the same way `certifi` was.
+
+**Checked specifically for further hidden optional-dependency gaps of the same shape** (`grep -l "read_excel\|to_excel\|openpyxl"` across all 23 `reproduce`-target scripts) before fixing: only `scripts/88` uses this pattern. No other script in the fast-reproduce path calls `pd.read_excel` or otherwise pulls in an undeclared optional pandas engine.
