@@ -8,7 +8,7 @@ Code, frozen splits, evaluation API, and derived data tables: `https://github.co
 
 Two Zenodo deposits, kept structurally separate so the core benchmark stays cleanly, commercially reusable:
 
-1. **Core benchmark** (MIT license) — `data/core/`, the `crosshost` package, baseline suite, held-out evaluation split. Covers everything needed to reproduce every result in this manuscript except the two foundation-model comparisons (Appendix, Section 3.9).
+1. **Core benchmark** (MIT license) — `data/core/`, the `crosshost` package, baseline suite, held-out evaluation split. Covers everything needed to reproduce every result in this manuscript except the two foundation-model comparisons (Appendix, Section 3.8).
 2. **PromoGen2-derived embeddings** (CC-BY-NC-4.0, non-commercial, matching PromoGen2's own license) — kept out of the core deposit specifically so the core deposit's MIT license applies without exception.
 
 Full metadata drafts (title, description, keywords, related-identifiers) for both: `package/ARCHIVE_METADATA.md`. **Neither has been created; no DOI has been minted.** This statement will need updating with the actual DOIs once that happens — do not cite a DOI from this document as if it exists yet.

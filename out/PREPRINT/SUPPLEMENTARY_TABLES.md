@@ -62,7 +62,7 @@ Full table: `out/results/gate10_5_gc_confound.json` (Task 4). `null` = stratum N
 | *B. subtilis* | 174 | 0.69 |
 | *C. glutamicum* | 230 | 0.80 |
 
-*P. aeruginosa* is not one of RS234's seven in-vivo comparison species (and is separately confirmed absent from DRAFTS entirely — see Section 3.4/Limitations item 11).
+*P. aeruginosa* is not one of RS234's seven in-vivo comparison species (and is separately confirmed absent from DRAFTS entirely — see Section 3.2/Limitations item 11).
 
 ## Table S6 — GC-vs-activity, both datasets (the confound Table S3/S4 control for)
 

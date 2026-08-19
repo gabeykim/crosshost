@@ -2491,5 +2491,111 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (165 files, after SR9 fix)"
     }
+  },
+  "gate_12": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS",
+    "crash_recovery_note": "session crashed mid-Task-0 (read-only investigation, no writes reached disk); recovery report confirmed working tree clean at commit 8a0298e, both audits unchanged; Task 0 restarted from scratch with incremental disk writes per revised instructions",
+    "task0_drafts_verification": {
+      "verdict": "CONFIRMED",
+      "file": "out/results/gate12_drafts_verification.md",
+      "surfaces_checked": [
+        "full article text (abstract, Discussion, Methods)",
+        "all 6 Appendix tables (S1-S6)",
+        "all 14 Appendix figures (S1-S14)",
+        "all 5 source-data Excel files' sheet and column structure",
+        "peer review correspondence (bonus surface)"
+      ],
+      "finding": "DRAFTS never compares cross-species correlation structure between cell-free and in-vivo modalities; reports only within-species modality fidelity (RS234, 7 species) and within-cell-free cross-species structure (RS1383, 10 species), never connected",
+      "ancillary_finding": "paper's own stated within-species fidelity range (0.71-0.90) differs slightly from this project's Gate 10 recomputation (0.69-0.90); already disclosed pre-Gate-12, re-confirmed here, does not affect verdict"
+    },
+    "task1_paper_logic": {
+      "file": "out/PAPER_LOGIC.md",
+      "logic_accepted": true,
+      "clarification_added": "the 'genome-derived features should carry no signal' prediction extends to this project's own physiology-proxy vector too, since it is a composition proxy (like the genomic vector) not a measurement of dynamic physiological context (what the mechanistic hypothesis is actually about) -- carried into Section 2.2/3.4 of the restructured manuscript"
+    },
+    "task2_results_restructure": {
+      "new_section_order": [
+        "3.1 Cross-host measurement structure (Johns et al.'s finding, confirmed and quantified)",
+        "3.2 The modality contrast (headline)",
+        "3.3 The mechanistic hypothesis",
+        "3.4 Testing the prediction",
+        "3.5 Calibration",
+        "3.6 Secondary findings",
+        "3.7 Two retractions, and why they strengthen the rest",
+        "3.8 Appendix: foundation models"
+      ],
+      "old_section_order_superseded": [
+        "3.1 H-MAIN kill gate (opening)",
+        "3.2 calibration",
+        "3.3 conditioning mechanisms",
+        "3.4 DRAFTS modality",
+        "3.5 H-DIAGNOSTIC",
+        "3.6 co-activity",
+        "3.7 shift-prediction retraction",
+        "3.8 disattenuation+GC",
+        "3.9 appendix FM/ablation"
+      ],
+      "no_new_analyses": true,
+      "no_new_numbers_except_corrections": "two prompt-supplied figures did not match verified data and were corrected, not silently used -- see discrepancies below"
+    },
+    "task2_citation_verification": {
+      "method": "WebSearch/WebFetch against primary sources for all 6 citations supplied in the gate prompt, before use, per this project's standing citation-verification practice",
+      "confirmed_accurate": [
+        "Borkowski et al. 2018, Nat Commun 9:1457 -- R\u00b2=0.74 exact match (author list corrected: Bricio/Murgiano/Rothschild-Mancinelli/Stan/Ellis, not the Ceroni/Stan/Ellis first guessed)",
+        "Pandi et al. 2022 (METIS), Nat Commun 13:3876 -- 0.41 correlation and 'not necessarily directly transferable' language exact match",
+        "El Houdaigui et al. 2019, NAR 47(11):5648, DOI 10.1093/nar/gkz300 -- supercoiling/discriminator-GC-content mechanism confirmed (author list corrected: Forquet/Hindre/Schneider/Nasser/Reverchon/Meyer, not the fabricated 'Vindry' third author first written)"
+      ],
+      "confirmed_with_correction": [
+        "LaFleur et al. 2022, Nat Commun 13:5159 -- actual R\u00b2=0.80 own-data / 0.45-0.65 across three external datasets, not the prompt-supplied 0.79 / 0.45-0.60"
+      ],
+      "could_not_verify_and_dropped": [
+        "Chappell et al. 2013 (NAR 41(5):3471) -- actually reports the OPPOSITE of divergence (R\u00b2=0.946 promoters, R\u00b2=0.968 RBS, strong cell-free/in-vivo agreement); not cited for the divergence claim",
+        "Sun et al. 2013 -- no primary source found making a promoter-ranking-divergence claim; not cited"
+      ],
+      "disclosed_in_manuscript": "out/MANUSCRIPT.md Section 6, 'What I could not do' -- dedicated bullet on the dropped citations, and References section's per-citation Gate 12 verification notes"
+    },
+    "task2_number_discrepancy_flagged": {
+      "prompt_said": "sequence-only beating conditioned models 17/18 under three mechanisms",
+      "verified_value": "16/18 (sequence-only NOT distinguishably beaten in 16 of 18; conditioning helps in exactly 2/18, both at EC transcription)",
+      "source": "out/results/gate8_5_conditioning_mechanisms_verdict_summary.json: n_total=18, n_wins_vs_both=2",
+      "resolution": "used the verified 16/18 figure throughout the restructured manuscript; not silently substituted, flagged in the status report"
+    },
+    "task2_foundation_model_framing_corrected": {
+      "prompt_said": "the honest note that PromoGen2's authors reported these models failing at this task",
+      "verified_finding": "the opposite: PromoGen2's own native protocol reports it BEATING sequence-only at every host (0.68/0.52/0.30 EC/PA/BS transcription); it is this project's OWN frozen-embedding-plus-shallow-head protocol that shows both foundation models losing -- an already-established Gate 8.5 finding ('the issue is protocol fairness, not model size')",
+      "resolution": "used the already-verified Gate 8.5 framing, not the prompt's inaccurate paraphrase; flagged in the status report"
+    },
+    "task3_retractions": "both retained in Results (now Section 3.7), positioned as a closing robustness note ('why they strengthen the rest') rather than footnotes, per instruction",
+    "task4_introduction_discussion": {
+      "introduction_moves": [
+        "chassis-effect quotes (unchanged)",
+        "orthogonal-machinery scoping (already present, positioned early, preserved)",
+        "hypothesis motivated by the DRAFTS comparison, stated before the modeling test"
+      ],
+      "discussion_reordered": "'what this means for practice' now leads; robustness paragraph retained; 'what would settle the open questions' rewritten as an explicit invitation framing"
+    },
+    "task5_abstract_and_title": {
+      "word_count": 250,
+      "title_options_presented": 3,
+      "title_used": "Cell-free systems do not reproduce the bacterial chassis effect: host specificity resides in cellular context rather than transcription machinery"
+    },
+    "preprint_sync": {
+      "manuscript_copied": true,
+      "figures_renumbered": "9 main-text figures renamed via git mv to match new citation order; 0 content changes; mapping documented in out/PREPRINT/FIGURE_AUDIT.md",
+      "supplementary_figures_unchanged": true,
+      "stale_section_refs_fixed": [
+        "SUPPLEMENTARY_TABLES.md",
+        "DATA_AND_CODE_AVAILABILITY.md"
+      ]
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (165 files)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (165 files) -- unchanged despite figure renaming, since PREPRINT/ remains excluded via SR9"
+    }
   }
 }

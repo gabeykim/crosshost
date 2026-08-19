@@ -1,6 +1,22 @@
-# Figure audit — Gate 11, Task 4.2
+# Figure audit — Gate 11, Task 4.2 (renumbered Gate 12)
 
-**Method.** For every `.png` file in `out/figures/` (31 total), searched `scripts/*.py` for the exact basename to find its producing script — the same method `scripts/audit_provenance.py` uses, with the same disclosed limitation: a textual-mention match is not proof a script *currently* regenerates the exact file (a script can merely reference a stale file's name in a comment or a triage list). Every figure was checked by hand against that limitation before being included here, per the audit script's own docstring instruction ("investigate each one by hand before trusting or retracting it").
+**Gate 12 renumbering.** The manuscript restructure (Gate 12) reordered the Results section so the modality contrast (formerly Section 3.4) leads and the pre-registered kill gate (formerly Section 3.1) now appears as evidence for a stated prediction. The 9 main-text figures were renamed to match the new citation order — **no figure's content, underlying data, or producing script changed; only filenames did**, via `git mv` to preserve history:
+
+| Old filename (Gate 11) | New filename (Gate 12) | New section |
+|---|---|---|
+| `Figure6_disattenuation.png` | `Figure1_disattenuation.png` | 3.1 |
+| `Figure7a_gc_control.png` | `Figure2a_gc_control.png` | 3.1 |
+| `Figure7b_phylum_stratified.png` | `Figure2b_phylum_stratified.png` | 3.1 |
+| `Figure4_drafts_modality_comparison.png` | `Figure3_drafts_modality_comparison.png` | 3.2 |
+| `Figure1_hmain_kill_gate.png` | `Figure4_hmain_kill_gate.png` | 3.4 |
+| `Figure3a_conditioning_mechanisms.png` | `Figure5_conditioning_mechanisms.png` | 3.4 |
+| `Figure2_calibration_collapse.png` | `Figure6_calibration_collapse.png` | 3.5 |
+| `Figure3b_film_instability.png` | `Figure7_film_instability.png` | 3.6 |
+| `Figure5_shift_prediction_retraction.png` | `Figure8_shift_prediction_retraction.png` | 3.7 |
+
+Supplementary figure numbering (S1–S10) and all supplementary filenames are unchanged — none of them were cited by number in the restructured main text, so renumbering them was not required and would have added risk for no benefit.
+
+**Method (Gate 11, unchanged).** For every `.png` file in `out/figures/` (31 total), searched `scripts/*.py` for the exact basename to find its producing script — the same method `scripts/audit_provenance.py` uses, with the same disclosed limitation: a textual-mention match is not proof a script *currently* regenerates the exact file (a script can merely reference a stale file's name in a comment or a triage list). Every figure was checked by hand against that limitation before being included here, per the audit script's own docstring instruction ("investigate each one by hand before trusting or retracting it").
 
 **Result: 28 of 31 figures have a real, current producing script and are included in this package (9 main text, 19 supplementary). 3 are excluded, for cause, below.**
 
