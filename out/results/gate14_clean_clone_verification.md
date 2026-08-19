@@ -4,7 +4,7 @@
 
 **Method:** worked entirely inside the clone, following only what is written in files inside the clone itself — no step taken on the basis of prior knowledge of the project's internal structure. Every command and its result recorded below, in the order run, written incrementally as the verification proceeded (not reconstructed afterward). Nothing in the clone was fixed; every defect found here is fixed only in `~/Downloads/crosshosts`, per instruction.
 
-**Status: IN PROGRESS.**
+**Status: COMPLETE. A fresh clone passes with zero undocumented steps. It took 3 iterations.**
 
 ---
 
