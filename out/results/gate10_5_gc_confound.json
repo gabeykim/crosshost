@@ -1,0 +1,310 @@
+{
+  "task1_gc_vs_activity_invivo": [
+    {
+      "host": "EC",
+      "readout": "transcription",
+      "n": 15040,
+      "spearman_rho_gc_vs_activity": -0.6137371840995114
+    },
+    {
+      "host": "EC",
+      "readout": "translation",
+      "n": 9295,
+      "spearman_rho_gc_vs_activity": -0.4941594977790057
+    },
+    {
+      "host": "BS",
+      "readout": "transcription",
+      "n": 4435,
+      "spearman_rho_gc_vs_activity": -0.19969295665221215
+    },
+    {
+      "host": "BS",
+      "readout": "translation",
+      "n": 1142,
+      "spearman_rho_gc_vs_activity": -0.26626866305598973
+    },
+    {
+      "host": "PA",
+      "readout": "transcription",
+      "n": 17886,
+      "spearman_rho_gc_vs_activity": -0.43369879025949803
+    },
+    {
+      "host": "PA",
+      "readout": "translation",
+      "n": 11725,
+      "spearman_rho_gc_vs_activity": -0.23024858899627465
+    }
+  ],
+  "task2_raw_vs_gc_controlled_correlations": {
+    "transcription": {
+      "EC_BS": {
+        "n": 3668,
+        "rho_raw": 0.2575175805660613,
+        "rho_gc_controlled_formula": 0.20650522789012724,
+        "rho_gc_controlled_residual": 0.20650522789012715,
+        "pct_attenuation_residual_method": 19.809269939474234
+      },
+      "EC_PA": {
+        "n": 9741,
+        "rho_raw": 0.753750672912612,
+        "rho_gc_controlled_formula": 0.7180417301844185,
+        "rho_gc_controlled_residual": 0.7180417301844185,
+        "pct_attenuation_residual_method": 4.737500610143201
+      },
+      "BS_PA": {
+        "n": 2099,
+        "rho_raw": 0.2570510930286312,
+        "rho_gc_controlled_formula": 0.23606438537930788,
+        "rho_gc_controlled_residual": 0.23606438537930782,
+        "pct_attenuation_residual_method": 8.164410974508412
+      }
+    },
+    "translation": {
+      "EC_BS": {
+        "n": 866,
+        "rho_raw": 0.160689304443626,
+        "rho_gc_controlled_formula": 0.12455213210360722,
+        "rho_gc_controlled_residual": 0.12455213210360722,
+        "pct_attenuation_residual_method": 22.48884732256505
+      },
+      "EC_PA": {
+        "n": 3826,
+        "rho_raw": 0.7420946148344976,
+        "rho_gc_controlled_formula": 0.7375688110644135,
+        "rho_gc_controlled_residual": 0.7375688110644135,
+        "pct_attenuation_residual_method": 0.6098688333823032
+      },
+      "BS_PA": {
+        "n": 314,
+        "rho_raw": 0.26326902314611467,
+        "rho_gc_controlled_formula": 0.22974994229804158,
+        "rho_gc_controlled_residual": 0.22974994229804152,
+        "pct_attenuation_residual_method": 12.731874205143388
+      }
+    }
+  },
+  "task3_verdict": {
+    "transcription": {
+      "ec_pa_raw": 0.753750672912612,
+      "ec_pa_gc_controlled": 0.7180417301844185,
+      "bs_pairs_raw_mean": 0.25728433679734625,
+      "bs_pairs_gc_controlled_mean": 0.2212848066347175,
+      "gap_ratio_raw": 0.34133878223041425,
+      "gap_ratio_gc_controlled": 0.3081781981917454,
+      "gap_ratio_pct_change": -9.71485977127686,
+      "verdict": "SURVIVES INTACT"
+    },
+    "translation": {
+      "ec_pa_raw": 0.7420946148344976,
+      "ec_pa_gc_controlled": 0.7375688110644135,
+      "bs_pairs_raw_mean": 0.21197916379487033,
+      "bs_pairs_gc_controlled_mean": 0.17715103720082437,
+      "gap_ratio_raw": 0.28564978044227696,
+      "gap_ratio_gc_controlled": 0.24018238643411588,
+      "gap_ratio_pct_change": -15.917181500284387,
+      "verdict": "SURVIVES, ATTENUATED"
+    }
+  },
+  "task4_phylum_stratified": {
+    "transcription": {
+      "EC_BS": {
+        "Proteobacteria": {
+          "n": 321,
+          "spearman_rho": 0.08977244537978556
+        },
+        "Firmicutes": {
+          "n": 2532,
+          "spearman_rho": 0.1773594001858587
+        },
+        "Bacteroidetes": {
+          "n": 146,
+          "spearman_rho": -0.010105051668049541
+        },
+        "Actinobacteria": {
+          "n": 97,
+          "spearman_rho": 0.09169307905926972
+        },
+        "Cyanobacteria": {
+          "n": 62,
+          "spearman_rho": 0.3322838321070743
+        },
+        "Planctomycetes": {
+          "n": 14,
+          "spearman_rho": null
+        },
+        "Euryarchaeota": {
+          "n": 24,
+          "spearman_rho": 0.34398783157167034
+        }
+      },
+      "EC_PA": {
+        "Proteobacteria": {
+          "n": 3282,
+          "spearman_rho": 0.6338603070748432
+        },
+        "Firmicutes": {
+          "n": 2666,
+          "spearman_rho": 0.8116013140714102
+        },
+        "Bacteroidetes": {
+          "n": 842,
+          "spearman_rho": 0.5357666506592734
+        },
+        "Actinobacteria": {
+          "n": 824,
+          "spearman_rho": 0.6931201526174045
+        },
+        "Cyanobacteria": {
+          "n": 455,
+          "spearman_rho": 0.543220142446234
+        },
+        "Planctomycetes": {
+          "n": 254,
+          "spearman_rho": 0.5250037576240103
+        },
+        "Euryarchaeota": {
+          "n": 104,
+          "spearman_rho": 0.6968691487473325
+        }
+      },
+      "BS_PA": {
+        "Proteobacteria": {
+          "n": 327,
+          "spearman_rho": -0.20884935771622762
+        },
+        "Firmicutes": {
+          "n": 1214,
+          "spearman_rho": 0.2708666971173258
+        },
+        "Bacteroidetes": {
+          "n": 81,
+          "spearman_rho": 0.017616668141443755
+        },
+        "Actinobacteria": {
+          "n": 119,
+          "spearman_rho": -0.17409852693453845
+        },
+        "Cyanobacteria": {
+          "n": 44,
+          "spearman_rho": -0.022277054609151966
+        },
+        "Planctomycetes": {
+          "n": 18,
+          "spearman_rho": null
+        },
+        "Euryarchaeota": {
+          "n": 13,
+          "spearman_rho": null
+        }
+      }
+    },
+    "translation": {
+      "EC_BS": {
+        "Proteobacteria": {
+          "n": 18,
+          "spearman_rho": null
+        },
+        "Firmicutes": {
+          "n": 739,
+          "spearman_rho": 0.11750415965600342
+        },
+        "Bacteroidetes": {
+          "n": 5,
+          "spearman_rho": null
+        },
+        "Actinobacteria": {
+          "n": 6,
+          "spearman_rho": null
+        },
+        "Cyanobacteria": {
+          "n": 1,
+          "spearman_rho": null
+        },
+        "Planctomycetes": {
+          "n": 1,
+          "spearman_rho": null
+        },
+        "Euryarchaeota": {
+          "n": 3,
+          "spearman_rho": null
+        }
+      },
+      "EC_PA": {
+        "Proteobacteria": {
+          "n": 1107,
+          "spearman_rho": 0.6273404097141705
+        },
+        "Firmicutes": {
+          "n": 1652,
+          "spearman_rho": 0.7132278285811121
+        },
+        "Bacteroidetes": {
+          "n": 135,
+          "spearman_rho": 0.57456321419647
+        },
+        "Actinobacteria": {
+          "n": 274,
+          "spearman_rho": 0.720588946323991
+        },
+        "Cyanobacteria": {
+          "n": 86,
+          "spearman_rho": 0.6482180592925855
+        },
+        "Planctomycetes": {
+          "n": 54,
+          "spearman_rho": 0.704439838940752
+        },
+        "Euryarchaeota": {
+          "n": 30,
+          "spearman_rho": 0.5798134852320559
+        }
+      },
+      "BS_PA": {
+        "Proteobacteria": {
+          "n": 31,
+          "spearman_rho": -0.35979402759022266
+        },
+        "Firmicutes": {
+          "n": 235,
+          "spearman_rho": 0.24454101919726082
+        },
+        "Bacteroidetes": {
+          "n": 5,
+          "spearman_rho": null
+        },
+        "Actinobacteria": {
+          "n": 13,
+          "spearman_rho": null
+        },
+        "Cyanobacteria": {
+          "n": 5,
+          "spearman_rho": null
+        },
+        "Planctomycetes": {
+          "n": 1,
+          "spearman_rho": null
+        },
+        "Euryarchaeota": {
+          "n": 2,
+          "spearman_rho": null
+        }
+      }
+    }
+  },
+  "task5_gap_ratio_with_gc_control": {
+    "transcription": {
+      "reliability_0.9": {
+        "gap_ratio_disattenuated_only_raw_correlations": 0.3413387822304142,
+        "gap_ratio_disattenuated_AND_gc_controlled": 0.30817819819174536
+      }
+    },
+    "translation": {
+      "reliability_0.9": {
+        "gap_ratio_disattenuated_only_raw_correlations": 0.285649780442277,
+        "gap_ratio_disattenuated_AND_gc_controlled": 0.2401823864341159
+      }
+    }
+  }
+}

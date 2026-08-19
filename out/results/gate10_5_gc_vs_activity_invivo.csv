@@ -1,0 +1,7 @@
+host,readout,n,spearman_rho_gc_vs_activity
+EC,transcription,15040,-0.6137371840995114
+EC,translation,9295,-0.4941594977790057
+BS,transcription,4435,-0.19969295665221215
+BS,translation,1142,-0.26626866305598973
+PA,transcription,17886,-0.43369879025949803
+PA,translation,11725,-0.23024858899627465

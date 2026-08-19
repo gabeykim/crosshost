@@ -1,4 +1,4 @@
-# CROSSHOST — Paper Framing (LOCKED, Gate 9 — for the manuscript and all downstream outreach)
+# CROSSHOST — Paper Framing (LOCKED, Gate 9, updated Gate 10.5 — for the manuscript and all downstream outreach)
 
 **This file is locked.** It supersedes every prior version. It was written
 after four independent attempts to recover a positive cross-host signal
@@ -6,6 +6,13 @@ after four independent attempts to recover a positive cross-host signal
 initially looked real (Gate 8.6). No further rescue attempts are
 authorized against this framing — running a fifth would be the anti-retrofit
 failure the charter warns against (Part V, rule 9), not diligence.
+
+**Gate 10.5 update:** inserted a new finding (5, below) from an independent
+dataset (DRAFTS) using the same regulatory-sequence library, and confirmed
+the central raw-correlation contrast survives controlling for a real,
+universal source-genome GC confound (see finding 5 and finding 9). No
+other finding changed; findings previously numbered 5–11 are renumbered
+6–12 to make room.
 
 ## The central claim, in one sentence
 
@@ -17,7 +24,11 @@ over a sequence-only model for absolute-level prediction, under three
 distinct conditioning mechanisms, and helps only in the single host×readout
 cell with the highest measurement reliability. Two attempts to recover
 signal by reframing the prediction target failed under controls that
-identified their mechanisms.**
+identified their mechanisms. An independent dataset using the same
+regulatory-sequence library suggests host specificity resides substantially
+in cellular context rather than transcriptional machinery — consistent
+with, though not proof of, why genome-encoded machinery features carried no
+signal.**
 
 ## Evidence hierarchy, strongest first
 
@@ -75,7 +86,42 @@ identified their mechanisms.**
    whether conditioning helps at all — a methodological finding useful to
    anyone building a host-conditioned model on a handful of domains,
    regardless of this paper's own negative result.
-5. **[PRE-REGISTERED, strong] H-DIAGNOSTIC: NOT MET on all 12 cells.** A
+5. **[POST-HOC, Gate 10/10.5, independent dataset, mechanistic] Cell-free
+   lysates largely abolish the cross-host differences that dominate in-vivo
+   measurements — evidence host specificity resides in cellular context,
+   not transcriptional machinery.** DRAFTS (Yim, Johns et al. 2019, *Mol
+   Syst Biol*) measured the same 165bp regulatory-sequence library's
+   transcription across ten bacterial species using cell-free lysates.
+   Cross-host correlations there span **0.623–0.911 across all 45 species
+   pairs**, including cross-phylum pairs; *B. subtilis* is not an outlier
+   (mean correlation with the other nine species: 0.783, mid-pack). The
+   directly comparable pair — *E. coli*–*B. subtilis*, the only two of this
+   project's three primary hosts present in DRAFTS (*P. aeruginosa* is
+   confirmed absent, see Scope limits) — correlates at **0.597 cell-free
+   vs. 0.258 in vivo**, more than double. Within-species agreement between
+   the two modalities is separately good (0.69–0.90 across seven species,
+   DRAFTS's own paired RS234 design) — cell-free measurement is a faithful
+   proxy for a host's own behavior, just not for cross-host *differences*.
+   **Mechanistic reading, explicitly flagged as a hypothesis consistent
+   with the data, not a demonstrated causal claim:** cell-free systems
+   retain transcriptional machinery (RNA polymerase, sigma factors) but
+   lack membrane, native supercoiling, resource competition, and growth
+   physiology. If cross-host specificity largely disappears when that
+   context is removed, it plausibly resides substantially in cellular
+   context rather than machinery — which would explain why this project's
+   37 genome-encoded machinery features (finding 6, below) carried no
+   detectable signal. **Independently robustness-checked:** the analogous
+   raw in-vivo contrast (finding 9) survives controlling for a real,
+   universal source-genome GC confound found in this same DRAFTS analysis
+   (GC-vs-activity ρ −0.49 to −0.74 in all ten cell-free hosts, and
+   −0.20 to −0.61 in vivo) — confirmed two independent ways (Gate 10.5).
+   Full section: `out/DRAFTS_SECTION.md`. **A host-count sweep on DRAFTS
+   was considered and explicitly not run** — this cross-host structure is
+   measurably a different phenomenon from the in-vivo one, so a sweep
+   there would answer a real question about cell-free systems, not resolve
+   whether more training hosts would fix conditioning on the in-vivo
+   problem (`out/GATE10_MEMO.md` Task 5).
+6. **[PRE-REGISTERED, strong] H-DIAGNOSTIC: NOT MET on all 12 cells.** A
    free per-host lookup embedding — pure identity, zero biological content
    — matches or beats both the 37-D genomic and 6-D physiology
    host-feature vectors at zero-shot in every one of 12 (host, readout,
@@ -83,8 +129,9 @@ identified their mechanisms.**
    point estimate wins outright). **The biological features carry no
    detectable advantage over an arbitrary host tag.** Caveated explicitly:
    n_hosts ≤ 6, so this is a strong result within a small evaluation, not
-   a claim about host-feature engineering in general.
-6. **[POST-HOC, Gate 8.5/8.6, refuted hypothesis with direction named]
+   a claim about host-feature engineering in general. (See finding 5 for a
+   candidate explanation: the features describe machinery, not context.)
+7. **[POST-HOC, Gate 8.5/8.6, refuted hypothesis with direction named]
    Co-activity, not magnitude, carries what transferable signal exists.**
    The hypothesis tested was that activity is host-specific while strength
    above threshold is conserved. The data says the opposite for
@@ -99,7 +146,7 @@ identified their mechanisms.**
    *B. subtilis* pairs lives predominantly in whether a sequence fires at
    all, not in how strongly it fires once it does** — magnitude agreement
    drops sharply, not strengthens, once both hosts are firing.
-7. **[POST-HOC, Gate 3 + Gate 8.6, three converging lines] The
+8. **[POST-HOC, Gate 3 + Gate 8.6, three converging lines] The
    transcription/translation asymmetry is a result, not a limitation.**
    (i) A sigma-70 promoter-motif match score carries real transcription
    signal (ρ=0.24–0.43 across primary hosts, Gate 3) but essentially none
@@ -111,7 +158,7 @@ identified their mechanisms.**
    smaller than the raw column implies (11,564) and the smallest of any
    primary host/readout combination in this project. **A fourth candidate
    line — that shift-prediction recovered transcription-specific signal —
-   was tested and did NOT survive its own control (see finding 9 below);
+   was tested and did NOT survive its own control (see finding 10 below);
    it is explicitly removed from this convergent-evidence list, not
    silently dropped.** On the three lines that do survive: transcription
    carries recoverable cross-host structure in this dataset; translation
@@ -119,53 +166,64 @@ identified their mechanisms.**
    "translation is fundamentally less cross-host-conserved" from "the
    FACS-seq translation readout in this dataset is too noisy to support
    this class of analysis" — no measurement-reliability estimate exists
-   for translation in any host (see finding 8). The honest bet is a mix,
+   for translation in any host (see finding 9). The honest bet is a mix,
    weighted toward the noise explanation for *B. subtilis* specifically
    (smallest N of any primary cell) but not for *E. coli*/*P. aeruginosa*
    (ample N — 9,146/17,630 floor-corrected — where every model in this
    project still found no translation signal either).
-8. **[POST-HOC, Gate 8, your addition to a known result] Disattenuated
-   cross-host measurement agreement bounds achievable model performance.**
-   Raw cross-host correlation is ρ≈0.75 (*E. coli*–*P. aeruginosa*,
-   transcription) vs. ρ≈0.16–0.26 for any *B. subtilis* pair — itself a
-   replication of Johns et al. 2018's own reported result (finding 10
-   below), not a new observation. What this project adds: a
-   disattenuation correction (Spearman's classical measurement-error
-   correction), anchored by an empirically-measured *E. coli* transcription
-   reliability of 0.912 (five independent growth-condition replicates,
-   cross-checked to 0.929 by an independent method), leaves the gap ratio
-   **unchanged** — 0.341 observed, 0.341 corrected at reliability 0.9, and
-   still only 0.515 under a deliberately pessimistic reliability of 0.5.
-   **The gap survives measurement-noise correction at every tested level.**
-   This connects measurement agreement directly to the ceiling on what any
-   downstream model could achieve — a link Johns et al. did not make.
-9. **[POST-HOC, Gate 8.5/8.6, TWO DOCUMENTED FAILED RESCUE ATTEMPTS —
-   reported in the results, not buried]**
-   - **Shift-prediction (RETRACTED).** Reframing the target as the
-     cross-host *shift*, given a reference host's measured value, initially
-     appeared to recover real *B. subtilis*-transcription signal (7 of 8
-     configurations beat a mean-shift baseline). A regression-to-the-mean
-     control found this did not survive: Spearman(shift, reference value)
-     is as strongly negative as −0.812 (PA→BS transcription) across most
-     host pairs, meaning a high reference-host value mechanically predicts
-     a larger downward shift with zero sequence information required. A
-     reference-value-only baseline (no sequence at all) matched or beat the
-     original model in 10 of 11 winning cells. A second, independent
-     control — retraining the identical architecture with sequences
-     randomly shuffled relative to their targets — reproduced most of the
-     original performance (e.g. EC→BS transcription: original ρ=0.432,
-     shuffled-sequence ρ=0.557, **higher** with no real sequence
-     information at all). **Retracted, with the retraction disclosed in
-     place, not erased** (`out/GATE8_5_MEMO.md` Task 1B carries a dated
-     correction notice; `out/GATE8_6_MEMO.md` has the full control).
-   - **Co-active restriction (refuted in the informative direction).** See
-     finding 6.
-   - **A negative result that survived four independent, controlled
-     rescue attempts — three alternative conditioning mechanisms, a target
-     reframing, and a subset-restriction hypothesis — is harder to dismiss
-     than one that was never tested this way.** Reported as evidence for
-     the central claim's robustness, not as a series of failures to hide.
-10. **[POST-HOC, replication credited to the original source] Raw
+9. **[POST-HOC, Gate 8, your addition to a known result, Gate 10.5
+   robustness-checked] Disattenuated cross-host measurement agreement
+   bounds achievable model performance.** Raw cross-host correlation is
+   ρ≈0.75 (*E. coli*–*P. aeruginosa*, transcription) vs. ρ≈0.16–0.26 for
+   any *B. subtilis* pair — itself a replication of Johns et al. 2018's own
+   reported result (finding 11 below), not a new observation. What this
+   project adds: a disattenuation correction (Spearman's classical
+   measurement-error correction), anchored by an empirically-measured
+   *E. coli* transcription reliability of 0.912 (five independent
+   growth-condition replicates, cross-checked to 0.929 by an independent
+   method), leaves the gap ratio **unchanged** — 0.341 observed, 0.341
+   corrected at reliability 0.9, and still only 0.515 under a deliberately
+   pessimistic reliability of 0.5. **Gate 10.5 added a second, independent
+   robustness check**: controlling for source-genome GC content — a real,
+   universal confound found in the same-library DRAFTS dataset (finding 5)
+   — leaves the transcription gap ratio at 0.308 (SURVIVES INTACT, −9.7%
+   relative change) and the translation gap ratio at 0.240 (SURVIVES,
+   ATTENUATED, −15.9%), confirmed a second way by holding source phylum
+   constant entirely (stratified correlations, no functional-form
+   assumption) — the EC-PA vs. BS-pairs contrast holds, and in the
+   Firmicutes stratum is if anything sharper, within a single source
+   phylum. **The gap survives measurement-noise correction and GC/phylum-composition
+   control at every tested level.** Full analysis: `out/GATE10_5_MEMO.md`
+   Task 2. This connects measurement agreement directly to the ceiling on
+   what any downstream model could achieve — a link Johns et al. did not
+   make.
+10. **[POST-HOC, Gate 8.5/8.6, TWO DOCUMENTED FAILED RESCUE ATTEMPTS —
+    reported in the results, not buried]**
+    - **Shift-prediction (RETRACTED).** Reframing the target as the
+      cross-host *shift*, given a reference host's measured value, initially
+      appeared to recover real *B. subtilis*-transcription signal (7 of 8
+      configurations beat a mean-shift baseline). A regression-to-the-mean
+      control found this did not survive: Spearman(shift, reference value)
+      is as strongly negative as −0.812 (PA→BS transcription) across most
+      host pairs, meaning a high reference-host value mechanically predicts
+      a larger downward shift with zero sequence information required. A
+      reference-value-only baseline (no sequence at all) matched or beat the
+      original model in 10 of 11 winning cells. A second, independent
+      control — retraining the identical architecture with sequences
+      randomly shuffled relative to their targets — reproduced most of the
+      original performance (e.g. EC→BS transcription: original ρ=0.432,
+      shuffled-sequence ρ=0.557, **higher** with no real sequence
+      information at all). **Retracted, with the retraction disclosed in
+      place, not erased** (`out/GATE8_5_MEMO.md` Task 1B carries a dated
+      correction notice; `out/GATE8_6_MEMO.md` has the full control).
+    - **Co-active restriction (refuted in the informative direction).** See
+      finding 7.
+    - **A negative result that survived four independent, controlled
+      rescue attempts — three alternative conditioning mechanisms, a target
+      reframing, and a subset-restriction hypothesis — is harder to dismiss
+      than one that was never tested this way.** Reported as evidence for
+      the central claim's robustness, not as a series of failures to hide.
+11. **[POST-HOC, replication credited to the original source] Raw
     cross-host measurement correlation.** *E. coli* and *P. aeruginosa*
     activity measurements correlate at ρ≈0.75 (transcription); any
     *B. subtilis* pair correlates at only ρ≈0.16–0.26. **This replicates
@@ -180,9 +238,9 @@ identified their mechanisms.**
     operationalization (raw protein level vs. Johns's translation-efficiency
     ratio), a different, more robust statistic on far larger per-pair N
     (Spearman on pairwise-co-active subsets vs. Johns's Pearson on a
-    three-way-intersected n=212), and the disattenuation link in finding 8,
+    three-way-intersected n=212), and the disattenuation link in finding 9,
     which does not exist in Johns et al. at all.
-11. **[APPENDIX-LEVEL] Foundation-model comparison and feature ablation.**
+12. **[APPENDIX-LEVEL] Foundation-model comparison and feature ablation.**
     Two genomic foundation models (DNABERT-2, 117M params; PromoGen2, 148M
     params) were evaluated via frozen-embedding + shallow-head, uniformly
     with each other, and lost to sequence-only in 35 of 37 statistically
@@ -217,22 +275,28 @@ explicitly.** Two of the three primary hosts (*E. coli*, *P. aeruginosa*)
 are Gammaproteobacteria — **one of the three held-out-host tests in this
 project's own primary evaluation is therefore a substantially easier
 phylogenetic hop than the other two**, and this project's own raw-correlation
-finding (10, above) shows exactly that pair has the highest cross-host
+finding (11, above) shows exactly that pair has the highest cross-host
 measurement agreement. Held-out-host results should be read per-host, not
 pooled, for this reason — a pattern this project's own results (finding 3)
 independently confirm (conditioning helps only at the Gammaproteobacteria
 pair). One architecture family (a ~214–228K-parameter CNN trunk, tested
 with three conditioning mechanisms and a sequence-only ablation). One
-dataset: Johns et al. 2018, 165bp regulatory-sequence library, the only
-dataset of its kind and eight years old. Two specific host-feature vectors
-(37-D genomic, 6-D depth-matched proteomic physiology proxy) — not
-exhaustive of what "genome-encoded" or "physiological" could mean. Two
-genomic foundation models at 117M and 148M parameters, evaluated via one
-protocol (frozen-embedding + shallow head) that this project's own
-follow-up work found is not necessarily either model's best protocol.
-Measurement reliability is directly estimated for exactly one
-host×readout combination — *E. coli* transcription (0.912) — and
-sensitivity-bounded (not measured) everywhere else, including for
+dataset for the central in-vivo claim: Johns et al. 2018, 165bp
+regulatory-sequence library, the only dataset of its kind and eight years
+old — the DRAFTS mechanistic corroboration (finding 5) is a second,
+independent dataset from the same laboratory and library, but covers only
+transcription, cell-free, and only two of this project's three primary
+hosts (**P. aeruginosa is entirely absent from DRAFTS** — its ten-species
+panel includes *Pantoea agglomerans*, an unrelated species sharing the "Pa"
+abbreviation with *Pseudomonas aeruginosa*; see `out/KNOWN_ISSUES.md`).
+Two specific host-feature vectors (37-D genomic, 6-D depth-matched
+proteomic physiology proxy) — not exhaustive of what "genome-encoded" or
+"physiological" could mean. Two genomic foundation models at 117M and 148M
+parameters, evaluated via one protocol (frozen-embedding + shallow head)
+that this project's own follow-up work found is not necessarily either
+model's best protocol. Measurement reliability is directly estimated for
+exactly one host×readout combination — *E. coli* transcription (0.912) —
+and sensitivity-bounded (not measured) everywhere else, including for
 *B. subtilis*, the host the central claim depends on most.
 
 ## Evo 2 — documented infrastructure limitation, not a gap in effort
@@ -245,7 +309,7 @@ the ArcInstitute repository README and GitHub issue #67; this project's
 environment is Apple Silicon, MPS-only). A free hosted-API path was
 identified but requires external account creation this project's tooling
 could not perform. The capacity objection to the central claim is weakened
-by findings 3–4 and 11 above (three conditioning mechanisms tested, not
+by findings 3–4 and 12 above (three conditioning mechanisms tested, not
 one; the FM comparison itself demoted with its capacity framing dropped)
 but not fully closed by any model actually run at that scale.
 
@@ -255,9 +319,9 @@ Retired in Gate 7, reconfirmed retired here. Does not appear anywhere in
 this paper. Full history: `out/GATE5_5_MEMO.md`'s dated correction,
 `out/GATE6_MEMO.md`'s dated addendum, `out/GATE7_MEMO.md` Task 1,
 `out/GATE8_MEMO.md` Task 1. Raw cross-host measurement correlation
-(finding 10) and its disattenuated form (finding 8) carry the full
-interpretive weight this metric was meant to carry, without a derived
-ratio.
+(finding 11) and its disattenuated, GC-controlled form (finding 9) carry
+the full interpretive weight this metric was meant to carry, without a
+derived ratio.
 
 ## Relationship to the Bernstein-lab claim — corrected attribution
 
@@ -292,7 +356,7 @@ wet-lab measurement. This does not test, confirm, or refute either paper's
 claim in its own terms. **The scoping observation worth stating precisely:**
 the 2024 paper's tested regime — closely related *Stutzerimonas* strains —
 is exactly the kind of phylogenetically close comparison this project's own
-data (findings 3, 10) shows has the *highest* cross-host measurement
+data (findings 3, 11) shows has the *highest* cross-host measurement
 agreement and the one case where conditioning showed any benefit at all.
 Their finding and this project's negative result are not in tension; they
 were tested in different, non-overlapping regimes of host similarity. This
@@ -312,8 +376,9 @@ everywhere: the sequence-only ablation, the cross-host measurement-
 correlation analysis, the conformal-calibration/ECE finding, the
 feature-group ablation, the alternative conditioning mechanisms (1A), the
 co-active-subset analysis (1C), the two-stage transfer analysis (1D), the
-disattenuation analysis, and the shift-prediction attempt and its
-retraction (1B).
+disattenuation analysis and its GC-control robustness check, the DRAFTS
+modality comparison, and the shift-prediction attempt and its retraction
+(1B).
 
 **Predicted-in-advance-and-then-corrected**: the Gate 6 foundation-model
 comparison (a specific falsifiable threshold committed in
@@ -322,8 +387,15 @@ was correct, one piece of its framing was later found wrong and corrected
 in Gate 7).
 
 **Attempted-and-retracted, disclosed with the mechanism, not hidden**: the
-shift-prediction reframe (finding 9). This is the second such
+shift-prediction reframe (finding 10). This is the second such
 correction-in-public this project has made (after the Gate 6→7 ceiling-metric
 correction) and is treated as evidence of verification discipline, not
 embarrassment — the manuscript's "what I could not do" and Discussion
 sections say this plainly.
+
+**Independent dataset, same library, different laboratory-run modality**:
+the DRAFTS comparison (finding 5) — not a reanalysis of this project's own
+numbers, and not run by this project (the raw DRAFTS measurements are
+Yim/Johns et al.'s own data); this project's contribution is the join, the
+cross-host correlation computation, the modality comparison, and the
+GC-confound robustness check.

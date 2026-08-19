@@ -2320,5 +2320,70 @@
       "provenance": "0 orphans (159 files)"
     },
     "self_caused_regression_found_and_fixed": "audit_leakage.py check 6 assumed all manifest keys resolve under data/; raw/drafts/* entries broke this; fixed by resolving raw/ and out/ -prefixed keys relative to project root"
+  },
+  "gate_10_5": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS",
+    "task2_gc_confound_LOAD_BEARING": {
+      "verdict_first_line": "contrast SURVIVES for both readouts",
+      "transcription": {
+        "gap_ratio_raw": 0.341,
+        "gap_ratio_gc_controlled": 0.308,
+        "pct_change": -9.7,
+        "verdict": "SURVIVES INTACT"
+      },
+      "translation": {
+        "gap_ratio_raw": 0.286,
+        "gap_ratio_gc_controlled": 0.24,
+        "pct_change": -15.9,
+        "verdict": "SURVIVES, ATTENUATED"
+      },
+      "ec_pa_barely_moves": {
+        "transcription_pct_change": -4.7,
+        "translation_pct_change": -0.6
+      },
+      "gc_vs_activity_invivo_per_host": {
+        "EC": {
+          "transcription": -0.614,
+          "translation": -0.494
+        },
+        "BS": {
+          "transcription": -0.2,
+          "translation": -0.266
+        },
+        "PA": {
+          "transcription": -0.434,
+          "translation": -0.23
+        }
+      },
+      "independent_confirmation_method": "phylum-stratified correlations (no functional-form assumption) -- contrast holds within Proteobacteria and Firmicutes strata separately, sharper within Firmicutes",
+      "methods_used": [
+        "closed-form partial correlation formula",
+        "rank-residual regression"
+      ],
+      "methods_agreement": "agreed to 3 decimal places in every cell",
+      "files": [
+        "scripts/95_gc_confound_invivo.py",
+        "out/results/gate10_5_gc_confound.json",
+        "out/results/gate10_5_gc_confound.csv"
+      ]
+    },
+    "task1_drafts_section": {
+      "file": "out/DRAFTS_SECTION.md",
+      "content": "publication-ready prose, no new analysis beyond Gate 10's own findings"
+    },
+    "task3_framing_updates": {
+      "paper_framing": "new finding 5 inserted (DRAFTS modality comparison), findings 5-11 renumbered 6-12, all cross-references updated",
+      "known_issues": "items 11 (Pa/P. agglomerans vs P. aeruginosa collision) and 12 (DRAFTS ID-space disjoint from Johns) added, synced to package/KNOWN_ISSUES.md",
+      "charter_amendments": "SR8 added -- manifest path-resolution convention for raw/ and out/ prefixed keys"
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (165 files)"
+    }
   }
 }
