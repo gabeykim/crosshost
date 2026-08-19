@@ -1,0 +1,72 @@
+{
+  "n_pairs": 45,
+  "same_phylum_mean_rho": 0.8515372910748868,
+  "cross_phylum_mean_rho": 0.7687030518920146,
+  "highest_pair": {
+    "species": [
+      "Pa",
+      "Vn"
+    ],
+    "rho": 0.9109435769826634
+  },
+  "lowest_pair": {
+    "species": [
+      "Ec",
+      "Ll"
+    ],
+    "rho": 0.6225321367294302
+  },
+  "per_species_mean_rho_ranked_lowest_first": [
+    {
+      "species": "Ll",
+      "phylum": "Firmicutes",
+      "mean_rho_with_others": 0.7286548752416512
+    },
+    {
+      "species": "Ec",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.75808907667779
+    },
+    {
+      "species": "Bs",
+      "phylum": "Firmicutes",
+      "mean_rho_with_others": 0.7830689256154051
+    },
+    {
+      "species": "Vn",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.8118709622439008
+    },
+    {
+      "species": "Cg",
+      "phylum": "Actinobacteria",
+      "mean_rho_with_others": 0.8197164046839392
+    },
+    {
+      "species": "Se",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.8306067586494792
+    },
+    {
+      "species": "Pp",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.8342968713377235
+    },
+    {
+      "species": "Pa",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.8348517727634268
+    },
+    {
+      "species": "Ko",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.8376897379137351
+    },
+    {
+      "species": "Ef",
+      "phylum": "Proteobacteria",
+      "mean_rho_with_others": 0.8531525253538037
+    }
+  ],
+  "phylogenetic_pattern_holds": true
+}

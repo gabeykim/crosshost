@@ -237,7 +237,12 @@ def check_manifest_hashes():
     mismatches = []
     checked = 0
     for fname, info in manifest.items():
-        path = DATA / fname
+        # Manifest keys are bare filenames resolved under data/ by convention
+        # (e.g. "three_host.parquet"), EXCEPT keys that already carry an
+        # explicit root-relative path prefix (e.g. "raw/drafts/foo.xlsx",
+        # added starting Gate 10 for source-data provenance tracking outside
+        # data/) -- those resolve relative to the project ROOT instead.
+        path = ROOT / fname if fname.startswith(("raw/", "out/")) else DATA / fname
         if not path.exists():
             mismatches.append(f"{fname}: file missing")
             continue

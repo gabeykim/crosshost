@@ -1,0 +1,66 @@
+{
+  "id_join": {
+    "drafts_id_range": [
+      13097,
+      14477
+    ],
+    "johns_three_host_id_range": [
+      14478,
+      43726
+    ],
+    "rs241_id_range": [
+      14772,
+      48469
+    ],
+    "drafts_johns_id_overlap": 0,
+    "drafts_rs241_id_overlap": 0,
+    "verdict": "IDs do NOT join -- ranges are disjoint. Join must use sequence text."
+  },
+  "sequence_join": {
+    "drafts_n_sequences": 1047,
+    "drafts_vs_three_host_exact_match": 112,
+    "drafts_vs_three_host_match_pct_of_drafts": 10.7,
+    "rs241_sequences_recoverable_via_library_lookup": "207/241",
+    "drafts_vs_rs241_exact_match": 1,
+    "join_key": "sequence_165bp (uppercased, stripped) == three_host.regulatory_sequence / library-looked-up RS241 sequence"
+  },
+  "fold_compatibility": {
+    "n_drafts_sequences_matched_to_three_host": 112,
+    "n_of_those_present_in_frozen_fold_assignment": 111,
+    "case": "PARTIALLY COVERED (111/112 = 99.1%)",
+    "fold_distribution_of_matched_rows": {
+      "0": 24,
+      "1": 23,
+      "2": 6,
+      "3": 31,
+      "4": 27
+    },
+    "note": "The single fold=NaN row is a matched sequence whose OLIGO ID was excluded from the main-library fold assignment for the same reason every RS241 ID was (see 'of_uncovered_rows_also_in_rs241' below -- confirms it is literally an RS241 sequence, not a separate excluded category).",
+    "FROZEN SPLITS NOT MODIFIED THIS GATE": true,
+    "of_uncovered_rows_also_in_rs241": 1
+  },
+  "primary_host_overlap": {
+    "P_aeruginosa_in_DRAFTS": false,
+    "P_aeruginosa_note": "DRAFTS's 'Pa' column is Pantoea agglomerans, confirmed against Appendix Table S1 and full-text species list -- NOT Pseudomonas aeruginosa. Zero occurrences of 'aeruginosa' anywhere in the paper.",
+    "n_matched_rows_usable_in_Ec": 94,
+    "n_matched_rows_usable_in_Bs": 83,
+    "n_matched_rows_usable_in_both_Ec_and_Bs": 82,
+    "of_this_project_3_primary_hosts_EC_BS_PA_only_2_overlap_with_DRAFTS": [
+      "EC",
+      "BS"
+    ]
+  },
+  "source_genome_metadata": {
+    "carried_natively_by_drafts": true,
+    "columns": [
+      "source_species",
+      "source_genus",
+      "source_family",
+      "source_order",
+      "source_class",
+      "source_phylum",
+      "source_genome"
+    ],
+    "note": "DRAFTS's Fig. 3 sheet carries its own full source-genome taxonomy per sequence, independent of Johns's metadata -- does not need to be joined from three_host_library for genome-blocked splitting, though cross-checking the two sources' agreement on the 112 overlapping sequences would be a natural sanity check for Gate 11, not required here."
+  }
+}

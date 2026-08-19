@@ -1,0 +1,136 @@
+{
+  "gc_vs_activity": [
+    {
+      "species": "Ec",
+      "phylum": "Proteobacteria",
+      "n": 897,
+      "spearman_rho_gc_vs_log_tx": -0.4932280341171012
+    },
+    {
+      "species": "Ef",
+      "phylum": "Proteobacteria",
+      "n": 828,
+      "spearman_rho_gc_vs_log_tx": -0.7224284351873318
+    },
+    {
+      "species": "Se",
+      "phylum": "Proteobacteria",
+      "n": 475,
+      "spearman_rho_gc_vs_log_tx": -0.7395402708926687
+    },
+    {
+      "species": "Ko",
+      "phylum": "Proteobacteria",
+      "n": 752,
+      "spearman_rho_gc_vs_log_tx": -0.7345282604583007
+    },
+    {
+      "species": "Pa",
+      "phylum": "Proteobacteria",
+      "n": 876,
+      "spearman_rho_gc_vs_log_tx": -0.6311633308529304
+    },
+    {
+      "species": "Pp",
+      "phylum": "Proteobacteria",
+      "n": 802,
+      "spearman_rho_gc_vs_log_tx": -0.6990432989919907
+    },
+    {
+      "species": "Vn",
+      "phylum": "Proteobacteria",
+      "n": 822,
+      "spearman_rho_gc_vs_log_tx": -0.6257226655323417
+    },
+    {
+      "species": "Bs",
+      "phylum": "Firmicutes",
+      "n": 830,
+      "spearman_rho_gc_vs_log_tx": -0.667893535814034
+    },
+    {
+      "species": "Cg",
+      "phylum": "Actinobacteria",
+      "n": 908,
+      "spearman_rho_gc_vs_log_tx": -0.7325762592676728
+    },
+    {
+      "species": "Ll",
+      "phylum": "Firmicutes",
+      "n": 932,
+      "spearman_rho_gc_vs_log_tx": -0.6841926250107575
+    }
+  ],
+  "source_phylum_activity": [
+    {
+      "recipient": "Ec",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": -0.051621141572080455,
+      "proteobacteria_source_mean_log_tx": -0.6672796364485226,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Ef",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.2302825278833367,
+      "proteobacteria_source_mean_log_tx": -0.796817364846691,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Se",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.60995870844768,
+      "proteobacteria_source_mean_log_tx": -0.21173602485498777,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Ko",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.20449156192380274,
+      "proteobacteria_source_mean_log_tx": -0.7557563251565863,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Pa",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.12944364375023537,
+      "proteobacteria_source_mean_log_tx": -0.42976652519272146,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Pp",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.34303467599976567,
+      "proteobacteria_source_mean_log_tx": -0.29100340266596636,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Vn",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.1485871928042928,
+      "proteobacteria_source_mean_log_tx": -0.40735586448487726,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Bs",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": -0.1669393800956554,
+      "proteobacteria_source_mean_log_tx": -1.2951262451885446,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Cg",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.480977570508668,
+      "proteobacteria_source_mean_log_tx": -0.11904602062402664,
+      "firmicutes_gt_proteobacteria": "True"
+    },
+    {
+      "recipient": "Ll",
+      "highest_mean_activity_source_phylum": "Firmicutes",
+      "firmicutes_source_mean_log_tx": 0.3495005775596752,
+      "proteobacteria_source_mean_log_tx": -0.08904332097823627,
+      "firmicutes_gt_proteobacteria": "True"
+    }
+  ]
+}

@@ -2183,5 +2183,142 @@
       "leakage": "6/6 PASS",
       "provenance": "0 orphans"
     }
+  },
+  "gate_10": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS (data acquired and characterized; feasibility verdict is DECISION NEEDED, not a clean go/no-go)",
+    "task1_acquisition": {
+      "route_1_embo_springer": "BLOCKED (bot-detection Client Challenge wall)",
+      "route_2_pmc": "SUCCESS via PMC OA bulk-package FTP fallback (per-file downloads blocked by PoW challenge)",
+      "route_3_biorxiv": "BLOCKED (HTTP 429 rate limit)",
+      "route_4_sra_accession": "FOUND, quoted exactly: PRJNA509603 (not downloaded, not needed)",
+      "license": "CC BY 4.0 (article's own stated license; no separate CC0 label found for source data)",
+      "files_in_manifest": 10
+    },
+    "task2_inventory": {
+      "species_confirmed": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Bs",
+        "Cg",
+        "Ll"
+      ],
+      "CRITICAL_FINDING_Pa_is_P_agglomerans_not_P_aeruginosa": true,
+      "n_10way_union_set_recomputed": 421,
+      "matches_paper_headline": true,
+      "rs234_invivo_n": 234,
+      "rs234_species": [
+        "Ec",
+        "Se",
+        "Pp",
+        "Vn",
+        "Ko",
+        "Bs",
+        "Cg"
+      ],
+      "data_quality_trap_caught": "tx/zscore columns use string sentinels ('no_DNA_counts' etc) not NaN for unusable rows -- naive .notna() would have shown 100% usable",
+      "replicate_reliability_ec_invivo": 0.8932,
+      "replicate_reliability_ec_drafts_cellfree": 0.9333
+    },
+    "task3_join": {
+      "id_join_works": false,
+      "id_ranges_disjoint": {
+        "drafts": [
+          13097,
+          14477
+        ],
+        "johns_three_host": [
+          14478,
+          43726
+        ],
+        "rs241": [
+          14772,
+          48469
+        ]
+      },
+      "sequence_join_works": true,
+      "drafts_vs_three_host_overlap": 112,
+      "drafts_vs_rs241_overlap": 1,
+      "fold_coverage": "111/112 (99.1%), PARTIALLY COVERED",
+      "bug_caught_and_fixed": "fold_assignment_FINAL.parquet OLIGO ID stored as string not int, caused silent 0/112 false-negative on first pass",
+      "frozen_splits_modified": false,
+      "primary_host_overlap": [
+        "EC",
+        "BS"
+      ],
+      "note": "P. aeruginosa entirely absent from DRAFTS"
+    },
+    "task4_characterization": {
+      "crosshost_correlation_range": [
+        0.623,
+        0.911
+      ],
+      "crosshost_correlation_mean": 0.81,
+      "same_phylum_mean": 0.852,
+      "cross_phylum_mean": 0.769,
+      "bs_outlier_in_cellfree": false,
+      "modality_comparison_LOAD_BEARING": {
+        "cellfree_EC_BS_rho": 0.597,
+        "invivo_EC_BS_rho_full_library": 0.258,
+        "ratio": "cell-free more than 2x the in-vivo figure",
+        "within_species_modality_agreement_rs234": {
+          "Ec": 0.9,
+          "Se": 0.76,
+          "Pp": 0.74,
+          "Vn": 0.79,
+          "Ko": 0.69,
+          "Bs": 0.69,
+          "Cg": 0.8
+        },
+        "verdict": "cell-free host effect is NOT the same object as the in-vivo host effect"
+      },
+      "gc_confound_confirmed": true,
+      "gc_activity_correlation_range": [
+        -0.74,
+        -0.49
+      ],
+      "floor_artifact_found": false
+    },
+    "task5_feasibility": {
+      "max_hosts": 10,
+      "n_at_10way_union": 421,
+      "n_at_2way_best": 891,
+      "volume_controlled_sweep_max_total_N": 1782,
+      "sample_size_verdict": "marginal, not clearly too small, but wide intervals expected at high host counts",
+      "new_splits_required": "935/1047 DRAFTS sequences have no existing fold assignment",
+      "recommendation": "NOT a clean go, NOT a clean no-go -- relevance concern (task 4.3) is more serious than sample size -- DECISION NEEDED",
+      "decision_needed": true
+    },
+    "files": {
+      "data": [
+        "data/drafts.parquet",
+        "data/drafts_rs234_invivo.parquet",
+        "data/drafts_johns_overlap.parquet"
+      ],
+      "scripts": [
+        "scripts/88_parse_drafts.py",
+        "scripts/89_join_drafts_johns.py",
+        "scripts/90_drafts_crosshost_correlations.py",
+        "scripts/91_drafts_modality_comparison.py",
+        "scripts/92_drafts_gc_and_floor_check.py",
+        "scripts/93_drafts_feasibility.py",
+        "scripts/94_gate10_figures.py"
+      ],
+      "memo": "out/GATE10_MEMO.md"
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (159 files)"
+    },
+    "self_caused_regression_found_and_fixed": "audit_leakage.py check 6 assumed all manifest keys resolve under data/; raw/drafts/* entries broke this; fixed by resolving raw/ and out/ -prefixed keys relative to project root"
   }
 }

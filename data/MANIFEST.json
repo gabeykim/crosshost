@@ -55,5 +55,90 @@
   "splits/clustering_summary.csv": {
     "sha256": "7eac3ae423302c9fa5e72a0311fd616cee5b9c549856df164bafeac696a6abc0",
     "size_bytes": 220
+  },
+  "drafts.parquet": {
+    "sha256": "13152733f72459d3ea2ea7128738044033a25404211418e5c4e831e9292b9874",
+    "size_bytes": 431062,
+    "n_rows": 1047,
+    "source": "scripts/88_parse_drafts.py"
+  },
+  "drafts_rs234_invivo.parquet": {
+    "sha256": "866ae5f8899df718379ae363da613e1ffe4bcf3ffc48ddc66270f47d8541f535",
+    "size_bytes": 157486,
+    "n_rows": 234,
+    "source": "scripts/88_parse_drafts.py"
+  },
+  "drafts_johns_overlap.parquet": {
+    "sha256": "04d9271d8b6a048493ed0aba6c7a58971071f971f3b460a9a9c83be9b26eb63e",
+    "size_bytes": 97908,
+    "n_rows": 112,
+    "source": "scripts/89_join_drafts_johns.py"
+  },
+  "raw/drafts/msb198875_FullTextArticle.pdf": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 2880017,
+    "sha256": "b2b7a73cae75768e1f245edd12e0c7bf23ca5dce710920fd1efa5c1f8adb4da1"
+  },
+  "raw/drafts/msb198875_FullTextArticle.nxml": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 178055,
+    "sha256": "26e7cb63786c456a3689e349641212cada3bda91c6cda926b7a011454a8da10a"
+  },
+  "raw/drafts/msb198875_Appendix.pdf": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 4520346,
+    "sha256": "8bb7e233846b04e0c08cfa5d8d498942b365d9da1a1cb1f88f39eb4616b1e6fc"
+  },
+  "raw/drafts/msb198875_SourceData_Fig1.xlsx": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 10959221,
+    "sha256": "b2c8b2e9fc78242d6335e593ad3492fcdf55e95e65e7d372a1cdb7fdcb4dea16"
+  },
+  "raw/drafts/msb198875_SourceData_Fig2.xlsx": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 328242,
+    "sha256": "e002ced3f158eb502e7e0f0e17f17aec9df098e916389e904f7f558bc7ab1484"
+  },
+  "raw/drafts/msb198875_SourceData_Fig3.xlsx": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 1083660,
+    "sha256": "a5f9ab026a931eee6bd1f0049ef281334b99b7bfd476a1f1ddc43f0c6c5eafee"
+  },
+  "raw/drafts/msb198875_SourceData_Fig4.xlsx": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 4547103,
+    "sha256": "a60fb4a96e5df9278172d070d14f28c4e4107fcc4007cfc7927d80b590d3b96f"
+  },
+  "raw/drafts/msb198875_SourceData_Fig5.xlsx": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 4350611,
+    "sha256": "0c7f2196bfdc3ab4ec5df7c024e0ac6775b6d2650470760c2ae4d56d186c33a7"
+  },
+  "raw/drafts/msb198875_SourceData_Appendix.zip": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 21126240,
+    "sha256": "bb94c5010a4e5830647426ab5773e93e59d0580f0631edee5b70e1b73b2419ae"
+  },
+  "raw/drafts/msb198875_ReviewProcessFile.pdf": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 440721,
+    "sha256": "745f90f1462f9528de6aa31fc76e700bb998cfd636cdd8f80445a9f1e11b6241"
+  },
+  "raw/drafts/PMC6692573.tar.gz": {
+    "url": "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/6b/PMC6692573.tar.gz",
+    "license": "CC BY 4.0",
+    "size_bytes": 49974910,
+    "sha256": "9c3aeddf04d305aec8f048bbae05ceef10dbd1f7c668c1ab7a11c5f23af0460c",
+    "note": "bulk package containing all files above"
   }
 }

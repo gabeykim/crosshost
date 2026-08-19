@@ -1,0 +1,285 @@
+{
+  "max_training_hosts_available": 10,
+  "n_usable_by_host_count": {
+    "2": {
+      "n_subsets_checked": 45,
+      "n_total_possible_subsets": 45,
+      "min_N": 430,
+      "median_N": 796,
+      "max_N": 891,
+      "best_subset": [
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 891,
+      "worst_subset": [
+        "Se",
+        "Ko"
+      ],
+      "worst_subset_N": 430
+    },
+    "3": {
+      "n_subsets_checked": 120,
+      "n_total_possible_subsets": 120,
+      "min_N": 424,
+      "median_N": 749,
+      "max_N": 862,
+      "best_subset": [
+        "Pa",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 862,
+      "worst_subset": [
+        "Se",
+        "Ko",
+        "Ll"
+      ],
+      "worst_subset_N": 424
+    },
+    "4": {
+      "n_subsets_checked": 210,
+      "n_total_possible_subsets": 210,
+      "min_N": 422,
+      "median_N": 735,
+      "max_N": 828,
+      "best_subset": [
+        "Ec",
+        "Pa",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 828,
+      "worst_subset": [
+        "Ec",
+        "Se",
+        "Ko",
+        "Ll"
+      ],
+      "worst_subset_N": 422
+    },
+    "5": {
+      "n_subsets_checked": 252,
+      "n_total_possible_subsets": 252,
+      "min_N": 421,
+      "median_N": 589,
+      "max_N": 798,
+      "best_subset": [
+        "Ef",
+        "Pa",
+        "Vn",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 798,
+      "worst_subset": [
+        "Ec",
+        "Se",
+        "Ko",
+        "Bs",
+        "Ll"
+      ],
+      "worst_subset_N": 421
+    },
+    "6": {
+      "n_subsets_checked": 210,
+      "n_total_possible_subsets": 210,
+      "min_N": 421,
+      "median_N": 444,
+      "max_N": 778,
+      "best_subset": [
+        "Ef",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 778,
+      "worst_subset": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Bs",
+        "Ll"
+      ],
+      "worst_subset_N": 421
+    },
+    "7": {
+      "n_subsets_checked": 120,
+      "n_total_possible_subsets": 120,
+      "min_N": 421,
+      "median_N": 437,
+      "max_N": 762,
+      "best_subset": [
+        "Ec",
+        "Ef",
+        "Pa",
+        "Vn",
+        "Bs",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 762,
+      "worst_subset": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Pa",
+        "Bs",
+        "Ll"
+      ],
+      "worst_subset_N": 421
+    },
+    "8": {
+      "n_subsets_checked": 45,
+      "n_total_possible_subsets": 45,
+      "min_N": 421,
+      "median_N": 427,
+      "max_N": 750,
+      "best_subset": [
+        "Ec",
+        "Ef",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Bs",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 750,
+      "worst_subset": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Pa",
+        "Pp",
+        "Bs",
+        "Ll"
+      ],
+      "worst_subset_N": 421
+    },
+    "9": {
+      "n_subsets_checked": 10,
+      "n_total_possible_subsets": 10,
+      "min_N": 421,
+      "median_N": 421,
+      "max_N": 717,
+      "best_subset": [
+        "Ec",
+        "Ef",
+        "Ko",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Bs",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 717,
+      "worst_subset": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Bs",
+        "Ll"
+      ],
+      "worst_subset_N": 421
+    },
+    "10": {
+      "n_subsets_checked": 1,
+      "n_total_possible_subsets": 1,
+      "min_N": 421,
+      "median_N": 421,
+      "max_N": 421,
+      "best_subset": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Bs",
+        "Cg",
+        "Ll"
+      ],
+      "best_subset_N": 421,
+      "worst_subset": [
+        "Ec",
+        "Ef",
+        "Se",
+        "Ko",
+        "Pa",
+        "Pp",
+        "Vn",
+        "Bs",
+        "Cg",
+        "Ll"
+      ],
+      "worst_subset_N": 421
+    }
+  },
+  "volume_controlled_sweep": {
+    "feasible": true,
+    "largest_total_N_supporting_full_k2_to_k10_range": 1782,
+    "limiting_host_count": 2,
+    "per_k_row_counts": {
+      "2": {
+        "per_host_N": 891,
+        "total_N": 1782
+      },
+      "3": {
+        "per_host_N": 594,
+        "total_N": 1782
+      },
+      "4": {
+        "per_host_N": 445,
+        "total_N": 1780
+      },
+      "5": {
+        "per_host_N": 356,
+        "total_N": 1780
+      },
+      "6": {
+        "per_host_N": 297,
+        "total_N": 1782
+      },
+      "7": {
+        "per_host_N": 254,
+        "total_N": 1778
+      },
+      "8": {
+        "per_host_N": 222,
+        "total_N": 1776
+      },
+      "9": {
+        "per_host_N": 198,
+        "total_N": 1782
+      },
+      "10": {
+        "per_host_N": 178,
+        "total_N": 1780
+      }
+    },
+    "caveat": "This is the theoretical max given the BEST subset at the limiting k; using a FIXED subset across all k values (needed to separate 'how many hosts' from 'which hosts' cleanly) will have a smaller usable N than this best-case figure -- see host-subset-sampling section."
+  },
+  "n_distinct_subsets_by_host_count": {
+    "2": 45,
+    "3": 120,
+    "4": 210,
+    "5": 252,
+    "6": 210,
+    "7": 120,
+    "8": 45,
+    "9": 10,
+    "10": 1
+  }
+}

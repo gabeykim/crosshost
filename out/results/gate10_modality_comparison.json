@@ -1,0 +1,62 @@
+{
+  "comparison_a_own_computation": {
+    "comparison": "A: own computation, DRAFTS cell-free vs Johns in-vivo, EC-BS pair (only pair with both hosts in both datasets)",
+    "cell_free_DRAFTS_EC_BS": {
+      "n": 82,
+      "spearman_rho": 0.5972649256459484
+    },
+    "in_vivo_Johns_EC_BS_on_same_112seq_overlap": {
+      "n": 15,
+      "spearman_rho": 0.14655948658340096
+    },
+    "in_vivo_Johns_EC_BS_full_library_reference": {
+      "n": 3668,
+      "spearman_rho": 0.2575175805660613
+    },
+    "caveat": "n is small (the DRAFTS-Johns sequence overlap is only 112 total, ~80-95 usable per pair) -- read the comparison directionally, not as a precise estimate."
+  },
+  "comparison_b_published_and_recomputed_rs234": {
+    "b1_published_replicate_reproducibility": {
+      "source": "raw/drafts/msb198875_Appendix.pdf, Appendix Table S6, 'Figure 1D' rows -- TRANSCRIBED DIRECTLY, not recomputed",
+      "metric": "Pearson r between biological replicate 1 and replicate 2 (NOT in-vitro-vs-in-vivo)",
+      "E_coli_in_vivo_RS29249": 0.8932,
+      "E_coli_DRAFTS_cellfree_RS29249": 0.9333,
+      "relevance": "A second, independent E. coli reliability estimate via true biological replicates, comparable in spirit to Gate 8's growth-condition-based estimate (0.912/0.929) but not the same measurement -- both point to E. coli transcription reliability in the low-to-mid 0.9s."
+    },
+    "b2_recomputed_from_drafts_own_released_data_NOT_a_published_quote": {
+      "source": "data/drafts_rs234_invivo.parquet (parsed from msb198875_SourceData_Fig2.xlsx, sheet 'Appendix Fig. S5')",
+      "metric": "Spearman rho, DRAFTS in-vitro (cell-free) tx vs DRAFTS in-vivo tx, same 234-sequence RS234 library, per species",
+      "per_species": {
+        "Ec": {
+          "n": 176,
+          "spearman_rho_invitro_vs_invivo": 0.9009333039841516
+        },
+        "Se": {
+          "n": 226,
+          "spearman_rho_invitro_vs_invivo": 0.7565163151534052
+        },
+        "Pp": {
+          "n": 226,
+          "spearman_rho_invitro_vs_invivo": 0.7379387418294284
+        },
+        "Vn": {
+          "n": 222,
+          "spearman_rho_invitro_vs_invivo": 0.7888861407721868
+        },
+        "Ko": {
+          "n": 204,
+          "spearman_rho_invitro_vs_invivo": 0.6893187552565182
+        },
+        "Bs": {
+          "n": 174,
+          "spearman_rho_invitro_vs_invivo": 0.6925311085167573
+        },
+        "Cg": {
+          "n": 230,
+          "spearman_rho_invitro_vs_invivo": 0.7962269361547887
+        }
+      },
+      "note_pa_not_tested": "P. aeruginosa is not in DRAFTS at all (see scripts/89); it is also not one of RS234's 7 in-vivo comparison species regardless."
+    }
+  }
+}

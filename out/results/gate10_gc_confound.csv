@@ -1,0 +1,11 @@
+species,phylum,n,spearman_rho_gc_vs_log_tx
+Ec,Proteobacteria,897,-0.4932280341171012
+Ef,Proteobacteria,828,-0.7224284351873318
+Se,Proteobacteria,475,-0.7395402708926687
+Ko,Proteobacteria,752,-0.7345282604583007
+Pa,Proteobacteria,876,-0.6311633308529304
+Pp,Proteobacteria,802,-0.6990432989919907
+Vn,Proteobacteria,822,-0.6257226655323417
+Bs,Firmicutes,830,-0.667893535814034
+Cg,Actinobacteria,908,-0.7325762592676728
+Ll,Firmicutes,932,-0.6841926250107575

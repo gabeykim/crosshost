@@ -1,0 +1,1804 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Syst Biol</journal-id><journal-id journal-id-type="iso-abbrev">Mol. Syst. Biol</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1744-4292</journal-id><journal-id journal-id-type="publisher-id">MSB</journal-id><journal-id journal-id-type="hwp">msb</journal-id><journal-title-group><journal-title>Molecular Systems Biology</journal-title></journal-title-group><issn pub-type="epub">1744-4292</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">31464371</article-id><article-id pub-id-type="pmc">6692573</article-id><article-id pub-id-type="doi">10.15252/msb.20198875</article-id><article-id pub-id-type="publisher-id">MSB198875</article-id><article-categories><subj-group subj-group-type="overline"><subject>Method</subject></subj-group><subj-group subj-group-type="heading"><subject>Methods</subject></subj-group></article-categories><title-group><article-title>Multiplex transcriptional characterizations across diverse bacterial species using cell&#x02010;free systems</article-title><alt-title alt-title-type="left-running-head">Sung Sun Yim <italic>et&#x000a0;al</italic></alt-title></title-group><contrib-group><contrib id="msb198875-cr-0001" contrib-type="author"><name><surname>Yim</surname><given-names>Sung Sun</given-names></name><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-5060-0344</contrib-id><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="msb198875-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="msb198875-cr-0002" contrib-type="author"><name><surname>Johns</surname><given-names>Nathan I</given-names></name><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="msb198875-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="msb198875-curr-0001">
+<sup>7</sup>
+</xref><xref ref-type="author-notes" rid="msb198875-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="msb198875-cr-0003" contrib-type="author"><name><surname>Park</surname><given-names>Jimin</given-names></name><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="msb198875-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="msb198875-cr-0004" contrib-type="author"><name><surname>Gomes</surname><given-names>Antonio LC</given-names></name><xref ref-type="aff" rid="msb198875-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="msb198875-cr-0005" contrib-type="author"><name><surname>McBee</surname><given-names>Ross M</given-names></name><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="msb198875-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="msb198875-cr-0006" contrib-type="author"><name><surname>Richardson</surname><given-names>Miles</given-names></name><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0003-3004-1084</contrib-id><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="msb198875-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="msb198875-cr-0007" contrib-type="author"><name><surname>Ronda</surname><given-names>Carlotta</given-names></name><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="msb198875-cr-0008" contrib-type="author"><name><surname>Chen</surname><given-names>Sway P</given-names></name><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="msb198875-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="msb198875-cr-0009" contrib-type="author"><name><surname>Garenne</surname><given-names>David</given-names></name><xref ref-type="aff" rid="msb198875-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="msb198875-cr-0010" contrib-type="author"><name><surname>Noireaux</surname><given-names>Vincent</given-names></name><xref ref-type="aff" rid="msb198875-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="msb198875-cr-0011" contrib-type="author" corresp="yes"><name><surname>Wang</surname><given-names>Harris H</given-names></name><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0003-2164-4318</contrib-id><address><email>hw2429@columbia.edu</email></address><xref ref-type="aff" rid="msb198875-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="msb198875-aff-0006">
+<sup>6</sup>
+</xref></contrib></contrib-group><aff id="msb198875-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Systems Biology</named-content>
+<institution>Columbia University</institution>
+<named-content content-type="city">New York</named-content>
+<named-content content-type="country-part">NY</named-content>
+<country country="US">USA</country>
+</aff><aff id="msb198875-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Integrated Program in Cellular, Molecular, and Biomedical Studies</named-content>
+<institution>Columbia University</institution>
+<named-content content-type="city">New York</named-content>
+<named-content content-type="country-part">NY</named-content>
+<country country="US">USA</country>
+</aff><aff id="msb198875-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Department of Immunology</named-content>
+<institution>Memorial Sloan Kettering Cancer Center</institution>
+<named-content content-type="city">New York</named-content>
+<named-content content-type="country-part">NY</named-content>
+<country country="US">USA</country>
+</aff><aff id="msb198875-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Biological Sciences</named-content>
+<institution>Columbia University</institution>
+<named-content content-type="city">New York</named-content>
+<named-content content-type="country-part">NY</named-content>
+<country country="US">USA</country>
+</aff><aff id="msb198875-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">School of Physics and Astronomy</named-content>
+<institution>University of Minnesota</institution>
+<named-content content-type="city">Minneapolis</named-content>
+<named-content content-type="country-part">MN</named-content>
+<country country="US">USA</country>
+</aff><aff id="msb198875-aff-0006">
+<label><sup>6</sup></label>
+<named-content content-type="organisation-division">Department of Pathology and Cell Biology</named-content>
+<institution>Columbia University</institution>
+<named-content content-type="city">New York</named-content>
+<named-content content-type="country-part">NY</named-content>
+<country country="US">USA</country>
+</aff><aff id="msb198875-curr-0001"><label><sup>7</sup></label>Present address:
+<named-content content-type="organisation-division">Department of Bioengineering</named-content>
+<institution>Stanford University</institution>
+<named-content content-type="city">Stanford</named-content>
+<named-content content-type="country-part">CA</named-content>
+<country country="US">USA</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label>Corresponding author. Tel: +1 212 305 1697; E&#x02010;mail: <email>hw2429@columbia.edu</email></corresp><fn fn-type="equal" id="msb198875-note-1001"><label>&#x02020;</label><p>These authors contributed equally to this work</p></fn></author-notes><pub-date pub-type="epub"><day>14</day><month>8</month><year>2019</year></pub-date><pub-date pub-type="collection"><month>8</month><year>2019</year></pub-date><volume>15</volume><issue>8</issue><issue-id pub-id-type="doi">10.1002/msb.v15.8</issue-id><elocation-id>e8875</elocation-id><history><date date-type="received"><day>19</day><month>2</month><year>2019</year></date><date date-type="rev-recd"><day>01</day><month>7</month><year>2019</year></date><date date-type="accepted"><day>03</day><month>7</month><year>2019</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2019 EMBO <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2019 The Authors. Published under the terms of the CC BY 4.0 license</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:MSB-15-e8875.pdf"/><abstract id="msb198875-abs-0001"><title>Abstract</title><p>Cell&#x02010;free expression systems enable rapid prototyping of genetic programs <italic>in&#x000a0;vitro</italic>. However, current throughput of cell&#x02010;free measurements is limited by the use of channel&#x02010;limited fluorescent readouts. Here, we describe <styled-content style="fixed-case">DNA</styled-content> Regulatory element Analysis by cell&#x02010;Free Transcription and Sequencing (<styled-content style="fixed-case">DRAFTS</styled-content>), a rapid and robust <italic>in&#x000a0;vitro</italic> approach for multiplexed measurement of transcriptional activities from thousands of regulatory sequences in a single reaction. We employ this method in active cell lysates developed from ten diverse bacterial species. Interspecies analysis of transcriptional profiles from &#x0003e;&#x000a0;1,000 diverse regulatory sequences reveals functional differences in promoter activity that can be quantitatively modeled, providing a rich resource for tuning gene expression in diverse bacterial species. Finally, we examine the transcriptional capacities of dual&#x02010;species hybrid lysates that can simultaneously harness gene expression properties of multiple organisms. We expect that this cell&#x02010;free multiplex transcriptional measurement approach will improve genetic part prototyping in new bacterial chassis for synthetic biology.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="msb198875-kwd-0001">cell&#x02010;free expression systems</kwd><kwd id="msb198875-kwd-0002">gene expression</kwd><kwd id="msb198875-kwd-0003">massively parallel reporter assay</kwd><kwd id="msb198875-kwd-0004">synthetic biology</kwd><kwd id="msb198875-kwd-0005">transcription</kwd></kwd-group><kwd-group kwd-group-type="subject-categories"><title>Subject Categories</title><kwd>Synthetic Biology &#x00026; Biotechnology</kwd><kwd>Microbiology, Virology &#x00026; Host Pathogen Interaction</kwd></kwd-group><funding-group><award-group><funding-source>National Science Foundation NSF</funding-source><award-id>MCB&#x02010;1453219</award-id><award-id>DGE&#x02010;1644869</award-id></award-group><award-group><funding-source>HHS|NIH|National Institute of General Medical Sciences NIGMS</funding-source><award-id>U01GM110714&#x02010;01A1</award-id></award-group><award-group><funding-source>NIH/NIAID</funding-source><award-id>1R01AI132403&#x02010;01</award-id></award-group><award-group><funding-source>DOD|Defense Advanced Research Projects Agency DARPA</funding-source><award-id>HR0011&#x02010;17&#x02010;C&#x02010;0068</award-id></award-group><award-group><funding-source>DOD|United States Navy|ONR|Office of Naval Research Global ONRG</funding-source><award-id>N00014&#x02010;15&#x02010;1&#x02010;2704</award-id><award-id>N00014&#x02010;13&#x02010;1&#x02010;0074</award-id></award-group><award-group><funding-source>Alfred P. Sloan Foundation</funding-source><award-id>FR&#x02010;2015&#x02010;65795</award-id></award-group><award-group><funding-source>Human Frontier Science Program HFSP</funding-source><award-id>RGP0037/2015</award-id></award-group><award-group><funding-source>National Research Foundation of Korea NRF</funding-source><award-id>NRF&#x02010;2017R1A6A3A03003401</award-id></award-group></funding-group><counts><fig-count count="5"/><table-count count="0"/><page-count count="15"/><word-count count="10643"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>msb198875</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>August 2019</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.7 mode:remove_FC converted:14.08.2019</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="msb198875-cit-1001">
+<source xml:lang="en">Mol Syst Biol</source>. (<year>2019</year>) <volume>15</volume>: <elocation-id>e8875</elocation-id>
+</mixed-citation>
+</p></notes></front><body><sec id="msb198875-sec-0001"><title>Introduction</title><p>The cell envelope is a key physical barrier that compartmentalizes cellular functions and insulates biological systems from the external environment. However, this barrier also limits direct access to the genome and other cellular components, complicating genetic engineering efforts and biomolecular characterizations. Cell&#x02010;free expression systems have long been established as a simplified <italic>in&#x000a0;vitro</italic> approach to overcome these challenges by maintaining cellular processes in the absence of an intact cell membrane (Swartz, <xref rid="msb198875-bib-0068" ref-type="ref">2012</xref>). Cell&#x02010;free systems, made up of either individually reconstituted cellular components (Shimizu <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0057" ref-type="ref">2001</xref>; Wang <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0075" ref-type="ref">2012</xref>; Villarreal <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0073" ref-type="ref">2018</xref>) or cell lysates (Jewett <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0027" ref-type="ref">2013</xref>; Garamella <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0018" ref-type="ref">2016</xref>), can support a variety of catalytic reactions <italic>in&#x000a0;vitro</italic> when supplied with energy sources, cofactors, and ions (Calhoun &#x00026; Swartz, <xref rid="msb198875-bib-0005" ref-type="ref">2005</xref>, <xref rid="msb198875-bib-0006" ref-type="ref">2007</xref>; Jewett <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0026" ref-type="ref">2008</xref>). These cell&#x02010;free approaches have facilitated the development of therapeutically useful natural products (Dudley <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0012" ref-type="ref">2015</xref>; Maini <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0040" ref-type="ref">2016</xref>) and biologics with non&#x02010;standard amino acids (Martin <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0043" ref-type="ref">2018</xref>) or chemical moieties otherwise challenging to synthesize (Jaroentomeechai <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0024" ref-type="ref">2018</xref>). They have also been used to generate viable phage particles directly from purified phage DNA (Shin <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0058" ref-type="ref">2012</xref>; Garamella <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0018" ref-type="ref">2016</xref>; Rustad <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0053" ref-type="ref">2018</xref>) and detect pathogens in emerging diagnostic applications (Pardee <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0049" ref-type="ref">2014</xref>; Takahashi <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0070" ref-type="ref">2018</xref>). Recently, cell&#x02010;free transcription&#x02013;translation (TXTL; Sun <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0066" ref-type="ref">2013</xref>; Kwon &#x00026; Jewett, <xref rid="msb198875-bib-0035" ref-type="ref">2015</xref>) has increasingly gained popularity as a prototyping platform for synthetic biology (Hodgman &#x00026; Jewett, <xref rid="msb198875-bib-0021" ref-type="ref">2012</xref>; Takahashi <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0069" ref-type="ref">2015</xref>). By shortcutting time&#x02010;consuming cloning and transformation steps, TXTL reactions can directly yield proteins and metabolites straight from DNA that encodes biosynthetic genes, operons, or pathways. TXTL has also been useful for characterizing synthetic gene circuits with multi&#x02010;layered components and dynamic behaviors (Takahashi <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0069" ref-type="ref">2015</xref>; Borkowski <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0003" ref-type="ref">2018</xref>; Marshall <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0041" ref-type="ref">2018</xref>). However, the correspondence between <italic>in&#x000a0;vitro</italic> measurements and actual <italic>in&#x000a0;vivo</italic> conditions in live cells remains understudied (Jewett <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0026" ref-type="ref">2008</xref>; Chappell <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0008" ref-type="ref">2013</xref>; Siegal&#x02010;Gaskins <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0059" ref-type="ref">2014</xref>).</p><p>Traditional approaches to track RNA or protein levels in TXTL reactions rely on fluorescent reporters that have limited sensitivity and multiplexing capacity. In contrast, deep sequencing offers a vastly improved and less expensive (per construct measured) approach to characterize thousands of genetic designs or variants simultaneously, which can be produced from pooled DNA synthesis or mutagenesis methods. Such massively parallel reporter assays have enabled detailed studies of governing regulatory features of gene expression, such as 5&#x02032; untranslated region (UTR) structure and codon usage, directly in cell populations (Kinney <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0032" ref-type="ref">2010</xref>; Goodman <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0019" ref-type="ref">2013</xref>; Kosuri <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0034" ref-type="ref">2013</xref>; Cambray <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0007" ref-type="ref">2018</xref>). Cell&#x02010;free studies have also used similar strategies to study transcription from purified RNA polymerases of phage (Patwardhan <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0050" ref-type="ref">2009</xref>) and <italic>E.&#x000a0;coli</italic> (Vvedenskaya <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0074" ref-type="ref">2015</xref>). Large&#x02010;scale and rapid analysis of genetic components can thus greatly shorten the design&#x02013;build&#x02013;test cycle for synthetic biology.</p><p>Recently, a number of TXTL systems have been developed from diverse bacterial species (Kelwick <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0031" ref-type="ref">2016</xref>; Li <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0038" ref-type="ref">2017</xref>; Des Soye <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0011" ref-type="ref">2018</xref>; Moore <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0046" ref-type="ref">2018</xref>). These TXTL systems allow better design and testing of genetic circuits and metabolic pathways in microbes with unique biochemical capabilities (Moore <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0045" ref-type="ref">2017</xref>, <xref rid="msb198875-bib-0046" ref-type="ref">2018</xref>). Cell&#x02010;free methods have the potential to more rapidly advance the development of non&#x02010;model strains that lack characterized genetic parts (i.e., promoters and ribosome&#x02010;binding sites) into useful chassis for industrial synthetic biology. Additionally, the use of diverse TXTL systems opens the door for systematic assessment of compatibility between circuit components and various chassis. However, the utility of these <italic>in&#x000a0;vitro</italic> approaches is dependent on their correspondence to <italic>in&#x000a0;vivo</italic> conditions, which are not well&#x02010;established.</p><p>Here, we describe a new deep sequencing&#x02010;based multiplex strategy to rapidly measure the activities of thousands of regulatory sequences in a single cell lysate reaction, called DNA Regulatory element Analysis by cell&#x02010;Free Transcription and Sequencing (DRAFTS). We first outline a simple pipeline to rapidly develop and characterize cell&#x02010;free expression systems in diverse microbes, which we applied to generate active cell lysates from diverse and industrially useful bacteria. Applying DRAFTS to libraries of natural DNA regulatory sequences, we systematically compared transcriptional measurements made <italic>in&#x000a0;vitro</italic> in TXTL versus <italic>in&#x000a0;vivo</italic> in cell populations. We then analyzed transcriptional patterns across ten diverse bacteria to identify common and diverging transcriptional capacities between different species as well as in &#x0201c;hybrid&#x0201d; cell lysates made from multiple species. This study provides a guiding roadmap to generate diverse cell&#x02010;free prototyping platforms and use massively parallel reporter assays to expand the regulatory element toolbox for synthetic biology and biomanufacturing applications.</p></sec><sec id="msb198875-sec-0002"><title>Results</title><sec id="msb198875-sec-0003"><title>Multiplex characterization of 5&#x02032; regulatory sequences using DRAFTS</title><p>Thanks to recent advances in DNA synthesis, tens to hundreds of thousands of genetic designs can now be cheaply and quickly built in parallel (Kosuri <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0034" ref-type="ref">2013</xref>; Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). However, these pooled libraries cannot be easily characterized using traditional TXTL reporter assays (e.g., fluorescence), which only support a few channels of simultaneous measurement due to spectral overlap. As a result, individual genetic circuits need to be separately generated and tested, which adds significant hands&#x02010;on burden and limits throughput, even in 96&#x02010;well, 384&#x02010;well, or microfluidic formats (Moore <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0046" ref-type="ref">2018</xref>; Swank <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0067" ref-type="ref">2019</xref>). On the other hand, deep sequencing methods are ideally suited for quantitative measurements of many DNA or RNA sequences in pooled reactions. Key considerations when using multiplex measurements are that individual constructs should not cross&#x02010;interact and must be distinguishable from one another through their sequence or by the use of identifying barcodes. Given these considerations, we designed DRAFTS for quantitative transcriptional analyses of DNA regulatory sequences in pooled TXTL reactions by next&#x02010;generation sequencing (Fig&#x000a0;<xref rid="msb198875-fig-0001" ref-type="fig">1</xref>A).</p><fig fig-type="Figure" xml:lang="en" id="msb198875-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><title>DNA Regulatory element Analysis by Cell&#x02010;Free Transcription and Sequencing (DRAFTS)</title><p>
+<list list-type="alpha-upper" id="msb198875-list-0009"><list-item><p>DRAFTS uses crude cell lysate&#x02010;based cell&#x02010;free expression systems to harness source host cell's endogenous gene expression machineries. Compared to conventional single&#x02010;channel reporters with color or fluorescence readouts, multiplexed sequencing readouts from pooled reactions in DRAFTS scale up the throughput of measurement.</p></list-item><list-item><p>Biological replicates of transcriptional profiles (Tx) measured in separately prepared cell&#x02010;free lysate batches of <italic>E.&#x000a0;coli</italic>.</p></list-item><list-item><p>Comparison of abundances of each library constructs in <italic>in&#x000a0;vivo</italic> and <italic>in&#x000a0;vitro</italic> measurements.</p></list-item><list-item><p>Correlation between transcriptional profiles (Tx) for regulatory sequence libraries from <italic>in&#x000a0;vitro</italic> and <italic>in&#x000a0;vivo</italic> measurements in <italic>E.&#x000a0;coli</italic>. The color scale indicates the density of data points in a given area of the plot.</p></list-item><list-item><p>Correlation between primary TSS calls (in bp from ATG start codon) of regulatory sequences from <italic>in&#x000a0;vitro</italic> and <italic>in&#x000a0;vivo</italic> measurements in <italic>E.&#x000a0;coli</italic>.</p></list-item></list>Data information: Dashed lines represent <italic>y</italic>&#x000a0;=&#x000a0;<italic>x</italic> in (B), (D), and (E). Sample sizes (<italic>n</italic>) and Pearson correlation coefficients (<italic>r</italic>) are shown in each plot. For normalization, transcription levels in log<sub>10</sub> scale were transformed to <italic>Z</italic>&#x02010;scores. All measurements except (C) are based on two biological replicates.<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-5" xlink:href="MSB-15-e8875-g002"/></fig><p>To test whether multiplex transcriptional measurements can be carried out in cell&#x02010;free expression systems, we first performed pooled <italic>E.&#x000a0;coli</italic> TXTL reactions using libraries of uniquely barcoded DNA regulatory parts (ranging from 234 to 29,249 members) derived from our previous study of natural regulatory sequences (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). These sequences were mined from unidirectional intergenic regions within 184 diverse prokaryotic genomes and consist of the immediate 165 base pairs upstream of target genes, which were synthesized using microarray oligo library synthesis (LeProust <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0036" ref-type="ref">2010</xref>). Rather than requiring large&#x02010;scale transformation and propagation of library cell populations, our <italic>in&#x000a0;vitro</italic> approach involves incubating single TXTL reactions with library DNA. From each reaction, we performed targeted RNA&#x02010;seq on reporter mRNAs, which were then enriched by reverse transcription and 3&#x02032;&#x02010;end cDNA ligation of sequencing adaptors (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1</xref>). The relative RNA abundance of each construct was normalized to its relative DNA abundance, which was determined by DNA&#x02010;seq of the input regulatory library, to yield the final quantitative measurement of transcription (see <xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>). Our adaptor ligation&#x02010;based approach involves amplification of whole 5&#x02032; UTRs, enabling identification of transcription start sites (TSSs) by mapping cDNA 3&#x02032; ends to reference constructs. Across different regulatory libraries, transcription levels spanned &#x0003e;&#x000a0;5 orders of magnitude and were highly reproducible using the same and separately prepared cell lysates on different days (Fig&#x000a0;<xref rid="msb198875-fig-0001" ref-type="fig">1</xref>B, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2A</xref>). Similar to previous reports (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>), transcriptional values were consistent across libraries using alternate N&#x02010;terminal barcodes and downstream genes (sfGFP or mCherry), which supports that gene&#x02010;specific reverse transcription or barcode identity does not significantly affect our activity measurements (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2B and C</xref>). We observed that relative transcription levels remained constant across different TXTL reaction times (0.5, 1, 2, or 4&#x000a0;h). Lowering input library DNA concentrations from 25&#x000a0;nM to 2.5, 0.25, or 0.025&#x000a0;nM did not introduce significant variability in transcription measurements (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2D and E</xref>). A commercial (myTXTL, Arbor Bioscience) and our laboratory&#x02010;made <italic>E.&#x000a0;coli</italic> lysates also showed highly similar transcriptional profiles, demonstrating reliability of the laboratory&#x02010;made lysates (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2F</xref>).</p><p>TXTL systems are more dilute than the cytoplasm and rates of transcription and translation initiation tend to be lower than what is observed within cells, making it unclear whether <italic>in&#x000a0;vitro</italic> measurements will correspond to those made <italic>in&#x000a0;vivo</italic> (Jewett &#x00026; Swartz, <xref rid="msb198875-bib-0025" ref-type="ref">2004</xref>). However, one might expect that although absolute gene expression rates are lower, the relative strengths within a promoter library may remain the same. To compare TXTL transcription levels with <italic>in&#x000a0;vivo</italic> values, we transformed each library into the same <italic>E.&#x000a0;coli</italic> BL21 strain that was used for cell lysate preparation. We observed that the distribution of DNA libraries was much more uniform <italic>in&#x000a0;vitro</italic> than <italic>in&#x000a0;vivo</italic>, mostly due to the decoupling of gene expression from cell fitness <italic>in&#x000a0;vitro</italic>, which improves accuracy by minimizing noisy measurements from low&#x02010;abundance library members (Fig&#x000a0;<xref rid="msb198875-fig-0001" ref-type="fig">1</xref>C, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2G</xref>). Importantly, relative transcription levels from <italic>in&#x000a0;vitro</italic> and <italic>in&#x000a0;vivo</italic> measurements showed a strong correlation, with 94.2% of the regulatory sequence activities within 1&#x02010;log variation (Fig&#x000a0;<xref rid="msb198875-fig-0001" ref-type="fig">1</xref>D). We identified transcription start site (TSS) of each regulatory sequence by determining where the start position of RNA&#x02010;seq reads aligns to reference sequences (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S3A and B</xref>, <xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>). TSSs were also highly concordant between <italic>in&#x000a0;vitro</italic> and <italic>in&#x000a0;vivo</italic> measurements, with 92.6% within 1&#x02010;bp variation (Fig&#x000a0;<xref rid="msb198875-fig-0001" ref-type="fig">1</xref>E, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S3C and D</xref>). The sequences upstream of TSSs were enriched for sigma70 binding sites, indicating accurate identification of mRNA 5&#x02032; positions and enabling compositional analysis of promoter sequences (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S3E and F</xref>). Together, these results demonstrate that <italic>in&#x000a0;vitro</italic> TXTL reactions provide a reasonable approximation of <italic>in&#x000a0;vivo</italic> transcription conditions, enabling high&#x02010;throughput screening and quantitative characterization of thousands of regulatory components in a single pooled TXTL reaction.</p></sec><sec id="msb198875-sec-0004"><title>A simple pipeline for preparing diverse microbial lysates</title><p>Given the robustness of multiplex transcriptional measurements in <italic>E.&#x000a0;coli</italic> TXTL reactions, we sought to generalize this approach by first generating and optimizing cell&#x02010;free expression systems from other bacterial species. Recent studies have reported the development of cell&#x02010;free systems from several species other than <italic>E.&#x000a0;coli</italic> (Kelwick <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0031" ref-type="ref">2016</xref>; Li <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0038" ref-type="ref">2017</xref>; Moore <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0045" ref-type="ref">2017</xref>, <xref rid="msb198875-bib-0046" ref-type="ref">2018</xref>; Wang <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0076" ref-type="ref">2018</xref>; Wiegand <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0077" ref-type="ref">2018</xref>). To further expand upon these advances, we established a streamlined experimental pipeline to construct, test, and optimize cell lysates from diverse species using a combination of approaches used by previous studies (<xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>; Sun <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0066" ref-type="ref">2013</xref>; Kwon &#x00026; Jewett, <xref rid="msb198875-bib-0035" ref-type="ref">2015</xref>). In short, cells are grown in rich media, lysed by sonication, incubated in a run&#x02010;off reaction, and dialyzed (Fig&#x000a0;<xref rid="msb198875-fig-0002" ref-type="fig">2</xref>A; Silverman <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0060" ref-type="ref">2019</xref>). We used the expression of Broccoli, an RNA fluorescence aptamer, to quantify the transcriptional activity of cell lysates (Filonov <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0016" ref-type="ref">2014</xref>). When bound to the fluorophore DFHBI&#x02010;1T, Broccoli yields a fluorescence signal that is linearly proportional to its mRNA concentration (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S4C</xref>). We systematically optimized reaction buffer conditions by supplementing with different levels of Mg&#x02010;glutamate and K&#x02010;glutamate. The most transcriptionally active buffer conditions were used for all subsequent <italic>in&#x000a0;vitro</italic> studies.</p><fig fig-type="Figure" xml:lang="en" id="msb198875-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><title>Development of cell&#x02010;free expression systems of diverse bacterial species</title><p>
+<list list-type="alpha-upper" id="msb198875-list-0010"><list-item><p>Schematic diagram of experimental pipeline for preparation and optimization of cell&#x02010;free expression systems.</p></list-item><list-item><p>Optimization of transcriptional output using different concentrations of Mg&#x02010;glutamate and K&#x02010;glutamate in 10 bacterial cell&#x02010;free expression systems with Broccoli as a reporter (solid lines, optimal buffer composition shown in red). No DNA template controls are shown as gray dashed lines. 12.5&#x000a0;nM of DNA template was used in all systems, except <italic>L.&#x000a0;lactis</italic> (50&#x000a0;nM used).</p></list-item></list>
+</p><p>
+<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-7" xlink:href="MSB-15-e8875-g003"/></fig><p>In total, we implemented our cell lysate preparation and optimization pipeline on 10 phylogenetically and ecologically diverse bacterial species including seven Proteobacteria (<italic>E.&#x000a0;coli</italic>,<italic> E.&#x000a0;fergusonii</italic>,<italic> S.&#x000a0;enterica</italic>,<italic> P.&#x000a0;agglomerans</italic>,<italic> K.&#x000a0;oxytoca</italic>,<italic> P.&#x000a0;putida</italic>, and <italic>V.&#x000a0;natriegens</italic>), two Firmicutes (<italic>B.&#x000a0;subtilis</italic> and <italic>L.&#x000a0;lactis</italic>), and one Actinobacteria (<italic>C.&#x000a0;glutamicum</italic>; Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>A). <italic>E.&#x000a0;fergusonii</italic> and <italic>P.&#x000a0;agglomerans</italic> strains are novel isolates from the murine gut and agricultural waste, respectively, while other strains have been previously described. Each strain was first grown in their optimal growth conditions, and cell lysates were subsequently prepared using the same general protocol (<xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref> and <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Tables S1&#x02013;S3</xref>). Final cell&#x02010;free reaction conditions were individually optimized for each species (Fig&#x000a0;<xref rid="msb198875-fig-0002" ref-type="fig">2</xref>B and <xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>) and quantified to determine transcriptional yields (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S4A</xref>). In the <italic>E.&#x000a0;coli</italic> lysate, we found that the expression of the Broccoli reporter peaked after ~4&#x000a0;h and then decreased thereafter, consistent with previous reports (Siegal&#x02010;Gaskins <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0059" ref-type="ref">2014</xref>). In contrast, <italic>P.&#x000a0;agglomerans, V.&#x000a0;natriegens</italic>,<italic> C.&#x000a0;glutamicum,</italic> and <italic>L.&#x000a0;lactis</italic> showed a prolonged Broccoli signal over time with no observed decrease over 8&#x000a0;h. These differences could arise as a result of different stability dynamics of the DNA template or resulting mRNA molecules as well as alternative energy recycling processes for sustaining transcription. While transcription requires a few key proteins and cofactors, translation needs many more components with a far greater degree of coordination between them to function properly. Thus, for cell&#x02010;free lysate reactions, <italic>in&#x000a0;vitro</italic> translation is expected to require significantly more tuning and optimization than <italic>in&#x000a0;vitro</italic> transcription. Nonetheless, we quantitatively characterized the translational potential of our 10 cell lysates using an eGFP reporter plasmid and detected measurable levels of protein expression in most lysates except for <italic>L.&#x000a0;lactis</italic> (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S4B</xref>), although <italic>B.&#x000a0;subtilis</italic> and <italic>S.&#x000a0;enterica</italic> yielded only small amounts of protein (&#x0003c;&#x000a0;1&#x000a0;ng/&#x003bc;l). These results demonstrate that our cell lysate preparation methods are able to generate active cell&#x02010;free expression reactions from diverse bacteria with relative ease, provide a foundation for further optimizations of transcription and translation efficiency in cell&#x02010;free expression systems, and demonstrate their potential for rapid characterization of genetic designs in diverse bacterial species.</p><fig fig-type="Figure" xml:lang="en" id="msb198875-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><title>Comparative functional analysis of regulatory sequences across 10 bacterial species through DRAFTS</title><p>
+<list list-type="alpha-upper" id="msb198875-list-0011"><list-item><p>Unrooted maximum&#x02010;likelihood phylogenetic tree of 10 bacterial species used in this study based on multiple sequence alignment of 16S rRNA genes (distance scale of 0.1) using Clustal Omega.</p></list-item><list-item><p>Transcriptional activities (Tx) of 421 regulatory sequences that were active in all 10 bacterial cell&#x02010;free expression systems.</p></list-item><list-item><p>Pairwise comparison of transcriptional profiles of 421 universally active regulatory sequences between bacterial species. Example scatter plots with relatively high and low Pearson correlation in the heat map (marked i and ii) are shown on left.</p></list-item><list-item><p>Correlation between evolutionary divergences (16S rRNA percent identity) and pairwise Pearson correlation of transcriptional profiles. Dashed line represents linear regression.</p></list-item><list-item><p>Activity profiles (Tx) of regulatory sequences from donor phyla Proteobacteria and Firmicutes in 10 bacterial species. GC contents of regulatory sequences from the phylogenetic groups are shown on right. Box&#x000a0;plots are displaying the interquartile range (IQR) with median values (black line) and whiskers extending to the highest and lowest points within 1.5&#x000d7; the IQR.</p></list-item></list>Data information: For normalization, transcription levels in log<sub>10</sub> scale were transformed to Z&#x02010;score. All measurements are based on two biological replicates.<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-9" xlink:href="MSB-15-e8875-g004"/></fig></sec><sec id="msb198875-sec-0005"><title>Large&#x02010;scale transcriptional characterizations in diverse bacteria</title><p>Understanding how microbes utilize regulatory sequences is key for building reliable genetic circuits that experience fewer failures. In previous work, we found that the activity of a regulatory element can vary in different species (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). A major roadblock in identifying these species&#x02010;specific regulatory properties is the low efficiency of DNA transformation in many bacteria, which limits multiplex characterization in them. To address this challenge, we first tested a small 234&#x02010;member regulatory library (RS234; Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>) using DRAFTS in seven species with available genetic tools and efficient transformation methods for <italic>in&#x000a0;vivo</italic> comparison to obtain multiplex transcriptional data from cell&#x02010;free systems. These <italic>in&#x000a0;vitro</italic> results were compared with <italic>in&#x000a0;vivo</italic> transcription levels measured from library&#x02010;harboring populations of each species harvested at mid&#x02010;exponential growth phase in rich media (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Tables S1 and S4</xref>). Encouragingly, <italic>in&#x000a0;vitro</italic> and <italic>in&#x000a0;vivo</italic> transcription levels were highly correlated between cell lysates and cell libraries (Pearson's <italic>r</italic> between 0.71 and 0.9, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S5</xref>), demonstrating the utility of DRAFTS for accurate multiplex transcriptional measurements in diverse bacteria.</p><p>To further scale the throughput of DRAFTS, we mined diverse antibiotic resistance and virulence genes to generate a 1,383&#x02010;member library of natural regulatory sequences (RS1383; <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1B</xref> and <xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>). Since antibiotic resistance and virulence genes are often mobilized between microbes, we hypothesized that their regulatory regions may exhibit interesting host&#x02010;range properties. Accordingly, we tested this library in the 10 cell lysates using DRAFTS. By using the same RS1383 library in <italic>in&#x000a0;vitro</italic> reactions, we can also minimize any confounding contextual effects of different plasmid backbones, which are otherwise needed for <italic>in&#x000a0;vivo</italic> characterizations in different species (Yeung <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0078" ref-type="ref">2017</xref>). While the RS1383 library was uniformly present following <italic>in&#x000a0;vitro</italic> reactions in most lysates, a group of sequences (~13%) was significantly depleted in the <italic>L.&#x000a0;lactis</italic> lysate (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S6</xref>). Motif analysis revealed a CCNGG motif in these sequences, which corresponded to a known recognition site of a restriction enzyme (ScrFIR) present in the <italic>L.&#x000a0;lactis</italic> genome (Twomey <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0071" ref-type="ref">1997</xref>). We further verified the depletion of these sequences was the result of restriction cleavage in <italic>L.&#x000a0;lactis</italic> lysates (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S6E</xref>), highlighting the potential interference by bacterial defense systems to confound cell&#x02010;free studies. We thus removed these sequences from future analyses as they artificially inflated transcription activity calculations.</p><p>Many RS1383 regulatory sequences were transcriptionally active in our cell lysates, spanning several orders of magnitude in expression (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S7A</xref>). Hierarchical clustering revealed distinct groups of activity levels across phylogenetically diverse bacteria for 421 sequences that were active in all species (Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>A and B). For each regulatory element, we performed pairwise comparisons of their transcription levels between species (Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>C, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S7B</xref>). Pearson correlations of these pairwise comparisons showed varying levels of transcriptional concordance, which when clustered further revealed distinct gram&#x02010;negative and gram&#x02010;positive groups (Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>C). Principal component analysis of the RS1383 transcription profiles also revealed distinct groups for gram&#x02010;negative and gram&#x02010;positive species (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S7C</xref>). Pairwise comparisons of 16S rRNA and sigma70 protein sequence similarity showed that more phylogenetically related species tend to share a more similar transcription profile (Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>D, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S8</xref>). We did not find distinct patterns of expression across different classes of antibiotic resistance genes from which the regulatory sequences were mined (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S9</xref>). However, we did observe striking phylogenetic trends, with regulatory sequences derived from the Firmicutes tending to be more highly active overall compared with those from Proteobacteria, which is likely the result of differences in genomic GC contents between these groups (Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>E; Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). These findings provide a more informed basis for regulatory element use and design in diverse bacterial species and provide a path for further examination of the sequence features underlying these observed differences.</p><p>Accurate models of gene expression have the potential to greatly facilitate the engineering of genetic circuits. While there are accurate tools for predicting translation levels and engineering ribosome&#x02010;binding sites (Salis <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0054" ref-type="ref">2009</xref>; Farasat <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0015" ref-type="ref">2014</xref>), we currently lack similar methods for transcriptional regulatory sequences. To demonstrate the utility of DRAFTS for quantitative modeling of gene expression, we characterized an even larger library of 7,003 regulatory sequences (RS7003; Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>) in the 10 cell lysates. We first examined the relationship between 8 regulatory sequence features known to influence promoter activity (i.e., &#x02212;10/&#x02212;35 motif strength and interaction (Urtecho <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0072" ref-type="ref">2018</xref>), spacer sequence, TSS region composition, mRNA 5&#x02032;&#x02010;end stability, and GC%; <xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>) and the measured <italic>in&#x000a0;vitro</italic> expression levels (Fig&#x000a0;<xref rid="msb198875-fig-0004" ref-type="fig">4</xref>A). In line with previous results (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>), the most predictive features for transcriptional activity across species were the strength of the &#x02212;10 and &#x02212;35 motifs of sigma70 (positively correlated) and the GC content of the regulatory sequence (negatively correlated). We combined all 8 features to generate linear regression models of transcriptional activity for each species and tested the models using repeated random&#x02010;subsampling cross&#x02010;validation (Fig&#x000a0;<xref rid="msb198875-fig-0004" ref-type="fig">4</xref>B and <xref rid="msb198875-sec-0008" ref-type="sec">Materials and Methods</xref>). Transcriptional models based on only 10% of the dataset could explain 27&#x02013;50% of the variance for these 10 bacterial species (Fig&#x000a0;<xref rid="msb198875-fig-0004" ref-type="fig">4</xref>C), with 80&#x02013;98% of predictions falling within 1&#x02010;log from measured values for transcription activities spanning &#x0003e;&#x000a0;5 orders of magnitude (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S10</xref>). In addition, the models were further validated by testing on a separate collection of regulatory sequences (RS1383, Fig&#x000a0;<xref rid="msb198875-fig-0003" ref-type="fig">3</xref>). The predicted and measured values for the validation were also generally in agreement ranging from 27 to 44% in terms of variance explained (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S11</xref>). These results highlight the utility of applying cell&#x02010;free approaches for deep characterization and modeling of transcriptional processes in diverse bacteria and provide a foundation for studying complex regulatory mechanisms using <italic>in&#x000a0;vitro</italic> sequencing&#x02010;based approaches (Kinney <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0032" ref-type="ref">2010</xref>; Rhodius &#x00026; Mutalik, <xref rid="msb198875-bib-0051" ref-type="ref">2010</xref>; Belliveau <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0002" ref-type="ref">2018</xref>; Cambray <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0007" ref-type="ref">2018</xref>; Urtecho <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0072" ref-type="ref">2018</xref>).</p><fig fig-type="Figure" xml:lang="en" id="msb198875-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><title>Linear regression modeling of transcriptional activation in 10 bacterial species through DRAFTS</title><p>
+<list list-type="alpha-upper" id="msb198875-list-0012"><list-item><p>Correlation between sequence features of regulatory sequences and transcriptional activities in each bacterial species.</p></list-item><list-item><p>Correlation between predicted and measured transcription levels for each bacterial species with various proportions of data for model training. Data were randomly split for the training and test sets, respectively, and Pearson correlation between predicted and observed transcription levels was computed for 10 times for each proportion. Box&#x000a0;plots are displaying the interquartile range (IQR) with median values (black line) and whiskers extending to the highest and lowest points within 1.5&#x000d7; of the IQR.</p></list-item><list-item><p>Example linear regression models for transcriptional activation (Tx) in 10 bacterial species using data generated through DRAFTS. Data were randomly split in 10 and 90% for the training and test sets, respectively. Dashed lines represent linear regression. Sample sizes (<italic>n</italic>) and Pearson correlation coefficients (<italic>r</italic>) are shown in each plot.</p></list-item></list>Data information: For normalization, transcription levels in log<sub>10</sub> scale were transformed to <italic>Z</italic>&#x02010;score. All measurements are based on two biological replicates.<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-11" xlink:href="MSB-15-e8875-g005"/></fig></sec><sec id="msb198875-sec-0006"><title>Accessing transcriptional capacities of hybrid lysates through DRAFTS</title><p>The diversity of cellular physiologies and metabolisms in the microbial kingdom provides a rich basis to generate cell lysates with unique capacities (Smanski <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0062" ref-type="ref">2016</xref>). Mixing different cell lysates has been proposed as a way to take advantage of the biochemical features of multiple distinct strains (Fig&#x000a0;<xref rid="msb198875-fig-0005" ref-type="fig">5</xref>A; Zarate <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0082" ref-type="ref">2010</xref>; Dudley <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0012" ref-type="ref">2015</xref>, <xref rid="msb198875-bib-0013" ref-type="ref">2016</xref>; Karim &#x00026; Jewett, <xref rid="msb198875-bib-0030" ref-type="ref">2016</xref>). Such an approach might avoid unnecessary cloning and refactoring of biochemical pathways to suit any individual species (Smanski <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0061" ref-type="ref">2014</xref>). A recent study demonstrated the production of butanediol directly from starch in a hybrid <italic>E.&#x000a0;coli</italic>&#x02013;cyanobacteria (<italic>Synechocystis sp</italic>.), a biotransformation reaction that cannot otherwise be performed in either single&#x02010;species lysate (Yi <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0079" ref-type="ref">2018</xref>). Here, the endogenous cyanobacterial starch degrading enzymes increased the amount of carbon substrate available for biotransformation. Effective harnessing of the biochemical capabilities of hybrid lysates will require knowledge regarding how promoters and translation initiation sequences function in the presence of regulatory machineries from multiple constituent species. To explore the regulatory potential of such systems, we mixed individual cell lysates into 7 dual&#x02010;species hybrid lysates with equal proportions of each species and then examined their transcriptional and translational activities (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Figs S12 and S13</xref>). Interestingly, most hybrid lysates yielded mRNA and protein expression levels that were the average of their single&#x02010;species counterparts. Importantly, these data suggest that machineries for gene expression from evolutionarily distinct species generally do not negatively interfere with one another in mixed solution, despite the potential for cross&#x02010;interactions (Sorek <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0063" ref-type="ref">2007</xref>; Kitahara <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0033" ref-type="ref">2012</xref>).</p><fig fig-type="Figure" xml:lang="en" id="msb198875-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><title>Transcriptional characterization of dual&#x02010;species hybrid cell&#x02010;free systems</title><p>
+<list list-type="simple" id="msb198875-list-0013"><list-item><label>A</label><p>Construction of hybrid systems through cell lysate mixing.</p></list-item><list-item><label>B, C</label><p>Principal component analysis of RS7003 transcriptional profile similarity for individual and hybrid lysates with different mixing ratios for (B) <italic>E.&#x000a0;coli</italic>&#x000a0;+&#x000a0;<italic>B.&#x000a0;subtilis</italic> and (C) <italic>E.&#x000a0;coli</italic>&#x000a0;+&#x000a0;<italic>C.&#x000a0;glutamicum</italic> hybrids.</p></list-item><list-item><label>D, E</label><p>Pairwise correlation of RS7003 transcriptional profiles between hybrid lysate and single constituent species lysates for (D) <italic>E.&#x000a0;coli</italic>&#x000a0;+&#x000a0;<italic>B.&#x000a0;subtilis</italic> and (E) <italic>E.&#x000a0;coli</italic>&#x000a0;+&#x000a0;<italic>C.&#x000a0;glutamicum</italic> hybrids with different mixing ratios.</p></list-item></list>Data information: For normalization, transcription levels in log<sub>10</sub> scale were transformed to <italic>Z</italic>&#x02010;score. All measurements are based on two biological replicates.<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-13" xlink:href="MSB-15-e8875-g006"/></fig><p>To better delineate the transcriptional properties of hybrid lysates, we then applied DRAFTS using the RS7003 library to examine the transcriptional capacity of <italic>E.&#x000a0;coli&#x02013;B.&#x000a0;subtilis</italic> (<italic>Ec:Bs</italic>) or <italic>E.&#x000a0;coli</italic>&#x02013;<italic>C.&#x000a0;glutamicum</italic> (<italic>Ec:Cg</italic>) hybrid lysates generated with different mixing ratios (4:1, 1:1, 1:4). Transcriptional profiles in hybrid lysates were compared to one another as well as non&#x02010;mixed single species. Principal component analysis revealed transcriptional profiles in individual and hybrid lysates with different mixing ratios that were clearly distinguishable from each other (Fig&#x000a0;<xref rid="msb198875-fig-0005" ref-type="fig">5</xref>B and C). Interestingly, tuning the ratio of species in the hybrid lysate resulted in transcriptional profiles with more similarity to the majority species (e.g., 1:4 or 4:1) while still retaining some similarity to the minority species (Fig&#x000a0;<xref rid="msb198875-fig-0005" ref-type="fig">5</xref>D and E). We further performed differential expression analysis on the transcriptional profiles in non&#x02010;mixed single species to identify promoters with species&#x02010;selective behavior showing &#x0003e;&#x000a0;10&#x02010;fold stronger activities in each species (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S14A and D</xref>). <italic>B.&#x000a0;subtilis</italic> and <italic>C.&#x000a0;glutamicum</italic>&#x02010;selective promoters had lower GC contents in general compared with <italic>E.&#x000a0;coli</italic>&#x02010;selective promoters (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S14B and E</xref>), and their species selectivity could be tuned based on the mixing ratios (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S14C and F</xref>), a potentially simple strategy for optimizing the synthetic circuits to function within in hybrid lysates. Together, these results demonstrate the construction of functional hybrid lysates from phylogenetically distinct bacteria and also show a high&#x02010;throughput approach for regulatory element characterization for use in downstream synthetic biology applications using these systems (Zarate <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0082" ref-type="ref">2010</xref>; Dudley <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0012" ref-type="ref">2015</xref>; Yi <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0079" ref-type="ref">2018</xref>).</p></sec></sec><sec id="msb198875-sec-0007"><title>Discussion</title><p>Cell&#x02010;free expression systems enable rapid prototyping of natural or synthetic genetic circuits by eliminating time&#x02010;consuming transformation and cell growth steps. In this study, we developed and characterized cell&#x02010;free lysates for 10 diverse bacterial species from three phyla (Proteobacteria, Firmicutes, and Actinobacteria), many of which have never been utilized in cell&#x02010;free expression reactions. Using DRAFTS in our successful lysates, we demonstrated the accurate multiplexed characterization of thousands of DNA regulatory sequences <italic>in&#x000a0;vitro</italic>. This deep sequencing&#x02010;based approach can quantify transcriptional activities across &#x0003e;&#x000a0;5 orders of magnitude and simultaneously determine transcriptional start sites. <italic>In vitro</italic> transcriptional measurements faithfully recapitulated <italic>in&#x000a0;vivo</italic> expression levels, thus avoiding laborious construction of multiple species&#x02010;specific libraries and transformation into some challenging or recalcitrant species.</p><p>We observed increased dissimilarity of transcriptional profiles between phylogenetically more distant species, suggesting a functional evolutionary divergence of transcriptional regulation across the natural microbial biome (Iyer <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0023" ref-type="ref">2004</xref>). Differences between microbial species could be exploited to build more refined regulatory circuits that function in specific organisms or multiple targeted species (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). Using these high&#x02010;throughput datasets, simple linear regression models of transcriptional activation could be trained to predict promoter strengths in a wide array of organisms. However, we expect that more sophisticated computational modeling approaches beyond linear regression used here, such as those employing emerging deep learning frameworks (Urtecho <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0072" ref-type="ref">2018</xref>), could further improve the generation of accurate, predictable, and useful bacterial transcriptional models and advance the understanding of gene regulation processes in diverse species. Lastly, we developed multiple hybrid lysates and characterized their gene expression properties, demonstrating tunable species selectivity of regulatory sequences based on mixing ratios. We anticipate that future applications of hybrid lysates that take advantage of the combined metabolic properties of multiple microbes will enable production of useful biomolecules (Yi <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0079" ref-type="ref">2018</xref>), and may aid in the development of artificial minimal cells with properties of multiple species (Noireaux <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0048" ref-type="ref">2011</xref>; Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0028" ref-type="ref">2016</xref>).</p><p>While we successfully generated 10 different cell&#x02010;free lysates that were sufficiently active for deep sequencing measurements of transcription with relative ease, we failed to produce active lysates from other species including <italic>Lactobacillus reuteri</italic>,<italic> L.&#x000a0;plantarum,</italic> and <italic>Bacteroides thetaiotaomicron</italic>, which may require further optimizations to address specific properties such as low intracellular pH or strictly anaerobic growth requirements. We expect that strain engineering efforts aimed at deactivating restriction&#x02010;modification systems or proteases may improve both transcription and translation productivities of cell&#x02010;free systems made from diverse species of bacteria. Advances in cell lysate preparation, especially for organisms requiring anaerobic or fastidious growth conditions, will further extend these <italic>in&#x000a0;vitro</italic> approaches to new areas of bacterial physiology.</p><p>Although this study focused on characterizing constitutive promoters, our approach can likely be extended to inducible regulatory systems involving transcription factors or riboswitches (Sharon <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0056" ref-type="ref">2012</xref>; Rhodius <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0052" ref-type="ref">2013</xref>; Stanton <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0064" ref-type="ref">2014</xref>; Chen <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0010" ref-type="ref">2018</xref>; Forcier <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0017" ref-type="ref">2018</xref>). In these cases, additional regulatory proteins could be co&#x02010;expressed with a library of regulatory DNA variants in the same <italic>in&#x000a0;vitro</italic> reaction and their ligand&#x02010;response dynamics could be monitored over time. It might be challenging for cell&#x02010;free reactions to recapitulate long&#x02010;term <italic>in&#x000a0;vivo</italic> dynamics of genetic circuits relying on turnover of circuit components from degradation or cell division. However, recent advances in cell&#x02010;free methodologies such as the use of degradation tags or continuous exchange of reaction contents would provide a better mimic of <italic>in&#x000a0;vivo</italic> processes while maintaining the simplicity of the <italic>in&#x000a0;vitro</italic> format (Niederholtmeyer <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0047" ref-type="ref">2015</xref>; Garamella <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0018" ref-type="ref">2016</xref>; Swank <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0067" ref-type="ref">2019</xref>). Such approaches could also expedite the characterization of promoters controlled by multiple regulators (Belliveau <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0002" ref-type="ref">2018</xref>) and facilitate their integration into complex regulatory networks (Chen <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0010" ref-type="ref">2018</xref>; Zong <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0084" ref-type="ref">2018</xref>). Transcriptional profiles of entire genetic circuits could also be characterized in cell&#x02010;free reactions using whole&#x02010;transcriptome library preparation methods, which have been employed <italic>in&#x000a0;vivo</italic> to aid debugging of individual components and dynamic circuit behaviors (Gorochowski <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0020" ref-type="ref">2017</xref>). Sequencing&#x02010;based quantification methods for translation such as Ribo&#x02010;seq (Li <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0037" ref-type="ref">2014</xref>) or polysome profiling (Cambray <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0007" ref-type="ref">2018</xref>) could enable <italic>in&#x000a0;vitro</italic> multiplex characterization of protein synthesis in different bacteria. Finally, we expect multiplexed sequencing and quantification approaches to also improve analysis of fungal (Hodgman &#x00026; Jewett, <xref rid="msb198875-bib-0022" ref-type="ref">2013</xref>), plant (Sawasaki <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0055" ref-type="ref">2007</xref>), insect (Ezure <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0014" ref-type="ref">2006</xref>), mammalian (Mikami <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0044" ref-type="ref">2006</xref>; Martin <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0042" ref-type="ref">2017</xref>), and other cell&#x02010;free expression systems derived from eukaryotic organisms to study and engineer increasingly complex layers of gene regulation using synthetic biology.</p></sec><sec id="msb198875-sec-0008"><title>Materials and Methods</title><sec id="msb198875-sec-0009"><title>Reagents and Tools table</title><p>
+<table-wrap id="nlm-table-wrap-1" xml:lang="en" orientation="portrait" position="anchor"><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Reagent/Resource</th><th align="left" valign="top" rowspan="1" colspan="1">Reference or source</th><th align="left" valign="top" rowspan="1" colspan="1">Identifier or catalog number</th></tr></thead><tbody><tr><td align="left" colspan="3" rowspan="1">
+<bold>Experimental models</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;E.&#x000a0;coli</italic> BL21</td><td align="left" rowspan="1" colspan="1">New England Biolabs</td><td align="left" rowspan="1" colspan="1">C2530H</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;E.&#x000a0;fergusonii</italic>
+</td><td align="left" rowspan="1" colspan="1">Isolate (murine feces; Ronda <italic>et&#x000a0;al</italic>, 2019&#x02014;PMID: 30643213)</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;S.&#x000a0;enterica</italic> Serovar Typhi Ty2</td><td align="left" rowspan="1" colspan="1">ATCC</td><td align="left" rowspan="1" colspan="1">700931</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;K.&#x000a0;oxytoca</italic> M5A1</td><td align="left" rowspan="1" colspan="1">DSM</td><td align="left" rowspan="1" colspan="1">7342</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;P.&#x000a0;agglomerans</italic>
+</td><td align="left" rowspan="1" colspan="1">Isolate (agricultural waste)</td><td align="left" rowspan="1" colspan="1">&#x02013;</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;P.&#x000a0;putida</italic> KT2440</td><td align="left" rowspan="1" colspan="1">ATCC</td><td align="left" rowspan="1" colspan="1">47054</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;V.&#x000a0;natriegens</italic>
+</td><td align="left" rowspan="1" colspan="1">ATCC</td><td align="left" rowspan="1" colspan="1">14048</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;B.&#x000a0;subtilis</italic> BD3182 (168 derivative &#x00394;<italic>rok::kan</italic>)</td><td align="left" rowspan="1" colspan="1">D. Dubnau Lab (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>&#x02014;PMID: 30052624)</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;C.&#x000a0;glutamicum</italic>
+</td><td align="left" rowspan="1" colspan="1">ATCC</td><td align="left" rowspan="1" colspan="1">13032</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;L.&#x000a0;lactis</italic>
+</td><td align="left" rowspan="1" colspan="1">ATCC</td><td align="left" rowspan="1" colspan="1">11454</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Recombinant DNA</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>pTOPO&#x02010;F30&#x02010;Broccoli</td><td align="left" rowspan="1" colspan="1">This study</td><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S4</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>pTXTL&#x02010;P70a&#x02010;deGFP</td><td align="left" rowspan="1" colspan="1">Arbor Bioscience</td><td align="left" rowspan="1" colspan="1">Cat #502138, <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S4</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>RS234 library</td><td align="left" rowspan="1" colspan="1">This study</td><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S4</xref>, Source Data 1</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>RS29249 library</td><td align="left" rowspan="1" colspan="1">Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref> &#x02014;PMID: 30052624</td><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S4</xref>, Source Data 1</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>RS1383 library</td><td align="left" rowspan="1" colspan="1">This study</td><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S4</xref>, Source Data 3</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>RS7003 library</td><td align="left" rowspan="1" colspan="1">This study</td><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S4</xref>, Source Data 4</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Oligonucleotides and other sequence&#x02010;based reagents</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Primers</td><td align="left" rowspan="1" colspan="1">This study</td><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S5</xref>
+</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Chemicals, enzymes, and other reagents</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Media used in this study</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S2</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Buffer used in this study</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S2</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Cell&#x02010;free reaction components</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S2</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Q5 hot start high&#x02010;fidelity 2&#x000d7; master mix</td><td align="left" rowspan="1" colspan="1">New England Biolabs</td><td align="left" rowspan="1" colspan="1">M0494</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>SYBR Green I nucleic acid gel stain</td><td align="left" rowspan="1" colspan="1">Invitrogen</td><td align="left" rowspan="1" colspan="1">S7563</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>DNase I (RNase&#x02010;free)</td><td align="left" rowspan="1" colspan="1">New England Biolabs</td><td align="left" rowspan="1" colspan="1">M0303</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Maxima H minus reverse transcriptase</td><td align="left" rowspan="1" colspan="1">Thermo Scientific</td><td align="left" rowspan="1" colspan="1">EP0753</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>RiboLock RNase inhibitor</td><td align="left" rowspan="1" colspan="1">Thermo Scientific</td><td align="left" rowspan="1" colspan="1">EO0382</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>RNase H</td><td align="left" rowspan="1" colspan="1">New England Biolabs</td><td align="left" rowspan="1" colspan="1">M0297</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>T4 RNA ligase</td><td align="left" rowspan="1" colspan="1">New England Biolabs</td><td align="left" rowspan="1" colspan="1">M0204</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>DFHBI&#x02010;1T</td><td align="left" rowspan="1" colspan="1">Tocris Bioscience</td><td align="left" rowspan="1" colspan="1">Cat #5610</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Software</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Python 3.6.0</td><td align="left" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="https://www.python.org/">https://www.python.org/</ext-link> (Python software foundation)</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>BBmerge</td><td align="left" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide">https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide</ext-link> (Bushnell <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0004" ref-type="ref">2017</xref> &#x02010; PMID: 29073143)</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>NUPACK</td><td align="left" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://nupack.org">http://nupack.org</ext-link> (Zadeh <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0081" ref-type="ref">2011</xref> &#x02010; PMID: 20645303)</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>MEME</td><td align="left" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://meme-suite.org/tools/meme">http://meme-suite.org/tools/meme</ext-link> (Bailey, <xref rid="msb198875-bib-0001" ref-type="ref">2002</xref> &#x02010; PMID: 18792935)</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Other</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Illumina NextSeq 500/550</td><td align="left" rowspan="1" colspan="1">Illumina</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>NextSeq 500/550 mid output kit v2/v2.5 (150/300&#x02010;cycles)</td><td align="left" rowspan="1" colspan="1">Illumina</td><td align="left" rowspan="1" colspan="1">Cat #20024904/20024905</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Illumina MiSeq</td><td align="left" rowspan="1" colspan="1">Illumina</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>MiSeq reagent kit v2 (300&#x02010;cycles)</td><td align="left" rowspan="1" colspan="1">Illumina</td><td align="left" rowspan="1" colspan="1">MS&#x02010;102&#x02010;2002</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>CFX96 Touch Real&#x02010;Time PCR machine</td><td align="left" rowspan="1" colspan="1">Bio&#x02010;Rad</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Synergy H1 plate reader</td><td align="left" rowspan="1" colspan="1">BioTek</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Q125 sonicator</td><td align="left" rowspan="1" colspan="1">Qsonica</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>Slide&#x02010;A&#x02010;Lyzer 10k MWCO</td><td align="left" rowspan="1" colspan="1">Thermo Scientific</td><td align="left" rowspan="1" colspan="1">Cat #66382</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x000a0;</italic>prepGEM bacteria</td><td align="left" rowspan="1" colspan="1">MicroGEM</td><td align="left" rowspan="1" colspan="1">PBA0100</td></tr></tbody></table></table-wrap>
+</p></sec><sec id="msb198875-sec-0010"><title>Methods and Protocols</title><sec id="msb198875-sec-0011"><title>Library construction</title><p>Regulatory sequences were mined from databases of antibiotic resistance (Liu &#x00026; Pop, <xref rid="msb198875-bib-0039" ref-type="ref">2009</xref>) and virulence genes (Chen <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0009" ref-type="ref">2012</xref>) to make the RS1383 library (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1</xref>). Libraries (RS234, RS7003, and RS29249) were derived from our previous study (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). RS29249 is the full library, RS7003 is a smaller bottlenecked library, and RS234 is a library of isolate Sanger&#x02010;verified strains that span a wide range of activity levels. Regulatory sequences were mined from unidirectional intergenic regions that were greater than 200&#x000a0;bp in length and consist of the 165&#x000a0;bp preceding target genes. Oligo library design, synthesis, and cloning were performed as previously described (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>). Initial libraries were transformed into <italic>E</italic>.&#x000a0;<italic>coli</italic> MegaX DH10B cells (Invitrogen) and subsequently passaged twice 1:25 in LB&#x000a0;+&#x000a0;50&#x000a0;&#x003bc;g/ml carbenicillin. Plasmid DNA was extracted (Zymo Midiprep) and column&#x02010;purified once more (PureLink, Invitrogen) to avoid carryover of RNase A into cell&#x02010;free expression systems. Final concentrations of 10&#x02013;25&#x000a0;nM were suitable for downstream experiments.</p></sec><sec id="msb198875-sec-0012"><title>Lysate preparation</title><p>Strain information, media, buffer recipes, and growth conditions used for each species can be found in <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix</xref>. <italic>E.&#x000a0;fergusonii</italic> and <italic>P.&#x000a0;agglomerans</italic> strains were isolated from mouse feces and hemp feedstock (supplied by Ecovative), respectively. Lysates were generated using similar methods used to produce <italic>E.&#x000a0;coli</italic> TXTL systems as follows (Sun <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0066" ref-type="ref">2013</xref>; Kwon &#x00026; Jewett, <xref rid="msb198875-bib-0035" ref-type="ref">2015</xref>).</p><p>
+<list list-type="bullet" id="msb198875-list-0002"><list-item><p>Single colonies of each species were inoculated into 4&#x000a0;ml liquid media and grown 6&#x02013;8&#x000a0;h.</p></list-item><list-item><p>100&#x02013;500&#x000a0;&#x003bc;l of the culture was transferred to 50&#x000a0;ml of the same liquid media and grown overnight.</p></list-item><list-item><p>3.3&#x000a0;ml from the overnight culture was transferred to two flasks containing 330&#x000a0;ml growth medium in 1&#x02010;l baffled flasks (1:100 dilution) and grown to mid&#x02010;exponential phase (OD<sub>600</sub> 1.2&#x02013;1.6), where the primary sigma factor likely dominates transcriptional control. Host&#x02010;associated strains were grown at 37&#x000b0;C, while all others were grown at the temperature recommended by the supplier (ATCC, DSMZ) or previous studies (Zhu <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0083" ref-type="ref">2008</xref>).</p></list-item><list-item><p>Flasks were rapidly chilled on ice, and cells were centrifuged at 4,300&#x000a0;&#x000d7;&#x000a0;<italic>g</italic> for 10&#x000a0;min at 4&#x000b0;C.</p></list-item><list-item><p>Pellets were washed three times with 50&#x000a0;ml S30A buffer in 50&#x02010;ml centrifuge tubes.</p></list-item><list-item><p>The mass of the final pellet was measured, and 0.8&#x000a0;ml (1.2&#x000a0;ml for <italic>L.&#x000a0;lactis</italic>) S30A buffer was added per gram of pellet mass and then transferred to Eppendorf tubes in 300&#x000a0;&#x003bc;l aliquots.</p></list-item><list-item><p>The aliquoted resuspensions were sonicated on ice using a Q125 sonicator (Qsonica) with 3.2&#x02010;mm probe at 35% amplitude for 4 rounds of 30&#x000a0;s, with 30&#x02010;s breaks.</p></list-item><list-item><p>Lysates were clarified by centrifuging at 12,000&#x000a0;&#x000d7;&#x000a0;<italic>g</italic> for 10&#x000a0;min at 4&#x000b0;C.</p></list-item><list-item><p>Supernatant was removed and transferred to 2&#x02010;ml microtubes with screw cap opened.</p></list-item><list-item><p>Run&#x02010;off reactions were performed by incubating clarified lysates at 30&#x000b0;C or 37&#x000b0;C (whichever temperature used for cell growth), 250&#x000a0;rpm for 60&#x02013;80&#x000a0;min.</p></list-item><list-item><p>Samples were clarified by centrifuging at 12,000&#x000a0;&#x000d7;&#x000a0;<italic>g</italic> for 10&#x000a0;min at 4&#x000b0;C.</p></list-item><list-item><p>Supernatant was loaded in dialysis cassette (Slide&#x02010;A&#x02010;Lyzer 10k MWCO, Thermo Scientific) and dialyzed in S30B buffer for 2&#x02013;3&#x000a0;h at 4&#x000b0;C.</p></list-item><list-item><p>Samples were clarified once more by centrifuging at 12,000&#x000a0;&#x000d7;&#x000a0;<italic>g</italic> for 10&#x000a0;min at 4&#x000b0;C, then aliquoted, and stored at &#x02212;80&#x000b0;C.</p></list-item></list>
+</p></sec><sec id="msb198875-sec-0013"><title>Transcriptional optimization</title><p>Transcriptional optimization was performed separately for each species. Cell lysates were combined with amino acids, PEG, and energy buffer as previously described (Sun <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0066" ref-type="ref">2013</xref>), with additional Mg&#x02010;glutamate and K&#x02010;glutamate (both from Sigma&#x02010;Aldrich) at concentrations of 0, 3, 6, or 9&#x000a0;mM and 0, 30, 60, or 90&#x000a0;mM, respectively (total 16 combinations), in a skirted white 96&#x02010;well PCR plate (Bio&#x02010;Rad). A plasmid construct (pTOPO&#x02010;F30&#x02010;Broccoli) containing strong broad&#x02010;host&#x02010;range promoter (Gen_18145) identified by our previous study (Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>), F30&#x02010;Broccoli, and B0015 terminator was used as a DNA template, and nuclease&#x02010;free water was used as a negative control. DNA template (2&#x000a0;&#x003bc;l) and 10&#x000a0;mM DFHBI&#x02010;1T (0.5&#x000a0;&#x003bc;l, Tocris Bioscience) were added to each well immediately before time&#x02010;course measurements. Fluorescence was tracked for 8&#x000a0;h using a Synergy H1 plate reader (BioTek) at 30&#x000b0;C using excitation and emission wavelengths of 482 and 505&#x000a0;nm, respectively. The concentrations of Mg&#x02010;glutamate and K&#x02010;glutamate yielding the highest fluorescence peak were used for future experiments, typically between 1 and 4&#x000a0;h.</p></sec><sec id="msb198875-sec-0014"><title>Transcription assay and sequencing library generation</title><p>Library measurements were carried out in 10&#x000a0;&#x003bc;l reactions containing 7.5&#x000a0;&#x003bc;l cell&#x02010;free mixture and 2.5&#x000a0;&#x003bc;l DNA at a final concentration of 10&#x02013;25&#x000a0;nM. Reactions were incubated at 30&#x000b0;C for 30&#x000a0;min. Each reaction was then split and 2&#x000a0;&#x003bc;l was used for amplification of DNA library and total RNA was extracted from the remaining 5&#x000a0;&#x003bc;l using a Zymo RNA Clean and Concentrator&#x02010;5 kit, with the remaining volume saved as backups. For <italic>in&#x000a0;vivo</italic> measurements, library cultures of all bacterial species were grown in rich media (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S1</xref>) until mid&#x02010;exponential phase (OD<sub>600</sub> ~0.2). RNA was then extracted using RNAsnap (Stead <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0065" ref-type="ref">2012</xref>), and cells were lysed using prepGEM bacteria kit (MicroGEM) for amplification of input DNA library sequences. Unless otherwise stated, RNA sequencing library was prepared by reverse transcription and common adaptor ligation at 3&#x02032;&#x02010;end of the cDNA.</p><p>
+<list list-type="bullet" id="msb198875-list-0003"><list-item><p>Gene&#x02010;specific reverse transcription (<xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1A</xref>) was carried out for all RNA samples as follows:
+</p><list list-type="simple"><list-item><p>10&#x000a0;&#x003bc;l Total RNA sample (up to 5&#x000a0;&#x003bc;g, DNase I treated and purified)</p></list-item><list-item><p>1&#x000a0;&#x003bc;l Reverse transcription primer (20&#x000a0;&#x003bc;M)</p></list-item><list-item><p>1&#x000a0;&#x003bc;l 10&#x000a0;mM dNTPs (Invitrogen)</p></list-item><list-item><p>2.5&#x000a0;&#x003bc;l Nuclease&#x02010;free water</p></list-item></list></list-item></list>
+<list list-type="bullet" id="msb198875-list-0004"><list-item><p>Components were incubated at 65&#x000b0;C for 5&#x000a0;min and chilled on ice for 1&#x000a0;min. The following were then added to the reaction:
+</p><list list-type="simple"><list-item><p>4&#x000a0;&#x003bc;l 5&#x000d7; RT buffer</p></list-item><list-item><p>0.5&#x000a0;&#x003bc;l RNase inhibitor (RiboLock, Thermo Scientific)</p></list-item><list-item><p>1&#x000a0;&#x003bc;l Maxima reverse transcriptase (Thermo Scientific)</p></list-item></list></list-item></list>
+<list list-type="bullet" id="msb198875-list-0005"><list-item><p>The reverse transcription reaction was carried out as follows on a 96&#x02010;well thermocycler (Bio&#x02010;Rad):
+</p><list list-type="simple"><list-item><p>42&#x000b0;C for 90&#x000a0;min</p></list-item><list-item><p>50&#x000b0;C for 2&#x000a0;min</p></list-item><list-item><p>42&#x000b0;C for 2&#x000a0;min</p></list-item><list-item><p>Repeat the two steps above for 9 cycles</p></list-item><list-item><p>85&#x000b0;C for 5&#x000a0;min</p></list-item><list-item><p>4&#x000b0;C hold</p></list-item></list></list-item></list>
+<list list-type="bullet" id="msb198875-list-0006"><list-item><p>The completed reaction was incubated with 1&#x000a0;&#x003bc;l RNase H at 37&#x000b0;C for 30&#x000a0;min. Then, the reaction was purified using Zymo DNA Clean and Concentrator&#x02010;5 kit, and the common adaptor ligation was carried out as follows:
+</p><list list-type="simple"><list-item><p>5&#x000a0;&#x003bc;l cDNA</p></list-item><list-item><p>2&#x000a0;&#x003bc;l Adaptor (40&#x000a0;&#x003bc;M)</p></list-item></list></list-item></list>
+<list list-type="bullet" id="msb198875-list-0007"><list-item><p>Components were incubated at 65&#x000b0;C for 5&#x000a0;min and chilled on ice for 1&#x000a0;min. The following were then added to the reaction:
+</p><list list-type="simple"><list-item><p>2&#x000a0;&#x003bc;l T4 RNA ligase buffer</p></list-item><list-item><p>0.8&#x000a0;&#x003bc;l DMSO</p></list-item><list-item><p>0.2&#x000a0;&#x003bc;l 100&#x000a0;mM ATP</p></list-item><list-item><p>8.5&#x000a0;&#x003bc;l 50% PEG8000</p></list-item><list-item><p>1.5&#x000a0;&#x003bc;l T4 RNA ligase (New England Biolabs)</p></list-item></list></list-item></list>
+<list list-type="bullet" id="msb198875-list-0008"><list-item><p>Reactions were incubated overnight at 22&#x000b0;C and purified using Zymo DNA Clean and Concentrator&#x02010;5 kit.</p></list-item></list>
+<list list-type="bullet" id="msb198875-list-0502"><list-item><p>Illumina indexes and adaptors were added to both cDNA and input library DNA using a two&#x02010;step amplification process. All primer sequences are listed in <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix</xref>. Amplifications were performed using the following PCR mixture and cycling:
+</p><list list-type="simple"><list-item><p>10&#x000a0;&#x003bc;l Q5 hot start high&#x02010;fidelity 2&#x000d7; master mix (New England Biolabs)</p></list-item><list-item><p>0.2&#x000a0;&#x003bc;l 10&#x000d7; SYBR Green I (Invitrogen)</p></list-item><list-item><p>1&#x000a0;&#x003bc;l Forward primer (10&#x000a0;&#x003bc;M)</p></list-item><list-item><p>1&#x000a0;&#x003bc;l Reverse primer (10&#x000a0;&#x003bc;M)</p></list-item><list-item><p>1&#x000a0;&#x003bc;l 1:10 dilution of library DNA template</p></list-item><list-item><p>6.8&#x000a0;&#x003bc;l Nuclease&#x02010;free water (Ambion)</p></list-item><list-item><p>5&#x000a0;min 98&#x000b0;C Initial denaturation</p></list-item><list-item><p>10&#x000a0;s 98&#x000b0;C Denaturation</p></list-item><list-item><p>20&#x000a0;s 62&#x000b0;C Annealing</p></list-item><list-item><p>30&#x000a0;s 72&#x000b0;C Extension</p></list-item><list-item><p>Go to step 2 Until end of exponential amplification</p></list-item><list-item><p>2&#x000a0;min 72&#x000b0;C Final extension</p></list-item></list></list-item></list>
+<list list-type="bullet" id="msb198875-list-0109"><list-item><p>PCR was performed using a CFX96 Touch Real&#x02010;Time PCR machine (Bio&#x02010;Rad). Amplification was stopped as soon as exponential phase ceased, typically around 20 cycles.</p></list-item></list>
+<list list-type="bullet" id="msb198875-list-0102"><list-item><p>Samples were diluted 1:100 and amplified again using the same protocol using indexing primers for 8&#x02013;10 cycles.</p></list-item></list>
+<list list-type="simple" id="msb198875-list-0101"><list-item><p>Samples were then co&#x02010;purified and examined on a 2% agarose gel to verify correct band sizes of ~200&#x000a0;bp for cDNA and 350&#x000a0;bp for input plasmid DNA libraries.</p></list-item></list>
+</p></sec><sec id="msb198875-sec-0015"><title>Read processing and data analysis</title><p>Paired&#x02010;end reads were merged using BBmerge (Bushnell <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0004" ref-type="ref">2017</xref>), which simultaneously filters out mismatched reads that can result from poor read quality or multimeric cloning artifacts. Custom code was used to identify the barcode within each read and map the region corresponding to the regulatory sequence to designed library constructs. Transcriptional activities were calculated as done in previous studies (Kosuri <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0034" ref-type="ref">2013</xref>; Johns <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0029" ref-type="ref">2018</xref>) by normalizing each construct's individual RNA abundance by its DNA abundance using merged counts from two replicates. The log<sub>10</sub>&#x02010;transformed expression levels were converted to <italic>Z</italic>&#x02010;scores for further comparative analysis across samples. Principal component analysis (PCA) was performed using the PCA function in scikit&#x02010;learn package by using normalized transcriptional activities of universally active promoters across all samples being compared.</p></sec><sec id="msb198875-sec-0016"><title>Determination of transcription start sites and 5&#x02032; mRNA stability</title><p>To identify the TSSs of regulatory sequences, alignment of the merged RNA reads with the reference sequence was performed after trimming common adaptor sequence with two random bases at the end. Then, we processed TSS calls for each regulatory sequence by an algorithm using kmeans function of scikit&#x02010;learn package in Python. The algorithm starts with a seed of 16 clusters, and then the number of clusters is reduced if two clusters are found within 10&#x000a0;bp of each other or if the cluster contains &#x0003c;&#x000a0;1% of all reads. Primary TSS was defined as TSS in which &#x0003e;&#x000a0;70% of TSS calls lie within the cluster with &#x0003e;&#x000a0;200 counts. Other secondary TSSs defined as all the TSSs in which &#x0003e;&#x000a0;10% of TSS calls lie. Free energy of 5&#x02032;&#x02010;end mRNA structure was computed using the NUPACK package (<ext-link ext-link-type="uri" xlink:href="http://nupack.org">http://nupack.org</ext-link>; Zadeh <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0081" ref-type="ref">2011</xref>). The 5&#x02032;&#x02010;end of mRNA was defined by first 50&#x000a0;bp downstream of TSS of each regulatory sequence. Only promoters with primary TSSs were used for this analysis.</p></sec><sec id="msb198875-sec-0017"><title>Motif discovery and scoring</title><p>The conserved &#x02212;10 and &#x02212;35 motifs of regulatory sequences were identified within the 45&#x000a0;bp preceding primary TSSs using MEME software analysis (Bailey, <xref rid="msb198875-bib-0001" ref-type="ref">2002</xref>). Spacer sequences between &#x02212;35 and &#x02212;10 regions of promoters were extracted during motif scanning and were given penalty scores for suboptimal sizes deviating up to &#x000b1;&#x000a0;2&#x000a0;bp from the optimal 17&#x000a0;bp. We also examined motifs found within the 8&#x000a0;bp of downstream sequences from primary TSS as this region is important for transcription initiation (Vvedenskaya <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0074" ref-type="ref">2015</xref>; Yus <italic>et&#x000a0;al</italic>, <xref rid="msb198875-bib-0080" ref-type="ref">2017</xref>). Unless otherwise stated, top 10% highly active promoters were selected for motif analysis. The motif function in the Biopython package was used to scan the aligned sequences by MEME to obtain motif position weight matrix and match scores for each promoter in the regulatory sequence library.</p></sec></sec><sec id="msb198875-sec-0018"><title>Statistical methods</title><p>All library measurements were performed in duplicate for both RNA and DNA with replicate values listed in <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Table&#x000a0;S6</xref>. For most analyses, a cutoff of 15 DNA reads was set to minimize noise from low&#x02010;abundance constructs. All statistics were performed using commonly used Python libraries such as Numpy, Scipy, Pandas, and Seaborn. Linear modeling was performed using the LinearRegression function in scikit&#x02010;learn package, and cross&#x02010;validation of the models was performed by randomly splitting the data in 10 and 90% for the training and test sets, respectively, unless otherwise stated.</p></sec></sec><sec id="msb198875-sec-0021"><title>Author contributions</title><p>SSY, NIJ, VN, and HHW developed the initial concept. ALCG, CR, SPC, RMM, MR, and DG provided key biological reagents, strains, and code. SSY, NIJ, and JP performed experiments and analyzed the results under the supervision of HHW; NIJ, SSY, and HHW wrote the manuscript with input from all authors.</p></sec><sec sec-type="COI-statement" id="msb198875-sec-0022"><title>Conflict of interest</title><p>The authors declare that they have no conflict of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"/><supplementary-material content-type="local-data" id="msb198875-sup-0001"><caption><p>Appendix</p></caption><media xlink:href="MSB-15-e8875-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="msb198875-sup-0007"><caption><p>Source Data for Appendix</p></caption><media xlink:href="MSB-15-e8875-s007.zip"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>Review Process File</p></caption><media xlink:href="MSB-15-e8875-s008.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="msb198875-supp-data-0001"><caption><p>Source Data for Figure&#x000a0;1</p></caption><media xlink:href="MSB-15-e8875-s002.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="msb198875-supp-data-0002"><caption><p>Source Data for Figure&#x000a0;2</p></caption><media xlink:href="MSB-15-e8875-s003.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="msb198875-supp-data-0003"><caption><p>Source Data for Figure&#x000a0;3</p></caption><media xlink:href="MSB-15-e8875-s004.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="msb198875-supp-data-0004"><caption><p>Source Data for Figure&#x000a0;4</p></caption><media xlink:href="MSB-15-e8875-s005.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="msb198875-supp-data-0005"><caption><p>Source Data for Figure&#x000a0;5</p></caption><media xlink:href="MSB-15-e8875-s006.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="msb198875-sec-0020"><title>Acknowledgements</title><p>We thank members of the Wang Lab for advice and comments on the manuscript. H.H.W. acknowledges funding support from NSF (MCB&#x02010;1453219), NIH/NIGMS (U01GM110714&#x02010;01A1), NIH/NIAID (1R01AI132403&#x02010;01), DARPA (HR0011&#x02010;17&#x02010;C&#x02010;0068), DoD ONR (N00014&#x02010;15&#x02010;1&#x02010;2704), and the Sloan Foundation (FR&#x02010;2015&#x02010;65795). V.N. acknowledges funding support from DoD ONR (N00014&#x02010;13&#x02010;1&#x02010;0074) and Human Frontier Science Program (RGP0037/2015). S.S.Y. thanks support from Basic Science Research Program through the National Research Foundation of Korea funded by the Ministry of Education (NRF&#x02010;2017R1A6A3A03003401). N.I.J. is supported by an NSF Graduate Research Fellowship (DGE&#x02010;1644869). We also thank K.J. Jeong (KAIST, Daejeon, Korea) for providing pCES208 plasmid.</p></ack><sec sec-type="data-availability" id="msb198875-sec-0019"><title>Data availability</title><p>All data supporting the findings of this study are available within the article and its <xref rid="msb198875-sup-0001" ref-type="supplementary-material">Appendix</xref> and Source Data, or are available from the authors upon request. Sequencing data associated with this study are available at NCBI SRA under PRJNA509603 (<ext-link ext-link-type="uri" xlink:href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA509603/">https://www.ncbi.nlm.nih.gov/bioproject/PRJNA509603/</ext-link>). Custom code used for data processing is publicly available at the following link: <ext-link ext-link-type="uri" xlink:href="https://github.com/ssyim/DRAFTS">https://github.com/ssyim/DRAFTS</ext-link>.</p></sec><ref-list content-type="cited-references" id="msb198875-bibl-0001"><title>References</title><ref id="msb198875-bib-0001"><mixed-citation publication-type="journal" id="msb198875-cit-0001">
+<string-name>
+<surname>Bailey</surname>
+<given-names>TL</given-names>
+</string-name> (<year>2002</year>) <article-title>Discovering novel sequence motifs with MEME</article-title>. <source xml:lang="en">Curr Protoc Bioinformatics</source>
+<volume>Chapter 2</volume>: Unit 2.4</mixed-citation></ref><ref id="msb198875-bib-0002"><mixed-citation publication-type="journal" id="msb198875-cit-0002">
+<string-name>
+<surname>Belliveau</surname>
+<given-names>NM</given-names>
+</string-name>, <string-name>
+<surname>Barnes</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Ireland</surname>
+<given-names>WT</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Sweredoski</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Moradian</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Hess</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kinney</surname>
+<given-names>JB</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>R</given-names>
+</string-name> (<year>2018</year>) <article-title>Systematic approach for dissecting the molecular mechanisms of transcriptional regulation in bacteria</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>115</volume>: <fpage>E4796</fpage>&#x02013;<lpage>E4805</lpage>
+<pub-id pub-id-type="pmid">29728462</pub-id></mixed-citation></ref><ref id="msb198875-bib-0003"><mixed-citation publication-type="journal" id="msb198875-cit-0003">
+<string-name>
+<surname>Borkowski</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Bricio</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Murgiano</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Rothschild&#x02010;Mancinelli</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Stan</surname>
+<given-names>GB</given-names>
+</string-name>, <string-name>
+<surname>Ellis</surname>
+<given-names>T</given-names>
+</string-name> (<year>2018</year>) <article-title>Cell&#x02010;free prediction of protein expression costs for growing cells</article-title>. <source xml:lang="en">Nat Commun</source>
+<volume>9</volume>: <fpage>1457</fpage>
+<pub-id pub-id-type="pmid">29654285</pub-id></mixed-citation></ref><ref id="msb198875-bib-0004"><mixed-citation publication-type="journal" id="msb198875-cit-0004">
+<string-name>
+<surname>Bushnell</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Rood</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Singer</surname>
+<given-names>E</given-names>
+</string-name> (<year>2017</year>) <article-title>BBMerge &#x02010; Accurate paired shotgun read merging via overlap</article-title>. <source xml:lang="en">PLoS ONE</source>
+<volume>12</volume>: <fpage>e0185056</fpage>
+<pub-id pub-id-type="pmid">29073143</pub-id></mixed-citation></ref><ref id="msb198875-bib-0005"><mixed-citation publication-type="journal" id="msb198875-cit-0005">
+<string-name>
+<surname>Calhoun</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Swartz</surname>
+<given-names>JR</given-names>
+</string-name> (<year>2005</year>) <article-title>Energizing cell&#x02010;free protein synthesis with glucose metabolism</article-title>. <source xml:lang="en">Biotechnol Bioeng</source>
+<volume>90</volume>: <fpage>606</fpage>&#x02013;<lpage>613</lpage>
+<pub-id pub-id-type="pmid">15830344</pub-id></mixed-citation></ref><ref id="msb198875-bib-0006"><mixed-citation publication-type="journal" id="msb198875-cit-0006">
+<string-name>
+<surname>Calhoun</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Swartz</surname>
+<given-names>JR</given-names>
+</string-name> (<year>2007</year>) <article-title>Energy systems for ATP regeneration in cell&#x02010;free protein synthesis reactions</article-title>. <source xml:lang="en">Methods Mol Biol</source>
+<volume>375</volume>: <fpage>3</fpage>&#x02013;<lpage>17</lpage>
+<pub-id pub-id-type="pmid">17634594</pub-id></mixed-citation></ref><ref id="msb198875-bib-0007"><mixed-citation publication-type="journal" id="msb198875-cit-0007">
+<string-name>
+<surname>Cambray</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Guimaraes</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name>
+<surname>Arkin</surname>
+<given-names>AP</given-names>
+</string-name> (<year>2018</year>) <article-title>Evaluation of 244,000 synthetic sequences reveals design principles to optimize translation in <italic>Escherichia coli</italic>
+</article-title>. <source xml:lang="en">Nat Biotechnol</source>
+<volume>36</volume>: <fpage>1005</fpage>&#x02013;<lpage>1015</lpage>
+<pub-id pub-id-type="pmid">30247489</pub-id></mixed-citation></ref><ref id="msb198875-bib-0008"><mixed-citation publication-type="journal" id="msb198875-cit-0008">
+<string-name>
+<surname>Chappell</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Jensen</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Freemont</surname>
+<given-names>PS</given-names>
+</string-name> (<year>2013</year>) <article-title>Validation of an entirely <italic>in&#x000a0;vitro</italic> approach for rapid prototyping of DNA regulatory elements for synthetic biology</article-title>. <source xml:lang="en">Nucleic Acids Res</source>
+<volume>41</volume>: <fpage>3471</fpage>&#x02013;<lpage>3481</lpage>
+<pub-id pub-id-type="pmid">23371936</pub-id></mixed-citation></ref><ref id="msb198875-bib-0009"><mixed-citation publication-type="journal" id="msb198875-cit-0009">
+<string-name>
+<surname>Chen</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Xiong</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Jin</surname>
+<given-names>Q</given-names>
+</string-name> (<year>2012</year>) <article-title>VFDB 2012 update: toward the genetic diversity and molecular evolution of bacterial virulence factors</article-title>. <source xml:lang="en">Nucleic Acids Res</source>
+<volume>40</volume>: <fpage>D641</fpage>&#x02013;<lpage>D645</lpage>
+<pub-id pub-id-type="pmid">22067448</pub-id></mixed-citation></ref><ref id="msb198875-bib-0010"><mixed-citation publication-type="journal" id="msb198875-cit-0010">
+<string-name>
+<surname>Chen</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Ho</surname>
+<given-names>JML</given-names>
+</string-name>, <string-name>
+<surname>Shis</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Gupta</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Long</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Wagner</surname>
+<given-names>DS</given-names>
+</string-name>, <string-name>
+<surname>Ott</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Josic</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Bennett</surname>
+<given-names>MR</given-names>
+</string-name> (<year>2018</year>) <article-title>Tuning the dynamic range of bacterial promoters regulated by ligand&#x02010;inducible transcription factors</article-title>. <source xml:lang="en">Nat Commun</source>
+<volume>9</volume>: <fpage>64</fpage>
+<pub-id pub-id-type="pmid">29302024</pub-id></mixed-citation></ref><ref id="msb198875-bib-0011"><mixed-citation publication-type="journal" id="msb198875-cit-0011">
+<string-name>
+<surname>Des Soye</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Davidson</surname>
+<given-names>SR</given-names>
+</string-name>, <string-name>
+<surname>Weinstock</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name>
+<surname>Gibson</surname>
+<given-names>DG</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2018</year>) <article-title>Establishing a high&#x02010;yielding cell&#x02010;free protein synthesis platform derived from <italic>Vibrio natriegens</italic>
+</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>7</volume>: <fpage>2245</fpage>&#x02013;<lpage>2255</lpage>
+<pub-id pub-id-type="pmid">30107122</pub-id></mixed-citation></ref><ref id="msb198875-bib-0012"><mixed-citation publication-type="journal" id="msb198875-cit-0012">
+<string-name>
+<surname>Dudley</surname>
+<given-names>QM</given-names>
+</string-name>, <string-name>
+<surname>Karim</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2015</year>) <article-title>Cell&#x02010;free metabolic engineering: biomanufacturing beyond the cell</article-title>. <source xml:lang="en">Biotechnol J</source>
+<volume>10</volume>: <fpage>69</fpage>&#x02013;<lpage>82</lpage>
+<pub-id pub-id-type="pmid">25319678</pub-id></mixed-citation></ref><ref id="msb198875-bib-0013"><mixed-citation publication-type="journal" id="msb198875-cit-0013">
+<string-name>
+<surname>Dudley</surname>
+<given-names>QM</given-names>
+</string-name>, <string-name>
+<surname>Anderson</surname>
+<given-names>KC</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2016</year>) <article-title>Cell&#x02010;Free mixing of escherichia coli crude extracts to prototype and rationally engineer high&#x02010;titer mevalonate synthesis</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>5</volume>: <fpage>1578</fpage>&#x02013;<lpage>1588</lpage>
+<pub-id pub-id-type="pmid">27476989</pub-id></mixed-citation></ref><ref id="msb198875-bib-0014"><mixed-citation publication-type="journal" id="msb198875-cit-0014">
+<string-name>
+<surname>Ezure</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Suzuki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Higashide</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Shintani</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Endo</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Kobayashi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Shikata</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ito</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Tanimizu</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Nishimura</surname>
+<given-names>O</given-names>
+</string-name> (<year>2006</year>) <article-title>Cell&#x02010;free protein synthesis system prepared from insect cells by freeze&#x02010;thawing</article-title>. <source xml:lang="en">Biotechnol Prog</source>
+<volume>22</volume>: <fpage>1570</fpage>&#x02013;<lpage>1577</lpage>
+<pub-id pub-id-type="pmid">17137303</pub-id></mixed-citation></ref><ref id="msb198875-bib-0015"><mixed-citation publication-type="journal" id="msb198875-cit-0015">
+<string-name>
+<surname>Farasat</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Kushwaha</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Collens</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Easterbrook</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Guido</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Salis</surname>
+<given-names>HM</given-names>
+</string-name> (<year>2014</year>) <article-title>Efficient search, mapping, and optimization of multi&#x02010;protein genetic systems in diverse bacteria</article-title>. <source xml:lang="en">Mol Syst Biol</source>
+<volume>10</volume>: <fpage>731</fpage>
+<pub-id pub-id-type="pmid">24952589</pub-id></mixed-citation></ref><ref id="msb198875-bib-0016"><mixed-citation publication-type="journal" id="msb198875-cit-0016">
+<string-name>
+<surname>Filonov</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name>
+<surname>Moon</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Svensen</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Jaffrey</surname>
+<given-names>SR</given-names>
+</string-name> (<year>2014</year>) <article-title>Broccoli: rapid selection of an RNA mimic of green fluorescent protein by fluorescence&#x02010;based selection and directed evolution</article-title>. <source xml:lang="en">J Am Chem Soc</source>
+<volume>136</volume>: <fpage>16299</fpage>&#x02013;<lpage>16308</lpage>
+<pub-id pub-id-type="pmid">25337688</pub-id></mixed-citation></ref><ref id="msb198875-bib-0017"><mixed-citation publication-type="journal" id="msb198875-cit-0017">
+<string-name>
+<surname>Forcier</surname>
+<given-names>TL</given-names>
+</string-name>, <string-name>
+<surname>Ayaz</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Gill</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Kinney</surname>
+<given-names>JB</given-names>
+</string-name> (<year>2018</year>) <article-title>Measuring cis&#x02010;regulatory energetics in living cells using allelic manifolds</article-title>. <source xml:lang="en">Elife</source>
+<volume>7</volume>: <fpage>e40618</fpage>
+<pub-id pub-id-type="pmid">30570483</pub-id></mixed-citation></ref><ref id="msb198875-bib-0018"><mixed-citation publication-type="journal" id="msb198875-cit-0018">
+<string-name>
+<surname>Garamella</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Marshall</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Rustad</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name> (<year>2016</year>) <article-title>The all <italic>E.&#x000a0;coli</italic> TX&#x02010;TL toolbox 2.0: a platform for cell&#x02010;free synthetic biology</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>5</volume>: <fpage>344</fpage>&#x02013;<lpage>355</lpage>
+<pub-id pub-id-type="pmid">26818434</pub-id></mixed-citation></ref><ref id="msb198875-bib-0019"><mixed-citation publication-type="journal" id="msb198875-cit-0019">
+<string-name>
+<surname>Goodman</surname>
+<given-names>DB</given-names>
+</string-name>, <string-name>
+<surname>Church</surname>
+<given-names>GM</given-names>
+</string-name>, <string-name>
+<surname>Kosuri</surname>
+<given-names>S</given-names>
+</string-name> (<year>2013</year>) <article-title>Causes and effects of N&#x02010;terminal codon bias in bacterial genes</article-title>. <source xml:lang="en">Science</source>
+<volume>342</volume>: <fpage>475</fpage>&#x02013;<lpage>479</lpage>
+<pub-id pub-id-type="pmid">24072823</pub-id></mixed-citation></ref><ref id="msb198875-bib-0020"><mixed-citation publication-type="journal" id="msb198875-cit-0020">
+<string-name>
+<surname>Gorochowski</surname>
+<given-names>TE</given-names>
+</string-name>, <string-name>
+<surname>Espah Borujeni</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Park</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Nielsen</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Der</surname>
+<given-names>BS</given-names>
+</string-name>, <string-name>
+<surname>Gordon</surname>
+<given-names>DB</given-names>
+</string-name>, <string-name>
+<surname>Voigt</surname>
+<given-names>CA</given-names>
+</string-name> (<year>2017</year>) <article-title>Genetic circuit characterization and debugging using RNA&#x02010;seq</article-title>. <source xml:lang="en">Mol Syst Biol</source>
+<volume>13</volume>: <fpage>952</fpage>
+<pub-id pub-id-type="pmid">29122925</pub-id></mixed-citation></ref><ref id="msb198875-bib-0021"><mixed-citation publication-type="journal" id="msb198875-cit-0021">
+<string-name>
+<surname>Hodgman</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2012</year>) <article-title>Cell&#x02010;free synthetic biology: thinking outside the cell</article-title>. <source xml:lang="en">Metab Eng</source>
+<volume>14</volume>: <fpage>261</fpage>&#x02013;<lpage>269</lpage>
+<pub-id pub-id-type="pmid">21946161</pub-id></mixed-citation></ref><ref id="msb198875-bib-0022"><mixed-citation publication-type="journal" id="msb198875-cit-0022">
+<string-name>
+<surname>Hodgman</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2013</year>) <article-title>Optimized extract preparation methods and reaction conditions for improved yeast cell&#x02010;free protein synthesis</article-title>. <source xml:lang="en">Biotechnol Bioeng</source>
+<volume>110</volume>: <fpage>2643</fpage>&#x02013;<lpage>2654</lpage>
+<pub-id pub-id-type="pmid">23832321</pub-id></mixed-citation></ref><ref id="msb198875-bib-0023"><mixed-citation publication-type="journal" id="msb198875-cit-0023">
+<string-name>
+<surname>Iyer</surname>
+<given-names>LM</given-names>
+</string-name>, <string-name>
+<surname>Koonin</surname>
+<given-names>EV</given-names>
+</string-name>, <string-name>
+<surname>Aravind</surname>
+<given-names>L</given-names>
+</string-name> (<year>2004</year>) <article-title>Evolution of bacterial RNA polymerase: implications for large&#x02010;scale bacterial phylogeny, domain accretion, and horizontal gene transfer</article-title>. <source xml:lang="en">Gene</source>
+<volume>335</volume>: <fpage>73</fpage>&#x02013;<lpage>88</lpage>
+<pub-id pub-id-type="pmid">15194191</pub-id></mixed-citation></ref><ref id="msb198875-bib-0024"><mixed-citation publication-type="journal" id="msb198875-cit-0024">
+<string-name>
+<surname>Jaroentomeechai</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Stark</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name>
+<surname>Natarajan</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Glasscock</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Yates</surname>
+<given-names>LE</given-names>
+</string-name>, <string-name>
+<surname>Hsu</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Mrksich</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>DeLisa</surname>
+<given-names>MP</given-names>
+</string-name> (<year>2018</year>) <article-title>Single&#x02010;pot glycoprotein biosynthesis using a cell&#x02010;free transcription&#x02010;translation system enriched with glycosylation machinery</article-title>. <source xml:lang="en">Nat Commun</source>
+<volume>9</volume>: <fpage>2686</fpage>
+<pub-id pub-id-type="pmid">30002445</pub-id></mixed-citation></ref><ref id="msb198875-bib-0025"><mixed-citation publication-type="journal" id="msb198875-cit-0025">
+<string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Swartz</surname>
+<given-names>JR</given-names>
+</string-name> (<year>2004</year>) <article-title>Mimicking the <italic>Escherichia coli</italic> cytoplasmic environment activates long&#x02010;lived and efficient cell&#x02010;free protein synthesis</article-title>. <source xml:lang="en">Biotechnol Bioeng</source>
+<volume>86</volume>: <fpage>19</fpage>&#x02013;<lpage>26</lpage>
+<pub-id pub-id-type="pmid">15007837</pub-id></mixed-citation></ref><ref id="msb198875-bib-0026"><mixed-citation publication-type="journal" id="msb198875-cit-0026">
+<string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Calhoun</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Voloshin</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Wuu</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name>
+<surname>Swartz</surname>
+<given-names>JR</given-names>
+</string-name> (<year>2008</year>) <article-title>An integrated cell&#x02010;free metabolic platform for protein production and synthetic biology</article-title>. <source xml:lang="en">Mol Syst Biol</source>
+<volume>4</volume>: <fpage>220</fpage>
+<pub-id pub-id-type="pmid">18854819</pub-id></mixed-citation></ref><ref id="msb198875-bib-0027"><mixed-citation publication-type="journal" id="msb198875-cit-0027">
+<string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Fritz</surname>
+<given-names>BR</given-names>
+</string-name>, <string-name>
+<surname>Timmerman</surname>
+<given-names>LE</given-names>
+</string-name>, <string-name>
+<surname>Church</surname>
+<given-names>GM</given-names>
+</string-name> (<year>2013</year>) <article-title>
+<italic>In vitro</italic> integration of ribosomal RNA synthesis, ribosome assembly, and translation</article-title>. <source xml:lang="en">Mol Syst Biol</source>
+<volume>9</volume>: <fpage>678</fpage>
+<pub-id pub-id-type="pmid">23799452</pub-id></mixed-citation></ref><ref id="msb198875-bib-0028"><mixed-citation publication-type="journal" id="msb198875-cit-0028">
+<string-name>
+<surname>Johns</surname>
+<given-names>NI</given-names>
+</string-name>, <string-name>
+<surname>Blazejewski</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Gomes</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>HH</given-names>
+</string-name> (<year>2016</year>) <article-title>Principles for designing synthetic microbial communities</article-title>. <source xml:lang="en">Curr Opin Microbiol</source>
+<volume>31</volume>: <fpage>146</fpage>&#x02013;<lpage>153</lpage>
+<pub-id pub-id-type="pmid">27084981</pub-id></mixed-citation></ref><ref id="msb198875-bib-0029"><mixed-citation publication-type="journal" id="msb198875-cit-0029">
+<string-name>
+<surname>Johns</surname>
+<given-names>NI</given-names>
+</string-name>, <string-name>
+<surname>Gomes</surname>
+<given-names>ALC</given-names>
+</string-name>, <string-name>
+<surname>Yim</surname>
+<given-names>SS</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Blazejewski</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Smillie</surname>
+<given-names>CS</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>MB</given-names>
+</string-name>, <string-name>
+<surname>Alm</surname>
+<given-names>EJ</given-names>
+</string-name>, <string-name>
+<surname>Kosuri</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>HH</given-names>
+</string-name> (<year>2018</year>) <article-title>Metagenomic mining of regulatory elements enables programmable species&#x02010;selective gene expression</article-title>. <source xml:lang="en">Nat Methods</source>
+<volume>15</volume>: <fpage>323</fpage>&#x02013;<lpage>329</lpage>
+<pub-id pub-id-type="pmid">30052624</pub-id></mixed-citation></ref><ref id="msb198875-bib-0030"><mixed-citation publication-type="journal" id="msb198875-cit-0030">
+<string-name>
+<surname>Karim</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2016</year>) <article-title>A cell&#x02010;free framework for rapid biosynthetic pathway prototyping and enzyme discovery</article-title>. <source xml:lang="en">Metab Eng</source>
+<volume>36</volume>: <fpage>116</fpage>&#x02013;<lpage>126</lpage>
+<pub-id pub-id-type="pmid">26996382</pub-id></mixed-citation></ref><ref id="msb198875-bib-0031"><mixed-citation publication-type="journal" id="msb198875-cit-0031">
+<string-name>
+<surname>Kelwick</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Webb</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>MacDonald</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name>
+<surname>Freemont</surname>
+<given-names>PS</given-names>
+</string-name> (<year>2016</year>) <article-title>Development of a <italic>Bacillus subtilis</italic> cell&#x02010;free transcription&#x02010;translation system for prototyping regulatory elements</article-title>. <source xml:lang="en">Metab Eng</source>
+<volume>38</volume>: <fpage>370</fpage>&#x02013;<lpage>381</lpage>
+<pub-id pub-id-type="pmid">27697563</pub-id></mixed-citation></ref><ref id="msb198875-bib-0032"><mixed-citation publication-type="journal" id="msb198875-cit-0032">
+<string-name>
+<surname>Kinney</surname>
+<given-names>JB</given-names>
+</string-name>, <string-name>
+<surname>Murugan</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Callan</surname>
+<given-names>CG</given-names>
+<suffix>Jr</suffix>
+</string-name>, <string-name>
+<surname>Cox</surname>
+<given-names>EC</given-names>
+</string-name> (<year>2010</year>) <article-title>Using deep sequencing to characterize the biophysical mechanism of a transcriptional regulatory sequence</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>107</volume>: <fpage>9158</fpage>&#x02013;<lpage>9163</lpage>
+<pub-id pub-id-type="pmid">20439748</pub-id></mixed-citation></ref><ref id="msb198875-bib-0033"><mixed-citation publication-type="journal" id="msb198875-cit-0033">
+<string-name>
+<surname>Kitahara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Yasutake</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Miyazaki</surname>
+<given-names>K</given-names>
+</string-name> (<year>2012</year>) <article-title>Mutational robustness of 16S ribosomal RNA, shown by experimental horizontal gene transfer in <italic>Escherichia coli</italic>
+</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>109</volume>: <fpage>19220</fpage>&#x02013;<lpage>19225</lpage>
+<pub-id pub-id-type="pmid">23112186</pub-id></mixed-citation></ref><ref id="msb198875-bib-0034"><mixed-citation publication-type="journal" id="msb198875-cit-0034">
+<string-name>
+<surname>Kosuri</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Goodman</surname>
+<given-names>DB</given-names>
+</string-name>, <string-name>
+<surname>Cambray</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Mutalik</surname>
+<given-names>VK</given-names>
+</string-name>, <string-name>
+<surname>Gao</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Arkin</surname>
+<given-names>AP</given-names>
+</string-name>, <string-name>
+<surname>Endy</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Church</surname>
+<given-names>GM</given-names>
+</string-name> (<year>2013</year>) <article-title>Composability of regulatory sequences controlling transcription and translation in <italic>Escherichia coli</italic>
+</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>110</volume>: <fpage>14024</fpage>&#x02013;<lpage>14029</lpage>
+<pub-id pub-id-type="pmid">23924614</pub-id></mixed-citation></ref><ref id="msb198875-bib-0035"><mixed-citation publication-type="journal" id="msb198875-cit-0035">
+<string-name>
+<surname>Kwon</surname>
+<given-names>YC</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2015</year>) <article-title>High&#x02010;throughput preparation methods of crude extract for robust cell&#x02010;free protein synthesis</article-title>. <source xml:lang="en">Sci Rep</source>
+<volume>5</volume>: <fpage>8663</fpage>
+<pub-id pub-id-type="pmid">25727242</pub-id></mixed-citation></ref><ref id="msb198875-bib-0036"><mixed-citation publication-type="journal" id="msb198875-cit-0036">
+<string-name>
+<surname>LeProust</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Peck</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Spirin</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>McCuen</surname>
+<given-names>HB</given-names>
+</string-name>, <string-name>
+<surname>Moore</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Namsaraev</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Caruthers</surname>
+<given-names>MH</given-names>
+</string-name> (<year>2010</year>) <article-title>Synthesis of high&#x02010;quality libraries of long (150mer) oligonucleotides by a novel depurination controlled process</article-title>. <source xml:lang="en">Nucleic Acids Res</source>
+<volume>38</volume>: <fpage>2522</fpage>&#x02013;<lpage>2540</lpage>
+<pub-id pub-id-type="pmid">20308161</pub-id></mixed-citation></ref><ref id="msb198875-bib-0037"><mixed-citation publication-type="journal" id="msb198875-cit-0037">
+<string-name>
+<surname>Li</surname>
+<given-names>GW</given-names>
+</string-name>, <string-name>
+<surname>Burkhardt</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Gross</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Weissman</surname>
+<given-names>JS</given-names>
+</string-name> (<year>2014</year>) <article-title>Quantifying absolute protein synthesis rates reveals principles underlying allocation of cellular resources</article-title>. <source xml:lang="en">Cell</source>
+<volume>157</volume>: <fpage>624</fpage>&#x02013;<lpage>635</lpage>
+<pub-id pub-id-type="pmid">24766808</pub-id></mixed-citation></ref><ref id="msb198875-bib-0038"><mixed-citation publication-type="journal" id="msb198875-cit-0038">
+<string-name>
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Kwon</surname>
+<given-names>YC</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2017</year>) <article-title>Establishing a high yielding streptomyces&#x02010;based cell&#x02010;free protein synthesis system</article-title>. <source xml:lang="en">Biotechnol Bioeng</source>
+<volume>114</volume>: <fpage>1343</fpage>&#x02013;<lpage>1353</lpage>
+<pub-id pub-id-type="pmid">28112394</pub-id></mixed-citation></ref><ref id="msb198875-bib-0039"><mixed-citation publication-type="journal" id="msb198875-cit-0039">
+<string-name>
+<surname>Liu</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Pop</surname>
+<given-names>M</given-names>
+</string-name> (<year>2009</year>) <article-title>ARDB&#x02013;antibiotic resistance genes database</article-title>. <source xml:lang="en">Nucleic Acids Res</source>
+<volume>37</volume>: <fpage>D443</fpage>&#x02013;<lpage>D447</lpage>
+<pub-id pub-id-type="pmid">18832362</pub-id></mixed-citation></ref><ref id="msb198875-bib-0040"><mixed-citation publication-type="journal" id="msb198875-cit-0040">
+<string-name>
+<surname>Maini</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Umemoto</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Suga</surname>
+<given-names>H</given-names>
+</string-name> (<year>2016</year>) <article-title>Ribosome&#x02010;mediated synthesis of natural product&#x02010;like peptides via cell&#x02010;free translation</article-title>. <source xml:lang="en">Curr Opin Chem Biol</source>
+<volume>34</volume>: <fpage>44</fpage>&#x02013;<lpage>52</lpage>
+<pub-id pub-id-type="pmid">27344230</pub-id></mixed-citation></ref><ref id="msb198875-bib-0041"><mixed-citation publication-type="journal" id="msb198875-cit-0041">
+<string-name>
+<surname>Marshall</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Maxwell</surname>
+<given-names>CS</given-names>
+</string-name>, <string-name>
+<surname>Collins</surname>
+<given-names>SP</given-names>
+</string-name>, <string-name>
+<surname>Jacobsen</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Luo</surname>
+<given-names>ML</given-names>
+</string-name>, <string-name>
+<surname>Begemann</surname>
+<given-names>MB</given-names>
+</string-name>, <string-name>
+<surname>Gray</surname>
+<given-names>BN</given-names>
+</string-name>, <string-name>
+<surname>January</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Singer</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>He</surname>
+<given-names>Y</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic> (<year>2018</year>) <article-title>Rapid and scalable characterization of CRISPR technologies using an <italic>E.&#x000a0;coli</italic> cell&#x02010;free transcription&#x02010;translation system</article-title>. <source xml:lang="en">Mol Cell</source>
+<volume>69</volume>: <fpage>146</fpage>&#x02013;<lpage>157</lpage> e143<pub-id pub-id-type="pmid">29304331</pub-id></mixed-citation></ref><ref id="msb198875-bib-0042"><mixed-citation publication-type="journal" id="msb198875-cit-0042">
+<string-name>
+<surname>Martin</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name>
+<surname>Majewska</surname>
+<given-names>NI</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>CX</given-names>
+</string-name>, <string-name>
+<surname>Albanetti</surname>
+<given-names>TE</given-names>
+</string-name>, <string-name>
+<surname>Jimenez</surname>
+<given-names>RBC</given-names>
+</string-name>, <string-name>
+<surname>Schmelzer</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Roy</surname>
+<given-names>V</given-names>
+</string-name> (<year>2017</year>) <article-title>Development of a CHO&#x02010;based cell&#x02010;free platform for synthesis of active monoclonal antibodies</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>6</volume>: <fpage>1370</fpage>&#x02013;<lpage>1379</lpage>
+<pub-id pub-id-type="pmid">28350472</pub-id></mixed-citation></ref><ref id="msb198875-bib-0043"><mixed-citation publication-type="journal" id="msb198875-cit-0043">
+<string-name>
+<surname>Martin</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name>
+<surname>Des Soye</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Kwon</surname>
+<given-names>YC</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Davis</surname>
+<given-names>RG</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>PM</given-names>
+</string-name>, <string-name>
+<surname>Majewska</surname>
+<given-names>NI</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>CX</given-names>
+</string-name>, <string-name>
+<surname>Marcum</surname>
+<given-names>RD</given-names>
+</string-name>, <string-name>
+<surname>Weiss</surname>
+<given-names>MG</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic> (<year>2018</year>) <article-title>Cell&#x02010;free protein synthesis from genomically recoded bacteria enables multisite incorporation of noncanonical amino acids</article-title>. <source xml:lang="en">Nat Commun</source>
+<volume>9</volume>: <fpage>1203</fpage>
+<pub-id pub-id-type="pmid">29572528</pub-id></mixed-citation></ref><ref id="msb198875-bib-0044"><mixed-citation publication-type="journal" id="msb198875-cit-0044">
+<string-name>
+<surname>Mikami</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Masutani</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sonenberg</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Yokoyama</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Imataka</surname>
+<given-names>H</given-names>
+</string-name> (<year>2006</year>) <article-title>An efficient mammalian cell&#x02010;free translation system supplemented with translation factors</article-title>. <source xml:lang="en">Protein Expres Purif</source>
+<volume>46</volume>: <fpage>348</fpage>&#x02013;<lpage>357</lpage>
+</mixed-citation></ref><ref id="msb198875-bib-0045"><mixed-citation publication-type="journal" id="msb198875-cit-0045">
+<string-name>
+<surname>Moore</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Lai</surname>
+<given-names>HE</given-names>
+</string-name>, <string-name>
+<surname>Needham</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Polizzi</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name>
+<surname>Freemont</surname>
+<given-names>PS</given-names>
+</string-name> (<year>2017</year>) <article-title>Streptomyces venezuelae TX&#x02010;TL &#x02010; a next generation cell&#x02010;free synthetic biology tool</article-title>. <source xml:lang="en">Biotechnol J</source>
+<volume>12</volume>: <fpage>1600678</fpage>
+</mixed-citation></ref><ref id="msb198875-bib-0046"><mixed-citation publication-type="journal" id="msb198875-cit-0046">
+<string-name>
+<surname>Moore</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>MacDonald</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name>
+<surname>Wienecke</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ishwarbhai</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Tsipa</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Aw</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Kylilis</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Bell</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name>
+<surname>McClymont</surname>
+<given-names>DW</given-names>
+</string-name>, <string-name>
+<surname>Jensen</surname>
+<given-names>K</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic> (<year>2018</year>) <article-title>Rapid acquisition and model&#x02010;based analysis of cell&#x02010;free transcription&#x02010;translation reactions from nonmodel bacteria</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>115</volume>: <fpage>E4340</fpage>&#x02013;<lpage>E4349</lpage>
+<pub-id pub-id-type="pmid">29666238</pub-id></mixed-citation></ref><ref id="msb198875-bib-0047"><mixed-citation publication-type="journal" id="msb198875-cit-0047">
+<string-name>
+<surname>Niederholtmeyer</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>
+<given-names>ZZ</given-names>
+</string-name>, <string-name>
+<surname>Hori</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Yeung</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Verpoorte</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Murray</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>Maerkl</surname>
+<given-names>SJ</given-names>
+</string-name> (<year>2015</year>) <article-title>Rapid cell&#x02010;free forward engineering of novel genetic ring oscillators</article-title>. <source xml:lang="en">Elife</source>
+<volume>4</volume>: <fpage>e09771</fpage>
+<pub-id pub-id-type="pmid">26430766</pub-id></mixed-citation></ref><ref id="msb198875-bib-0048"><mixed-citation publication-type="journal" id="msb198875-cit-0048">
+<string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Maeda</surname>
+<given-names>YT</given-names>
+</string-name>, <string-name>
+<surname>Libchaber</surname>
+<given-names>A</given-names>
+</string-name> (<year>2011</year>) <article-title>Development of an artificial cell, from self&#x02010;organization to computation and self&#x02010;reproduction</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>108</volume>: <fpage>3473</fpage>&#x02013;<lpage>3480</lpage>
+<pub-id pub-id-type="pmid">21317359</pub-id></mixed-citation></ref><ref id="msb198875-bib-0049"><mixed-citation publication-type="journal" id="msb198875-cit-0049">
+<string-name>
+<surname>Pardee</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Green</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Cameron</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>DaleyKeyser</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Yin</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Collins</surname>
+<given-names>JJ</given-names>
+</string-name> (<year>2014</year>) <article-title>Paper&#x02010;based synthetic gene networks</article-title>. <source xml:lang="en">Cell</source>
+<volume>159</volume>: <fpage>940</fpage>&#x02013;<lpage>954</lpage>
+<pub-id pub-id-type="pmid">25417167</pub-id></mixed-citation></ref><ref id="msb198875-bib-0050"><mixed-citation publication-type="journal" id="msb198875-cit-0050">
+<string-name>
+<surname>Patwardhan</surname>
+<given-names>RP</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Litvin</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Pe'er</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Shendure</surname>
+<given-names>J</given-names>
+</string-name> (<year>2009</year>) <article-title>High&#x02010;resolution analysis of DNA regulatory elements by synthetic saturation mutagenesis</article-title>. <source xml:lang="en">Nat Biotechnol</source>
+<volume>27</volume>: <fpage>1173</fpage>&#x02013;<lpage>1175</lpage>
+<pub-id pub-id-type="pmid">19915551</pub-id></mixed-citation></ref><ref id="msb198875-bib-0051"><mixed-citation publication-type="journal" id="msb198875-cit-0051">
+<string-name>
+<surname>Rhodius</surname>
+<given-names>VA</given-names>
+</string-name>, <string-name>
+<surname>Mutalik</surname>
+<given-names>VK</given-names>
+</string-name> (<year>2010</year>) <article-title>Predicting strength and function for promoters of the Escherichia coli alternative sigma factor, sigmaE</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>107</volume>: <fpage>2854</fpage>&#x02013;<lpage>2859</lpage>
+<pub-id pub-id-type="pmid">20133665</pub-id></mixed-citation></ref><ref id="msb198875-bib-0052"><mixed-citation publication-type="journal" id="msb198875-cit-0052">
+<string-name>
+<surname>Rhodius</surname>
+<given-names>VA</given-names>
+</string-name>, <string-name>
+<surname>Segall&#x02010;Shapiro</surname>
+<given-names>TH</given-names>
+</string-name>, <string-name>
+<surname>Sharon</surname>
+<given-names>BD</given-names>
+</string-name>, <string-name>
+<surname>Ghodasara</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Orlova</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Tabakh</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Burkhardt</surname>
+<given-names>DH</given-names>
+</string-name>, <string-name>
+<surname>Clancy</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Peterson</surname>
+<given-names>TC</given-names>
+</string-name>, <string-name>
+<surname>Gross</surname>
+<given-names>CA</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic> (<year>2013</year>) <article-title>Design of orthogonal genetic switches based on a crosstalk map of sigmas, anti&#x02010;sigmas, and promoters</article-title>. <source xml:lang="en">Mol Syst Biol</source>
+<volume>9</volume>: <fpage>702</fpage>
+<pub-id pub-id-type="pmid">24169405</pub-id></mixed-citation></ref><ref id="msb198875-bib-0053"><mixed-citation publication-type="journal" id="msb198875-cit-0053">
+<string-name>
+<surname>Rustad</surname>
+<given-names>MEA</given-names>
+</string-name>, <string-name>
+<surname>Jardine</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name> (<year>2018</year>) <article-title>Cell&#x02010;free TXTL synthesis of infectious bacteriophage T4 in a single test tube reaction</article-title>. <source xml:lang="en">Synth Biol</source>
+<volume>3</volume>: <fpage>ysy002</fpage>
+</mixed-citation></ref><ref id="msb198875-bib-0054"><mixed-citation publication-type="journal" id="msb198875-cit-0054">
+<string-name>
+<surname>Salis</surname>
+<given-names>HM</given-names>
+</string-name>, <string-name>
+<surname>Mirsky</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name>
+<surname>Voigt</surname>
+<given-names>CA</given-names>
+</string-name> (<year>2009</year>) <article-title>Automated design of synthetic ribosome binding sites to control protein expression</article-title>. <source xml:lang="en">Nat Biotechnol</source>
+<volume>27</volume>: <fpage>946</fpage>&#x02013;<lpage>950</lpage>
+<pub-id pub-id-type="pmid">19801975</pub-id></mixed-citation></ref><ref id="msb198875-bib-0055"><mixed-citation publication-type="journal" id="msb198875-cit-0055">
+<string-name>
+<surname>Sawasaki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Morishita</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Gouda</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Endo</surname>
+<given-names>Y</given-names>
+</string-name> (<year>2007</year>) <article-title>Methods for high&#x02010;throughput materialization of genetic information based on wheat germ cell&#x02010;free expression system</article-title>. <source xml:lang="en">Methods Mol Biol</source>
+<volume>375</volume>: <fpage>95</fpage>&#x02013;<lpage>106</lpage>
+<pub-id pub-id-type="pmid">17634598</pub-id></mixed-citation></ref><ref id="msb198875-bib-0056"><mixed-citation publication-type="journal" id="msb198875-cit-0056">
+<string-name>
+<surname>Sharon</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Kalma</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Sharp</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Raveh&#x02010;Sadka</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Levo</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Zeevi</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Keren</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Yakhini</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Weinberger</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Segal</surname>
+<given-names>E</given-names>
+</string-name> (<year>2012</year>) <article-title>Inferring gene regulatory logic from high&#x02010;throughput measurements of thousands of systematically designed promoters</article-title>. <source xml:lang="en">Nat Biotechnol</source>
+<volume>30</volume>: <fpage>521</fpage>&#x02013;<lpage>530</lpage>
+<pub-id pub-id-type="pmid">22609971</pub-id></mixed-citation></ref><ref id="msb198875-bib-0057"><mixed-citation publication-type="journal" id="msb198875-cit-0057">
+<string-name>
+<surname>Shimizu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Inoue</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Tomari</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Suzuki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Yokogawa</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Nishikawa</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Ueda</surname>
+<given-names>T</given-names>
+</string-name> (<year>2001</year>) <article-title>Cell&#x02010;free translation reconstituted with purified components</article-title>. <source xml:lang="en">Nat Biotechnol</source>
+<volume>19</volume>: <fpage>751</fpage>&#x02013;<lpage>755</lpage>
+<pub-id pub-id-type="pmid">11479568</pub-id></mixed-citation></ref><ref id="msb198875-bib-0058"><mixed-citation publication-type="journal" id="msb198875-cit-0058">
+<string-name>
+<surname>Shin</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Jardine</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name> (<year>2012</year>) <article-title>Genome replication, synthesis, and assembly of the bacteriophage T7 in a single cell&#x02010;free reaction</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>1</volume>: <fpage>408</fpage>&#x02013;<lpage>413</lpage>
+<pub-id pub-id-type="pmid">23651338</pub-id></mixed-citation></ref><ref id="msb198875-bib-0059"><mixed-citation publication-type="journal" id="msb198875-cit-0059">
+<string-name>
+<surname>Siegal&#x02010;Gaskins</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Tuza</surname>
+<given-names>ZA</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Murray</surname>
+<given-names>RM</given-names>
+</string-name> (<year>2014</year>) <article-title>Gene circuit performance characterization and resource usage in a cell&#x02010;free &#x0201c;breadboard&#x0201d;</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>3</volume>: <fpage>416</fpage>&#x02013;<lpage>425</lpage>
+<pub-id pub-id-type="pmid">24670245</pub-id></mixed-citation></ref><ref id="msb198875-bib-0060"><mixed-citation publication-type="journal" id="msb198875-cit-0060">
+<string-name>
+<surname>Silverman</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Kelley&#x02010;Loughnane</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Lucks</surname>
+<given-names>JB</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2019</year>) <article-title>Deconstructing cell&#x02010;free extract preparation for <italic>in&#x000a0;vitro</italic> activation of transcriptional genetic circuitry</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>8</volume>: <fpage>403</fpage>&#x02013;<lpage>414</lpage>
+<pub-id pub-id-type="pmid">30596483</pub-id></mixed-citation></ref><ref id="msb198875-bib-0061"><mixed-citation publication-type="journal" id="msb198875-cit-0061">
+<string-name>
+<surname>Smanski</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Bhatia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Zhao</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Park</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>B A Woodruff</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Giannoukos</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Ciulla</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Busby</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Calderon</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Nicol</surname>
+<given-names>R</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic> (<year>2014</year>) <article-title>Functional optimization of gene clusters by combinatorial design and assembly</article-title>. <source xml:lang="en">Nat Biotechnol</source>
+<volume>32</volume>: <fpage>1241</fpage>&#x02013;<lpage>1249</lpage>
+<pub-id pub-id-type="pmid">25419741</pub-id></mixed-citation></ref><ref id="msb198875-bib-0062"><mixed-citation publication-type="journal" id="msb198875-cit-0062">
+<string-name>
+<surname>Smanski</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Claesen</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Shen</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Fischbach</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Voigt</surname>
+<given-names>CA</given-names>
+</string-name> (<year>2016</year>) <article-title>Synthetic biology to access and expand nature's chemical diversity</article-title>. <source xml:lang="en">Nat Rev Microbiol</source>
+<volume>14</volume>: <fpage>135</fpage>&#x02013;<lpage>149</lpage>
+<pub-id pub-id-type="pmid">26876034</pub-id></mixed-citation></ref><ref id="msb198875-bib-0063"><mixed-citation publication-type="journal" id="msb198875-cit-0063">
+<string-name>
+<surname>Sorek</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Zhu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Creevey</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Francino</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name>
+<surname>Bork</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Rubin</surname>
+<given-names>EM</given-names>
+</string-name> (<year>2007</year>) <article-title>Genome&#x02010;wide experimental determination of barriers to horizontal gene transfer</article-title>. <source xml:lang="en">Science</source>
+<volume>318</volume>: <fpage>1449</fpage>&#x02013;<lpage>1452</lpage>
+<pub-id pub-id-type="pmid">17947550</pub-id></mixed-citation></ref><ref id="msb198875-bib-0064"><mixed-citation publication-type="journal" id="msb198875-cit-0064">
+<string-name>
+<surname>Stanton</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name>
+<surname>Nielsen</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name>
+<surname>Tamsir</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Clancy</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Peterson</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Voigt</surname>
+<given-names>CA</given-names>
+</string-name> (<year>2014</year>) <article-title>Genomic mining of prokaryotic repressors for orthogonal logic gates</article-title>. <source xml:lang="en">Nat Chem Biol</source>
+<volume>10</volume>: <fpage>99</fpage>&#x02013;<lpage>105</lpage>
+<pub-id pub-id-type="pmid">24316737</pub-id></mixed-citation></ref><ref id="msb198875-bib-0065"><mixed-citation publication-type="journal" id="msb198875-cit-0065">
+<string-name>
+<surname>Stead</surname>
+<given-names>MB</given-names>
+</string-name>, <string-name>
+<surname>Agrawal</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Bowden</surname>
+<given-names>KE</given-names>
+</string-name>, <string-name>
+<surname>Nasir</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Mohanty</surname>
+<given-names>BK</given-names>
+</string-name>, <string-name>
+<surname>Meagher</surname>
+<given-names>RB</given-names>
+</string-name>, <string-name>
+<surname>Kushner</surname>
+<given-names>SR</given-names>
+</string-name> (<year>2012</year>) <article-title>RNAsnap: a rapid, quantitative and inexpensive, method for isolating total RNA from bacteria</article-title>. <source xml:lang="en">Nucleic Acids Res</source>
+<volume>40</volume>: <fpage>e156</fpage>
+<pub-id pub-id-type="pmid">22821568</pub-id></mixed-citation></ref><ref id="msb198875-bib-0066"><mixed-citation publication-type="journal" id="msb198875-cit-0066">
+<string-name>
+<surname>Sun</surname>
+<given-names>ZZ</given-names>
+</string-name>, <string-name>
+<surname>Hayes</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Shin</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Caschera</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Murray</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name> (<year>2013</year>) <article-title>Protocols for implementing an <italic>Escherichia coli</italic> based TX&#x02010;TL cell&#x02010;free expression system for synthetic biology</article-title>. <source xml:lang="en">J Vis Exp</source>
+<volume>79</volume>: <fpage>e50762</fpage>
+</mixed-citation></ref><ref id="msb198875-bib-0067"><mixed-citation publication-type="journal" id="msb198875-cit-0067">
+<string-name>
+<surname>Swank</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Laohakunakorn</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Maerkl</surname>
+<given-names>SJ</given-names>
+</string-name> (<year>2019</year>) <article-title>Cell&#x02010;free gene&#x02010;regulatory network engineering with synthetic transcription factors</article-title>. <source xml:lang="en">Proc Natl Acad Sci USA</source>
+<volume>116</volume>: <fpage>5892</fpage>&#x02013;<lpage>5901</lpage>
+<pub-id pub-id-type="pmid">30850530</pub-id></mixed-citation></ref><ref id="msb198875-bib-0068"><mixed-citation publication-type="journal" id="msb198875-cit-0068">
+<string-name>
+<surname>Swartz</surname>
+<given-names>JR</given-names>
+</string-name> (<year>2012</year>) <article-title>Transforming biochemical engineering with cell&#x02010;free biology</article-title>. <source xml:lang="en">AIChE J</source>
+<volume>58</volume>: <fpage>5</fpage>&#x02013;<lpage>13</lpage>
+</mixed-citation></ref><ref id="msb198875-bib-0069"><mixed-citation publication-type="journal" id="msb198875-cit-0069">
+<string-name>
+<surname>Takahashi</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name>
+<surname>Chappell</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hayes</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>
+<given-names>ZZ</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Singhal</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Spring</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Al&#x02010;Khabouri</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Fall</surname>
+<given-names>CP</given-names>
+</string-name>, <string-name>
+<surname>Noireaux</surname>
+<given-names>V</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic> (<year>2015</year>) <article-title>Rapidly characterizing the fast dynamics of RNA genetic circuitry with cell&#x02010;free transcription&#x02010;translation (TX&#x02010;TL) systems</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>4</volume>: <fpage>503</fpage>&#x02013;<lpage>515</lpage>
+<pub-id pub-id-type="pmid">24621257</pub-id></mixed-citation></ref><ref id="msb198875-bib-0070"><mixed-citation publication-type="journal" id="msb198875-cit-0070">
+<string-name>
+<surname>Takahashi</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name>
+<surname>Tan</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Dy</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Braff</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Akana</surname>
+<given-names>RT</given-names>
+</string-name>, <string-name>
+<surname>Furuta</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Donghia</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Ananthakrishnan</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Collins</surname>
+<given-names>JJ</given-names>
+</string-name> (<year>2018</year>) <article-title>A low&#x02010;cost paper&#x02010;based synthetic biology platform for analyzing gut microbiota and host biomarkers</article-title>. <source xml:lang="en">Nat Commun</source>
+<volume>9</volume>: <fpage>3347</fpage>
+<pub-id pub-id-type="pmid">30131493</pub-id></mixed-citation></ref><ref id="msb198875-bib-0071"><mixed-citation publication-type="journal" id="msb198875-cit-0071">
+<string-name>
+<surname>Twomey</surname>
+<given-names>DP</given-names>
+</string-name>, <string-name>
+<surname>Gabillet</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Daly</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Fitzgerald</surname>
+<given-names>GF</given-names>
+</string-name> (<year>1997</year>) <article-title>Molecular characterization of the restriction endonuclease gene (scrFIR) associated with the ScrFI restriction/modification system from <italic>Lactococcus lactis</italic> subsp. cremoris UC503</article-title>. <source xml:lang="en">Microbiology</source>
+<volume>143</volume> (<issue>Pt 7</issue>): <fpage>2277</fpage>&#x02013;<lpage>2286</lpage>
+<pub-id pub-id-type="pmid">9245816</pub-id></mixed-citation></ref><ref id="msb198875-bib-0072"><mixed-citation publication-type="journal" id="msb198875-cit-0072">
+<string-name>
+<surname>Urtecho</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Tripp</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Insigne</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Kosuri</surname>
+<given-names>S</given-names>
+</string-name> (<year>2018</year>) <article-title>Systematic dissection of sequence elements controlling sigma70 promoters using a genomically&#x02010;encoded multiplexed reporter assay in <italic>E.&#x000a0;coli</italic>
+</article-title>. <source xml:lang="en">Biochemistry</source>
+<volume>58</volume>: <fpage>1539</fpage>&#x02013;<lpage>1551</lpage>
+<pub-id pub-id-type="pmid">29388765</pub-id></mixed-citation></ref><ref id="msb198875-bib-0073"><mixed-citation publication-type="journal" id="msb198875-cit-0073">
+<string-name>
+<surname>Villarreal</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Contreras&#x02010;Llano</surname>
+<given-names>LE</given-names>
+</string-name>, <string-name>
+<surname>Chavez</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ding</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Fan</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Pan</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Tan</surname>
+<given-names>C</given-names>
+</string-name> (<year>2018</year>) <article-title>Synthetic microbial consortia enable rapid assembly of pure translation machinery</article-title>. <source xml:lang="en">Nat Chem Biol</source>
+<volume>14</volume>: <fpage>29</fpage>&#x02013;<lpage>35</lpage>
+<pub-id pub-id-type="pmid">29131146</pub-id></mixed-citation></ref><ref id="msb198875-bib-0074"><mixed-citation publication-type="journal" id="msb198875-cit-0074">
+<string-name>
+<surname>Vvedenskaya</surname>
+<given-names>IO</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Goldman</surname>
+<given-names>SR</given-names>
+</string-name>, <string-name>
+<surname>Valenti</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Visone</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Taylor</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name>
+<surname>Ebright</surname>
+<given-names>RH</given-names>
+</string-name>, <string-name>
+<surname>Nickels</surname>
+<given-names>BE</given-names>
+</string-name> (<year>2015</year>) <article-title>Massively systematic transcript end readout, &#x0201c;MASTER&#x0201d;: transcription start site selection, transcriptional slippage, and transcript yields</article-title>. <source xml:lang="en">Mol Cell</source>
+<volume>60</volume>: <fpage>953</fpage>&#x02013;<lpage>965</lpage>
+<pub-id pub-id-type="pmid">26626484</pub-id></mixed-citation></ref><ref id="msb198875-bib-0075"><mixed-citation publication-type="journal" id="msb198875-cit-0075">
+<string-name>
+<surname>Wang</surname>
+<given-names>HH</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>PY</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Haas</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Marblestone</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Gygi</surname>
+<given-names>SP</given-names>
+</string-name>, <string-name>
+<surname>Forster</surname>
+<given-names>AC</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Church</surname>
+<given-names>GM</given-names>
+</string-name> (<year>2012</year>) <article-title>Multiplexed <italic>in&#x000a0;vivo</italic> His&#x02010;tagging of enzyme pathways for <italic>in&#x000a0;vitro</italic> single&#x02010;pot multienzyme catalysis</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>1</volume>: <fpage>43</fpage>&#x02013;<lpage>52</lpage>
+<pub-id pub-id-type="pmid">22737598</pub-id></mixed-citation></ref><ref id="msb198875-bib-0076"><mixed-citation publication-type="journal" id="msb198875-cit-0076">
+<string-name>
+<surname>Wang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Jewett</surname>
+<given-names>MC</given-names>
+</string-name> (<year>2018</year>) <article-title>Development of a <italic>Pseudomonas putida</italic> cell&#x02010;free protein synthesis platform for rapid screening of gene regulatory elements</article-title>. <source xml:lang="en">Synth Biol</source>
+<volume>3</volume>: <fpage>ysy003</fpage>
+</mixed-citation></ref><ref id="msb198875-bib-0077"><mixed-citation publication-type="journal" id="msb198875-cit-0077">
+<string-name>
+<surname>Wiegand</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>HH</given-names>
+</string-name>, <string-name>
+<surname>Ostrov</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Church</surname>
+<given-names>GM</given-names>
+</string-name> (<year>2018</year>) <article-title>Establishing a cell&#x02010;free <italic>Vibrio</italic> natriegens expression system</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>7</volume>: <fpage>2475</fpage>&#x02013;<lpage>2479</lpage>
+<pub-id pub-id-type="pmid">30160938</pub-id></mixed-citation></ref><ref id="msb198875-bib-0078"><mixed-citation publication-type="journal" id="msb198875-cit-0078">
+<string-name>
+<surname>Yeung</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Dy</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Martin</surname>
+<given-names>KB</given-names>
+</string-name>, <string-name>
+<surname>Ng</surname>
+<given-names>AH</given-names>
+</string-name>, <string-name>
+<surname>Del Vecchio</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Beck</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name>
+<surname>Collins</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name>
+<surname>Murray</surname>
+<given-names>RM</given-names>
+</string-name> (<year>2017</year>) <article-title>Biophysical constraints arising from compositional context in synthetic gene networks</article-title>. <source xml:lang="en">Cell Syst</source>
+<volume>5</volume>: <fpage>11</fpage>&#x02013;<lpage>24</lpage> e12<pub-id pub-id-type="pmid">28734826</pub-id></mixed-citation></ref><ref id="msb198875-bib-0079"><mixed-citation publication-type="journal" id="msb198875-cit-0079">
+<string-name>
+<surname>Yi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Lim</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>KH</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>DM</given-names>
+</string-name> (<year>2018</year>) <article-title>Synthesis of (R, R)&#x02010;2,3&#x02010;butanediol from starch in a hybrid cell&#x02010;free reaction system</article-title>. <source xml:lang="en">J Ind Eng Chem</source>
+<volume>67</volume>: <fpage>231</fpage>&#x02013;<lpage>235</lpage>
+</mixed-citation></ref><ref id="msb198875-bib-0080"><mixed-citation publication-type="journal" id="msb198875-cit-0080">
+<string-name>
+<surname>Yus</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name>
+<surname>Sogues</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Serrano</surname>
+<given-names>L</given-names>
+</string-name> (<year>2017</year>) <article-title>A reporter system coupled with high&#x02010;throughput sequencing unveils key bacterial transcription and translation determinants</article-title>. <source xml:lang="en">Nat Commun</source>
+<volume>8</volume>: <fpage>368</fpage>
+<pub-id pub-id-type="pmid">28848232</pub-id></mixed-citation></ref><ref id="msb198875-bib-0081"><mixed-citation publication-type="journal" id="msb198875-cit-0081">
+<string-name>
+<surname>Zadeh</surname>
+<given-names>JN</given-names>
+</string-name>, <string-name>
+<surname>Steenberg</surname>
+<given-names>CD</given-names>
+</string-name>, <string-name>
+<surname>Bois</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name>
+<surname>Wolfe</surname>
+<given-names>BR</given-names>
+</string-name>, <string-name>
+<surname>Pierce</surname>
+<given-names>MB</given-names>
+</string-name>, <string-name>
+<surname>Khan</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name>
+<surname>Dirks</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>Pierce</surname>
+<given-names>NA</given-names>
+</string-name> (<year>2011</year>) <article-title>NUPACK: analysis and design of nucleic acid systems</article-title>. <source xml:lang="en">J Comput Chem</source>
+<volume>32</volume>: <fpage>170</fpage>&#x02013;<lpage>173</lpage>
+<pub-id pub-id-type="pmid">20645303</pub-id></mixed-citation></ref><ref id="msb198875-bib-0082"><mixed-citation publication-type="journal" id="msb198875-cit-0082">
+<string-name>
+<surname>Zarate</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Henderson</surname>
+<given-names>DC</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>KC</given-names>
+</string-name>, <string-name>
+<surname>Lake</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Galbraith</surname>
+<given-names>DW</given-names>
+</string-name> (<year>2010</year>) <article-title>Development of high&#x02010;yield autofluorescent protein microarrays using hybrid cell&#x02010;free expression with combined <italic>Escherichia coli</italic> S30 and wheat germ extracts</article-title>. <source xml:lang="en">Proteome Sci</source>
+<volume>8</volume>: <fpage>32</fpage>
+<pub-id pub-id-type="pmid">20546627</pub-id></mixed-citation></ref><ref id="msb198875-bib-0083"><mixed-citation publication-type="journal" id="msb198875-cit-0083">
+<string-name>
+<surname>Zhu</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>GC</given-names>
+</string-name>, <string-name>
+<surname>Qiao</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name>
+<surname>Cai</surname>
+<given-names>JL</given-names>
+</string-name> (<year>2008</year>) <article-title>Fermentative hydrogen production by the new marine <italic>Pantoea agglomerans</italic> isolated from the mangrove sludge</article-title>. <source xml:lang="en">Int J Hydrogen Energ</source>
+<volume>33</volume>: <fpage>6116</fpage>&#x02013;<lpage>6123</lpage>
+</mixed-citation></ref><ref id="msb198875-bib-0084"><mixed-citation publication-type="journal" id="msb198875-cit-0084">
+<string-name>
+<surname>Zong</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name>
+<surname>Cinar</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Shis</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Josic</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Ott</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Bennett</surname>
+<given-names>MR</given-names>
+</string-name> (<year>2018</year>) <article-title>Predicting transcriptional output of synthetic multi&#x02010;input promoters</article-title>. <source xml:lang="en">ACS Synth Biol</source>
+<volume>7</volume>: <fpage>1834</fpage>&#x02013;<lpage>1843</lpage>
+<pub-id pub-id-type="pmid">30040895</pub-id></mixed-citation></ref></ref-list></back></article>

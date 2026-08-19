@@ -35,6 +35,17 @@ raw/PMC6065261.tar.gz
 # scripts/19_mmseqs_clustering.py, not read by any fast-path script.
 raw/mmseqs/
 
+# DRAFTS (Gate 10) source-data bundles -- fully redundant with the
+# individually-extracted files kept alongside them (same pattern as the
+# Johns et al. PMC tarball exclusion above). PMC6692573.tar.gz (48M) bundles
+# every other raw/drafts/ file; msb198875_SourceData_Appendix.zip (20M)
+# bundles per-appendix-figure source data that duplicates the per-figure
+# xlsx files scripts/88-92 actually read. Neither is read by any committed
+# script. Both hashes remain in data/MANIFEST.json for provenance even
+# though the bytes aren't tracked -- obtain via the URL recorded there.
+raw/drafts/PMC6692573.tar.gz
+raw/drafts/msb198875_SourceData_Appendix.zip
+
 # Ad-hoc background-job stdout logs, not committed artifacts
 out/gate8_5_*.log
 out/gate8_6_*.log

@@ -1,0 +1,112 @@
+[
+  {
+    "species": "Ec",
+    "n_usable": 897,
+    "unusable_fraction": 0.1433,
+    "tx_min": 0.007295232,
+    "tx_median": 0.202569084,
+    "tx_max": 101.5301694,
+    "mode_value": 0.2108,
+    "mode_fraction_of_usable": 0.005574136008918618,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Ef",
+    "n_usable": 828,
+    "unusable_fraction": 0.2092,
+    "tx_min": 0.005342492,
+    "tx_median": 0.1691612565,
+    "tx_max": 170.9198514,
+    "mode_value": 0.0251,
+    "mode_fraction_of_usable": 0.0036231884057971015,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Se",
+    "n_usable": 475,
+    "unusable_fraction": 0.5463,
+    "tx_min": 0.015483312,
+    "tx_median": 0.93325002,
+    "tx_max": 177.3484655,
+    "mode_value": 0.0733,
+    "mode_fraction_of_usable": 0.004210526315789474,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Ko",
+    "n_usable": 752,
+    "unusable_fraction": 0.2818,
+    "tx_min": 0.009155133,
+    "tx_median": 0.17860487,
+    "tx_max": 230.0497823,
+    "mode_value": 0.0626,
+    "mode_fraction_of_usable": 0.003989361702127659,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Pa",
+    "n_usable": 876,
+    "unusable_fraction": 0.1633,
+    "tx_min": 0.024988101,
+    "tx_median": 0.36830585,
+    "tx_max": 506.567282,
+    "mode_value": 0.1743,
+    "mode_fraction_of_usable": 0.0045662100456621,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Pp",
+    "n_usable": 802,
+    "unusable_fraction": 0.234,
+    "tx_min": 0.057124011,
+    "tx_median": 0.5966369405,
+    "tx_max": 244.8519651,
+    "mode_value": 2.0948,
+    "mode_fraction_of_usable": 0.003740648379052369,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Vn",
+    "n_usable": 822,
+    "unusable_fraction": 0.2149,
+    "tx_min": 0.01281506,
+    "tx_median": 0.380670128,
+    "tx_max": 130.018665,
+    "mode_value": 0.1561,
+    "mode_fraction_of_usable": 0.0036496350364963502,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Bs",
+    "n_usable": 830,
+    "unusable_fraction": 0.2073,
+    "tx_min": 0.004527158,
+    "tx_median": 0.050526463,
+    "tx_max": 1040.378632,
+    "mode_value": 0.0123,
+    "mode_fraction_of_usable": 0.006024096385542169,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Cg",
+    "n_usable": 908,
+    "unusable_fraction": 0.1328,
+    "tx_min": 0.03727491,
+    "tx_median": 1.026686773,
+    "tx_max": 186.502466,
+    "mode_value": 0.118,
+    "mode_fraction_of_usable": 0.0022026431718061676,
+    "floor_pileup_flag": false
+  },
+  {
+    "species": "Ll",
+    "n_usable": 932,
+    "unusable_fraction": 0.1098,
+    "tx_min": 0.088238569,
+    "tx_median": 1.0227795655,
+    "tx_max": 105.3461511,
+    "mode_value": 1.5947,
+    "mode_fraction_of_usable": 0.004291845493562232,
+    "floor_pileup_flag": false
+  }
+]
