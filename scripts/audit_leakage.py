@@ -228,14 +228,34 @@ def check_no_global_normalization():
     return name, ok, detail
 
 
+def gitignored_paths():
+    """Root-relative paths explicitly listed in .gitignore (exact lines only --
+    this project's own gitignored MANIFEST entries are always exact paths, not
+    globs; a glob pattern would not exact-match a manifest key and is silently
+    treated as not-gitignored, which is the conservative direction -- it would
+    surface as a real mismatch rather than being silently swallowed)."""
+    gi = ROOT / ".gitignore"
+    if not gi.exists():
+        return set()
+    paths = set()
+    for line in gi.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        paths.add(line)
+    return paths
+
+
 def check_manifest_hashes():
     name = "6. Table hashes match data/MANIFEST.json"
     manifest_path = DATA / "MANIFEST.json"
     if not manifest_path.exists():
         return name, False, "MANIFEST.json does not exist"
     manifest = json.load(open(manifest_path))
+    ignored = gitignored_paths()
     mismatches = []
     checked = 0
+    skipped = []
     for fname, info in manifest.items():
         # Manifest keys are bare filenames resolved under data/ by convention
         # (e.g. "three_host.parquet"), EXCEPT keys that already carry an
@@ -244,6 +264,20 @@ def check_manifest_hashes():
         # data/) -- those resolve relative to the project ROOT instead.
         path = ROOT / fname if fname.startswith(("raw/", "out/")) else DATA / fname
         if not path.exists():
+            # A manifest-tracked file that is also listed in .gitignore is
+            # EXPECTED to be absent from a clean checkout (Gate 14: a fresh
+            # clone was found to fail this check unconditionally before this
+            # fix existed, for exactly this reason -- see
+            # out/results/gate14_clean_clone_verification.md). Its hash stays
+            # in the manifest for provenance (obtain the file via the URL
+            # recorded there); its absence here is not a leakage-audit
+            # failure. If the file IS present (e.g. downloaded manually), it
+            # is still hash-verified below like any other entry -- gitignored
+            # only means "not required to be present," not "never checked."
+            rel = fname if fname.startswith(("raw/", "out/")) else f"data/{fname}"
+            if rel in ignored:
+                skipped.append(f"{fname}: gitignored, not expected in a clean checkout")
+                continue
             mismatches.append(f"{fname}: file missing")
             continue
         actual_hash = sha256_of_file(path)
@@ -252,7 +286,8 @@ def check_manifest_hashes():
             mismatches.append(f"{fname}: hash mismatch")
     ok = len(mismatches) == 0 and checked > 0
     detail = f"{checked} files checked against manifest, {len(mismatches)} mismatches" + \
-             (f": {mismatches}" if mismatches else "")
+             (f": {mismatches}" if mismatches else "") + \
+             (f"; {len(skipped)} gitignored and skipped: {skipped}" if skipped else "")
     return name, ok, detail
 
 

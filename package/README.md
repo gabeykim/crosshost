@@ -8,13 +8,16 @@ A benchmark for predicting bacterial regulatory DNA activity across host species
 
 ## Install
 
+**These commands assume your current directory is this one (`package/`).** If you have cloned the full repository and are sitting at its root instead (where `Makefile` and `scripts/` live, not this file), use `pip install -e ./package` instead of `pip install -e .` — see the repository root's own `README.md` for the repo-root setup path (`make audit`, `make reproduce`, etc.), which is what most people cloning the repository actually want.
+
 ```bash
 pip install -e .                 # core package, data loaders, evaluation API
 pip install -e ".[models]"       # + torch/transformers, needed only to re-run the FM baselines
 pip install -e ".[dev]"          # + pytest, for running tests/
+pip install -e ".[citations]"    # + certifi, needed only for `make verify-citations`
 ```
 
-Tested in an isolated venv (`python3 -m venv`, `pip install -e .`, fresh process, different working directory) — see `out/GATE8_MEMO.md` for the exact verification steps. **Tested from a fresh `git clone` of the pushed repository as of Gate 8.5** (`pip install -e ./package`, `pytest` 9/9 passed, `make audit`, `make reproduce` — see `out/state.json` gate_8_5.task4_packaging) — see Reproducibility below for exactly what was and wasn't verified.
+Tested in an isolated venv (`python3 -m venv`, `pip install -e .`, fresh process, different working directory) — see `out/GATE8_MEMO.md` for the exact verification steps. **Tested from a fresh `git clone` of the pushed repository as of Gate 8.5** (`pip install -e ./package`, `pytest` 9/9 passed, `make audit`, `make reproduce` — see `out/state.json` gate_8_5.task4_packaging) **and re-verified end to end from a genuinely fresh clone as of Gate 14**, after fixing two gaps that regression (Gate 10's own manifest additions) had introduced since Gate 8.5 without being re-tested — see `out/results/gate14_clean_clone_verification.md` for exactly what was found and fixed, and Reproducibility below for the current, precise state of what has and hasn't been verified.
 
 ## Quickstart
 

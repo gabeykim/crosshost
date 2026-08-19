@@ -28,6 +28,16 @@ dependencies = [
 [project.optional-dependencies]
 models = ["torch==2.13.0", "transformers==5.14.1", "einops"]
 dev = ["pytest>=8.0"]
+citations = ["certifi"]  # needed only for scripts/97_verify_citations.py
+                          # (make verify-citations) -- a live-network check
+                          # against CrossRef/arXiv; certifi provides a CA
+                          # bundle for Python installs whose SSL context
+                          # cannot otherwise verify HTTPS certificates (a
+                          # real, silent gap on some macOS Python.org
+                          # installs -- confirmed missing in a genuinely
+                          # fresh clone/venv, Gate 14; masked entirely on
+                          # the original dev machine, where certifi happened
+                          # to already be present from an unrelated install)
 
 [project.urls]
 Repository = "https://github.com/gabeykim/crosshost"
