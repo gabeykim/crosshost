@@ -2655,5 +2655,79 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (167 files -- +2 for gate13_citation_verification.json/.csv)"
     }
+  },
+  "gate_14": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS",
+    "headline": "a fresh clone passes with zero undocumented steps -- took 3 iterations to get there",
+    "iterations": 3,
+    "defects_found_and_fixed": [
+      {
+        "defect": "no root-level README.md existed; only pointer was the Makefile's own header comment to package/README.md",
+        "type": "documentation",
+        "fix": "added README.md at repository root with the correct setup path and make-target list"
+      },
+      {
+        "defect": "package/README.md's own 'Install' code block (`pip install -e .`) fails if read literally from the repository root (no pyproject.toml there); the correct `pip install -e ./package` appeared only in later prose",
+        "type": "documentation",
+        "fix": "clarified which directory the Install block assumes; cross-referenced the new root README"
+      },
+      {
+        "defect": "audit_leakage.py check 6 unconditionally failed in every fresh clone: 2 DRAFTS source-data bundles are deliberately .gitignore'd (Gate 10) but their hashes remain in data/MANIFEST.json; check 6 had no concept of 'expected absent in a clean checkout'",
+        "type": "code",
+        "fix": "check 6 now reads .gitignore and treats a gitignored manifest entry's absence as an expected skip, not a failure -- still hash-verifies it if present"
+      },
+      {
+        "defect": "scripts/97_verify_citations.py (Gate 13) depends on certifi (SSL CA bundle) but it was never declared as a dependency -- masked by an incidental prior install on the dev machine",
+        "type": "dependency declaration",
+        "fix": "added certifi as a new 'citations' extra in package/pyproject.toml"
+      },
+      {
+        "defect": "scripts/88_parse_drafts.py (part of the core make reproduce path since Gate 11) calls pd.read_excel(), which lazily imports openpyxl -- never appeared as a top-level import, invisible to a plain import grep, never declared as a dependency, masked the same way as certifi",
+        "type": "dependency declaration",
+        "fix": "added openpyxl==3.1.5 to package/pyproject.toml's base dependencies (not an extra, since scripts/88 runs unconditionally)"
+      }
+    ],
+    "iteration_summary": {
+      "iteration_1": "clone as originally provided (commit 299bfdf) -- make audit failed immediately (ModuleNotFoundError, no setup documented); after inferring pip install -e ./package from package/README.md's own later prose, make audit failed on check 6 (2/26 manifest files missing, both gitignored); make verify-citations failed on all 16 citations (SSL cert error, certifi missing); make reproduce never ran (blocked by audit prerequisite)",
+      "iteration_2": "fresh clone at 9d6bda5 (3 fixes applied) -- make audit and make verify-citations both passed cleanly; make reproduce progressed through all Gate 1-8.6 scripts (matching established numbers exactly) then failed on scripts/88_parse_drafts.py, ModuleNotFoundError: openpyxl",
+      "iteration_3": "fresh clone at 87e6b61 (4th fix applied) -- make audit, make verify-citations, make reproduce all passed cleanly, exit code 0, zero undocumented steps, zero manual intervention, zero numeric deviation from established values"
+    },
+    "expected_values_compared": {
+      "audit_leakage": "29042 rows, worst per-fold identity 0.8485, 6/6 checks pass -- MATCHES (manifest breakdown differs as expected: 24 checked + 2 gitignored-skipped in the clone vs 26 checked in the real repo, where the 2 files are physically present -- same total, explained, not an unexplained deviation)",
+      "audit_provenance": "0 orphans -- MATCHES (167 files in both real repo and clone, post-Gate-13 baseline)",
+      "verify_citations": "11 verified, 5 explained mismatches, 0 real errors, 16 total -- MATCHES exactly",
+      "reproduce": "every spot-checked number (H-MAIN kill gate, conditioning mechanisms, FiLM fold variance, shift-prediction summary, co-active range restriction, GC-confound gap ratios 0.341->0.308 and 0.286->0.240, phylum-stratified table) -- MATCHES exactly, bit-for-bit"
+    },
+    "no_established_number_changed": true,
+    "make_reproduce_full": "explicitly not attempted, per instruction -- remains a disclosed, open limitation, not silently implied closed by this gate's work",
+    "environment_verified": {
+      "os": "macOS, Apple Silicon (arm64)",
+      "python": "3.14.2",
+      "pip": "25.3",
+      "note": "no other OS or Python version tested"
+    },
+    "files": {
+      "verification_report": "out/results/gate14_clean_clone_verification.md",
+      "new": [
+        "README.md"
+      ],
+      "modified": [
+        "package/README.md",
+        "package/pyproject.toml",
+        "scripts/audit_leakage.py",
+        "out/MANUSCRIPT.md",
+        "out/PREPRINT/MANUSCRIPT.md",
+        "out/PREPRINT/REPRODUCIBILITY.md"
+      ]
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (167 files)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (167 files)"
+    }
   }
 }

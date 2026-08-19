@@ -991,11 +991,20 @@ distinct from properties of the released data.)*
   of CNN/foundation-model training this project's gates already spent.
   Every individual script in the dependency graph has been run and
   produced its output at least once; the full chain was not re-run in one
-  sitting from raw data alone. `make reproduce` (the fast path, regenerating
-  figures/tables from already-computed intermediate results) was tested
-  and verified working from a genuine clean git clone (Gate 8.5), and
-  re-run in place, successfully, after being extended to cover Gates
-  8.5–10.5 (Gate 11).
+  sitting from raw data alone. This remains true as of the most recent
+  gate and is not expected to change before submission. `make reproduce`
+  (the fast path) **was verified end-to-end from a genuine fresh `git
+  clone`** — not a reused checkout, not an isolated venv on an
+  already-populated directory — together with `make audit` and `make
+  verify-citations` (Gate 14, `out/results/gate14_clean_clone_verification.md`).
+  This closed a real gap: a stranger following only the repository's own
+  documentation before Gate 14 would have hit four undeclared defects in
+  a row (no root README, an ambiguous install instruction, an audit check
+  that failed unconditionally in any clean checkout, and two undeclared
+  Python dependencies) — each found, fixed, and the fresh-clone test
+  re-run from scratch until it passed with zero undocumented steps (three
+  iterations). Verified on macOS, Apple Silicon, Python 3.14.2; no other
+  OS or Python version has been tested.
 - **We did not run a fifth attempt to recover a positive cross-host
   signal.** Four independent, pre-specified attempts (three conditioning
   mechanisms, a target reframing, a subset-restriction hypothesis) is the

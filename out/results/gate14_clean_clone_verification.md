@@ -135,3 +135,33 @@ make: *** [reproduce] Error 1
 **Root cause identified, not guessed:** `scripts/88_parse_drafts.py` calls `pd.read_excel(...)` to parse the DRAFTS source-data spreadsheets — part of the core `make reproduce` path since Gate 11 added the Gate-10/10.5 scripts to it. Pandas imports its Excel engine (`openpyxl`) lazily, inside `read_excel()` itself, so it never appears as a top-level `import openpyxl` statement anywhere in the script — a plain grep for import statements across all 23 `reproduce`-path scripts (run before this fix, to check for further hidden gaps in one pass) found nothing, confirming this is a real blind spot in that kind of check, not a scan that was run carelessly. `openpyxl` was never declared in `package/pyproject.toml`. On the original dev machine it was present incidentally (used directly, via `import openpyxl`, during Gates 12–13's own ad-hoc Excel-sheet-structure checks) — masked exactly the same way `certifi` was.
 
 **Checked specifically for further hidden optional-dependency gaps of the same shape** (`grep -l "read_excel\|to_excel\|openpyxl"` across all 23 `reproduce`-target scripts) before fixing: only `scripts/88` uses this pattern. No other script in the fast-reproduce path calls `pd.read_excel` or otherwise pulls in an undeclared optional pandas engine.
+
+**Fixed** (`package/pyproject.toml`: added `openpyxl==3.1.5` to base `dependencies`, not an extra, since `scripts/88` runs unconditionally as part of `make reproduce`), **committed as `87e6b61`, pushed.** With `openpyxl` installed manually as a spot-check (before the commit, to confirm the diagnosis), `make reproduce` completed end to end, exit code 0, and every number in the DRAFTS/GC-confound task sequence (scripts 88–96) matched the manuscript's own established values exactly — spot-checked in full: per-host GC-vs-activity correlations (EC −0.614/−0.494, BS −0.200/−0.266, PA −0.434/−0.230), all 6 raw-vs-GC-controlled pair correlations, the decisive gap-ratio verdicts (transcription 0.341→0.308 SURVIVES INTACT, translation 0.286→0.240 SURVIVES ATTENUATED), and the full phylum-stratified table — all bit-for-bit identical to Gate 10.5's and Gate 11's own reported figures.
+
+**Deleted `/tmp/crosshost-verify`, cloned fresh a third time** (commit `87e6b61`) — **Iteration 3, the clean pass:**
+
+```
+python3 -m venv .venv && source .venv/bin/activate           # OK
+pip install -e ./package                                      # OK -- openpyxl now installs automatically, no manual step
+pip install -e "./package[citations]"                          # OK -- certifi installs automatically
+make audit               # PASSED, all 6 checks, identical output to Iteration 2
+make verify-citations     # PASSED, 11/0/5/0/16, identical to Iteration 2 and to Gate 13's own report
+make reproduce            # PASSED -- exit code 0, 25/25 script invocations completed, zero errors/tracebacks anywhere in the full log
+```
+
+**`make reproduce`, Iteration 3: clean, end to end, exit code 0.** Every number checked matches the established values exactly, including the full DRAFTS/GC-confound sequence: `EC-PA raw=0.754 -> GC-controlled=0.718`, `film_std_over_seqonly_std: 7.800181878927151`, `EC transcription concat: mean=0.555 vs seqonly=0.367`, and the overall verdict `{'SURVIVES INTACT', 'SURVIVES, ATTENUATED'}` — all bit-for-bit identical to Gates 10.5/11/13's own reported figures. `grep -iE "error|traceback|failed"` across the entire log: zero matches.
+
+**Iteration 3 is the clean pass. It took 3 iterations to get there:**
+- **Iteration 1** (the clone as originally provided, commit `299bfdf`): 4 real defects found — no root README / ambiguous install path, `audit_leakage.py` check 6 unconditionally failing, `certifi` undeclared. Fixed, committed as `9d6bda5`.
+- **Iteration 2** (fresh clone at `9d6bda5`): the 3 fixes confirmed working; `make audit` and `make verify-citations` passed; `make reproduce` progressed far further than Iteration 1 (23 scripts, not 0) before failing on a 4th defect, `openpyxl` undeclared. Fixed, committed as `87e6b61`.
+- **Iteration 3** (fresh clone at `87e6b61`): `make audit`, `make verify-citations`, and `make reproduce` all passed with zero undocumented steps and zero manual intervention beyond the four commands the new root `README.md` actually documents.
+
+---
+
+## Task 4 — Reproducibility statement, updated
+
+(see `out/PREPRINT/REPRODUCIBILITY.md` and `out/MANUSCRIPT.md` Section 6 — updated to state the Gate 14 clean-clone verification precisely: date, exact targets verified, environment, and the one still-open limitation, `make reproduce-full`, which remains untested end-to-end and is disclosed as such, not silently implied to be covered by this gate's work.)
+
+**Environment used for this verification:** macOS, Apple Silicon (arm64), Python 3.14.2, `pip` 25.3. No other OS or Python version has been tested. All pinned dependency versions in `package/pyproject.toml` (including the two added this gate, `certifi` and `openpyxl==3.1.5`) had prebuilt `cp314-macosx-arm64` wheels available — no compilation-from-source step was needed or tested.
+
+**Remaining limitation, disclosed rather than implied closed:** `make reproduce-full` (the complete from-raw-data pipeline, including all CNN/foundation-model training) was explicitly not attempted, per instruction — it would cost the cumulative ~40 hours of training this project's Gates 4–8 already spent. This gate closes the "was a genuine clean clone ever tested" gap for `make audit`, `make verify-citations`, and `make reproduce` (the fast path) specifically. It does not close, and was never asked to close, the separate `make reproduce-full` gap.
