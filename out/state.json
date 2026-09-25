@@ -2734,5 +2734,110 @@
     "make_reproduce_timebox_seconds": 1200,
     "timebox_hit": false,
     "cpu_or_mps": "all three verified targets are CPU-only -- they never import torch; MPS is relevant only to make reproduce-full's training paths, which were not run"
+  },
+  "gate_15": {
+    "date_run": "2026-08-19",
+    "outcome": "PASS",
+    "verdict": "SURVIVES",
+    "verdict_first_line": "cell-free EC-BS stays above the in-vivo co-active 0.258 under every restriction regime tested (0.386-0.677, min 1.5x); the challenge's premise was incorrect due to a cross-dataset naming collision, but it correctly surfaced a number the manuscript never reported",
+    "task1_activity_distribution": {
+      "coactive_definable_for_drafts": true,
+      "mechanism": "DRAFTS 'no_RNA_counts' = template present, zero RNA = the in-vivo rna==0 inactive class. DRAFTS EXCLUDES it from 'usable'; Johns KEEPS it as usable-but-inactive with tx_norm exactly 0. So DRAFTS-usable is the analogue of Johns-ACTIVE, not Johns-usable -- a naming collision of the same class as the Gate 10 'Pa' collision",
+      "distribution_shape": "continuous, not bimodal; zero exact zeros among usable rows in any species",
+      "detection_floor": "none -- max single rounded value is 0.60% of a species' rows, vs the in-vivo protein_log10 floor pinning 66.5/89.9/10.1% for EC/BS/PA",
+      "inactive_fraction_drafts": {
+        "Ec": 0.0457,
+        "Ef": 0.0108,
+        "Se": 0.459,
+        "Ko": 0.0408,
+        "Pa": 0.0034,
+        "Pp": 0.0147,
+        "Vn": 0.0084,
+        "Bs": 0.0371,
+        "Cg": 0.0,
+        "Ll": 0.0
+      },
+      "inactive_fraction_invivo": {
+        "EC": 0.3889,
+        "BS": 0.7202,
+        "PA": 0.167
+      },
+      "key_asymmetry": "cell-free silent class <5% for 9 of 10 species (S. enterica the exception at 45.9%); in vivo 38.9% EC / 72.0% BS. Co-active restriction removes ~5% of cell-free rows but 74% of in-vivo rows"
+    },
+    "task2_ec_bs_full_shared_set": {
+      "pooled_equiv": {
+        "rho": 0.6162,
+        "n": 862
+      },
+      "co_detected": {
+        "rho": 0.6774,
+        "n": 807
+      },
+      "both_above_p25": {
+        "rho": 0.6466,
+        "n": 499
+      },
+      "both_above_med": {
+        "rho": 0.5921,
+        "n": 287
+      },
+      "matched_per_host_active_frac": {
+        "rho": 0.5088,
+        "n": 218
+      },
+      "matched_26pct": {
+        "rho": 0.3861,
+        "n": 150
+      }
+    },
+    "task2_invivo_reference": {
+      "pooled": {
+        "rho": 0.6551,
+        "n": 14088
+      },
+      "co_active": {
+        "rho": 0.2575,
+        "n": 3668
+      }
+    },
+    "task3_key_finding": "the asymmetry is restriction SENSITIVITY, not level: conditioning on co-activity moves in-vivo 0.655 -> 0.258 (-61%) but cell-free 0.616 -> 0.677 (+10%), because the in-vivo pooled correlation is carried by agreement on which sequences are silent and cell-free has almost no silent class",
+    "caveats_not_softened": [
+      "pooled-vs-pooled shows NO modality difference (0.616 cell-free vs 0.655 in vivo) -- the manuscript reports neither number and must",
+      "magnitude is regime-dependent: 2.6x (co-detected), 2.0x (per-host-fraction match), 1.5x (harshest top-26% cut)",
+      "under the harshest cut 4 of 45 pairs fall below 0.2575, all L. lactis (Ec-Ll 0.214, Ef-Ll 0.245, Pp-Ll 0.247, Pa-Ll 0.250); 0 of 45 under every other regime",
+      "the published 45-pair band 0.623-0.911 is regime-specific: pooled-equivalent is 0.364-0.892, harshest cut 0.214-0.804",
+      "S. enterica has a 45.9% inactive fraction -- 'cell-free has no inactive class' would be wrong as a blanket claim"
+    ],
+    "ec_bs_not_a_favourable_pick": "EC-BS ranks 3rd LOWEST of 45 pairs under co-detected and 15th of 45 under the harshest cut -- the published pair is among the weakest cell-free pairs, not a flattering one",
+    "task4_regime_audit": {
+      "file": "out/results/gate15_restriction_regime_audit.csv",
+      "figures_audited": 50,
+      "counts": {
+        "co-active": 16,
+        "co-active (derived)": 5,
+        "pooled": 6,
+        "co-detected": 6,
+        "co-detected in both modalities": 1,
+        "both explicitly labelled": 3,
+        "model vs truth (n/a)": 7,
+        "new this gate": 6
+      },
+      "pattern": "3.1 reports co-active figures without saying so; 3.6 reports the same pairs' pooled values and does say so; 3.2 mixes a cell-free co-detected figure with an in-vivo co-active figure -- correct, but reads as if it weren't. Labelling problem, not a computation problem"
+    },
+    "manuscript_changes_required_but_NOT_made_this_gate": [
+      "report pooled-vs-pooled (0.616 vs 0.655) in Section 3.2",
+      "name the restriction regime on every correlation figure",
+      "add the DRAFTS/Johns 'usable' definition collision to KNOWN_ISSUES.md alongside the 'Pa' collision"
+    ],
+    "incidental_fix": "audit_provenance.py now skips .DS_Store/Thumbs.db -- a stray out/.DS_Store tripped it as a 1-file orphan at gate start; same gitignore-unawareness Gate 14 fixed in audit_leakage.py check 6",
+    "no_manuscript_edits": true,
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "1 orphan (out/.DS_Store, macOS artifact) -- fixed during gate"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (171 files)"
+    }
   }
 }

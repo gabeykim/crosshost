@@ -1,0 +1,51 @@
+manuscript_section,figure,value,restriction_regime,n,source_file,note
+3.1,EC-PA transcription (headline cross-host correlation),0.7538,co-active,9741,gate8_5_coactive_correlation.csv,
+3.1 / 3.6,EC-PA transcription POOLED counterpart,0.6212,pooled,19643,gate8_5_coactive_correlation.csv,reported in 3.6 as the pre-restriction value; NOT reported in 3.1
+3.1,EC-BS transcription (headline cross-host correlation),0.2575,co-active,3668,gate8_5_coactive_correlation.csv,
+3.1 / 3.6,EC-BS transcription POOLED counterpart,0.6551,pooled,14088,gate8_5_coactive_correlation.csv,reported in 3.6 as the pre-restriction value; NOT reported in 3.1
+3.1,BS-PA transcription (headline cross-host correlation),0.2571,co-active,2099,gate8_5_coactive_correlation.csv,
+3.1 / 3.6,BS-PA transcription POOLED counterpart,0.508,pooled,11969,gate8_5_coactive_correlation.csv,reported in 3.6 as the pre-restriction value; NOT reported in 3.1
+3.1,EC-PA translation (headline cross-host correlation),0.7421,co-active,3826,gate8_5_coactive_correlation.csv,
+3.1 / 3.6,EC-PA translation POOLED counterpart,0.7244,pooled,4513,gate8_5_coactive_correlation.csv,reported in 3.6 as the pre-restriction value; NOT reported in 3.1
+3.1,EC-BS translation (headline cross-host correlation),0.1607,co-active,866,gate8_5_coactive_correlation.csv,
+3.1 / 3.6,EC-BS translation POOLED counterpart,0.1607,pooled,866,gate8_5_coactive_correlation.csv,reported in 3.6 as the pre-restriction value; NOT reported in 3.1
+3.1,BS-PA translation (headline cross-host correlation),0.2633,co-active,314,gate8_5_coactive_correlation.csv,
+3.1 / 3.6,BS-PA translation POOLED counterpart,0.2972,pooled,352,gate8_5_coactive_correlation.csv,reported in 3.6 as the pre-restriction value; NOT reported in 3.1
+3.1,EC-BS transcription GC-CONTROLLED,0.2065,co-active,3668,gate10_5_gc_confound.json,GC control applied to the co-active set; n identical to the co-active n above
+3.1,EC-PA transcription GC-CONTROLLED,0.718,co-active,9741,gate10_5_gc_confound.json,GC control applied to the co-active set; n identical to the co-active n above
+3.1,BS-PA transcription GC-CONTROLLED,0.2361,co-active,2099,gate10_5_gc_confound.json,GC control applied to the co-active set; n identical to the co-active n above
+3.1,EC-BS translation GC-CONTROLLED,0.1246,co-active,866,gate10_5_gc_confound.json,GC control applied to the co-active set; n identical to the co-active n above
+3.1,EC-PA translation GC-CONTROLLED,0.7376,co-active,3826,gate10_5_gc_confound.json,GC control applied to the co-active set; n identical to the co-active n above
+3.1,BS-PA translation GC-CONTROLLED,0.2297,co-active,314,gate10_5_gc_confound.json,GC control applied to the co-active set; n identical to the co-active n above
+3.1,gap ratio transcription (raw),0.3413,co-active (derived),-,gate10_5_gc_confound.json,ratio of co-active correlations
+3.1,gap ratio transcription (GC-controlled),0.3082,co-active (derived),-,gate10_5_gc_confound.json,
+3.1,gap ratio translation (raw),0.2856,co-active (derived),-,gate10_5_gc_confound.json,ratio of co-active correlations
+3.1,gap ratio translation (GC-controlled),0.2402,co-active (derived),-,gate10_5_gc_confound.json,
+3.1,"EC-PA transcription, Proteobacteria stratum",0.6339,co-active,3282,gate10_5_gc_confound.json,
+3.1,"EC-PA transcription, Firmicutes stratum",0.8116,co-active,2666,gate10_5_gc_confound.json,
+3.1,disattenuated gap ratio @ reliability 0.9,0.341,co-active (derived),-,gate8_attenuation_analysis.json,disattenuation applied to co-active correlations
+3.2,DRAFTS 45-pair range (min),0.6225,co-detected,880,gate10_crosshost_correlations.csv,"column is named n_shared_usable, but DRAFTS-usable REQUIRES rna>0 -- this is the co-active operation"
+3.2,DRAFTS 45-pair range (max),0.9109,co-detected,819,gate10_crosshost_correlations.csv,
+3.2,DRAFTS same-phylum mean,0.852,co-detected,17 pairs,gate10_crosshost_correlations_summary.json,
+3.2,DRAFTS cross-phylum mean,0.769,co-detected,28 pairs,gate10_crosshost_correlations_summary.json,
+3.2,B. subtilis mean correlation with other 9 species,0.783,co-detected,9 pairs,gate10_crosshost_correlations_summary.json,
+3.2,HEADLINE cell-free EC-BS,0.5973,co-detected,82,gate10_modality_comparison.json,Johns-overlap subset; script 91 filter is Ec_usable & Bs_usable = RNA detected in both
+3.2,HEADLINE in-vivo EC-BS (full-library reference),0.2575,co-active,3668,gate10_modality_comparison.json,script 91 filter is tx_usable & tx_active in both hosts
+3.2,"in-vivo EC-BS on the 15-seq overlap (reported, not used as evidence)",0.1466,co-active,15,gate10_modality_comparison.json,
+3.2,RS234 within-species in-vitro vs in-vivo (range across 7 species),0.689-0.901,co-detected in BOTH modalities,174-230,gate10_modality_comparison.json,"RS234 uses the same DRAFTS sentinel convention on both arms, so both sides exclude no-RNA rows -- internally regime-matched"
+"NEW (Gate 15, not yet in manuscript)","cell-free EC-BS, pooled_equiv, full shared set",0.6162,pooled_equiv,862,gate15_coactive_modality.json,
+"NEW (Gate 15, not yet in manuscript)","cell-free EC-BS, co_detected, full shared set",0.6774,co_detected,807,gate15_coactive_modality.json,
+"NEW (Gate 15, not yet in manuscript)","cell-free EC-BS, both_above_p25, full shared set",0.6466,both_above_p25,499,gate15_coactive_modality.json,
+"NEW (Gate 15, not yet in manuscript)","cell-free EC-BS, both_above_med, full shared set",0.5921,both_above_med,287,gate15_coactive_modality.json,
+"NEW (Gate 15, not yet in manuscript)","cell-free EC-BS, matched_per_host_active_frac, full shared set",0.5088,matched_per_host_active_frac,218,gate15_coactive_modality.json,
+"NEW (Gate 15, not yet in manuscript)","cell-free EC-BS, matched_26pct, full shared set",0.3861,matched_26pct,150,gate15_coactive_modality.json,
+3.6,EC-BS transcription pooled -> co-active,0.655 -> 0.258,"both, explicitly labelled",14088 -> 3668,gate8_5_coactive_correlation.csv,the one place the manuscript does distinguish
+3.6,BS-PA transcription pooled -> co-active,0.508 -> 0.257,"both, explicitly labelled",11969 -> 2099,gate8_5_coactive_correlation.csv,
+3.6,EC-PA transcription pooled -> co-active,0.621 -> 0.754,"both, explicitly labelled",19643 -> 9741,gate8_5_coactive_correlation.csv,
+3.4 / 3.7,"H-MAIN closest call, model",0.213,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies
+3.4 / 3.7,"H-MAIN closest call, baseline",0.218,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies
+3.4 / 3.7,sequence-only EC transcription,0.367,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies
+3.4 / 3.7,concat EC transcription,0.555,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies
+3.4 / 3.7,per-host-heads-avg EC transcription,0.615,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies
+3.4 / 3.7,shift-prediction original EC->BS,0.432,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies
+3.4 / 3.7,shift-prediction shuffled-sequence control,0.557,n/a - model prediction vs truth,-,various,not a cross-host measurement correlation; no restriction regime applies

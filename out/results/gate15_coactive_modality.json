@@ -1,0 +1,153 @@
+{
+  "task1_activity_distribution": {
+    "drafts_inactive_fraction_of_dna_adequate": {
+      "Ec": 0.045744680851063826,
+      "Ef": 0.010752688172043012,
+      "Se": 0.45899772209567197,
+      "Ko": 0.04081632653061224,
+      "Pa": 0.0034129692832764505,
+      "Pp": 0.014742014742014743,
+      "Vn": 0.008443908323281062,
+      "Bs": 0.037122969837587005,
+      "Cg": 0.0,
+      "Ll": 0.0
+    },
+    "invivo_inactive_fraction_of_usable": {
+      "EC": 0.38894080364035266,
+      "BS": 0.7201539626451288,
+      "PA": 0.16704698924230432
+    },
+    "drafts_exact_zeros_among_usable": 0,
+    "drafts_max_single_rounded_value_fraction": 0.006024096385542169,
+    "naming_collision": "DRAFTS-'usable' requires rna>0 and is therefore the analogue of Johns-'active', NOT of Johns-'usable'. Johns keeps rna==0 rows as usable-but-inactive with tx_norm exactly 0; DRAFTS excludes them as 'no_RNA_counts'."
+  },
+  "task2_ec_bs": {
+    "full_shared_1047": {
+      "pooled_equiv": {
+        "n": 862,
+        "rho": 0.6161655835154238
+      },
+      "co_detected": {
+        "n": 807,
+        "rho": 0.6774410917750749
+      },
+      "both_above_p25": {
+        "n": 499,
+        "rho": 0.6465973361600049
+      },
+      "both_above_med": {
+        "n": 287,
+        "rho": 0.5921374755216928
+      },
+      "matched_per_host_active_frac": {
+        "n": 218,
+        "rho": 0.5087883187668192
+      },
+      "matched_26pct": {
+        "n": 150,
+        "rho": 0.38611705952907344
+      }
+    },
+    "johns_overlap_112": {
+      "pooled_equiv": {
+        "n": 85,
+        "rho": 0.5512365765025374
+      },
+      "co_detected": {
+        "n": 82,
+        "rho": 0.5972649256459484
+      },
+      "both_above_p25": {
+        "n": 48,
+        "rho": 0.592884088475187
+      },
+      "both_above_med": {
+        "n": 28,
+        "rho": 0.47680307001867517
+      },
+      "matched_per_host_active_frac": {
+        "n": 22,
+        "rho": 0.6212934447129431
+      },
+      "matched_26pct": {
+        "n": 11,
+        "rho": 0.3181818181818182
+      }
+    },
+    "invivo_reference": {
+      "pooled": {
+        "n": 14088,
+        "rho": 0.6550978207525179
+      },
+      "co_active": {
+        "n": 3668,
+        "rho": 0.2575175805660613
+      }
+    },
+    "range_restriction_diagnostic": [
+      {
+        "set": "full_shared_1047",
+        "iqr_pooled_a": 0.55838497975,
+        "iqr_codetected_a": 0.680907281,
+        "iqr_matched26_a": 7.58292737475,
+        "iqr_pooled_b": 0.241592861,
+        "iqr_codetected_b": 0.2988353515,
+        "iqr_matched26_b": 12.947885079749998
+      },
+      {
+        "set": "johns_overlap_112",
+        "iqr_pooled_a": 0.929881913,
+        "iqr_codetected_a": 1.06209586075,
+        "iqr_matched26_a": 5.1228111595,
+        "iqr_pooled_b": 0.416292021,
+        "iqr_codetected_b": 0.415761026,
+        "iqr_matched26_b": 14.261122145
+      }
+    ]
+  },
+  "task2b_all_45_pairs_full_set": {
+    "pooled_equiv": {
+      "n_pairs": 45,
+      "min": 0.3637927682675842,
+      "max": 0.891974337538019,
+      "mean": 0.7102177582873669,
+      "median": 0.7357167705591088
+    },
+    "co_detected": {
+      "n_pairs": 45,
+      "min": 0.6225321367294302,
+      "max": 0.9109435769826634,
+      "mean": 0.8091997910480853,
+      "median": 0.8222226038634866
+    },
+    "both_above_p25": {
+      "n_pairs": 45,
+      "min": 0.46655018634605405,
+      "max": 0.8799435618419214,
+      "mean": 0.7235559062725734,
+      "median": 0.746674278171114
+    },
+    "both_above_med": {
+      "n_pairs": 45,
+      "min": 0.3342744156612534,
+      "max": 0.8349251299839109,
+      "mean": 0.6259669768565028,
+      "median": 0.6552774909368517
+    },
+    "matched_per_host_active_frac": {
+      "n_pairs": 3,
+      "min": 0.5087883187668192,
+      "max": 0.8251962046132546,
+      "mean": 0.6568615128821085,
+      "median": 0.6366000152662515
+    },
+    "matched_26pct": {
+      "n_pairs": 45,
+      "min": 0.2143769552706015,
+      "max": 0.8044936742401888,
+      "mean": 0.515382530200424,
+      "median": 0.5637925776318117
+    }
+  },
+  "invivo_coactive_retention_used_for_quantile_match": 0.26036342986939237
+}

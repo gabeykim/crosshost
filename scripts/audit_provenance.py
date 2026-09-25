@@ -41,6 +41,13 @@ EXCLUDE_DIRS = {"models", "PREPRINT"}  # models: binary checkpoints, not "result
 # document, never a fresh, only-here result.
 EXCLUDE_SUFFIXES = {".md"}  # memos are hand-written documents, not script outputs by design
 
+# OS/editor detritus that is gitignored and is not project content. Gate 15:
+# a stray out/.DS_Store tripped this audit as a one-file "orphan" -- the same
+# gitignore-unawareness Gate 14 fixed in audit_leakage.py's check 6. Skipping
+# these by name is deliberate and narrow: only files that .gitignore already
+# excludes AND that no script could ever produce.
+EXCLUDE_NAMES = {".DS_Store", "Thumbs.db"}
+
 # Known dynamic-filename templates (model_tag / host / variant substitution)
 # seen in scripts/61, 63, 64 etc. -- basename won't literal-match, so allow
 # the *_{tag}_* shape explicitly.
@@ -87,6 +94,8 @@ def main():
         if any(part in EXCLUDE_DIRS for part in p.relative_to(OUT).parts):
             continue
         if p.suffix in EXCLUDE_SUFFIXES:
+            continue
+        if p.name in EXCLUDE_NAMES:
             continue
         all_files.append(p)
 
