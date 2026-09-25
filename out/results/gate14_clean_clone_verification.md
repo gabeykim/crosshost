@@ -165,3 +165,35 @@ make reproduce            # PASSED -- exit code 0, 25/25 script invocations comp
 **Environment used for this verification:** macOS, Apple Silicon (arm64), Python 3.14.2, `pip` 25.3. No other OS or Python version has been tested. All pinned dependency versions in `package/pyproject.toml` (including the two added this gate, `certifi` and `openpyxl==3.1.5`) had prebuilt `cp314-macosx-arm64` wheels available — no compilation-from-source step was needed or tested.
 
 **Remaining limitation, disclosed rather than implied closed:** `make reproduce-full` (the complete from-raw-data pipeline, including all CNN/foundation-model training) was explicitly not attempted, per instruction — it would cost the cumulative ~40 hours of training this project's Gates 4–8 already spent. This gate closes the "was a genuine clean clone ever tested" gap for `make audit`, `make verify-citations`, and `make reproduce` (the fast path) specifically. It does not close, and was never asked to close, the separate `make reproduce-full` gap.
+
+---
+
+## Iteration 4 — confirming pass at the true final HEAD
+
+Iteration 3 passed at commit `87e6b61`, but two commits landed after it (`bcc660f`, the reproducibility-statement update, and `f4eb51f`, marking this report complete). Both were documentation-only and could not affect any target — **but "could not affect" is an assumption, and the whole point of this gate is not trusting that kind of assumption.** So the clone was deleted and re-cloned once more, at the actual final HEAD, and the full sequence re-run from scratch.
+
+**Clone:** `git clone https://github.com/gabeykim/crosshost.git /tmp/crosshost-verify`, confirmed at `f4eb51f`. `VIRTUAL_ENV` empty before starting (no inherited environment). Root listing now shows `README.md` present, as a stranger would find it.
+
+**Setup, following the new root `README.md` verbatim and nothing else:**
+```
+python3 -m venv .venv && source .venv/bin/activate
+  which python  -> /private/tmp/crosshost-verify/.venv/bin/python
+  which python3 -> /private/tmp/crosshost-verify/.venv/bin/python3
+  Python 3.14.2
+pip install -e ./package                 # OK
+pip install -e "./package[citations]"     # OK
+```
+**Zero undocumented steps required.** Every command run came from the README's own Setup block.
+
+**Results, all three targets:**
+
+| Target | Result | Match against expected |
+|---|---|---|
+| `make audit` (leakage) | ALL 6 CHECKS PASSED | 29,042 rows, worst identity 0.8485, 24 checked + 2 gitignored-skipped — identical to Iteration 3 |
+| `make audit` (provenance) | 0 orphans, 167 files | identical |
+| `make verify-citations` | 11 VERIFIED / 0 unexplained / 5 explained / 0 unresolved / 16 total | identical to Gate 13's own report |
+| `make reproduce` | **exit 0 in 140 seconds**, 25 script invocations, 0 errors/tracebacks | `29042 rows`; `EC transcription concat: mean=0.555 vs seqonly=0.367`; `film_std_over_seqonly_std: 7.800181878927151`; gap ratios `0.341 -> 0.308` and `0.286 -> 0.240` — all bit-for-bit identical |
+
+**Time-box:** 20 minutes, enforced by a watchdog that would have killed the run and reported partial progress. Not approached — the run finished in 140 s, 8.6% of the budget.
+
+**Final count: 4 iterations total** — 3 to find and fix the defects, 1 to confirm the true final HEAD. No established number changed in any of them.
