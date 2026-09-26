@@ -2839,5 +2839,116 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (171 files)"
     }
+  },
+  "gate_18": {
+    "date_run": "2026-09-26",
+    "outcome": "PASS",
+    "first_line": "both retention figures hold (807/862=93.62%, 3668/14088=26.04%) and both regime descriptions are correct; separately, none of these claims are in the manuscript yet",
+    "premise_finding": {
+      "claims_not_in_manuscript": true,
+      "detail": "gate described claims 'in the abstract and 3.2' and 'in 3.3'; out/PREPRINT/MANUSCRIPT.md and out/MANUSCRIPT.md were last changed by bcc660f (Gate 14) and contain no 93.6, no 26.0% retention claim, no 0.509/0.386, no regime names. The claims live in out/GATE15_MEMO.md and gate15_* results. out.zip is also Gate-14 era.",
+      "implication": "if a rewritten manuscript exists elsewhere it is uncommitted and unpushed"
+    },
+    "task1_retention": {
+      "method": "recomputed from data/three_host.parquet and data/drafts.parquet replicating scripts/80 and scripts/98 filter definitions, then cross-checked against their committed outputs",
+      "cross_check": "51 of 51 agree (6 in-vivo pair x readout, 45 cell-free pairs)",
+      "cell_free_EC_BS": {
+        "n_coactive": 807,
+        "n_pooled": 862,
+        "retention_pct": 93.62,
+        "claim_93_6": "CONFIRMED"
+      },
+      "in_vivo_EC_BS_transcription": {
+        "n_coactive": 3668,
+        "n_pooled": 14088,
+        "retention_pct": 26.04,
+        "claim_26_0": "CONFIRMED"
+      },
+      "in_vivo_all": {
+        "EC-BS tx": 26.04,
+        "EC-PA tx": 49.59,
+        "BS-PA tx": 17.54,
+        "EC-BS tl": 100.0,
+        "EC-PA tl": 84.78,
+        "BS-PA tl": 89.2
+      },
+      "cell_free_45_pairs": {
+        "min_pct": 53.9,
+        "median_pct": 95.9,
+        "max_pct": 100.0,
+        "lowest_three": "all involve S. enterica (Ec-Se 53.9, Se-Bs 54.1, Se-Pa 54.1)"
+      },
+      "caveat": "translation retention is NOT comparable to transcription retention: scripts/80 builds the translation 'pooled' set already floor-corrected, so EC-BS translation reads 866/866=100% as a definitional artifact, not a biological fact. Do not share a retention column across readouts without stating this.",
+      "translation_floors": {
+        "EC": {
+          "floor_value": 1.8700000047683716,
+          "floor_fraction": 0.6706936866718628,
+          "floor_detected": true
+        },
+        "BS": {
+          "floor_value": 2.0,
+          "floor_fraction": 0.9023013089229189,
+          "floor_detected": true
+        },
+        "PA": {
+          "floor_value": 2.2300000190734863,
+          "floor_fraction": 0.09906257917405624,
+          "floor_detected": true
+        }
+      },
+      "file": "out/results/gate18_coactive_retention.csv"
+    },
+    "task2_regimes": {
+      "matched_per_host_active_frac": {
+        "description_verdict": "CORRECT",
+        "rho": 0.509,
+        "n": 218,
+        "achieved_retention_of_pooled": 0.2529,
+        "Ec_threshold": 0.1342,
+        "Bs_threshold": 0.1922
+      },
+      "matched_26pct": {
+        "description_verdict": "CORRECT",
+        "rho": 0.386,
+        "n": 150,
+        "achieved_retention_of_pooled": 0.174,
+        "Ec_threshold": 0.7955,
+        "Bs_threshold": 0.2263
+      },
+      "precisions_to_add": [
+        "both regimes take quantiles over the DNA-adequate (pooled-equivalent) population, not the co-detected one; both use >= inclusive",
+        "the '26%' regime retains 17.4% (150/862), not 26%; the per-host regime retains 25.3% (218/862), almost exactly the in-vivo 26.04% it mirrors -- a point in the per-host regime's favour the description omits"
+      ],
+      "inconsistency_flagged": "matched regimes threshold on DNA-adequate with >=; both_above_p25/med threshold on usable with strict > -- the six rows are not on identical footing"
+    },
+    "task3_figure_audit": {
+      "figures_cited": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "files_present": "9 files for 8 figures (Figure 2 has panels a and b)",
+      "cited_but_missing": "none",
+      "present_but_uncited": "none",
+      "producing_scripts_committed": "8 of 8 (scripts 55, 65, 68, 73, 86, 87, 91, 96)",
+      "captions_stating_interval_type": "8 of 8",
+      "captions_stating_N": "7 of 8",
+      "gap": "Figure 8 (shift-prediction retraction) states interval type but no N; per-cell N is 294-9609 (gate8_5_shift_prediction_summary.csv, n_total). NOT fixed -- legends file left untouched.",
+      "supplementary_note": "19 files implement Figures S1-S10, documented in FIGURE_LEGENDS.md but never cited from the manuscript body; the manuscript's Fig. S13/S15/Appendix Fig. S5 refer to Johns'/DRAFTS' own figures. This package's Figure S5 and DRAFTS' Appendix Fig. S5 share a label -- minor collision worth checking before submission."
+    },
+    "no_manuscript_edits": true,
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (171 files)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (173 files)"
+    }
   }
 }

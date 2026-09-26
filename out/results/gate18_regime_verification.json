@@ -1,0 +1,53 @@
+{
+  "headline_claims": {
+    "cell_free_93_6": true,
+    "in_vivo_26_0": true
+  },
+  "regimes": {
+    "matched_per_host_active_frac": {
+      "population_thresholds_computed_over": "each species' DNA-adequate (pooled-equivalent) activity distribution",
+      "Ec_fraction_retained_target": 0.6110591963596473,
+      "Ec_threshold": 0.13423646078803886,
+      "Bs_fraction_retained_target": 0.2798460373548713,
+      "Bs_threshold": 0.19224267857288005,
+      "comparison_operator": ">= (inclusive)",
+      "n_after_intersection": 218,
+      "achieved_retention_of_pooled": 0.2529002320185615,
+      "source_of_fractions": "EC 15040/24613 and BS 4435/15848 = each host's own in-vivo tx_active/tx_usable"
+    },
+    "matched_26pct": {
+      "population_thresholds_computed_over": "each species' DNA-adequate (pooled-equivalent) activity distribution",
+      "uniform_fraction_applied_to_both": 0.26036342986939237,
+      "Ec_threshold": 0.7955385826609881,
+      "Bs_threshold": 0.22632593858091993,
+      "comparison_operator": ">= (inclusive)",
+      "n_after_intersection": 150,
+      "achieved_retention_of_pooled": 0.1740139211136891,
+      "source_of_fraction": "in-vivo EC-BS transcription co-active retention, 3668/14088"
+    },
+    "_note_p25_med_regimes": {
+      "population_thresholds_computed_over": "each species' USABLE (co-detected-eligible) distribution -- NOT DNA-adequate",
+      "comparison_operator": "> (strict)",
+      "why_it_matters": "the two matched regimes use DNA-adequate + '>=', the p25/median regimes use usable + '>' -- defensible per-regime choices, but the six rows are not all on identical footing and a reader comparing them should know",
+      "example_Ec_p25_threshold_on_usable": 0.092747283
+    }
+  },
+  "translation_floor": {
+    "EC": {
+      "floor_value": 1.8700000047683716,
+      "floor_fraction": 0.6706936866718628,
+      "floor_detected": true
+    },
+    "BS": {
+      "floor_value": 2.0,
+      "floor_fraction": 0.9023013089229189,
+      "floor_detected": true
+    },
+    "PA": {
+      "floor_value": 2.2300000190734863,
+      "floor_fraction": 0.09906257917405624,
+      "floor_detected": true
+    }
+  },
+  "problems": []
+}
