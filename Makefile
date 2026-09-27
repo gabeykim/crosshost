@@ -18,11 +18,12 @@
 
 PYTHON := python3
 
-.PHONY: all reproduce reproduce-full package audit verify-citations test clean help
+.PHONY: all reproduce reproduce-full package audit verify-citations manuscript test clean help
 
 help:
 	@echo "make audit             - run both audit scripts (leakage + provenance), fast, offline, VERIFIED"
 	@echo "make verify-citations  - mechanically verify every manuscript citation against CrossRef/arXiv (live network, run on demand alongside the audits -- not part of 'audit' itself, which must stay fast and offline)"
+	@echo "make manuscript        - build manuscript.pdf from out/PREPRINT/MANUSCRIPT.md (needs pandoc + xelatex), VERIFIED"
 	@echo "make test              - run package tests (loaders, evaluate API, held-out scoring), VERIFIED"
 	@echo "make package           - (re)build package/ from data/ and out/, VERIFIED"
 	@echo "make reproduce         - regenerate all figures/tables from shipped intermediate results, fast"
@@ -34,6 +35,14 @@ audit:
 
 verify-citations:
 	$(PYTHON) scripts/97_verify_citations.py
+
+# --resource-path is required: pandoc resolves relative image paths against the
+# working directory, NOT against the input file's directory. The figure paths in
+# MANUSCRIPT.md are relative to the manuscript itself, so that out/PREPRINT/ stays
+# a self-contained package for the Zenodo deposit.
+manuscript:
+	pandoc out/PREPRINT/MANUSCRIPT.md -o manuscript.pdf --pdf-engine=xelatex \
+		-V mainfont="Times New Roman" --resource-path=out/PREPRINT
 
 test:
 	cd package && $(PYTHON) -m pytest tests/ -v

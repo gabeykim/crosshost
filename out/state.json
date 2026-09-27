@@ -2542,15 +2542,15 @@
     "task2_citation_verification": {
       "method": "WebSearch/WebFetch against primary sources for all 6 citations supplied in the gate prompt, before use, per this project's standing citation-verification practice",
       "confirmed_accurate": [
-        "Borkowski et al. 2018, Nat Commun 9:1457 -- R\u00b2=0.74 exact match (author list corrected: Bricio/Murgiano/Rothschild-Mancinelli/Stan/Ellis, not the Ceroni/Stan/Ellis first guessed)",
+        "Borkowski et al. 2018, Nat Commun 9:1457 -- R²=0.74 exact match (author list corrected: Bricio/Murgiano/Rothschild-Mancinelli/Stan/Ellis, not the Ceroni/Stan/Ellis first guessed)",
         "Pandi et al. 2022 (METIS), Nat Commun 13:3876 -- 0.41 correlation and 'not necessarily directly transferable' language exact match",
         "El Houdaigui et al. 2019, NAR 47(11):5648, DOI 10.1093/nar/gkz300 -- supercoiling/discriminator-GC-content mechanism confirmed (author list corrected: Forquet/Hindre/Schneider/Nasser/Reverchon/Meyer, not the fabricated 'Vindry' third author first written)"
       ],
       "confirmed_with_correction": [
-        "LaFleur et al. 2022, Nat Commun 13:5159 -- actual R\u00b2=0.80 own-data / 0.45-0.65 across three external datasets, not the prompt-supplied 0.79 / 0.45-0.60"
+        "LaFleur et al. 2022, Nat Commun 13:5159 -- actual R²=0.80 own-data / 0.45-0.65 across three external datasets, not the prompt-supplied 0.79 / 0.45-0.60"
       ],
       "could_not_verify_and_dropped": [
-        "Chappell et al. 2013 (NAR 41(5):3471) -- actually reports the OPPOSITE of divergence (R\u00b2=0.946 promoters, R\u00b2=0.968 RBS, strong cell-free/in-vivo agreement); not cited for the divergence claim",
+        "Chappell et al. 2013 (NAR 41(5):3471) -- actually reports the OPPOSITE of divergence (R²=0.946 promoters, R²=0.968 RBS, strong cell-free/in-vivo agreement); not cited for the divergence claim",
         "Sun et al. 2013 -- no primary source found making a promoter-ranking-divergence claim; not cited"
       ],
       "disclosed_in_manuscript": "out/MANUSCRIPT.md Section 6, 'What I could not do' -- dedicated bullet on the dropped citations, and References section's per-citation Gate 12 verification notes"
@@ -3049,5 +3049,141 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (173 files)"
     }
+  },
+  "gate_20": {
+    "date_run": "2026-09-27",
+    "outcome": "PASS",
+    "first_line": "all 8 figures and all 8 verbatim captions now appear in manuscript.pdf; 9 image files (Figure 2 is two panels); pages 17 -> 23; embedded images 0 -> 9; no pandoc warnings",
+    "inventory": {
+      "figure_files_main": 9,
+      "figures": 8,
+      "all_png": true,
+      "dpi": 150,
+      "cited_not_present": [],
+      "present_not_cited": [],
+      "note": "Figure 2 = Figure2a_gc_control.png + Figure2b_phylum_stratified.png, one shared caption",
+      "supplementary_not_embedded": 19,
+      "figureS5_slot": "caption placeholder with no file, deliberate since Gate 19 (collides with DRAFTS Appendix Fig. S5)"
+    },
+    "placement": {
+      "1": "after 'The gap survives measurement noise.' (p7)",
+      "2": "after 'The gap survives a source-composition confound.' (p8, both panels)",
+      "3": "after 'Conditioning on co-activity separates them, in opposite directions.' (p9)",
+      "5": "after 'Sequence-only prediction is not distinguishably beaten...' (p13)",
+      "4": "after 'The pre-registered kill gate failed on all 8 primary comparisons.' (p14)",
+      "6": "after 'The sequence-only model's zero-shot classifier is well calibrated...' (p15)",
+      "7": "after 'FiLM is measurably unstable...' (p16)",
+      "8": "after 'It did not survive its control.' (p17)"
+    },
+    "method_corrections": [
+      "pandoc resolves relative image paths against the WORKING DIRECTORY, not the input file; the gate's build command produced a figure-free PDF with exit 0 and nine 'Could not fetch resource' warnings. Fixed with --resource-path=out/PREPRINT; paths left relative to the manuscript so out/PREPRINT stays self-contained for Zenodo.",
+      "the prescribed alt-text template would render each caption's label three times (gate's '**Figure N.**' + the legend's own '**Figure N - Title.**' + LaTeX's automatic 'Figure N:'); resolved by using the verbatim legend caption alone and suppressing LaTeX's automatic label. No caption text was cut.",
+      "figures floated away from their paragraphs under default htbp placement (test build split Figure 2's panels across pages); fixed with \\floatplacement{figure}{H}.",
+      "corrections 2 and 3 require preamble packages, so a five-line YAML header-includes block was added to MANUSCRIPT.md -- a THIRD header change beyond the two Task 3 requested."
+    ],
+    "reported_not_fixed": [
+      "Figure 5 (p13) appears before Figure 4 (p14): section 3.5 discusses the conditioning mechanisms before the kill gate, so per-paragraph placement inverts the numbering. Every alternative breaks a gate constraint (stacking, renumbering captions, or reordering paragraphs).",
+      "out/MANUSCRIPT.md's figures/ paths do not resolve from out/ (out/figures/ holds pre-Gate-12 filenames); byte-identical mirroring and manuscript-relative paths cannot both hold. out/PREPRINT/MANUSCRIPT.md is the build target."
+    ],
+    "build": {
+      "command": "pandoc out/PREPRINT/MANUSCRIPT.md -o manuscript.pdf --pdf-engine=xelatex -V mainfont=\"Times New Roman\" --resource-path=out/PREPRINT",
+      "make_target": "manuscript",
+      "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026), /Library/TeX/texbin, not on default PATH",
+      "pages_before": 17,
+      "pages_after": 23,
+      "embedded_images_before": 0,
+      "embedded_images_after": 9,
+      "pdfimages_rows": 18,
+      "pdfimages_rows_note": "9 image + 9 smask; every PNG has an alpha channel",
+      "grep_c_Figure_before": 6,
+      "grep_c_Figure_after": 18,
+      "filesize_before_bytes": 170472,
+      "filesize_after_bytes": 1233230
+    },
+    "glyphs": {
+      "rho": {
+        "before": 12,
+        "after": 21,
+        "in_captions": 9,
+        "ok": true
+      },
+      "leq": {
+        "before": 3,
+        "after": 3,
+        "in_captions": 0,
+        "ok": true
+      },
+      "gamma": {
+        "before": 2,
+        "after": 2,
+        "in_captions": 0,
+        "ok": true
+      },
+      "beta": {
+        "before": 2,
+        "after": 2,
+        "in_captions": 0,
+        "ok": true
+      },
+      "approx": {
+        "before": 1,
+        "after": 2,
+        "in_captions": 1,
+        "ok": true
+      },
+      "verdict": "no regression; every increase exactly accounted for by caption text"
+    },
+    "consistency": {
+      "cited": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "embedded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "captions_verbatim": "8/8, whitespace-normalised substring of FIGURE_LEGENDS.md; only transformation is joining soft-wrapped lines with a space",
+      "numbers_removed_vs_HEAD": 0,
+      "numbers_added_not_from_captions": 0,
+      "copies_identical": true,
+      "md5": "9d533d917f5f4df7ad9d88e17bf092c1",
+      "headings_before": 29,
+      "headings_after": 29,
+      "section_3_3_table": "renders"
+    },
+    "title_block": {
+      "email": "gabeykim@stanford.edu",
+      "email_placeholder_remaining": 0,
+      "zenodo_placeholder_kept": true,
+      "line_break": "trailing backslash after 'USA'; confirmed on separate lines in extracted text"
+    },
+    "verify_citations": "11 VERIFIED / 0 unexplained / 5 explained / 0 unresolved / 16 total -- unchanged since Gate 13",
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 173 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 173 files"
+    },
+    "files_written": [
+      "out/PREPRINT/MANUSCRIPT.md",
+      "out/MANUSCRIPT.md",
+      "manuscript.pdf",
+      "scripts/101_gate20_embed_figures.py",
+      "Makefile (manuscript target)",
+      "out/GATE20_MEMO.md",
+      "out/state.json"
+    ]
   }
 }

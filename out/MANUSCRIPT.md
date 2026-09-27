@@ -1,9 +1,17 @@
+---
+header-includes: |
+  \usepackage{float}
+  \floatplacement{figure}{H}
+  \usepackage{caption}
+  \captionsetup{labelformat=empty,font=small,justification=raggedright,singlelinecheck=false}
+---
+
 # Cell-free systems do not reproduce the bacterial chassis effect: evidence that host specificity resides in cellular context rather than transcription machinery
 
 **Gabriel Kim**
 
-Stanford University, Stanford, CA, USA
-Correspondence: [email]
+Stanford University, Stanford, CA, USA\
+Correspondence: gabeykim@stanford.edu
 
 ---
 
@@ -118,7 +126,13 @@ We summarize the contrast as a **gap ratio**: the mean of the two *B. subtilis*-
 
 **The gap survives measurement noise.** Anchored by a measured *E. coli* transcription reliability of 0.912 (five growth-condition replicates, cross-checked to 0.929 by an independent method — the only host×readout combination with usable replicate structure), disattenuation leaves the gap ratio unchanged at 0.341 when both sides are corrected at reliability 0.9, and moves it to 0.515 only when *B. subtilis* is assigned a pessimistic 0.5 while the others retain 0.9. Growth-condition replicates capture biological variation alongside measurement error, so this reliability estimate is conservative.
 
+![**Figure 1 — Raw cross-host measurement correlation, with disattenuation correction.** Spearman ρ, all co-active pairs, *E. coli*–*P. aeruginosa* vs. mean of *B. subtilis* pairs, both readouts, raw vs. disattenuation-corrected (reliability=0.9 anchor). **No resampled interval** — these are population Spearman correlations over the full stated co-active N per pair (transcription: EC–BS n=3,668, EC–PA n=9,741, BS–PA n=2,099; translation: EC–BS n=866, EC–PA n=3,826, BS–PA n=314); the "correction" is a deterministic disattenuation formula applied to the point estimate, not a resampling procedure, and is itself shown at three reliability levels (0.5/0.7/0.9) as a sensitivity grid rather than a confidence interval. Full data: `out/results/gate8_attenuation_analysis.json`. Script: `scripts/73_attenuation_figures.py`.](figures/Figure1_disattenuation.png)
+
 **The gap survives a source-composition confound.** DRAFTS revealed a universal source-genome GC–activity relationship in cell-free data (ρ −0.49 to −0.74 across ten hosts); the same relationship holds more weakly in vivo (ρ −0.20 to −0.61). Partial-correlation control with GC held constant — confirmed to three decimals by a closed-form formula and by rank-residual regression independently — leaves the transcription gap ratio at 0.308 (from 0.341, a 9.7% change) and translation at 0.240 (from 0.286, 15.9%). EC–PA itself moves only −4.7% (0.754 → 0.718) and −0.6%; the *B. subtilis* pairs shrink more in relative terms from a smaller base (EC–BS 0.258 → 0.207), which is mechanically expected. Phylum stratification agrees independently: within Proteobacteria, EC–PA transcription ρ = 0.634 with *B. subtilis* pairs near zero; within Firmicutes, EC–PA ρ = 0.812.
+
+![](figures/Figure2a_gc_control.png)
+
+![**Figure 2 — GC-composition robustness check.** *(a)* Raw vs. GC-controlled Spearman ρ, same three pairs and both readouts as Figure 1, partial-correlation control (closed-form formula, cross-checked by rank-residual regression — the two methods agreed to 3 decimal places in every cell shown, so one bar per cell is shown, not two). *(b)* The same EC–PA/BS-pair contrast, stratified by source-genome phylum (Proteobacteria, Firmicutes) instead of GC-controlled — an assumption-free cross-check. **No resampled interval in either panel**, same reasoning as Figure 1 (deterministic partial-correlation formula; phylum-stratified point estimates over the N shown per stratum, e.g. Proteobacteria EC–PA n=3,282, Firmicutes EC–PA n=2,666 for transcription — see the full table for every stratum's N, several of which are small and are reported as such, not omitted). Full data: `out/results/gate10_5_gc_confound.json`, `.csv`. Script: `scripts/96_gate10_5_figures.py`.](figures/Figure2b_phylum_stratified.png)
 
 ### 3.2 The modality contrast (Figure 3)
 
@@ -127,6 +141,8 @@ DRAFTS characterized transcription from the same library using cell-free lysates
 **Pooled, the two modalities agree.** For *E. coli*–*B. subtilis*, pooled transcription correlation is **0.616 cell-free** (n = 862) versus **0.655 in vivo** (n = 14,088). We report this first because it is the comparison a reader is most likely to compute independently.
 
 **Conditioning on co-activity separates them, in opposite directions.** Restricted to sequences active in both hosts, the in-vivo correlation falls to **0.258** (n = 3,668), a 61% drop, while the cell-free correlation *rises* to **0.677** (n = 807), a 10% increase. That is a **2.6-fold** modality gap under matched restriction, against none when pooled.
+
+![**Figure 3 — The DRAFTS modality comparison.** Cross-host Spearman ρ, *E. coli*–*B. subtilis* pair, cell-free (DRAFTS, N=82) vs. in-vivo (this project, full-library reference, N=3,668) vs. in-vivo on the small DRAFTS-overlap subset (N=15, shown for completeness, not used as evidence — see Section 3.2). **No interval shown — each bar is a point Spearman ρ over its full stated N**, not a resampled or bootstrapped estimate (DRAFTS provides a single measurement per sequence per species, not a replicate series suitable for bootstrapping the correlation itself beyond what N already reflects). Full data: `out/results/gate10_modality_comparison.json`. Script: `scripts/91_drafts_modality_comparison.py`.](figures/Figure3_drafts_modality_comparison.png)
 
 **The comparison rests on a single species pair.** Only *E. coli* and *B. subtilis* appear in both datasets; *P. aeruginosa* is absent from DRAFTS, and the three RS241 hosts DRAFTS does cover have at most 207 in-vivo sequences, of which the co-active subset would be smaller. We did not compute cross-modality correlations for them, and note that doing so is the most direct route to widening this comparison. The claim should be read as one well-characterized instance, not a survey.
 
@@ -173,11 +189,17 @@ Four independent lines of evidence test the prediction above, and each comes out
 
 **Sequence-only prediction is not distinguishably beaten under three conditioning mechanisms, in 16 of 18 tests.** Across 3 mechanisms × 6 (host, readout) cells, the two exceptions are both at *E. coli* transcription, where concatenation reaches 0.555 and per-host-heads-averaged 0.615 against sequence-only 0.367 and FiLM 0.371 — the one combination with the largest usable N and the only measured reliability estimate. Every *B. subtilis* cell, both readouts, is statistically indistinguishable across sequence-only and all three mechanisms. No mechanism recovers signal for the host the central question concerns.
 
+![**Figure 5 — Testing the conditioning mechanism.** *(a)* Zero-shot Spearman ρ, three conditioning mechanisms (FiLM, concatenation, per-host-heads-averaging) plus sequence-only, all (host, readout) cells, genomic-feature variant. **90% bootstrap CI**, same resampling scheme as Figure 4. *(b)* Fold-to-fold standard deviation of zero-shot ρ across the same 5 folds, all four systems — **no interval; this panel reports variance itself, computed across N=5 folds per (host, readout, mechanism) cell**, not a bootstrapped statistic on top of it. Full tables: `out/results/gate6_full_comparison.csv`, `out/results/gate8_6_mechanism_fold_variance.csv`. Scripts: `scripts/65_gate6_figures.py`, `scripts/86_mechanism_fold_variance.py`.](figures/Figure5_conditioning_mechanisms.png)
+
 **The pre-registered kill gate failed on all 8 primary comparisons.** Neither readout, neither host-feature variant, on either primary held-out host met the bar. The closest was *B. subtilis* transcription with genomic features: model ρ = 0.213 [0.154, 0.260] against baseline ρ = 0.218 [0.160, 0.251] — NOT MET, point estimate favoring the baseline, and not revisited under any alternative mechanism. Several cells failed by wide margins (*P. aeruginosa* genomic transcription: 0.104 against 0.447). The hypothesis was committed before any host-conditioned model was trained; both amendments are dated, preceded the results they touch, and make the bar harder to clear.
+
+![**Figure 4 — The pre-registered kill gate (H-MAIN): model vs. baseline, all 8 primary comparisons.** Zero-shot cross-host Spearman ρ, FiLM-conditioned model (N=100 host-specific calibration examples) vs. per-host-only baseline (N=3,000, or N≈300 for *B. subtilis* translation's own measured saturation ceiling), both readouts, both genomic and physiology host-feature variants, *B. subtilis* and *P. aeruginosa* held out. **Error bars: 90% percentile bootstrap CI, 10,000 resamples, hierarchical (fold identities resampled, then within-fold draws resampled)** — the pre-registered Amendment 2 interval, not a symmetric t-interval. Full per-cell table: `out/results/gate5_hmain_table.csv` (n=8 primary comparisons; per-cell N as stated above). Script: `scripts/55_gate5_figures.py`.](figures/Figure4_hmain_kill_gate.png)
 
 ### 3.6 Calibration (Figure 6)
 
 The sequence-only model's zero-shot classifier is well calibrated on *E. coli* (ECE 0.053 transcription, 0.099 translation) and severely miscalibrated on *B. subtilis* (0.429, 0.344) and *P. aeruginosa* (0.474, 0.431) — roughly a 3.5- to 9-fold degradation depending on the pairing. Split-conformal interval coverage for the strength regressor stayed near nominal regardless (77–94% empirical against 80/90% targets), since conformal intervals guarantee marginal coverage independent of the underlying model's calibration; the ECE failure is a point-probability problem that coverage numbers alone would not reveal.
+
+![**Figure 6 — Off-distribution calibration collapse.** Reliability diagrams, zero-shot active/inactive classifier, sequence-only model, all three primary hosts and both readouts. **No interval shown — each point is a bin-wise empirical fraction over the full per-host evaluation pool, not a resampled estimate**; Expected Calibration Error (ECE) is a point statistic over the same pool. N per cell: EC transcription 24,412 / EC translation 28,021 / BS transcription 15,697 / BS translation 11,564 / PA transcription 21,306 / PA translation 19,576. ECE: EC 0.053–0.099, BS 0.344–0.429, PA 0.431–0.474. Full data: `out/results/gate7_conformal_calibration.json`. Script: `scripts/68_conformal_calibration.py`.](figures/Figure6_calibration_collapse.png)
 
 We quantify the magnitude rather than claiming it as a novel warning. LaFleur, Hossain & Salis (2022) report R² = 0.80 on their own data but 0.45–0.65 across three independent external in-vivo datasets. The practical implication is that a model winning on rank correlation is not automatically trustworthy in absolute probability terms cross-host, and any deployment on a meaningfully different host should recalibrate first.
 
@@ -187,6 +209,8 @@ We quantify the magnitude rather than claiming it as a novel warning. LaFleur, H
 
 **FiLM is measurably unstable, independent of whether conditioning helps.** Its fold-to-fold standard deviation of zero-shot Spearman ρ exceeds every alternative's — sequence-only, concatenation, per-host heads — in all six (host, readout) cells, 4.0–7.8× higher at *E. coli* transcription (FiLM 0.200 against 0.031, 0.050, 0.026). A γ/β generator fit from only two training-host vectors is a poor default in this few-domain regime, which matters for any model conditioned on a handful of domains independent of this paper's negative result.
 
+![**Figure 7 — FiLM fold-to-fold instability.** Fold-to-fold standard deviation of zero-shot ρ, all 6 (host, readout) cells, all four systems (sequence-only, FiLM, concatenation, per-host-heads). **No interval; this figure reports variance itself**, computed across N=5 folds per cell, not a bootstrapped statistic on top of it — the same underlying data as Figure 5b, shown here in its own right since Section 3.6 treats it as a standalone, generalizable finding rather than a component of the conditioning-mechanism comparison. Full table: `out/results/gate8_6_mechanism_fold_variance.csv`. Script: `scripts/86_mechanism_fold_variance.py`.](figures/Figure7_film_instability.png)
+
 ### 3.8 Two retracted findings (Figure 8)
 
 **The ceiling metric.** A "percent of cross-host measurement-correlation ceiling" metric was proposed, subsequently corrected, and that correction later found wrong (it compared against the wrong baseline model). It was retired because the sequence-only model genuinely exceeds the correctly computed ceiling for *B. subtilis* on both readouts (102–111%) — an explainable consequence of disattenuation, since measurement noise depresses a raw pairwise correlation in a way a model trained on thousands of examples is not. It appears nowhere in this paper's results.
@@ -194,6 +218,8 @@ We quantify the magnitude rather than claiming it as a novel warning. LaFleur, H
 **Shift-prediction.** A fourth attempt reframed the target: instead of absolute activity, predict the *shift* from a reference host's measured value to a target host, given sequence and the reference value as inputs. This initially appeared to succeed for *B. subtilis* transcription — 7 of 8 configurations for that host and readout distinguishably beat a mean-shift constant baseline, which no absolute-level framing had achieved.
 
 It did not survive its control. Spearman correlation between the shift and the reference value itself is strongly negative for most host pairs (as low as −0.812, *P. aeruginosa*→*B. subtilis* transcription): a sequence with a high reference value mechanically has more room to fall than to rise. Across all 11 cells originally reported as wins, a reference-value-only baseline — ordinary least squares, one feature, no sequence input — matched or beat the original model in 10. A second control, retraining the identical architecture with sequences randomly permuted against their targets while keeping reference values intact, reproduced most of the original performance despite the sequence carrying no information (*E. coli*→*B. subtilis* transcription: original ρ = 0.432, shuffled-sequence 0.557 — *higher* with no sequence signal). **We retract this finding.** The one cell surviving both controls (*P. aeruginosa*→*E. coli* translation with conditioning: 0.341 against reference-only 0.142 and shuffled −0.015) shares no host or readout with the retracted claim and is reported as a separate minor result.
+
+![**Figure 8 — The shift-prediction retraction: regression-to-the-mean control.** Original shift-prediction model vs. reference-value-only baseline vs. shuffled-sequence control, Spearman ρ between predicted and true shift, for the originally-reported "winning" host-pair/readout/mechanism cells. N per cell ranges 294–9,609 depending on host pair and readout (e.g. EC→BS transcription n=3,589; EC→PA transcription n=9,609; BS→PA translation n=294; full per-cell N in `out/results/gate8_5_shift_prediction_summary.csv`, column `n_total`). **No interval shown — single point estimates per cell on the held-out fold**, consistent with how the original (now-retracted) result was itself reported; the retraction rests on the reference-only and shuffled-sequence *comparisons* (10 of 11 cells matched or beaten, respectively reproduced without real sequence information), not on interval non-overlap. Full data: `out/results/gate8_6_shift_controls.json`, `out/results/gate8_6_shift_controls_decisive_comparison.csv`. Script: `scripts/87_gate8_6_figures.py`.](figures/Figure8_shift_prediction_retraction.png)
 
 ### 3.9 Appendix: foundation models
 
