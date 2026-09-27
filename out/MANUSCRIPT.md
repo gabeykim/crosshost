@@ -94,6 +94,10 @@ Two amendments, both dated 2026-08-05 and both made before H-MAIN was evaluated.
 
 **Decision rule.** H-MAIN is MET only if the model's 90% CI lower bound exceeds the baseline's 90% CI upper bound. Overlapping intervals are NOT MET regardless of which mean is higher.
 
+### 2.7 AI assistance
+
+Data processing, model implementation, evaluation code, and audit scripts were written with the assistance of an AI coding agent (Claude Code, Anthropic), operating under task specifications written by the author. Every reported number is produced by a committed script in the public repository and verified by the audit suite described in Section 2.5. The author designed the study, specified the pre-registration, made all interpretive decisions, and is responsible for all claims.
+
 ---
 
 ## 3. Results
@@ -126,7 +130,7 @@ DRAFTS characterized transcription from the same library using cell-free lysates
 
 **The comparison rests on a single species pair.** Only *E. coli* and *B. subtilis* appear in both datasets; *P. aeruginosa* is absent from DRAFTS, and the three RS241 hosts DRAFTS does cover have at most 207 in-vivo sequences, of which the co-active subset would be smaller. We did not compute cross-modality correlations for them, and note that doing so is the most direct route to widening this comparison. The claim should be read as one well-characterized instance, not a survey.
 
-The mechanism is visible in how much each modality loses to the restriction. Of the EC–BS sequences measured in both hosts, **93.6% (807 of 862) are co-active in lysate against 26.0% (3,668 of 14,088) in vivo** — the same operation on the same pair. Cell-free activity is also continuous rather than bimodal, with no exact zeros among usable rows and no floor pile-up (the largest single rounded value accounts for 0.60% of rows); across the ten DRAFTS species the below-detection class is under 5% in nine, with *S. enterica* at 45.9% the exception. In vivo, cross-host agreement is carried substantially by agreement about what does not work. In lysate there is little silence to agree about.
+The mechanism is visible in how much each modality loses to the restriction. Of the EC–BS sequences measured in both hosts, **93.6% (807 of 862) are co-active in lysate against 26.0% (3,668 of 14,088) in vivo (transcription)** — the same operation on the same pair. Cell-free activity is also continuous rather than bimodal, with no exact zeros among usable rows and no floor pile-up (the largest single rounded value accounts for 0.60% of rows); across the ten DRAFTS species the below-detection class is under 5% in nine, with *S. enterica* at 45.9% the exception. In vivo, cross-host agreement is carried substantially by agreement about what does not work. In lysate there is little silence to agree about.
 
 **Implications for cell-free prototyping.** Cell-free measurement is a reasonable proxy for behavior *within* a host — within-species in-vitro/in-vivo agreement runs 0.69–0.90 across seven species (*E. coli* 0.901, *B. subtilis* 0.693), recomputed from DRAFTS's released source data and close to but not identical with their stated 0.71–0.90. What it does not reproduce is host-to-host difference, because the dominant in-vivo difference is which sequences are silent. A practitioner screening constructs for one fixed chassis via lysate should expect results broadly consistent with in vivo. A practitioner ranking a part across candidate hosts should not.
 
@@ -145,7 +149,7 @@ The mechanism is visible in how much each modality loses to the restriction. Of 
 | Active-fraction matched (per-host) | 0.509 (218) | 0.258 | 2.0× |
 | Top 26% of both (uniform quantile) | 0.386 (150) | 0.258 | 1.5× |
 
-The per-host matched variant restricts each cell-free host to the top fraction matching that host's own in-vivo active fraction; the uniform variant applies the pooled 26.0% co-active retention rate to both hosts as a hard quantile. The intermediate quantile cuts have no in-vivo counterpart, since the in-vivo restriction is a detection threshold rather than a quantile. Under the harshest cut the contrast falls to 1.5×, and 4 of the 45 DRAFTS species pairs fall below 0.258 — all four involving *L. lactis*. The 45-pair band is likewise regime-specific: 0.623–0.911 co-active, 0.364–0.892 pooled. EC–BS (0.677) is the third-lowest of the 45 under the regime we use, so the reported pair is conservative rather than favorable.
+The per-host matched variant restricts each cell-free host to the top fraction matching that host's own in-vivo active fraction (*E. coli* 61.11%, *B. subtilis* 27.98%), retaining 25.3% of shared sequences — close to the in-vivo co-active retention of 26.04%. The uniform variant applies 26.04% to each host independently, which compounds to 17.4% retention and is therefore the stricter of the two. Both take quantiles over the DNA-adequate population rather than the co-detected one. The intermediate quantile cuts have no in-vivo counterpart, since the in-vivo restriction is a detection threshold rather than a quantile. Under the harshest cut the contrast falls to 1.5×, and 4 of the 45 DRAFTS species pairs fall below 0.258 — all four involving *L. lactis*. The 45-pair band is likewise regime-specific: 0.623–0.911 co-active, 0.364–0.892 pooled. EC–BS (0.677) is the third-lowest of the 45 under the regime we use, so the reported pair is conservative rather than favorable.
 
 Prior work has noted that cell-free and in-vivo measurements can diverge. Pandi et al. (2022) report a cell-free/in-vivo yield correlation of 0.41 for 20 optimized constructs, concluding that "the optimal candidates are not necessarily directly transferable in vivo." That concerns a different quantity — absolute yield within a single host — but supports the general caution this section sharpens by identifying which axis of fidelity holds and which does not.
 
@@ -265,7 +269,7 @@ The CROSSHOST benchmark — frozen splits, evaluation code, nine baseline system
 
 ## Acknowledgements
 
-[Optional — note correspondence with the source-dataset authors here.]
+I thank Harris Wang for helpful correspondence about the Johns et al. and DRAFTS datasets, and for connecting me with Sung Sun Yim and Nathan Johns.
 
 ## Funding
 

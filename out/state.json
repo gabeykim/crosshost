@@ -2950,5 +2950,104 @@
       "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
       "provenance": "0 orphans (173 files)"
     }
+  },
+  "gate_19": {
+    "date_run": "2026-09-27",
+    "outcome": "PASS",
+    "first_line": "manuscript was NOT current at gate open (both copies still Gate 14; draft was at out/PREPRINT/MANUSCRIPT_v8.md); reported and stopped per Task 0, then synced on confirmation and all six tasks completed",
+    "task0_sync": {
+      "initial_state": "both tracked copies byte-identical to bcc660f (Gate 14), mtime Aug 19, all markers absent",
+      "draft_found_at": "out/PREPRINT/MANUSCRIPT_v8.md (Sep 26 21:59, 46449 bytes, untracked)",
+      "markers_verified": [
+        "title 'evidence that'",
+        "### 2.2 Two dataset collisions",
+        "3.1-3.9 with 3.3 Scope and supporting checks",
+        "## 5. Limitations and unresolved gaps with 19 sequential items",
+        "all six 3.2 figures (0.616/0.655/0.258/0.677/93.6%/26.0%)"
+      ],
+      "action": "copied to both canonical paths, _v8 deleted, committed as d8fb600 with no edits",
+      "sync_commit": "d8fb600"
+    },
+    "task1_regime_description": {
+      "applied": true,
+      "instruction_correction": "gate said 'replace the first two sentences'; the target's first sentence was a single semicolon-joined sentence covering both variants, so replacing two would have deleted the 'intermediate quantile cuts' sentence the gate says to keep. Confirmed with the user, replaced only the first sentence.",
+      "figures_added": [
+        "61.11%",
+        "27.98%",
+        "25.3%",
+        "26.04%",
+        "17.4%"
+      ]
+    },
+    "task2_transcription_scope": {
+      "applied": true,
+      "edit": "added '(transcription)' to the 93.6%/26.0% sentence in 3.2",
+      "no_cross_readout_retention_table_added": true
+    },
+    "task3_figure_s5_collision": {
+      "old_label": "Figure S5",
+      "new_label": "Figure S11",
+      "file_renamed": "FigureS5_feature_ablation.png -> FigureS11_feature_ablation.png (git mv)",
+      "s5_slot": "left deliberately empty with an explanatory placeholder in FIGURE_LEGENDS.md",
+      "rationale": "renumbering within S1-S10 cannot fix it -- any figure of ours in the S5 slot collides equally with DRAFTS's Appendix Fig. S5 cited in 3.2 -- so the slot is vacated",
+      "references_found": 1,
+      "dangling_references": 0,
+      "note": "third collision of this species after 'Pa' and 'usable'"
+    },
+    "task4_figure8_caption": {
+      "applied": true,
+      "n_range_added": "294-9,609 per cell; EC->BS tx 3,589, EC->PA tx 9,609, BS->PA tl 294",
+      "source": "gate8_5_shift_prediction_summary.csv column n_total",
+      "all_eight_captions_now_state_N_and_interval": true
+    },
+    "task5_disclosures": {
+      "section_2_7_ai_assistance_added": true,
+      "acknowledgements_replaced": true,
+      "funding_competing_authorcontrib": "untouched"
+    },
+    "task6_consistency": {
+      "numbers_changed_beyond_spec": 0,
+      "numbers_added": [
+        "17.4%",
+        "25.3%",
+        "26.04%",
+        "27.98%",
+        "61.11%",
+        "section refs 2.5/2.7"
+      ],
+      "manuscript_diff": "7 insertions, 3 deletions",
+      "reconciliation": {
+        "numbers_checked_against_out_results": 48,
+        "contradictions": 0,
+        "absences_confirmed_not_errors": [
+          "translation co-active n (3,826/866/314) -- draft cites translation rho but not n",
+          "0.597 (82-seq overlap) -- draft uses full-set 0.677 instead; 15-seq overlap rho=0.147 reported in Limitations item 5",
+          "GC-controlled translation values (0.125/0.738/0.230) not cited"
+        ]
+      },
+      "cross_references": {
+        "section_refs_checked": 10,
+        "unresolved": 0,
+        "limitations_item_refs": 0
+      },
+      "limitations_items": {
+        "count": 19,
+        "sequential": true,
+        "duplicates": 0,
+        "gaps": 0
+      },
+      "copies_byte_identical": true,
+      "md5": "7f57d6260fec26cfd8e531f2a4178e53",
+      "verify_citations": "11 verified / 0 unexplained / 5 explained / 0 unresolved / 16 total -- no regression",
+      "stray_full_drafts_in_out": 0
+    },
+    "audits_start": {
+      "leakage": "6/6 PASS",
+      "provenance": "0 orphans (173 files)"
+    },
+    "audits_end": {
+      "leakage": "6/6 PASS (26/26 manifest files, 0 mismatches)",
+      "provenance": "0 orphans (173 files)"
+    }
   }
 }
