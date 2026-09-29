@@ -3420,5 +3420,118 @@
       "out/GATE23_MEMO.md",
       "out/state.json"
     ]
+  },
+  "gate_24": {
+    "date_run": "2026-09-29",
+    "outcome": "PASS",
+    "first_line": "body word count 5,870 (from 6,240, -370); no numbers lost -- zero numeric tokens disappeared, and 0.912 / 0.8485 / all disattenuation figures confirmed present in the rendered PDF",
+    "cuts_applied": 13,
+    "borderline_untouched": 6,
+    "c_number_mapping": "GATE23_CUT_CANDIDATES.md carries no C-labels; C1-C10 map to the ten CUT rows in file order, confirmed because the ten spans sum to 325 words, matching the file's stated total (38+23+36+35+26+12+18+35+42+60)",
+    "cuts": {
+      "C1": "sec 1, 38w, second Chan & Bernstein quote",
+      "C2": "sec 2.3, 23w, forward pointer to the Discussion",
+      "C3": "sec 2.6, 36w, the Amendment 1 sentence",
+      "C4": "sec 3.1, 35w, re-explanation of the two regimes",
+      "C5": "sec 3.5, 26w, restatement of the pre-registration",
+      "C6": "sec 3.6, 12w, 'We quantify the magnitude rather than...'",
+      "C7": "sec 3.7, 18w, FiLM generalisation tail",
+      "C8": "sec 4, 35w, recapitulation of 3.1's robustness checks",
+      "C9": "sec 4, 42w, recapitulation of 3.2's pooled result",
+      "C10": "sec 4, 60w, 'On the form of the negative result'",
+      "C11": "sec 1, 6w, 'This paper addresses the second group.' -- not in the candidates file",
+      "C12": "sec 3.2, 18w, 'We report this first because...' -- not in the candidates file; reverses the Gate 23 recommendation, which was to keep this and cut the Discussion duplicate (C9). Both applied as instructed.",
+      "C17": "sec 2.7, 24w, middle clause of the AI-assistance statement; result matches the gate's specified text exactly"
+    },
+    "no_ops": [
+      "C13-C16 were 'do not cut' instructions for spans that were never candidates in GATE23_CUT_CANDIDATES.md. C13's 'shift-prediction warning in 3.7' does not exist (the retraction is 3.8; the actionable warning is Limitations item 8). C14 and C16 were argued for keeping in the candidates file's prose and never listed. C15's listed candidate was the hedge sentence after Pandi, not the citation, and it is borderline and therefore untouched."
+    ],
+    "numbers": {
+      "tokens_lost_entirely": 0,
+      "deduplicated_only": {
+        "2024": "12->11, same citation in Intro para 1, Discussion, References",
+        "100": "3->2, survives in 2.6's H-MAIN statement and the Figure 4 caption",
+        "1": "10->9, the '**Amendment 1**' label itself",
+        "4": "11->10, 'unfrozen-conv4'"
+      },
+      "confirmed_present_in_pdf": {
+        "0.912": 2,
+        "0.8485": 2,
+        "0.341": 5,
+        "0.515": 1,
+        "0.308": 1,
+        "0.240": 1,
+        "0.286": 1,
+        "0.929": 1
+      },
+      "guard": "script asserts all eight required figures before writing and fails closed",
+      "tokenizer_defect_fixed": "first run failed on ['100,'] -- a greedy [\\d,]* swallowed the trailing comma so 'N=100,' and 'N=100 ' read as different figures; the tokenizer now requires a token to end in a digit"
+    },
+    "reported_not_fixed": [
+      "Discussion after C8: the paragraph now opens '**Robustness, not proof.** Neither correction was pre-registered...' -- 'Neither correction' has no antecedent, because the two corrections were introduced by the sentence C8 removed. Minimal repair: 'Neither of the two corrections in Section 3.1 was pre-registered.'",
+      "Section 2.6 after C3: 'Two amendments, both dated 2026-08-05... **Amendment 2** widened...' announces two amendments and describes one; Amendment 1 is never named. Minimal repair: drop the label to 'The second widened...'.",
+      "C17's rationale does not hold: section 2.5 is Splitting and makes no claim about the provenance of every reported number. After the cut the manuscript no longer states anywhere that every number it reports comes from a committed script; the nearest survivor is Data and Code Availability listing the audits as available code. Applied as specified because it is a content judgement.",
+      "Side effect of C17: that clause held the manuscript's only reference to Section 2.5, so 2.5 is now cross-referenced from nowhere. The heading remains and nothing is unresolved."
+    ],
+    "verification": {
+      "body_words_before": 6240,
+      "body_words_after": 5870,
+      "delta": -370,
+      "resource_warnings": 0,
+      "images": 9,
+      "caption_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "caption_text_lines": [
+        255,
+        283,
+        314,
+        432,
+        468,
+        500,
+        539,
+        582
+      ],
+      "glyphs": {
+        "rho": 21,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 2
+      },
+      "pages": 21,
+      "pages_unchanged": true,
+      "regime_table": "renders as an aligned 6-row table",
+      "copies_identical": true,
+      "md5": "a6f96c999971c040632c9f9ab0f720b9",
+      "cross_references": 9,
+      "cross_references_unresolved": 0,
+      "limitations_items": 12,
+      "figure_embeds": 9,
+      "verify_citations": "11 VERIFIED / 0 unexplained / 5 explained / 0 unresolved / 16 total",
+      "whitespace": "0 triple newlines, 0 space-before-punctuation; only double spaces are the YAML preamble's indentation",
+      "section_2_7": "matches the gate's specified replacement text exactly"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 173 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 173 files"
+    },
+    "files_written": [
+      "out/PREPRINT/MANUSCRIPT.md",
+      "out/MANUSCRIPT.md",
+      "manuscript.pdf",
+      "scripts/104_gate24_apply_cuts.py",
+      "out/GATE24_MEMO.md",
+      "out/state.json"
+    ]
   }
 }
