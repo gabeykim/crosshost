@@ -18,12 +18,12 @@
 
 PYTHON := python3
 
-.PHONY: all reproduce reproduce-full package audit verify-citations manuscript test clean help
+.PHONY: all reproduce reproduce-full package audit verify-citations pdf manuscript test clean help
 
 help:
 	@echo "make audit             - run both audit scripts (leakage + provenance), fast, offline, VERIFIED"
 	@echo "make verify-citations  - mechanically verify every manuscript citation against CrossRef/arXiv (live network, run on demand alongside the audits -- not part of 'audit' itself, which must stay fast and offline)"
-	@echo "make manuscript        - build manuscript.pdf from out/PREPRINT/MANUSCRIPT.md (needs pandoc + xelatex), VERIFIED"
+	@echo "make pdf               - build manuscript.pdf from out/PREPRINT/MANUSCRIPT.md (needs pandoc + xelatex; alias: make manuscript), VERIFIED"
 	@echo "make test              - run package tests (loaders, evaluate API, held-out scoring), VERIFIED"
 	@echo "make package           - (re)build package/ from data/ and out/, VERIFIED"
 	@echo "make reproduce         - regenerate all figures/tables from shipped intermediate results, fast"
@@ -40,7 +40,16 @@ verify-citations:
 # working directory, NOT against the input file's directory. The figure paths in
 # MANUSCRIPT.md are relative to the manuscript itself, so that out/PREPRINT/ stays
 # a self-contained package for the Zenodo deposit.
-manuscript:
+#
+# Do NOT add `-V header-includes:...` here. MANUSCRIPT.md carries its own YAML
+# header-includes block (float + \floatplacement{figure}{H}, and the caption
+# package with labelformat=empty). A -V header-includes on the command line
+# REPLACES that block rather than adding to it, which silently drops the caption
+# setting and restores LaTeX's automatic "Figure N:" on top of each caption's own
+# "**Figure N -- ...**" label. Verified in Gate 21.
+#
+# xelatex ships in /Library/TeX/texbin, which is not on the default PATH on macOS.
+pdf manuscript:
 	pandoc out/PREPRINT/MANUSCRIPT.md -o manuscript.pdf --pdf-engine=xelatex \
 		-V mainfont="Times New Roman" --resource-path=out/PREPRINT
 

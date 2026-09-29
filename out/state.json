@@ -3185,5 +3185,109 @@
       "out/GATE20_MEMO.md",
       "out/state.json"
     ]
+  },
+  "gate_21": {
+    "date_run": "2026-09-28",
+    "outcome": "PASS",
+    "first_line": "all 9 images present, all 8 captions in ascending order, all glyph counts unchanged from the Gate 20 build; fixed by moving one image line, not by changing float placement",
+    "premise_corrections": [
+      "NOT float placement: \\usepackage{float} and \\floatplacement{figure}{H} have been in the preamble since Gate 20 (generated .tex preamble lines 71-72), carried by MANUSCRIPT.md's own YAML header-includes. With H placement a float cannot move, so re-pinning could not have been the cure.",
+      "The real cause was Markdown source order: Gate 20 placed each figure after the paragraph it illustrates, and section 3.5 discusses the conditioning mechanisms (Figure 5) before the pre-registered kill gate (Figure 4).",
+      "The gate's proposed command would have REGRESSED the build: '-V header-includes:' REPLACES the document's YAML header-includes rather than appending to it. Tested -- the resulting preamble held only '\\usepackage{float}\\floatplacement{figure}{H}' and had lost \\usepackage{caption}/\\captionsetup{labelformat=empty}, which would have restored LaTeX's automatic 'Figure N:' on top of each caption's own '**Figure N -- ...**' label. Figure order would have been unchanged.",
+      "float was already installed in TeX Live 2026 BasicTeX (/usr/local/texlive/2026basic/texmf-dist/tex/latex/float/float.sty); no tlmgr install and no substitute approach were needed."
+    ],
+    "fix": {
+      "action": "moved the Figure 4 image line above the Figure 5 image line, to immediately after section 3.5's opening paragraph",
+      "rationale": "section 3.5 is titled 'Testing the prediction (Figures 4-5)' and Figure 4 is the pre-registered test it is named for; Figure 5's caption says 'same resampling scheme as Figure 4', which now resolves backwards",
+      "rejected": [
+        "reordering the prose paragraphs (a manuscript text change this gate forbids)",
+        "renumbering the figures (would alter captions)"
+      ],
+      "diff": "4 insertions / 4 deletions across the two copies -- one image line plus one blank line, moved",
+      "prose_lines_identical_vs_HEAD": true,
+      "prose_line_count": 172,
+      "all_numbers_identical_vs_HEAD": true,
+      "image_line_set_identical_vs_HEAD": true
+    },
+    "build_command": "pandoc out/PREPRINT/MANUSCRIPT.md -o manuscript.pdf --pdf-engine=xelatex -V mainfont=\"Times New Roman\" --resource-path=out/PREPRINT",
+    "verification": {
+      "resource_warnings": 0,
+      "image_count": 9,
+      "caption_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "caption_text_lines": [
+        265,
+        293,
+        325,
+        442,
+        478,
+        510,
+        550,
+        593
+      ],
+      "caption_order_ascending": true,
+      "gate_grep_artifact": "the gate's exact command, grep -n '^Figure [0-9] --', returns only 3 of 8: pdftotext prefixes the first line of each page with a form feed (\\f) and five captions begin a page (od -c confirms '2 6 5 : \\f F i g u r e'). Dropping the ^ anchor returns all eight. Nothing missing from the PDF.",
+      "glyphs": {
+        "rho": 21,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 2
+      },
+      "glyph_note": "12/3/2/2/1 are the PRE-FIGURE counts from before Gate 20 embedded captions; the captions contain 9 rho and 1 approx (12+9=21, 1+1=2). Both values are unchanged from the Gate 20 build, so nothing regressed in this gate.",
+      "pages_before": 23,
+      "pages_after": 22,
+      "page_drop_explanation": "pure repagination: Figure 4 (2100x900) is shorter than Figure 5 (2400x1350), so moving it earlier packs one page tighter. Verified by extracting text from the committed Gate 20 PDF and this one, stripping page numbers, normalising whitespace and sorting: 639 lines each, zero diff.",
+      "section_3_3_table": "renders as an aligned table",
+      "email_placeholder_remaining": 0,
+      "email_present": "gabeykim@stanford.edu",
+      "zenodo_placeholder_present": true,
+      "figure_pages": [
+        7,
+        8,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "make_target": {
+      "primary": "pdf",
+      "alias": "manuscript",
+      "verified": "deleted manuscript.pdf and rebuilt from scratch: 22 pages, 9 images, 8 captions",
+      "comments_added": [
+        "--resource-path required: pandoc resolves image paths against the working directory",
+        "do NOT add -V header-includes: it replaces the manuscript's YAML block and drops the caption setting",
+        "xelatex lives in /Library/TeX/texbin, not on the default macOS PATH"
+      ]
+    },
+    "manuscript_text_changed": false,
+    "numbers_changed": false,
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 173 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 173 files"
+    },
+    "files_written": [
+      "out/PREPRINT/MANUSCRIPT.md",
+      "out/MANUSCRIPT.md",
+      "manuscript.pdf",
+      "scripts/102_gate21_reorder_figure4.py",
+      "Makefile (pdf target)",
+      "out/GATE21_MEMO.md",
+      "out/state.json"
+    ]
   }
 }
