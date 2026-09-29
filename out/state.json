@@ -3289,5 +3289,136 @@
       "out/GATE21_MEMO.md",
       "out/state.json"
     ]
+  },
+  "gate_23": {
+    "date_run": "2026-09-29",
+    "outcome": "PASS (Task 1 applied; Task 2 reported only)",
+    "first_line": "body word count after Task 1 is 6,240; Task 2 identifies 16 candidates totalling 484 words (325 recommended, 159 borderline)",
+    "premise_corrections": [
+      "The manuscript is NOT a hybrid. It was byte-identical to the Gate 21 commit 366661e (md5 92a11ed5560009c6d10860308ec36d74) with the UNCOMPRESSED Results and Methods: Results 3.1-3.9, body 6,349 words, not ~4,650. The compressed draft has still not reached disk (third gate in a row).",
+      "There is no '## 6. What we could not do' section to merge in; Gate 22 verified its absence and that was one of the three markers that matched.",
+      "Section 2.1 ALREADY contains the denominator note that Gate 22's Task 2 would have added: 52.0%/18.9%/83.8%, the 17.9% recomputation, the 1.0-point difference, and 'the percentages are not comparable across denominators'. So cutting old item 17's second clause loses nothing.",
+      "The ceiling metric is absorbed into section 3.8 under this numbering, not 3.7; 3.8 already ends 'It appears nowhere in this paper's results'.",
+      "Data and Code Availability had no existing reproduce-full clause; one was written to carry the relocated numbers.",
+      "The Introduction already records the four independent attempts, so cutting old item 19 loses nothing."
+    ],
+    "task1": {
+      "applied": true,
+      "items_before": 19,
+      "items_after": 12,
+      "sequential": true,
+      "limitations_words_before": 940,
+      "limitations_words_after": 712,
+      "body_words_before": 6349,
+      "body_words_after": 6240,
+      "net_body_saving": 109,
+      "numbers_entirely_lost": 0,
+      "numbers_entirely_new": 0,
+      "deduplicated_only": {
+        "17.9": "2->1, still in 2.1",
+        "18.9": "2->1, still in 2.1",
+        "1.0": "2->1, still in 2.1",
+        "Section 3.8": "4->3, still in Intro and item 8"
+      },
+      "merges": {
+        "new_9": "old 9 + 10 (three dataset collisions)",
+        "new_10": "old 14 + 15 (Evo 2 + non-native protocols)",
+        "new_3": "old 3 + Pearson clause from old 17"
+      },
+      "cut_clean": {
+        "old_11": "ceiling metric; no numbers; 3.8 covers it",
+        "old_17b": "17.9/18.9/1.0-point; all three in 2.1",
+        "old_19": "no fifth attempt; Intro and Discussion record the four attempts"
+      },
+      "relocated": {
+        "old_13": "~300x cost cliff and 1,024-row chunk -> section 2.4 Architecture",
+        "old_18": "reproduce-full status, Python 3.14.2, six defects, four iterations, 40+ hours -> Data and Code Availability"
+      },
+      "relocation_rationale": "the gate requires both '12 items' and 'preserve every number', and both items carried numbers found nowhere else; relocating satisfies both. This is why the net body saving is 109 words rather than 228 -- about 119 words returned as relocations.",
+      "option_offered": "if the two relocated clauses should simply go, the body drops to roughly 6,120"
+    },
+    "task2": {
+      "applied": false,
+      "report": "out/GATE23_CUT_CANDIDATES.md",
+      "candidates": 16,
+      "recommended_cut_words": 325,
+      "body_if_applied": 5915,
+      "borderline_words": 159,
+      "body_if_all_applied": 5756,
+      "densest_source": "Discussion: 3 candidates, 178 of the 325 recommended words, all recapitulations of Results or the Introduction",
+      "flagged_sections_yielding_less": {
+        "2.6": "only the Amendment 1 sentence (42 words); Amendment 2's bootstrap parameters are cited by 3.5 and by the Figure 4 and 5 captions",
+        "3.3": "two borderline candidates and no clean cut; the enumeration of what was searched in DRAFTS is what makes the novelty claim checkable"
+      },
+      "no_candidates_in": [
+        "Abstract",
+        "2.1",
+        "2.4",
+        "3.4",
+        "3.8",
+        "3.9"
+      ],
+      "verification": "every quoted span verified to appear exactly once in the manuscript; word counts measured, not estimated"
+    },
+    "task3_build": {
+      "command_used": "make pdf: pandoc out/PREPRINT/MANUSCRIPT.md -o manuscript.pdf --pdf-engine=xelatex -V mainfont=\"Times New Roman\" --resource-path=out/PREPRINT",
+      "gate_command_rejected": "the gate again specified -V \"header-includes:...\", which REPLACES the manuscript's own YAML header-includes rather than appending, dropping \\captionsetup{labelformat=empty} and restoring LaTeX's automatic 'Figure N:'. Tested and documented in Gate 21; the Makefile carries a comment saying not to add it. Float pinning is already in the manuscript's YAML, so the flag is redundant as well as harmful. Third gate in which this command has been specified.",
+      "resource_warnings": 0,
+      "images": 9,
+      "caption_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "caption_text_lines": [
+        267,
+        295,
+        327,
+        444,
+        480,
+        512,
+        552,
+        595
+      ],
+      "figure4_precedes_figure5": true,
+      "glyphs": {
+        "rho": 21,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 2
+      },
+      "pages_before": 22,
+      "pages_after": 21,
+      "section_3_3_table": "renders as a table",
+      "email_placeholder_remaining": 0,
+      "zenodo_placeholder_present": true,
+      "cross_references_checked": 10,
+      "cross_references_unresolved": 0,
+      "limitations_item_refs": 0,
+      "copies_identical": true,
+      "md5": "75b2c27830b57df95b3c79c4483dc994",
+      "verify_citations": "11 VERIFIED / 0 unexplained / 5 explained / 0 unresolved / 16 total"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 173 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 173 files"
+    },
+    "files_written": [
+      "out/PREPRINT/MANUSCRIPT.md",
+      "out/MANUSCRIPT.md",
+      "manuscript.pdf",
+      "scripts/103_gate23_limitations.py",
+      "out/GATE23_CUT_CANDIDATES.md",
+      "out/GATE23_MEMO.md",
+      "out/state.json"
+    ]
   }
 }

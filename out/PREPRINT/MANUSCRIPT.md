@@ -78,7 +78,7 @@ Both vectors are z-scored across all six hosts rather than fold-locally, since h
 
 A four-layer 1D convolutional trunk (kernel widths 15/9/5/3, channels 128/128/64/64, matching the 165 bp part length), BatchNorm, a residual connection on the final conv layer, global average pooling, and two two-stage output heads (transcription, translation; each a classifier plus a strength regressor on actives) — 213,956 parameters with no conditioning pathway (`SequenceOnlyCNN`, the primary baseline).
 
-The pre-registered conditioning mechanism is FiLM: a small MLP maps the host vector to per-channel (γ, β) applied multiplicatively at conv layers 2 and 3 (~227K genomic variant, ~226K physiology variant). Three alternatives were added later to test whether FiLM's own weakness rather than conditioning per se explained the negative result: concatenation, per-host output heads combined by prediction-space averaging, and per-host heads using the nearest training host. Those three across six (host, readout) cells give the 18 comparisons in Section 3.5; FiLM is the comparator, not one of the three.
+The pre-registered conditioning mechanism is FiLM: a small MLP maps the host vector to per-channel (γ, β) applied multiplicatively at conv layers 2 and 3 (~227K genomic variant, ~226K physiology variant). Three alternatives were added later to test whether FiLM's own weakness rather than conditioning per se explained the negative result: concatenation, per-host output heads combined by prediction-space averaging, and per-host heads using the nearest training host. Those three across six (host, readout) cells give the 18 comparisons in Section 3.5; FiLM is the comparator, not one of the three. Unbatched inference over a large pooled array showed a ~300× non-linear cost cliff on both CPU and Apple Silicon MPS; inference is chunked at 1,024 rows by default, numerically verified identical to the unbatched path.
 
 ### 2.5 Splitting
 
@@ -251,7 +251,7 @@ The modality contrast survived a third check, the one that came closest to overt
 
 2. **The modality contrast rests on one species pair and is regime-dependent.** *E. coli*–*B. subtilis* is the only pair present in both datasets. Cell-free EC–BS ranges 0.386–0.677 across six restriction levels against an in-vivo co-active 0.258 — a ratio between 1.5× and 2.6×. Under the harshest cut, 4 of 45 DRAFTS pairs fall below 0.258, all involving *L. lactis*. The pooled cell-free figures require imputing activity 0 for `no_RNA_counts` rows, a definitional assignment rather than a measurement. We did not compute cross-modality correlations for the three RS241 hosts DRAFTS covers, which is the most direct route to widening the comparison.
 
-3. **No direct reliability estimate exists for *B. subtilis* or *P. aeruginosa*, or for translation in any host.** No replicate or condition-series data exists for them in the released tables. The one measured reliability (0.912, EC transcription) is for the host and readout the central claim depends on least; *B. subtilis*'s own reliability is bounded by a sensitivity grid, which is a different strength of evidence than a measurement.
+3. **No direct reliability estimate exists for *B. subtilis* or *P. aeruginosa*, or for translation in any host.** No replicate or condition-series data exists for them in the released tables. The one measured reliability (0.912, EC transcription) is for the host and readout the central claim depends on least; *B. subtilis*'s own reliability is bounded by a sensitivity grid, which is a different strength of evidence than a measurement. Relatedly, we did not re-derive Johns et al.'s per-cell Pearson values from their Supplementary Figs. S13/S15 — only the captions and main-text summary were available in the source materials, and the qualitative claim is confirmed from quoted text.
 
 4. **The translation floor artifact.** `protein_log10` is pinned at a per-host floor for 66.5% / 89.9% / 10.1% of nominally usable rows (EC/BS/PA). Corrected usable-for-regression N: 9,146 / 1,101 / 17,630.
 
@@ -263,27 +263,13 @@ The modality contrast survived a third check, the one that came closest to overt
 
 8. **Regression to the mean is a serious confound for any shift-prediction extension of this dataset.** Run a reference-value-only baseline and a shuffled-sequence control before trusting such a result (Section 3.8).
 
-9. **The two datasets do not join cleanly (Section 2.2).** "Usable" differs between them, so joining on `n_shared_usable` compares mismatched restriction regimes; and the ID spaces are disjoint, so any join must use sequence text.
+9. **Three dataset collisions, each of which silently corrupts a naive join (Section 2.2).** "Usable" differs between the two datasets, so joining on `n_shared_usable` compares mismatched restriction regimes. The ID spaces are disjoint, so any join must use sequence text. And DRAFTS's `Pa` is *Pantoea agglomerans*, not *P. aeruginosa* — which is absent from DRAFTS entirely — so a script matching on the bare two-letter code merges two unrelated organisms.
 
-10. **DRAFTS's `Pa` is *Pantoea agglomerans*, not *P. aeruginosa***, which is absent from DRAFTS entirely. A script matching on the bare two-letter code will silently merge two unrelated organisms.
+10. **Evo 2 was not evaluated, and the two foundation models that were did not run under their native protocols.** The official package requires CUDA, Flash Attention, and Transformer Engine on a Hopper GPU (verified against the ArcInstitute repository and issue #67); this work ran on Apple Silicon, MPS-only. For the two models evaluated instead, a uniform frozen-embedding head-to-head was chosen for comparability between architecturally different models, but it measurably cost PromoGen2 relative to its published native numbers (Section 3.9), and the comparison was not re-run under that protocol. The capacity objection is weakened, not closed.
 
-11. **The retired ceiling metric** (Section 3.8) appears in no baseline table.
+11. **We could not separate two explanations for the transcription/translation asymmetry** — that translation is fundamentally less cross-host-conserved, versus that the FACS-seq readout is too noisy to support this analysis. Our working view is a mix weighted toward noise for *B. subtilis* specifically, stated as inference rather than a measured result.
 
 12. **The held-out evaluation split is not cryptographically enforced.** The public model-development table contains the withheld fold's labels, since it is the same table used for development; the protocol relies on convention, not a technical barrier.
-
-13. **A ~300× inference performance cliff, now fixed.** Unbatched inference over a large pooled array showed a severe non-linear cost cliff on both CPU and Apple Silicon MPS. Now chunked at 1,024 rows by default, numerically verified identical to the unbatched path.
-
-14. **Evo 2 was not evaluated.** The official package requires CUDA, Flash Attention, and Transformer Engine on a Hopper GPU (verified against the ArcInstitute repository and issue #67); this work ran on Apple Silicon, MPS-only.
-
-15. **The foundation-model comparison used one protocol, not each model's native one.** A uniform frozen-embedding head-to-head was chosen for comparability between architecturally different models, but it measurably cost PromoGen2 relative to its published native numbers (Section 3.9), and the comparison was not re-run under that protocol. The capacity objection is weakened, not closed.
-
-16. **We could not separate two explanations for the transcription/translation asymmetry** — that translation is fundamentally less cross-host-conserved, versus that the FACS-seq readout is too noisy to support this analysis. Our working view is a mix weighted toward noise for *B. subtilis* specifically, stated as inference rather than a measured result.
-
-17. **We did not re-derive Johns et al.'s per-cell Pearson values** from their Supplementary Figs. S13/S15; only the captions and main-text summary were available in the source materials, and the qualitative claim is confirmed from quoted text. We also have not traced the 1.0-point difference between our *B. subtilis* union-set active fraction (17.9%) and the published 18.9%.
-
-18. **`make reproduce-full`** — the complete from-raw-data pipeline including all model training — was not re-executed end to end, as it would cost the 40+ cumulative hours already expended. Every script in the dependency graph has run and produced its output at least once. `make reproduce` (the fast path), `make audit`, and `make verify-citations` were verified from a fresh `git clone`; that verification found six undocumented defects — no root README, setup docs reachable only via a Makefile header comment, an install instruction failing from the repository root, an audit check failing unconditionally in any clean checkout, and two undeclared dependencies — each fixed, with the test re-run until it passed with zero undocumented steps (four iterations). Verified on macOS, Apple Silicon, Python 3.14.2 only.
-
-19. **We did not run a fifth attempt to recover a positive cross-host signal.** Four independent, pre-specified attempts — three conditioning mechanisms, a target reframing, and a subset-restriction hypothesis — was the number judged sufficient before further attempts would risk reshaping the search until something stuck.
 
 ---
 
@@ -292,6 +278,8 @@ The modality contrast survived a third check, the one that came closest to overt
 All data are public: Johns et al. (2018) via BioProject PRJNA431139 and the paper's supplementary tables; DRAFTS via the PMC6692573 open-access package; reference proteomes via PaxDb.
 
 The CROSSHOST benchmark — frozen splits, evaluation code, nine baseline systems, the leakage, provenance, and restriction-regime audits, and the citation-verification script — is available at https://github.com/gabeykim/crosshost and archived at [Zenodo DOI]. Derived activity values from Johns et al. are redistributed with attribution; PromoGen2-derived content is held in a separate deposit under CC BY-NC-4.0.
+
+`make reproduce` (the fast path), `make audit`, and `make verify-citations` were verified from a fresh clone on macOS, Apple Silicon, Python 3.14.2 — a test that surfaced six undocumented defects, each fixed and the test re-run until it passed with zero undocumented steps (four iterations). `make reproduce-full`, the complete from-raw-data pipeline including all model training, was not re-executed end to end, as it would cost the 40+ cumulative hours already expended; every script in the dependency graph has run and produced its output at least once.
 
 ## Acknowledgements
 
