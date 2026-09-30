@@ -140,3 +140,9 @@ package:
 clean:
 	rm -rf package/data/core/*.parquet package/baselines/*.csv package/baselines/*.json
 	@echo "Removed generated package/ data files (source data/ and out/ untouched)."
+
+pdf:
+	pandoc out/PREPRINT/MANUSCRIPT.md -o manuscript.pdf \
+	  --pdf-engine=xelatex \
+	  --resource-path=out/PREPRINT \
+	  -V mainfont="Times New Roman"
