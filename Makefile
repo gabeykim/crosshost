@@ -141,4 +141,3 @@ clean:
 	rm -rf package/data/core/*.parquet package/baselines/*.csv package/baselines/*.json
 	@echo "Removed generated package/ data files (source data/ and out/ untouched)."
 
-pdf:
