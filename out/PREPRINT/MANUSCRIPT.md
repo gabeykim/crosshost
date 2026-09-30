@@ -271,7 +271,7 @@ DNABERT-2 (117M parameters; Zhou et al., 2024) and PromoGen2 (148M; Xia et al., 
 
 All data are public: Johns et al. (2018) via BioProject PRJNA431139 and the paper's supplementary tables; DRAFTS via the PMC6692573 open-access package; reference proteomes via PaxDb.
 
-The CROSSHOST benchmark — frozen splits, evaluation code, nine baseline systems, the leakage, provenance, and restriction-regime audits, and the citation-verification script — is available at https://github.com/gabeykim/crosshost and archived at [Zenodo DOI]. Derived activity values from Johns et al. are redistributed with attribution; PromoGen2-derived content is held in a separate deposit under CC BY-NC-4.0.
+The CROSSHOST benchmark — frozen splits, evaluation code, nine baseline systems, the leakage, provenance, and restriction-regime audits, and the citation-verification script — is available at https://github.com/gabeykim/crosshost and archived at [Zenodo DOI]. Derived activity values from Johns et al. are redistributed with attribution; PromoGen2 and DNABERT-2 embeddings were computed from publicly released model weights and are not redistributed.
 
 `make reproduce` (the fast path), `make audit`, and `make verify-citations` were verified from a fresh clone on macOS, Apple Silicon, Python 3.14.2. `make reproduce-full`, the complete from-raw-data pipeline including all model training, was not re-executed end to end, as it would cost the 40+ cumulative hours already expended; every script in the dependency graph has run and produced its output at least once.
 
