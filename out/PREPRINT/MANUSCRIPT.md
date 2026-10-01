@@ -104,7 +104,7 @@ One amendment, dated 2026-08-05 and made before H-MAIN was evaluated, widened th
 
 ### 2.7 AI assistance
 
-Data processing, model implementation, evaluation code, and audit scripts were written with the assistance of an AI coding agent (Claude Code, Anthropic), operating under task specifications written by the author. The author designed the study, specified the pre-registration, made all interpretive decisions, and is responsible for all claims.
+Data processing, model implementation, evaluation code, audit scripts, and manuscript drafting were carried out with the assistance of an AI system (Claude, Anthropic), operating under task specifications and editorial direction from the author. The author designed the study, specified the pre-registration, made all interpretive decisions, verified every reported number against committed outputs, and is responsible for all claims.
 
 ---
 
