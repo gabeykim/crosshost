@@ -3787,5 +3787,106 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 176 files"
     }
+  },
+  "gate_27": {
+    "date_run": "2026-10-01",
+    "outcome": "PASS",
+    "first_line": "the figures are CURRENT -- all nine match their embedded captions, verified by extracting the images from manuscript.pdf itself. The REVIEW was wrong on all three counts; Gate 26's verification was correct; the reviewer read a stale PDF.",
+    "task1_ground_truth": {
+      "working_tree_clean_at_open": true,
+      "figures_written": "2026-09-30 21:07",
+      "pdf_built": "2026-09-30 21:08:34",
+      "commit_3cfbca6": "2026-09-30 21:11:46",
+      "ordering": "figures -> pdf -> commit, so the committed PDF was built from the committed figures; no window for a stale figure",
+      "method": "extracted embedded images with `pdfimages -png manuscript.pdf` and inspected them; re-reading the source PNGs would not have settled the dispute",
+      "figure_2b": "five strata (Proteobacteria, Firmicutes, Actinobacteria, Bacteroidetes, Cyanobacteria), N on all 15 bars -- MATCH",
+      "figure_5": "nine systems, six panels, y-axis shared; EC transcription shows concat 0.555 and perhost_heads_avg 0.615 -- MATCH",
+      "figure_3": "panel A four bars (0.616/862, 0.655/14,088, 0.677/807, 0.258/3,668); no 0.597; no n=15 bar; panel B present with 7 species -- MATCH",
+      "figure_8": "title 'Reference-value alone matches or beats the original model in 10 of 11; 1 of 11 survives'; 11 bar groups; tx/tl distinct -- MATCH",
+      "figures_1_2a_4_6_7": "byte-identical across ef23f32, 3cfbca6 and disk, so regeneration is deterministic; each inspected in Gate 20 or 25",
+      "verdict": "9 of 9 MATCH; nothing regenerated this gate because nothing was stale",
+      "which_account_was_wrong": "the review. Every specific claim is contradicted by the PDF in the repository. Most likely a PDF downloaded before ef23f32 or built from an older checkout.",
+      "note": "Gate 25 DID contain this exact failure mode -- a regeneration script reporting success while five of six producers never ran -- which is presumably why the review was credible. It was caught and fixed inside Gate 25 and the fix held.",
+      "table": "out/results/gate27_figure_state.csv"
+    },
+    "task2_applied": {
+      "2a": "pooled GC-controlled correlations now stated: cell-free 0.616->0.561 (8.9%), in vivo 0.655->0.517 (21.1%), ratio 0.94x->1.09x",
+      "2b": "'two checks' -> 'three checks', all three named (disattenuation; GC control on the in-vivo pairs with phylum stratification; the same GC control on the modality contrast)",
+      "2c": "'was not originally applied to this comparison' -> 'applies equally to this comparison... so we apply it here'",
+      "numbers_added": [
+        "0.561",
+        "0.517",
+        "8.9",
+        "21.1"
+      ],
+      "numbers_removed": [],
+      "source": "all four read from gate25_modality_gc_control.json, not typed"
+    },
+    "task3_abstract_assessed": {
+      "applied": false,
+      "clause": "a 2.6-fold gap that survives partial-correlation control for source-genome GC composition (2.63x raw, 2.69x controlled)",
+      "clause_words": 12,
+      "abstract_words_now": 252,
+      "ceiling": 250,
+      "must_remove": 14,
+      "proposed_cuts": [
+        "'a barrier practitioners describe as unresolved for engineering non-model hosts' (10 words, pure framing)",
+        "'over all measured sequences' (4 words, redundant -- 'pooled' is defined by the contrast in the next clause)"
+      ],
+      "result": "exactly 14 words out, abstract lands at 250",
+      "would_not_cut": "the three evidence lines (8 comparisons, 12 cells, 16 of 18), the silent-class mechanism sentence, and the single-species-pair scope limit"
+    },
+    "task4_assessed": {
+      "4a_yim_fig3": {
+        "applied": false,
+        "reconciliation": "their r=0.73 gradient is about how cross-host correlation VARIES with phylogenetic distance; our claim is about its absolute LEVEL. Cell-free can preserve the ordering while compressing the band upward -- our 45-pair cell-free band is 0.623-0.911 co-active against an in-vivo co-active 0.258.",
+        "one_paragraph": "cite their Fig. 3 in 3.3, state the distinction, quote the 45-pair band -- writing, not analysis",
+        "properly_engaged": "recompute the phylogenetic gradient under our restriction regimes (all 45 pairs are in gate10_crosshost_correlations.csv and DRAFTS released 16S distances) -- a real analysis with a real risk: if the gradient strengthens co-active, the objection is harder than it looks",
+        "recommendation": "paragraph is v1; recomputation is v2 unless the stronger claim is wanted before submission"
+      },
+      "4b_fitness_decoupling": {
+        "applied": false,
+        "why_it_matters": "the simplest competing explanation for the missing silent class, and better-motivated than the confounds already tested because it comes from the dataset's own authors",
+        "can_we_distinguish": "NO -- separating them needs a fitness or burden measurement per sequence per host, which neither dataset has",
+        "scope": "one paragraph in 3.4 naming it as a competing explanation of equal standing, plus one Limitations clause saying we cannot separate them and what would. No new analysis.",
+        "recommendation": "v1 -- a reviewer who knows the DRAFTS paper will raise it, and the paper is better for having named it first"
+      }
+    },
+    "verification": {
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 20,
+      "table_renders": true,
+      "email_placeholder": 0,
+      "bs_15848_intact": true,
+      "cross_references_unresolved": 0,
+      "copies_identical": true,
+      "body_words_open": 6172,
+      "body_words_close": 6215
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 176 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
