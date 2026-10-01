@@ -1,0 +1,5 @@
+modality,regime,n,rho_raw,rho_gc_controlled_formula,rho_gc_controlled_residual,gc_vs_EC_activity,gc_vs_BS_activity,pct_change
+cell_free,pooled,862,0.6162,0.5611,0.5641,-0.3103,-0.5495,-8.9
+cell_free,co_active,807,0.6774,0.5561,0.5483,-0.4662,-0.6637,-17.9
+in_vivo,pooled,14088,0.6551,0.5167,0.4902,-0.6693,-0.4735,-21.1
+in_vivo,co_active,3668,0.2575,0.2065,0.2054,-0.3374,-0.1986,-19.8

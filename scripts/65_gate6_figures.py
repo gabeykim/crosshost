@@ -31,7 +31,9 @@ COLORS = {"sequence_only": "#4c72b0", "free_embedding_B3": "#dd8452", "genomic":
 def fig_full_comparison():
     df = pd.read_csv(RESULTS / "gate6_full_comparison.csv")
     systems = [s for s in SYSTEMS if s in df.system.unique()] + (["evo2"] if "evo2" in df.system.unique() else [])
-    fig, axes = plt.subplots(2, 3, figsize=(16, 9), sharey=False)
+    # One y-scale across all six panels (Gate 25 A3): per-panel scaling made weak
+    # B. subtilis performance look comparable to E. coli, the inverse of the point.
+    fig, axes = plt.subplots(2, 3, figsize=(16, 9), sharey=True)
     for col, host in enumerate(HOSTS):
         for row, readout in enumerate(READOUTS):
             ax = axes[row, col]
@@ -49,7 +51,8 @@ def fig_full_comparison():
             ax.set_title(f"{host} {readout}", fontsize=10)
             if col == 0:
                 ax.set_ylabel("Spearman rho (N=0 zero-shot)")
-    fig.suptitle("Gate 6: full model comparison, zero-shot LOHO, 90% bootstrap CI", fontsize=13)
+    fig.suptitle("Full model comparison, zero-shot leave-one-host-out, 90% bootstrap CI\n"
+                 "(one y-scale across all panels)", fontsize=13)
     fig.tight_layout(rect=[0, 0, 1, 0.96])
     fig.savefig(FIGS / "gate6_full_comparison.png", dpi=150)
     print(f"Wrote {FIGS / 'gate6_full_comparison.png'}")

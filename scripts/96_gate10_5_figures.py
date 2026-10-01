@@ -80,8 +80,16 @@ def fig_phylum_stratified():
     colors = {"EC_BS": "#c53030", "EC_PA": "#2f855a", "BS_PA": "#805ad5"}
     for i, pair in enumerate(pairs):
         vals = [t4[pair].get(ph, {}).get("spearman_rho") for ph in phyla]
+        ns = [t4[pair].get(ph, {}).get("n") for ph in phyla]
         vals = [v if v is not None else 0 for v in vals]
         ax.bar(x + (i - 1) * w, vals, width=w, label=pair.replace("_", "-"), color=colors[pair])
+        # per-stratum N on every bar (Gate 25 A4)
+        for xi, v, n in zip(x, vals, ns):
+            if n is None:
+                continue
+            ax.annotate(f"n={n:,}", (xi + (i - 1) * w, v),
+                        ha="center", va="bottom" if v >= 0 else "top",
+                        fontsize=6, rotation=90)
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_xticks(x)
     ax.set_xticklabels(phyla, rotation=15)

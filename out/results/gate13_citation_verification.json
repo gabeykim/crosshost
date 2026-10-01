@@ -552,61 +552,10 @@
   {
     "key": "bend2024",
     "stated_title": "BEND: Benchmarking DNA Language Models on Biologically Meaningful Tasks",
-    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
-    "fields": {
-      "authors": {
-        "ok": true,
-        "detail": "exact match"
-      },
-      "title": {
-        "ok": true,
-        "detail": "manuscript='BEND: Benchmarking DNA Language Models on Biologically Meaningful Tasks' canonical='BEND: Benchmarking DNA Language Models on biologically meaningful tasks'"
-      },
-      "venue": {
-        "ok": false,
-        "detail": "manuscript='ICLR 2024' canonical='arXiv'"
-      },
-      "year": {
-        "ok": false,
-        "detail": "manuscript=2024 canonical=2023"
-      },
-      "volume": {
-        "ok": null,
-        "detail": "both absent"
-      },
-      "pages": {
-        "ok": null,
-        "detail": "both absent"
-      },
-      "doi": {
-        "ok": null,
-        "detail": "both absent"
-      }
-    },
-    "canonical": {
-      "authors": [
-        "Marin",
-        "Teufel",
-        "Horlacher",
-        "Madsen",
-        "Pultz",
-        "Winther",
-        "Boomsma"
-      ],
-      "title": "BEND: Benchmarking DNA Language Models on biologically meaningful tasks",
-      "venue": "arXiv",
-      "volume": null,
-      "pages": null,
-      "year": 2023,
-      "doi": null,
-      "arxiv_id": "2311.12570"
-    },
-    "error": null,
-    "mismatched_fields": [
-      "venue",
-      "year"
-    ],
-    "manual_review_note": "Same pattern as DNABERT-2: no DOI, arXiv-only canonical lookup will always show venue=arXiv/year=2023 (original posting) even though ICLR 2024 acceptance is real -- independently confirmed via OpenReview (openreview.net/forum?id=uKB4cFNQFg, 'submitted November 21, 2023; final revision April 9, 2024') during Gate 13 manual review."
+    "status": "SKIPPED",
+    "fields": {},
+    "canonical": null,
+    "error": "network/lookup error: The read operation timed out"
   },
   {
     "key": "genomic_benchmarks2023",
@@ -836,61 +785,9 @@
   {
     "key": "iclr2025_specialized_fm",
     "stated_title": "Specialized Foundation Models Struggle to Beat Supervised Baselines",
-    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
-    "fields": {
-      "authors": {
-        "ok": null,
-        "detail": "no stated author list to compare"
-      },
-      "title": {
-        "ok": true,
-        "detail": "manuscript='Specialized Foundation Models Struggle to Beat Supervised Baselines' canonical='Specialized Foundation Models Struggle to Beat Supervised Baselines'"
-      },
-      "venue": {
-        "ok": false,
-        "detail": "manuscript='ICLR 2025' canonical='arXiv'"
-      },
-      "year": {
-        "ok": false,
-        "detail": "manuscript=2025 canonical=2024"
-      },
-      "volume": {
-        "ok": null,
-        "detail": "both absent"
-      },
-      "pages": {
-        "ok": null,
-        "detail": "both absent"
-      },
-      "doi": {
-        "ok": null,
-        "detail": "both absent"
-      }
-    },
-    "canonical": {
-      "authors": [
-        "Xu",
-        "Gupta",
-        "Cheng",
-        "Shen",
-        "Shen",
-        "Talwalkar",
-        "Khodak"
-      ],
-      "title": "Specialized Foundation Models Struggle to Beat Supervised Baselines",
-      "venue": "arXiv",
-      "volume": null,
-      "pages": null,
-      "year": 2024,
-      "doi": null,
-      "arxiv_id": "2411.02796"
-    },
-    "error": null,
-    "mismatched_fields": [
-      "venue",
-      "year"
-    ],
-    "note": "not actually cited inline anywhere in the current manuscript body (checked directly) -- flagged for removal in Gate 13, not a mismatch on bibliographic fields",
-    "manual_review_note": "Same arXiv-only pattern: venue=arXiv/year=2024 (original posting) vs stated ICLR 2025 -- independently confirmed real acceptance via OpenReview (openreview.net/forum?id=JYTQ6ELUVO) and the ICLR 2025 virtual site (iclr.cc/virtual/2025/poster/30102) during Gate 13 manual review. Removed from References regardless, per the orphan note above -- this citation supports no claim actually made in the manuscript body."
+    "status": "SKIPPED",
+    "fields": {},
+    "canonical": null,
+    "error": "network/lookup error: HTTP Error 429: Unknown Error"
   }
 ]

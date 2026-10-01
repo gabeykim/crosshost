@@ -259,7 +259,7 @@ def fig_reliability_diagrams(seqonly_rel, b2_rel):
             if col == 0:
                 ax.set_ylabel("empirical active rate")
             ax.legend(fontsize=6, loc="upper left")
-    fig.suptitle("Gate 7 Task 2: reliability diagrams, active/inactive classifier", fontsize=13)
+    fig.suptitle("Reliability diagrams, zero-shot active/inactive classifier", fontsize=13)
     fig.tight_layout(rect=[0, 0, 1, 0.96])
     fig.savefig(FIGS / "gate7_reliability_diagrams.png", dpi=150)
     print(f"Wrote {FIGS / 'gate7_reliability_diagrams.png'}")
@@ -281,7 +281,7 @@ def fig_coverage(seqonly_cov, b2_cov):
         ax.set_ylim(0, 1.05)
     axes[0].set_ylabel("empirical coverage")
     axes[1].legend(fontsize=8)
-    fig.suptitle("Gate 7 Task 2: split-conformal empirical coverage vs target", fontsize=13)
+    fig.suptitle("Split-conformal empirical coverage vs target", fontsize=13)
     fig.tight_layout(rect=[0, 0, 1, 0.92])
     fig.savefig(FIGS / "gate7_conformal_coverage.png", dpi=150)
     print(f"Wrote {FIGS / 'gate7_conformal_coverage.png'}")

@@ -3533,5 +3533,124 @@
       "out/GATE24_MEMO.md",
       "out/state.json"
     ]
+  },
+  "gate_25": {
+    "date_run": "2026-09-30",
+    "outcome": "PASS",
+    "first_line": "0.597 was stale (Gate 10, 82-sequence overlap, superseded by Gate 15); 7 of 8 figures carried a real discrepancy (23 findings: 2 blocking, 11 major, 5 minor, 5 clean); the modality contrast SURVIVES GC control, co-active ratio 2.63x raw -> 2.69x controlled",
+    "manuscript_moved": "10 user commits landed after Gate 24 (9803e29 'Final manuscript' .. df7ccf4), including a Zenodo DOI, a rewritten AI-assistance disclosure, repair of the Gate 24 dangling antecedent, and a full rewrite of the embedded figure captions which split Figure 2 into separate 2a and 2b captioned figures. Gate 25 works against that version (5,691 body words at open).",
+    "block_c": {
+      "verdict": "SURVIVES",
+      "cell_free_coactive": {
+        "n": 807,
+        "raw": 0.6774,
+        "gc_controlled": 0.5561,
+        "pct": -17.9
+      },
+      "in_vivo_coactive": {
+        "n": 3668,
+        "raw": 0.2575,
+        "gc_controlled": 0.2065,
+        "pct": -19.8
+      },
+      "cell_free_pooled": {
+        "n": 862,
+        "raw": 0.6162,
+        "gc_controlled": 0.5611,
+        "pct": -8.9
+      },
+      "in_vivo_pooled": {
+        "n": 14088,
+        "raw": 0.6551,
+        "gc_controlled": 0.5167,
+        "pct": -21.1
+      },
+      "ratio_coactive_raw": 2.63,
+      "ratio_coactive_gc": 2.69,
+      "ratio_pooled_raw": 0.94,
+      "ratio_pooled_gc": 1.09,
+      "methods_agree": "closed-form 0.556 vs rank-residual 0.548 (cell-free); 0.207 vs 0.205 (in vivo)",
+      "guard": "script reproduces all four published raw n and rho exactly before controlling, and refuses to run otherwise",
+      "scope_limit": "the two modalities are measured on different sequence populations, so GC is controlled within each modality separately; not a paired control",
+      "written_into_results": false
+    },
+    "block_a": {
+      "figures_regenerated": 9,
+      "figures_with_discrepancy": 7,
+      "findings": {
+        "blocking": 2,
+        "major": 11,
+        "minor": 5,
+        "none": 5,
+        "total": 23
+      },
+      "A1_0597_stale": true,
+      "A1_provenance": "gate10_modality_comparison.json comparison_a cell_free_DRAFTS_EC_BS: n=82, rho=0.5972649; superseded by gate15_coactive_modality.csv",
+      "A1_note": "the manuscript's embedded Figure 3 caption was ALREADY correct; the figure was the stale half",
+      "A2_refuted": "the '12 bar groups' report is wrong -- the source CSV has 11 rows and the figure draws 11 groups. The real defect is readout[:2] rendering both 'transcription' and 'translation' as 'tr', which made two cells look like duplicates. Fixed to tx/tl.",
+      "A3_confirmed": "six systems not four; no panel (b); y-axes now shared across all six panels",
+      "A3_reported_not_fixed": "section 3.5 cites this figure for concatenation 0.555 and per-host-heads 0.615; neither system is plotted here",
+      "A4_confirmed": "four strata; values and N verified; 'B. subtilis pairs near zero' corrected to the range -0.209 to +0.271",
+      "A4_brief_correction": "0.754 is the CO-ACTIVE EC-PA value, not pooled (pooled EC-PA is 0.621); the strata use the co-active mask, so co-active is the right comparator",
+      "A4_reported_not_fixed": "results file holds SEVEN transcription strata, figure hardcodes four; Cyanobacteria clears threshold on all three pairs and could be added",
+      "A5_diagnosis_corrected": "NOT axis clipping: scripts/72 stores float(np.clip(corrected,-1,1)) and records clipped_at_1, so the cap is in the data. Extending the axis alone changed nothing. True values 1.51/1.08 tx, 1.48/1.06 tl, now annotated above a rho=1 line.",
+      "A5_second_defect": "clipped_at_1 is serialised as the STRING 'True'/'False' by json.dump(default=str) on a numpy bool, so a plain truth test matches both. Reported, results file not rewritten.",
+      "A6": "gate nomenclature stripped from Figures 1, 5, 6, 8",
+      "provenance_false_pass_found": "NO script produced out/PREPRINT/figures/*.png -- producers write out/figures/gate*.png and Gate 12 renamed copies by hand. audit_provenance passed only because the Gate 20 embed script mentions every preprint filename: a false pass on all nine files since Gate 20. scripts/106 now regenerates and places all nine.",
+      "self_caught_bug": "scripts/106's first version imported producers and called main(), but only 1 of 6 defines main(), so 5 silently did nothing and it copied stale output while reporting success. Now runs each as a subprocess and asserts the output was rewritten."
+    },
+    "block_b": {
+      "B1": "REFUTED, no edit. Manuscript correctly says 'BS 15,848'; '215,848' appears nowhere. The PDF breaks the page between 'BS' and '15,848' with the page number 2 between them. The 'fix' would have introduced an error.",
+      "B2": "CONFIRMED WRONG, wording proposed, NOT applied. DRAFTS Methods: 'Plasmid DNA was extracted (Zymo Midiprep)...' -- midiprepped plasmid, which is supercoiled. 'supercoil' appears nowhere in the DRAFTS paper. Proposed: lysates lack gyrase/topoisomerase homeostasis and chromosomal context, so supercoiling is fixed rather than regulated -- weaker than absence.",
+      "B3": "applied",
+      "B4": "applied",
+      "B5": "three title options proposed, none chosen",
+      "B6": "applied in abstract and 3.2",
+      "B7": "applied",
+      "B8": "applied to 3.3 and Limitation 2",
+      "B9": "applied"
+    },
+    "numbers": {
+      "removed": 0,
+      "added_authorised": "A4 stratum values and per-stratum N",
+      "added_beyond_allowance": "10,420 and 55 in section 3.2 -- arithmetic on existing numbers (14,088-3,668 and 862-807), required to state the B6 asymmetry; flagged"
+    },
+    "verification": {
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 20,
+      "table_renders": true,
+      "email_placeholder": 0,
+      "zenodo_present": true,
+      "cross_references_unresolved": 0,
+      "copies_identical": true,
+      "body_words_open": 5691,
+      "body_words_close": 5938,
+      "verify_citations": "11 VERIFIED / 0 unexplained / 3 explained / 2 SKIPPED -- the two skips are HTTP 429 rate-limiting from the citation APIs, not a content change; baseline 11/0/5/0/16 and no citation was touched"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 173 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 176 files"
+    }
   }
 }

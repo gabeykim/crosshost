@@ -21,7 +21,10 @@ FIGS.mkdir(parents=True, exist_ok=True)
 def fig_shift_controls():
     df = pd.read_csv(RESULTS / "gate8_6_shift_controls_decisive_comparison.csv")
     df = df.sort_values("effect_size_rho_orig_minus_refonly")
-    labels = [f"{r.pair}\n{r.readout[:2]} {r.variant.replace('_condition','')}" for r in df.itertuples()]
+    # readout[:2] rendered BOTH "transcription" and "translation" as "tr", making two
+    # distinct cells look like duplicates and the 11 groups look like 12 (Gate 25 A2).
+    RD = {"transcription": "tx", "translation": "tl"}
+    labels = [f"{r.pair}\n{RD[r.readout]} {r.variant.replace('_condition','')}" for r in df.itertuples()]
     x = np.arange(len(df))
     w = 0.27
 
@@ -37,8 +40,9 @@ def fig_shift_controls():
     ax.set_xticklabels(labels, fontsize=8)
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_ylabel("Spearman rho (test fold, mean of 5)")
-    ax.set_title("Gate 8.6 Task 1: regression-to-the-mean control on Task 1B's 11 winning cells\n"
-                 "1 of 11 survives (sequence+reference distinguishably beats reference-value alone)")
+    ax.set_title("Regression-to-the-mean control on the 11 originally-reported winning cells\n"
+                 "Reference-value alone matches or beats the original model in 10 of 11; "
+                 "1 of 11 survives")
     ax.legend(loc="upper left", fontsize=9)
     fig.tight_layout()
     fig.savefig(FIGS / "gate8_6_shift_regression_to_mean_control.png", dpi=150)
@@ -54,7 +58,8 @@ def fig_mechanism_variance():
 
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
     cells = df[["host", "readout"]].drop_duplicates().reset_index(drop=True)
-    cell_labels = [f"{r.host}\n{r.readout[:2]}" for r in cells.itertuples()]
+    cell_labels = [f"{r.host}\n{ {'transcription': 'tx', 'translation': 'tl'}[r.readout] }"
+                   for r in cells.itertuples()]
     x = np.arange(len(cells))
     w = 0.2
     for i, mech in enumerate(mechs):
@@ -65,7 +70,7 @@ def fig_mechanism_variance():
     axes[0].set_xticks(x)
     axes[0].set_xticklabels(cell_labels, fontsize=8)
     axes[0].set_ylabel("fold-to-fold std of zero-shot Spearman rho")
-    axes[0].set_title("Fold-to-fold instability, all 4 systems, all 6 (host,readout) cells")
+    axes[0].set_title("Fold-to-fold instability, all 4 systems, all 6 (host, readout) cells")
     axes[0].legend(fontsize=8)
 
     ec_tx = df[(df.host == "EC") & (df.readout == "transcription")].set_index("mechanism")

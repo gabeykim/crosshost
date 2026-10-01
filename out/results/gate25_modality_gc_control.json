@@ -1,0 +1,58 @@
+{
+  "question": "Does the cell-free/in-vivo modality contrast survive a source-genome GC partial-correlation control?",
+  "method": "Spearman partial correlation controlling for source-genome GC%, by the closed-form formula and independently by rank-residual regression, the two methods used in Gate 10.5.",
+  "note_separate_populations": "The two modalities are measured on different sequence populations (DRAFTS 1,047-sequence library vs the Johns three-host library), so GC is controlled within each modality separately; this is not a paired control.",
+  "co_active": {
+    "cell_free": {
+      "modality": "cell_free",
+      "regime": "co_active",
+      "n": 807,
+      "rho_raw": 0.6774,
+      "rho_gc_controlled_formula": 0.5561,
+      "rho_gc_controlled_residual": 0.5483,
+      "gc_vs_EC_activity": -0.4662,
+      "gc_vs_BS_activity": -0.6637,
+      "pct_change": -17.9
+    },
+    "in_vivo": {
+      "modality": "in_vivo",
+      "regime": "co_active",
+      "n": 3668,
+      "rho_raw": 0.2575,
+      "rho_gc_controlled_formula": 0.2065,
+      "rho_gc_controlled_residual": 0.2054,
+      "gc_vs_EC_activity": -0.3374,
+      "gc_vs_BS_activity": -0.1986,
+      "pct_change": -19.8
+    },
+    "ratio_raw": 2.63,
+    "ratio_gc_controlled": 2.69
+  },
+  "pooled": {
+    "cell_free": {
+      "modality": "cell_free",
+      "regime": "pooled",
+      "n": 862,
+      "rho_raw": 0.6162,
+      "rho_gc_controlled_formula": 0.5611,
+      "rho_gc_controlled_residual": 0.5641,
+      "gc_vs_EC_activity": -0.3103,
+      "gc_vs_BS_activity": -0.5495,
+      "pct_change": -8.9
+    },
+    "in_vivo": {
+      "modality": "in_vivo",
+      "regime": "pooled",
+      "n": 14088,
+      "rho_raw": 0.6551,
+      "rho_gc_controlled_formula": 0.5167,
+      "rho_gc_controlled_residual": 0.4902,
+      "gc_vs_EC_activity": -0.6693,
+      "gc_vs_BS_activity": -0.4735,
+      "pct_change": -21.1
+    },
+    "ratio_raw": 0.94,
+    "ratio_gc_controlled": 1.09
+  },
+  "verdict": "SURVIVES"
+}

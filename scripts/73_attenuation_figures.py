@@ -31,11 +31,30 @@ def fig_disattenuation():
         ax.set_xticks(x)
         ax.set_xticklabels([PAIR_LABELS[p] for p in PAIRS])
         ax.set_title(readout)
-        ax.set_ylim(0, 1.05)
+        # Disattenuating a high correlation at a low assumed reliability can exceed 1.
+        # scripts/72 clips the stored value at 1.0 and records clipped_at_1, so the bar
+        # itself cannot show it. Label every clipped bar with its uncapped value instead
+        # of letting it sit flat at the ceiling (Gate 25 A5).
+        ax.set_ylim(0, 1.3)
+        ax.axhline(1.0, color="black", linestyle=":", linewidth=1)
+        for i, rel in enumerate(RELIABILITIES):
+            for j, p in enumerate(PAIRS):
+                cell = scenario2[readout][p][f"reliability_{rel}"]
+                # clipped_at_1 is serialised as the STRING "True"/"False" by
+                # scripts/72's json.dump(default=str) on a numpy bool, so a plain
+                # truth test matches both. Compare explicitly.
+                flag = cell.get("clipped_at_1")
+                if str(flag) != "True":
+                    continue
+                uncapped = scenario2[readout][p]["rho_observed"] / rel
+                ax.annotate(f"{uncapped:.2f}\nclipped",
+                            (j - 0.3 + (i + 1) * 0.15, 1.01),
+                            ha="center", va="bottom", fontsize=7, color="#9b2c2c")
     axes[0].set_ylabel("Spearman rho")
     axes[1].legend(fontsize=8, loc="upper right")
-    fig.suptitle("Gate 8 Task 1: raw vs. disattenuation-corrected cross-host correlation\n"
-                  "(EC-PA gap survives BS-pairs at every tested reliability)", fontsize=12)
+    fig.suptitle("Raw vs. disattenuation-corrected cross-host correlation\n"
+                 "(sensitivity grid over three assumed reliabilities; dotted line marks rho = 1)",
+                 fontsize=12)
     fig.tight_layout(rect=[0, 0, 1, 0.90])
     fig.savefig(FIGS / "gate8_disattenuation.png", dpi=150)
     print(f"Wrote {FIGS / 'gate8_disattenuation.png'}")
