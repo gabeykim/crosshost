@@ -3888,5 +3888,94 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_28": {
+    "date_run": "2026-10-01",
+    "outcome": "PASS",
+    "first_line": "all four applied; the abstract is exactly 250 words (from 252); one number added to the manuscript (r = 0.73, verified in the DRAFTS source before use); none removed",
+    "task1_abstract": {
+      "applied": true,
+      "words_before": 252,
+      "words_after": 250,
+      "added": "a 2.6-fold gap that survives partial-correlation control for source-genome GC composition (2.63x raw, 2.69x controlled) -- 12 words",
+      "cut": [
+        "'a barrier practitioners describe as unresolved for engineering non-model hosts' (10 words)",
+        "'over all measured sequences' (4 words)"
+      ],
+      "untouched": "the three evidence lines, the silent-class sentence, the single-species-pair limit",
+      "note": "both ratios already appear in 3.3, so no unverifiable figure was added to the abstract"
+    },
+    "task2_yim_fig3": {
+      "applied": true,
+      "location": "end of section 3.3",
+      "recomputation_run": false,
+      "content": "states the objection at full strength; distinguishes their gradient (how agreement varies with phylogenetic similarity) from this paper's level under restriction; quotes the 45-pair cell-free band 0.623-0.911 co-active against in-vivo 0.258; names the recomputation as the open check and that the gradient could strengthen under co-active restriction",
+      "source_precision": "the brief said 'against 16S distance'; DRAFTS Fig. 3E plots r = 0.73 against 16S rRNA SIMILARITY (%), so the correlation is positive. The paragraph says similarity. The same panel also carries r = 0.91 and r = 0.61 for its two sub-panels.",
+      "verified_from": "raw/drafts/msb198875_FullTextArticle.pdf"
+    },
+    "task3_fitness_decoupling": {
+      "applied": true,
+      "location": "end of section 3.4, after the 'hypothesis not a demonstrated causal claim' paragraph",
+      "limitations_clause": "appended to item 2; item count unchanged at 12",
+      "source_precision": "Yim et al.'s sentence is about the distribution of DNA LIBRARIES being more uniform in vitro, i.e. library representation at the DNA level -- not about silent sequences at the RNA level. The extension to activity is OURS and the paragraph says so explicitly rather than misattributing the stronger claim to them.",
+      "verified_quote": "'the distribution of DNA libraries was much more uniform in vitro than in vivo, mostly due to the decoupling of gene expression from cell fitness in vitro, which improves accuracy by minimizing noisy measurements from low-abundance library members'",
+      "content": "their account stated plainly; both accounts make the same prediction for every quantity available here; separating them requires per-sequence fitness or burden data neither dataset provides"
+    },
+    "task4_provenance_disclosure": {
+      "applied": true,
+      "verbatim": true,
+      "location": "Data and Code Availability, after the reproducibility paragraph"
+    },
+    "numbers": {
+      "added": [
+        "0.73"
+      ],
+      "removed": [],
+      "added_source": "Yim et al.'s reported gradient, quoted from DRAFTS Fig. 3E and verified in the source PDF before use",
+      "not_new": [
+        "2.63 and 2.69 in the abstract -- already in 3.3",
+        "0.623, 0.911, 0.258 in the new 3.3 paragraph -- already in 3.3"
+      ]
+    },
+    "verification": {
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages_before": 20,
+      "pages_after": 22,
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "cross_references_unresolved": 0,
+      "limitations_items": 12,
+      "copies_identical": true,
+      "abstract_words": 250,
+      "body_words_before": 6215,
+      "body_words_after": 6650,
+      "verify_citations": "11 / 0 / 5 / 0 / 16 -- BACK TO BASELINE; the two HTTP 429 skips of Gates 26-27 cleared on their own, confirming they were rate limiting and not a content problem"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
