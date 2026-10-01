@@ -3652,5 +3652,140 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 176 files"
     }
+  },
+  "gate_26": {
+    "date_run": "2026-09-30",
+    "outcome": "PASS",
+    "first_line": "all five decisions applied cleanly; the PDF no longer breaks 'BS' from '15,848' -- a non-breaking space between each host label and its count prevents the line break, and the number was not touched",
+    "task1_supercoiling": {
+      "applied_to": [
+        "3.2",
+        "3.4"
+      ],
+      "3.2": "'native supercoiling' -> 'supercoiling homeostasis'",
+      "3.4": "removed 'absent in linear cell-free reactions'; added that DRAFTS supplied midiprepped plasmid so templates ARE supercoiled, and what a lysate lacks is gyrase/topoisomerase homeostasis and chromosomal context, leaving supercoiling fixed rather than dynamically maintained",
+      "third_mention_found": "section 2.3 also names supercoiling, but as a list of what the hypothesis concerns, not a claim that lysates lack it. Stays true under the correction; left unchanged and reported."
+    },
+    "task2_title": {
+      "option": 2,
+      "new": "Cell-free transcription does not reproduce the bacterial chassis effect: evidence that host specificity resides in cellular context rather than transcription machinery",
+      "pdf_confirmed": true
+    },
+    "task3_gc_control": {
+      "applied": true,
+      "location": "3.3, after the regime-dependence material, before the Pandi comparison",
+      "content": [
+        "cell-free 0.677->0.556 (17.9%)",
+        "in vivo 0.258->0.207 (19.8%)",
+        "ratio 2.63x -> 2.69x",
+        "pooled 0.94x -> 1.09x",
+        "both methods agree 0.556/0.548 and 0.207/0.205",
+        "scope limit: different sequence populations, GC controlled within each modality separately, not a paired control"
+      ]
+    },
+    "task4_figure5": {
+      "action": "added concat, perhost_heads_avg, perhost_heads_nearest; 9 systems per panel",
+      "readable": true,
+      "text_change_needed": false,
+      "citation_resolves": "EC transcription now shows concatenation 0.555 and per-host-heads-averaged 0.615, the values section 3.5 cites",
+      "merge_justification": "gate8_5_conditioning_mechanisms.csv and gate6_full_comparison.csv are on identical footing -- same 5 folds, same 90% bootstrap scheme, sequence_only 0.367130 and film_genomic/genomic 0.371166 agree to six decimals across both"
+    },
+    "task5_figure2b": {
+      "choice": "ADDED Cyanobacteria rather than explaining the gap in the caption",
+      "why": "stating the threshold would have required explaining why a stratum that clears it is absent; the four-phylum list was hardcoded with no principled basis. Adding makes figure, caption, text and results file agree.",
+      "cyanobacteria": {
+        "EC_PA": 0.543,
+        "EC_PA_n": 455,
+        "EC_BS": 0.332,
+        "EC_BS_n": 62,
+        "BS_PA": -0.022,
+        "BS_PA_n": 44
+      },
+      "honest_cost": "Cyanobacteria has the highest EC-BS of any stratum (0.332), so the EC-PA margin is narrowest there (0.543 vs 0.332) on the smallest N. Section 3.1 now states this. The ordering still holds in every stratum.",
+      "still_unplotted": "Euryarchaeota and Planctomycetes have at least one pair below the n>20 threshold; the caption says so"
+    },
+    "task6a_provenance_disclosure": {
+      "applied": false,
+      "reason": "wording proposed for review first, per instruction",
+      "preferred_location": "Data and Code Availability",
+      "proposed": "The provenance audit matches output filenames against script text, which is a substring check rather than a dependency check; from Gate 20 to Gate 24 it returned no orphans for the nine preprint figures although no committed script produced them, because the figure-embedding script mentions every filename. Producing scripts were added in Gate 25 and the audit now covers them genuinely.",
+      "alternative_shorter": "The provenance audit's filename matching gave a false pass on the nine preprint figures from Gate 20 to Gate 24 -- the embedding script mentions every filename -- until producing scripts were added in Gate 25."
+    },
+    "task6b_page_break": {
+      "fixed": true,
+      "method": "non-breaking space (U+00A0) between each host label and its count",
+      "before": "page 2 ended '...EC 24,613, BS'; page 3 opened '15,848, PA 21,473' with the page number 2 interposed",
+      "after": "page 2 ends '...EC 24,613,'; page 3 opens 'BS 15,848, PA 21,473.'",
+      "alternatives_rejected": [
+        "\\needspace -- needs a preamble package and can push figures around",
+        "reflowing the sentence -- editing text to fix typesetting"
+      ],
+      "number_changed": false
+    },
+    "numbers": {
+      "added_task3": [
+        "0.205",
+        "0.548",
+        "0.556",
+        "1.09",
+        "19.8",
+        "2.63",
+        "2.69"
+      ],
+      "added_task5": [
+        "0.022",
+        "0.332",
+        "0.543",
+        "44",
+        "62",
+        "455",
+        "0.33"
+      ],
+      "removed": [
+        "0.27"
+      ],
+      "removal_reason": "the upper end of the rounded B. subtilis-pair range over four strata; recomputed to 0.33 over five. A summary statistic, not a measurement, and every underlying per-stratum value is still printed in the same sentence. The script required an explicit documented exception to allow it.",
+      "anything_else": "none -- the guard refuses to write if any other numeric token disappears"
+    },
+    "verification": {
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 20,
+      "table_renders": true,
+      "email_placeholder": 0,
+      "zenodo_present": true,
+      "cross_references": 9,
+      "cross_references_unresolved": 0,
+      "limitations_items": 12,
+      "copies_identical": true,
+      "body_words_open": 5938,
+      "body_words_close": 6172,
+      "verify_citations": "11 / 0 / 3 / 2 skipped -- still HTTP 429 rate limiting, noted not chased",
+      "bs_15848_intact": true
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 176 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 176 files"
+    }
   }
 }

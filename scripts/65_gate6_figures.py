@@ -19,17 +19,33 @@ FIGS.mkdir(parents=True, exist_ok=True)
 
 HOSTS = ["EC", "BS", "PA"]
 READOUTS = ["transcription", "translation"]
-SYSTEMS = ["sequence_only", "free_embedding_B3", "genomic", "physiology", "dnabert2", "promogen2"]
+# The three conditioning mechanisms Section 3.5 cites (concat, per-host-heads
+# averaged and nearest) live in gate8_5_conditioning_mechanisms.csv, not in
+# gate6_full_comparison.csv, so Figure 5 did not plot the values the text cited
+# (Gate 26 T4). The two tables are on identical footing -- sequence_only 0.367130
+# and film_genomic/genomic 0.371166 agree exactly at EC transcription, same 5
+# folds, same 90% bootstrap scheme -- so they can share a panel.
+SYSTEMS = ["sequence_only", "free_embedding_B3", "genomic", "physiology",
+           "concat", "perhost_heads_avg", "perhost_heads_nearest",
+           "dnabert2", "promogen2"]
+MECHANISM_SYSTEMS = {"concat", "perhost_heads_avg", "perhost_heads_nearest"}
 SYSTEM_LABELS = {"sequence_only": "Sequence-only\nCNN (214K)", "free_embedding_B3": "Free host\nembedding",
                   "genomic": "Genomic\n+ FiLM", "physiology": "Physiology\n+ FiLM",
                   "dnabert2": "DNABERT-2\n(117M)", "promogen2": "PromoGen2\n(148M)",
+                  "concat": "Concat-\nenation", "perhost_heads_avg": "Per-host\nheads (avg)",
+                  "perhost_heads_nearest": "Per-host\nheads (near)",
                   "evo2": "Evo 2\n(40B)"}
 COLORS = {"sequence_only": "#4c72b0", "free_embedding_B3": "#dd8452", "genomic": "#55a868",
-          "physiology": "#c44e52", "dnabert2": "#8172b3", "promogen2": "#937860", "evo2": "#ccb974"}
+          "physiology": "#c44e52", "dnabert2": "#8172b3", "promogen2": "#937860", "evo2": "#ccb974",
+          "concat": "#64b5cd", "perhost_heads_avg": "#8c8c8c", "perhost_heads_nearest": "#b5b5b5"}
 
 
 def fig_full_comparison():
     df = pd.read_csv(RESULTS / "gate6_full_comparison.csv")
+    mech = pd.read_csv(RESULTS / "gate8_5_conditioning_mechanisms.csv")
+    mech = mech[mech.system.isin(MECHANISM_SYSTEMS)].copy()
+    mech["eval_point"] = "N0_zeroshot"
+    df = pd.concat([df, mech], ignore_index=True)
     systems = [s for s in SYSTEMS if s in df.system.unique()] + (["evo2"] if "evo2" in df.system.unique() else [])
     # One y-scale across all six panels (Gate 25 A3): per-panel scaling made weak
     # B. subtilis performance look comparable to E. coli, the inverse of the point.
@@ -47,7 +63,7 @@ def fig_full_comparison():
             ax.bar(x, means, yerr=errs, color=colors, capsize=3, edgecolor="black", linewidth=0.5)
             ax.axhline(0, color="gray", linewidth=0.5)
             ax.set_xticks(x)
-            ax.set_xticklabels([SYSTEM_LABELS[s] for s in systems], fontsize=7)
+            ax.set_xticklabels([SYSTEM_LABELS[s] for s in systems], fontsize=6, rotation=30, ha="right")
             ax.set_title(f"{host} {readout}", fontsize=10)
             if col == 0:
                 ax.set_ylabel("Spearman rho (N=0 zero-shot)")

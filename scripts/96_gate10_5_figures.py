@@ -71,7 +71,12 @@ def fig_correlation_comparison():
 def fig_phylum_stratified():
     d = json.load(open(RESULTS / "gate10_5_gc_confound.json"))
     t4 = d["task4_phylum_stratified"]["transcription"]
-    phyla = ["Proteobacteria", "Firmicutes", "Actinobacteria", "Bacteroidetes"]
+    # Every stratum in which all three host pairs clear the n > 20 reporting
+    # threshold. Cyanobacteria clears it and was previously omitted, which left a
+    # reader comparing figure to results file with an unexplained fifth stratum
+    # (Gate 26 T5).
+    phyla = ["Proteobacteria", "Firmicutes", "Actinobacteria", "Bacteroidetes",
+             "Cyanobacteria"]
     pairs = ["EC_BS", "EC_PA", "BS_PA"]
 
     fig, ax = plt.subplots(figsize=(9, 5))
@@ -91,6 +96,9 @@ def fig_phylum_stratified():
                         ha="center", va="bottom" if v >= 0 else "top",
                         fontsize=6, rotation=90)
     ax.axhline(0, color="black", linewidth=0.8)
+    # headroom so the rotated n= labels on tall bars clear the title
+    lo, hi = ax.get_ylim()
+    ax.set_ylim(lo - 0.08, hi + 0.18)
     ax.set_xticks(x)
     ax.set_xticklabels(phyla, rotation=15)
     ax.set_ylabel("Spearman rho (transcription)")
