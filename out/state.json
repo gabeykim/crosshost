@@ -4279,5 +4279,108 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_32": {
+    "date_run": "2026-10-01",
+    "outcome": "PASS",
+    "first_line": "nothing failed verification -- every Task 3 check passes including the two Gate 31 added (make pdf exit 0, PDF newer than both manuscript copies). Submission-ready with one real gap: no LICENSE at the repository root, and the manuscript states no licence for the benchmark.",
+    "task1": {
+      "applied": true,
+      "before": "the prediction is consistent with the result, not confirmed by it.",
+      "after": "the prediction is consistent with the result, not confirmed by it (Section 3.7 measures what that costs).",
+      "pdf_check_note": "a single-line grep of the extracted PDF text returned ZERO matches because pdftotext wraps the phrase across lines 429-430; unwrapping first finds it. The naive check would have reported the edit missing from a PDF that contains it -- the mirror image of the Gate 31 failure."
+    },
+    "task2_proposed_not_applied": {
+      "applied": false,
+      "reason": "wording proposed for review first, per instruction",
+      "location": "Data and Code Availability, immediately after the provenance-audit paragraph",
+      "one_sentence": "Build and regeneration steps should be checked on exit status and on whether the output is newer than its input, rather than on reported success, because a step that silently does nothing leaves its previous output in place and every downstream check will then validate a stale artifact without error.",
+      "two_sentence_RECOMMENDED": "...same first sentence, then: This occurred three times during development: a figure-regeneration pass in which five of six producers never ran, the provenance false pass described above, and a document build that failed on a full disk while the checks that followed validated the previous build.",
+      "recommendation": "the two-sentence version -- it gives the evidence the rule was earned, which is the standard the rest of the paper's disclosures meet, and it is the only place a reader learns the figure-regeneration failure happened"
+    },
+    "task3_verification": {
+      "make_pdf_exit": 0,
+      "pdf_newer_than_preprint_copy": true,
+      "pdf_newer_than_mirror_copy": true,
+      "crossref_in_pdf": true,
+      "leakage": "ALL 6 PASSED",
+      "provenance": "0 orphans, 177 files",
+      "verify_citations": "11 / 0 / 5 / 0 / 16 -- full baseline, zero skips",
+      "make_test": "9 passed",
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 22,
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "zenodo_doi": "10.5281/zenodo.23051834 present and resolves (302 -> zenodo.org)",
+      "github_url": "resolves (200)",
+      "section_refs": 10,
+      "section_refs_unresolved": 0,
+      "limitations_items": 12,
+      "limitations_item_refs_resolve": true,
+      "copies_identical": true,
+      "md5": "a4c591a2e0c560c3bc3efd2b3a69e751",
+      "abstract_words": 250,
+      "body_words": 6834
+    },
+    "task4_readiness": {
+      "present": [
+        "manuscript (both copies byte-identical)",
+        "manuscript.pdf, 22 pages, built from current source",
+        "9 main figure files for 8 figures, all with producing scripts",
+        "19 supplementary figures",
+        "FIGURE_LEGENDS.md with N and interval type for every caption",
+        "frozen splits: fold_assignment_FINAL.parquet plus clusters at 30/50/70% identity",
+        "evaluation code: package/crosshost/evaluate.py",
+        "baselines: package/baselines/master_baselines.{csv,json}, nine systems",
+        "audits: leakage, provenance, regime, citations -- all clean",
+        "data/MANIFEST.json, 26 files hash-verified",
+        "Makefile: help, audit, verify-citations, pdf/manuscript, test, reproduce, reproduce-full, package, clean",
+        "README.md at repository root",
+        "Zenodo DOI, resolves",
+        "9 passing tests including two leakage checks"
+      ],
+      "flagged": [
+        "NO LICENSE at the repository root. package/LICENSE is MIT and covers the curated distribution, package/data/licensed/ carries per-dataset terms, but a reader cloning the repo sees no top-level licence, which defaults to all rights reserved -- the opposite of what the availability statement implies. One-file fix; choosing the licence is the author's call.",
+        "The manuscript states no licence for the benchmark; a reader has to infer it from package/pyproject.toml.",
+        "Task 2's sentence not applied, pending wording choice.",
+        "Disk at 99%, 3.9 GB free, down from 5.8 GB at Gate 31 where a build failed on exactly this.",
+        "Open v2 analysis: recomputing Yim et al.'s phylogenetic gradient under this paper's restriction regimes; 3.3 states it as the open check.",
+        "out.zip no longer exists (was untracked and stale since Gate 19)"
+      ],
+      "disclosure_coverage": "the three self-caught verification failures are each recorded: provenance false pass in Data and Code Availability (in the manuscript), figure regeneration in GATE25_MEMO and state.json, stale-PDF build in GATE31_MEMO. Only the first is in the manuscript; Task 2's two-sentence variant would put all three in front of a reader who reruns the pipeline."
+    },
+    "numbers": {
+      "changed": "NONE",
+      "identifier_added": {
+        "3.7": "section pointer in the new cross-reference"
+      },
+      "guard": "refuses to write on any other delta; also asserts the abstract word count is untouched"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
