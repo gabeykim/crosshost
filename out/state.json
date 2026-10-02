@@ -4061,5 +4061,139 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_30": {
+    "date_run": "2026-10-01",
+    "outcome": "PASS",
+    "first_line": "all four applied; abstract exactly 250 words, unchanged -- the 93.6%/26.0% contrast and the practitioner takeaway added, 30 words cut from elsewhere to pay for them; no measured value changed",
+    "task1": {
+      "applied": true,
+      "location": "section 3.4, end of the fitness-decoupling paragraph",
+      "added": "Both accounts nonetheless place the difference in cellular context rather than in transcriptional machinery -- expression coupled to growth is a property of a living cell, not of its polymerase. What the data available here cannot settle is which contextual mechanism dominates, not whether the difference is contextual.",
+      "why": "the paragraph previously conceded a competitor without noting the competitor falls on the paper's own side of the title's dichotomy"
+    },
+    "task2": {
+      "applied": true,
+      "abstract_before": 250,
+      "abstract_after": 250,
+      "added_2a": "26.0% of these sequences are co-active in vivo against 93.6% in lysate",
+      "added_2b": "Screening constructs for one fixed chassis via lysate is therefore reasonable; ranking a part across candidate hosts is not.",
+      "cuts": [
+        {
+          "what": "opening framing clause",
+          "from": 36,
+          "to": 21,
+          "saved": 15
+        },
+        {
+          "what": "pooled sentence compressed (0.616/0.655 retained)",
+          "from": 17,
+          "to": 11,
+          "saved": 6
+        },
+        {
+          "what": "prediction lead-in",
+          "from": 18,
+          "to": 16,
+          "saved": 2
+        },
+        {
+          "what": "availability sentence",
+          "from": 19,
+          "to": 16,
+          "saved": 3
+        }
+      ],
+      "protected_untouched": [
+        "three 3.5 evidence lines",
+        "single-species-pair limit",
+        "n_hosts <= 6 bound",
+        "GC-control clause"
+      ],
+      "applied_directly_because": "no cut touched the protected set"
+    },
+    "task3": {
+      "applied": true,
+      "options": [
+        "Magnitude, robustness, and the published objections (CHOSEN)",
+        "How large the contrast is, and what it survives",
+        "The contrast under scrutiny: magnitude, controls, and prior art"
+      ],
+      "why": "names the three things in the section in the order they appear; 'published objections' tells a skimmer the strongest prior-art challenge is answered here",
+      "content_not_moved_to_3_2": true,
+      "cross_references_still_resolve": true
+    },
+    "task4": {
+      "applied": true,
+      "added": "It is one of two checks this paper leaves open; the other, cross-modality correlations for the three RS241 hosts DRAFTS covers, is stated in Limitations item 2.",
+      "verified": "Limitations item 2 is the modality-contrast item and contains the RS241 clause; 12 items; this is the manuscript's only 'Limitations item N' reference and it resolves"
+    },
+    "task5_assessed": {
+      "applied": false,
+      "framing_sites": [
+        "Abstract -- 'That interpretation predicts... and we tested it:' + three evidence lines",
+        "Introduction -- 'Comparing the two (Section 3.2) motivates a testable prediction... We pre-registered a test of this'",
+        "3.4 closing -- 'the link from them to the modeling failure in Section 3.5 is an inference'",
+        "3.5 heading -- 'Testing the prediction (Figures 4-5)'",
+        "3.5 opening -- 'Four independent lines of evidence test the prediction above, and each comes out as Section 3.4 says it should.'"
+      ],
+      "discussion_already_decoupled": "the 'On the form of the negative result' paragraph was cut in Gate 24 as a restatement of the Introduction, so the Discussion no longer frames 3.5 this way",
+      "minimal_decoupling": "change the 3.5 heading and opening, soften the abstract and 3.4; leave the Introduction. Sections stay adjacent and the conditional stays stated; what goes is the claim that the second result confirms the first.",
+      "what_is_lost": "less than it appears. 3.5 stands alone as a complete claim -- a pre-registered kill gate failing 8 of 8, a host tag matching or beating both vectors 12 of 12, sequence-only not beaten in 16 of 18. What is lost is the narrative spine and, more seriously, the title's only PRE-REGISTERED support: it would then rest on 3.2-3.4 alone, which is one species pair.",
+      "recommendation": "the one-clause alternative. 'With two training hosts per fold, these features would also fail if host specificity were mechanistic but simply not learnable at this n_hosts; the prediction is consistent with the result, not confirmed by it.' Costs one sentence, states the objection in the paper's own voice, keeps the narrative.",
+      "paper_already_concedes_adjacent_point": "3.7: 'a gamma/beta generator fit from only two training-host vectors is a poor default in this few-domain regime'; Limitations item 1 bounds everything at n_hosts <= 6"
+    },
+    "numbers": {
+      "measured_values_changed": "NONE",
+      "added": {
+        "93.6": "+1 occurrence, moved into the abstract from 3.2",
+        "26.0": "+1 occurrence, moved into the abstract from 3.2"
+      },
+      "identifiers_added": {
+        "2": "Limitations item 2 cross-reference",
+        "241": "three RS241 hosts"
+      },
+      "guard": "refuses to write on any delta outside the expected set"
+    },
+    "verification": {
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 22,
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "cross_references_unresolved": 0,
+      "limitations_items": 12,
+      "limitations_item_refs_resolve": true,
+      "copies_identical": true,
+      "abstract_words": 250,
+      "body_words_before": 6717,
+      "body_words_after": 6794,
+      "verify_citations": "11 / 0 / 4 / 1 skipped -- dnabert2, same transient network timeout as Gate 29"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
