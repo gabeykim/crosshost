@@ -185,7 +185,7 @@ This is consistent with established links between each removed element and trans
 
 ### 3.5 Testing the prediction (Figures 4–5)
 
-Four independent lines of evidence test the prediction above, and each comes out as Section 3.4 says it should.
+Four independent lines of evidence test the prediction above, and each comes out as Section 3.4 says it should. With two training hosts per fold, these features would also fail if host specificity were mechanistic but simply not learnable at this n_hosts; the prediction is consistent with the result, not confirmed by it.
 
 ![**Figure 4 — The pre-registered kill gate (H-MAIN).** Model vs. per-host baseline across all 8 primary comparisons, with 90% percentile bootstrap intervals (10,000 resamples, hierarchical over folds then draws). None met the pre-registered bar.](figures/Figure4_hmain_kill_gate.png)
 

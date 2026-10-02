@@ -494,10 +494,60 @@
   {
     "key": "dnabert2",
     "stated_title": "DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species Genome",
-    "status": "SKIPPED",
-    "fields": {},
-    "canonical": null,
-    "error": "network/lookup error: The read operation timed out"
+    "status": "MISMATCH (manually reviewed, explained -- see manual_review_note)",
+    "fields": {
+      "authors": {
+        "ok": true,
+        "detail": "exact match"
+      },
+      "title": {
+        "ok": true,
+        "detail": "manuscript='DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species Genome' canonical='DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome'"
+      },
+      "venue": {
+        "ok": false,
+        "detail": "manuscript='ICLR 2024' canonical='arXiv'"
+      },
+      "year": {
+        "ok": false,
+        "detail": "manuscript=2024 canonical=2023"
+      },
+      "volume": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "pages": {
+        "ok": null,
+        "detail": "both absent"
+      },
+      "doi": {
+        "ok": null,
+        "detail": "both absent"
+      }
+    },
+    "canonical": {
+      "authors": [
+        "Zhou",
+        "Ji",
+        "Li",
+        "Dutta",
+        "Davuluri",
+        "Liu"
+      ],
+      "title": "DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome",
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "year": 2023,
+      "doi": null,
+      "arxiv_id": "2306.15006"
+    },
+    "error": null,
+    "mismatched_fields": [
+      "venue",
+      "year"
+    ],
+    "manual_review_note": "No DOI exists; ICLR has none for accepted papers. Canonical lookup is arXiv-only (posted 2023, venue field literally 'arXiv'), so this will always show venue/year MISMATCH against the arXiv record even though ICLR 2024 acceptance is real -- independently confirmed via the ICLR 2024 proceedings page (proceedings.iclr.cc/paper_files/paper/2024/hash/b633e7052970b8f5aa1a69164d99e9e8-Abstract-Conference.html) during Gate 13 manual review. Cite both: ICLR 2024 as the peer-reviewed venue, arXiv:2306.15006 as the preprint."
   },
   {
     "key": "bend2024",

@@ -4195,5 +4195,89 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_31": {
+    "date_run": "2026-10-01",
+    "outcome": "PASS",
+    "first_line": "the clause landed at section 3.5's opening, immediately after the confirmation claim; no number changed (the clause contains no digits and the guard confirmed token counts identical in both directions)",
+    "task1": {
+      "applied": true,
+      "location": "section 3.5 opening",
+      "before": "Four independent lines of evidence test the prediction above, and each comes out as Section 3.4 says it should.",
+      "after": "...same sentence, then: With two training hosts per fold, these features would also fail if host specificity were mechanistic but simply not learnable at this n_hosts; the prediction is consistent with the result, not confirmed by it.",
+      "why_3_5_not_3_4": [
+        "it is where the claim being qualified is made, so the concession now frames the four evidence lines instead of arriving after them",
+        "section 3.4's closing already concedes the same point from the other direction ('the link from them to the modeling failure in Section 3.5 is an inference'); adding it there would state one concession twice in one paragraph"
+      ],
+      "other_framing_sites_untouched": [
+        "abstract",
+        "Introduction",
+        "3.4 closing",
+        "3.5 heading"
+      ]
+    },
+    "task2_redundancy": {
+      "verdict": "NOT redundant; no change proposed",
+      "difference": "3.5's clause is a scope limit on an INFERENCE covering all four lines of evidence; 3.7's sentence is a MEASURED instability with numbers (4.0-7.8x) about FiLM specifically",
+      "separation": "two sections apart with 3.6 between them, so a reader does not meet them in sequence",
+      "optional_not_applied": "appending '(Section 3.7 measures what that costs)' would make the 3.5 concession checkable rather than asserted; not applied because Task 2 scopes a cross-reference to the redundant case"
+    },
+    "build_incident": {
+      "first_build_failed": true,
+      "exit_code": 43,
+      "error": "fclose: No space left on device -- volume at 98% capacity",
+      "consequence": "downstream checks read the Gate 30 manuscript.pdf (17:35:58) against a manuscript written at 20:07:15 and produced plausible but meaningless output",
+      "caught_by": "the make exit code; that entire round of checks was discarded",
+      "second_build": "exit 0 with 5.8 GB free; condition was transient",
+      "confirmed": "rebuilt PDF is newer than the manuscript (20:09:32 > 20:07:15) and contains the new clause",
+      "same_failure_mode_as": "Gate 25's regeneration script reporting success while producers never ran; the guard that caught it here is checking the exit code and that output is newer than input"
+    },
+    "out_zip": "no longer exists; deleted outside this session. It had been reported as untracked and stale since Gate 19.",
+    "numbers": {
+      "changed": "NONE",
+      "guard": "numeric-token counts compared in both directions and found identical; the script also asserts the abstract word count is untouched"
+    },
+    "verification": {
+      "new_clause_in_pdf": true,
+      "pdf_newer_than_manuscript": true,
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 22,
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "cross_references_unresolved": 0,
+      "limitations_items": 12,
+      "limitations_item_refs_resolve": true,
+      "copies_identical": true,
+      "abstract_words": 250,
+      "body_words_before": 6794,
+      "body_words_after": 6828,
+      "verify_citations": "11 / 0 / 5 / 0 / 16 -- full baseline, zero skips; the dnabert2 timeout of Gates 29-30 has cleared"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
