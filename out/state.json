@@ -3977,5 +3977,89 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_29": {
+    "date_run": "2026-10-01",
+    "outcome": "PASS",
+    "first_line": "Tasks 1 and 2 applied; on Task 3 the external read is CORRECT -- Yim et al. describe the clustering as 'distinct gram-negative and gram-positive groups', not phylum. Their term adopted. A second error surfaced: our sentence attributed both their clustering and their gradient to a bare 'Fig. 3'; the clustering is Fig. 3C and the gradient Fig. 3D. No number changed.",
+    "task1": {
+      "applied": true,
+      "arithmetic_recomputed": {
+        "co_active": {
+          "cell_free_pct": 17.9,
+          "in_vivo_pct": 19.8,
+          "apart": "1.11x"
+        },
+        "pooled": {
+          "cell_free_pct": 8.9,
+          "in_vivo_pct": 21.1,
+          "apart": "2.36x"
+        }
+      },
+      "confirmed": "the generalisation is false for the pooled half",
+      "before": "Both modalities attenuate by nearly the same proportion, so the contrast is not an artifact of source-genome GC composition.",
+      "after": "Under co-active restriction the two modalities attenuate by nearly the same proportion, so the co-active contrast -- the one this paper's claim rests on -- is not an artifact of source-genome GC composition. The pooled attenuations differ considerably, but the pooled comparison shows no modality difference before or after the control, so nothing in the argument turns on them.",
+      "pooled_numbers_and_ratio": "untouched; no percentage restated, so nothing duplicated into the paragraph"
+    },
+    "task2": {
+      "applied": true,
+      "before": "...the two confounds a careful reader proposes first have each been tested and neither survives contact with the data.",
+      "after": "...the two confounds a careful reader proposes first have each been tested -- GC twice, on the in-vivo pairs and on the modality contrast -- and neither survives contact with the data.",
+      "rejected_phrasing": "'tested three ways' was NOT used: the three checks are two methods, one applied to two different comparisons, not three methods",
+      "caveat_kept": "'surviving three does not rule out a fourth' untouched"
+    },
+    "task3": {
+      "external_read_correct": true,
+      "drafts_quote_clustering": "Pearson correlations of these pairwise comparisons showed varying levels of transcriptional concordance, which when clustered further revealed distinct gram-negative and gram-positive groups (Fig 3C). Principal component analysis of the RS1383 transcription profiles also revealed distinct groups for gram-negative and gram-positive species (Appendix Fig S7C).",
+      "drafts_quote_gradient": "Pairwise comparisons of 16S rRNA and sigma70 protein sequence similarity showed that more phylogenetically related species tend to share a more similar transcription profile (Fig 3D, Appendix Fig S8).",
+      "verdict": "they say gram-stain for the clustering; term adopted",
+      "second_error_found": "our sentence attributed BOTH results to a bare 'Fig. 3'. Caption: 3C is the clustering heat map, 3D is the 16S-vs-correlation regression where r = 0.73 lives, 3E is activity by DONOR phyla (the phyla the sequences were mined from, not how recipient species group). Gate 28's memo put r = 0.73 in panel E -- wrong; panel D is the only panel with a 16S axis and a linear regression. Panel E is plausibly where 'clusters by phylum' originally came from.",
+      "substance_unaffected": "the argument -- their result is about how agreement VARIES with phylogenetic similarity, this paper's claim is about its LEVEL under restriction -- holds either way; the correction is terminological and attributional",
+      "not_rechecked": "r = 0.73 and the 'similarity' direction, verified in Gate 28, per instruction"
+    },
+    "numbers": {
+      "changed": "NONE",
+      "guard": "compares numeric-token counts in both directions and refuses to write on any difference",
+      "documented_exception": "token '3' went 9 -> 11 because 'Fig. 3C' and 'Fig. 3D' replace one bare 'Fig. 3'; panel letters, not quantities. Allowed by explicit exception rather than by weakening the check."
+    },
+    "verification": {
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 22,
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "cross_references_unresolved": 0,
+      "limitations_items": 12,
+      "copies_identical": true,
+      "abstract_words": 250,
+      "body_words_before": 6650,
+      "body_words_after": 6717,
+      "verify_citations": "11 / 0 / 4 / 1 skipped -- dnabert2 network read timeout, transient, same class as the Gate 26-27 HTTP 429s; VERIFIED and unexplained-mismatch counts unchanged"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }

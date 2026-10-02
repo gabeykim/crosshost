@@ -8,7 +8,7 @@ borkowski2018,VERIFIED,,
 pandi2022,VERIFIED,,
 lafleur2022,VERIFIED,,
 xia2026_promogen2,VERIFIED,,
-dnabert2,"MISMATCH (manually reviewed, explained -- see manual_review_note)",venue;year,
+dnabert2,SKIPPED,,network/lookup error: The read operation timed out
 bend2024,"MISMATCH (manually reviewed, explained -- see manual_review_note)",venue;year,
 genomic_benchmarks2023,VERIFIED,,
 dart_eval2024,"MISMATCH (manually reviewed, explained -- see manual_review_note)",venue,
