@@ -4382,5 +4382,99 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_33": {
+    "date_run": "2026-10-03",
+    "outcome": "PASS",
+    "first_line": "the licence gap is closed and every Task 3 check passes; one pre-existing gap remains -- the repository tracks five Johns et al. supplementary tables under raw/, three of them large, against its own .gitignore policy of keeping only the two smallest",
+    "task1_license": {
+      "stop_condition_checked": "the restricted payloads in package/data/licensed/ are gitignored (.gitignore excludes package/data/licensed/*/*.npz), so the PromoGen2 CC-BY-NC-4.0 and DNABERT-2 Apache-2.0 embeddings are not distributed at all; only their LICENSE and README files are tracked. Nothing there is contradicted -- proceeded.",
+      "file": "LICENSE at repository root, no extension, 1513 bytes",
+      "mit_body_byte_identical_to_canonical": true,
+      "mit_body_share_of_file": "71% -- should classify as MIT rather than Other",
+      "copyright": "Copyright (c) 2026 Gabriel Kim",
+      "intentional_difference_from_package_LICENSE": "package/LICENSE says 'Copyright (c) 2026 CROSSHOST contributors'; the root says 'Gabriel Kim' as instructed. The two now differ and should probably agree before submission.",
+      "scope_note": "names what is and is not covered and points at package/LICENSE and package/data/licensed/; it exists because a bare MIT at the root would claim rights over raw/ publisher material and the quarantined model-derived data",
+      "manuscript_clause": "Code and benchmark artifacts are released under the MIT license; source datasets retain their original terms, documented per dataset in the repository."
+    },
+    "task2_verification_note": {
+      "applied": true,
+      "version": "two-sentence",
+      "location": "Data and Code Availability, appended to the provenance-disclosure paragraph",
+      "text": "More generally, build and regeneration steps should be checked on exit status and on whether the output is newer than its input, rather than on reported success, because a step that silently does nothing leaves its previous output in place and every downstream check will then validate a stale artifact without error. This occurred three times during development: a figure-regeneration pass in which five of six producers never ran, the provenance false pass described above, and a document build that failed on a full disk while the checks that followed validated the previous build.",
+      "no_gate_numbers": true,
+      "all_three_instances_confirmed_in_pdf": true
+    },
+    "finding_raw_supplements": {
+      "severity": "needs a decision before submission",
+      "policy": ".gitignore states only 'the two smallest xlsx supplements' are kept for provenance-audit purposes; the charter says 'do not re-host raw tables without checking'",
+      "actual": "five tracked: supplement-3 (8.4 MB), -4 (5.4 MB), -5 (7.6 MB) are outside the policy; -6 (46 KB) and -7 (14 KB) are the two smallest and within it",
+      "total_outside_policy": "21.4 MB of Springer Nature copyrighted supplementary tables re-hosted",
+      "policy_partially_applied": ".gitignore does exclude supplement-2.docx and the PMC tarball, so the intent was acted on but not completed",
+      "not_removed": "deleting tracked files from a public repository is a judgement with consequences: the bytes stay in git history unless rewritten, and a rewrite breaks the Zenodo archive's correspondence to the repository",
+      "options": [
+        "leave them and change the policy text -- but the charter's 'without checking' then needs to have been checked",
+        "remove from the working tree and gitignore -- stops further distribution, bytes remain in history",
+        "remove from history -- complete, invalidates the DOI snapshot correspondence"
+      ],
+      "pre_existing": true,
+      "relation_to_license": "the new root LICENSE does not worsen it -- its scope note explicitly disclaims raw/ -- but it is the reason the scope note exists"
+    },
+    "task3_verification": {
+      "make_pdf_exit": 0,
+      "pdf_newer_than_both_copies": true,
+      "new_clauses_in_pdf": "all four, confirmed by unwrapped grep",
+      "license_present": true,
+      "license_filename_correct": true,
+      "leakage": "ALL 6 PASSED",
+      "provenance": "0 orphans, 177 files",
+      "verify_citations": "11 / 0 / 5 / 0 / 16 -- full baseline, zero skips",
+      "make_test": "9 passed",
+      "resource_warnings": 0,
+      "images": 9,
+      "captions": [
+        "1",
+        "2a",
+        "2b",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "pages": 22,
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "zenodo_doi": "present; resolves 302",
+      "github_url": "resolves 200",
+      "section_refs": 10,
+      "section_refs_unresolved": 0,
+      "limitations_items": 12,
+      "limitations_item_refs_resolve": true,
+      "copies_identical": true,
+      "md5": "6e5bce0c3ea0dd27b99c0a68e1b4aac6",
+      "abstract_words": 250,
+      "body_words": 6950,
+      "disk": "5.1 GB free, 98%, recovered from 3.9 GB at Gate 32"
+    },
+    "numbers": {
+      "measured_values_changed": "NONE",
+      "guard": "both new clauses are digit-free; numeric-token counts compared in both directions and found identical; abstract word count asserted unchanged"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
