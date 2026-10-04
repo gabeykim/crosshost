@@ -4568,5 +4568,65 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_35": {
+    "date_run": "2026-10-03",
+    "outcome": "PASS (Task 1 complete; Task 2 prepared but BLOCKED)",
+    "first_line": "the NIHMS files are untracked, gitignored and still on disk (committed 2e32ae9); the repository is NOT ready for v1.0.1 -- GitHub classifies the root LICENSE as NOASSERTION/'Other', not MIT, so Zenodo would default to CC-BY-4.0 again",
+    "task1": {
+      "applied": true,
+      "commit": "2e32ae9",
+      "untracked": [
+        "raw/nihms945382.pdf (1.2 MB)",
+        "raw/nihms945382.nxml (108 KB)"
+      ],
+      "on_disk": true,
+      "gitignored": true,
+      "no_script_reads_them": "the only two scripts mentioning nihms945382 -- scripts/03 and scripts/15 -- both reference nihms945382_bodytext.txt, which stays tracked as a unit-test fixture",
+      "make_reproduce": "exit 0, zero errors, no tracked output changed",
+      "step5_other_raw_files_under_policy": "NONE. Every remaining tracked Johns file is inside the stated policy: bodytext.txt, five figure thumbnails, supplements 6 and 7. The other 164 tracked raw/ files are from unrestricted sources, checked by source: drafts/ (MSB open access, PMC6692573), genomes/ and pfam_hmms/ (NCBI), paxdb_* (PaxDb), vnat_* (PRIDE PXD027874), cordis_/osti_/nsf_/nih_reporter_/gtr_ (funder-database API responses), cluster_comparison/ (generated here), darpa_*.pdf (US Government)."
+    },
+    "task2_blocked": {
+      "blocker": "GitHub reports the root LICENSE as NOASSERTION / 'Other'. gh api repos/gabeykim/crosshost -> license NOASSERTION; /license -> detected from LICENSE, spdx NOASSERTION.",
+      "cause": "the scope addendum added in Gate 33 is ~29% of the file; GitHub's licensee matches against templates by similarity with a high threshold, and the file as a whole no longer matches, although the MIT body is byte-identical to the canonical template",
+      "my_error": "Gate 33 predicted 'the MIT body is 71% of the file, so GitHub's detector should classify it as MIT rather than Other'. That was a guess stated as an expectation and it was wrong; the correct check was one gh api call.",
+      "why_it_blocks": "Zenodo takes the licence from the repository's DETECTED licence; with NOASSERTION it falls back to CC-BY-4.0, which is exactly the mismatch v1.0.1 exists to correct",
+      "proposed_fix_not_applied": "move the scope addendum out of LICENSE into a root NOTICE.md, leaving LICENSE as canonical MIT alone. Reverses the FORM of Gate 33's decision, not its substance, so it needs approval.",
+      "alternative": "publish and edit the licence field manually in the Zenodo record; works, but GitHub still shows 'Other' to anyone browsing",
+      "step2_absent_from_index": [
+        "supplement-3",
+        "supplement-4",
+        "supplement-5",
+        "nihms945382.pdf",
+        "nihms945382.nxml"
+      ],
+      "working_tree_clean_at": "2e32ae9",
+      "step3_release_draft": {
+        "tag": "v1.0.1",
+        "target": "main at 2e32ae9",
+        "title": "CROSSHOST benchmark v1.0.1",
+        "description_summary": "corrects licence metadata and removes re-hosted publisher material; retrieval instructions in README; no analysis, result, figure or manuscript number changes"
+      },
+      "step4_integration": "active Zenodo webhook on the repository (active=true, events=['release']); v1.0.0 record records isSupplementTo https://github.com/gabeykim/crosshost/tree/v1.0.0",
+      "security_note": "the webhook URL embeds a Zenodo personal access token in plaintext and was printed into this session's output while checking the integration. Not recorded in any file. If the transcript is shared, rotate the token at zenodo.org -> Applications -> Personal access tokens and re-enable the repository in Zenodo's GitHub panel.",
+      "step5_concept_doi": "the manuscript cites 10.5281/zenodo.23051834, confirmed by the Zenodo API to be the CONCEPT DOI (conceptrecid 23051834, conceptdoi 10.5281/zenodo.23051834); the version DOI for v1.0.0 is 10.5281/zenodo.23051835. A concept DOI always resolves to the newest version, so the manuscript needs no change.",
+      "release_created": false
+    },
+    "task3_verification": {
+      "leakage": "ALL 6 PASSED",
+      "provenance": "0 orphans, 177 files",
+      "make_test": "9 passed",
+      "verify_citations": "11 / 0 / 5 / 0 / 16 -- full baseline",
+      "make_reproduce": "exit 0",
+      "manuscript_changed": false,
+      "md5": "6e5bce0c3ea0dd27b99c0a68e1b4aac6 -- matches",
+      "numbers_changed": "none"
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
