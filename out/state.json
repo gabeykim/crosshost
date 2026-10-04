@@ -4628,5 +4628,89 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_37": {
+    "date_run": "2026-10-03",
+    "outcome": "PASS -- no edit required",
+    "first_line": "neither source nor rendering defects: all three are text-EXTRACTION artifacts. The Markdown is correct in all three cases and so is the rendered page. Two of the three do not exist in the PDF's text layer at all; the third is one of seventeen identical instances. Nothing was edited.",
+    "numbering_note": "out/state.json goes from gate_35 to gate_37; no Gate 36 ran in this session",
+    "artifact1_stutzerimonas": {
+      "source": "*Stutzerimonas* strains -- space present, line 30",
+      "pdf_extraction": "'Stutzerimonas strains' with the space; 2 occurrences. 'Stutzerimonasstrains': 0 occurrences",
+      "verdict": "DOES NOT EXIST in this PDF"
+    },
+    "artifact2_subtilis": {
+      "source": "*B. subtilis* simultaneously -- space present, Limitations item 5",
+      "pdf_extraction": "'subtilis simultaneously' 1 occurrence; 'subtilissimultaneously' 0",
+      "verdict": "DOES NOT EXIST in this PDF"
+    },
+    "artifact3_sequenceonly": {
+      "source": "sequence-only -- hyphen present",
+      "rendering": "CORRECT. pdftotext -layout shows the abstract line ending 'sequence-' and the next beginning 'only'. Confirmed visually by rendering page 1 at 300 dpi and cropping to that line: the hyphen is on the page.",
+      "cause": "plain pdftotext joins the two lines and drops the trailing hyphen",
+      "verdict": "EXTRACTION ARTIFACT, not a rendering defect"
+    },
+    "task2_fix_applied": "NONE. All three are correct in source and on the page. Applying a non-breaking space, a zero-width non-joiner or \\mbox{} would change correct typesetting to work around a text-extraction behaviour; \\mbox{sequence-only} would forbid a legitimate line break and worsen the abstract's justification.",
+    "task3_class_scan": {
+      "class_A_hyphen_breaks": 17,
+      "class_A_instances": [
+        "sequence-only",
+        "Johns-active",
+        "host-specific",
+        "larger-scale",
+        "Partial-correlation",
+        "closed-form",
+        "cell-free",
+        "1-log",
+        "862-sequence",
+        "gram-positive",
+        "per-sequence",
+        "cross-host",
+        "shuffled-sequence (x2)",
+        "Gammaproteobacteria-close",
+        "fitness-decoupling",
+        "Host-Dependent"
+      ],
+      "class_A_significance": "that the count is 17 and not 1 is the finding -- a rendering defect would not hit every hyphenated term uniformly; a line-joining rule in the extractor does exactly that",
+      "class_B_italic_boundaries_checked": 27,
+      "class_B_affected": 0,
+      "figure_captions_scanned": 9,
+      "figure_caption_issues": 0,
+      "origin_of_reports": "not this PDF. Class A is reproducible from plain pdftotext; Class B is not reproducible here at all and is the signature of a viewer's copy-to-clipboard or an extractor omitting spaces at font changes. Unlike Gate 27's stale-PDF case, Class B does not depend on which version is read."
+    },
+    "task4_verification": {
+      "pdf_rebuilt": false,
+      "why_not": "the source did not change; rebuilding would rewrite 1.2 MB of binary with a new timestamp and no content difference. The build was verified by running the documented command to a scratch target instead.",
+      "build_command_exit": 0,
+      "resource_warnings": 0,
+      "pdf_newer_than_both_copies": true,
+      "copies_identical": true,
+      "md5": "6e5bce0c3ea0dd27b99c0a68e1b4aac6 -- unchanged since Gate 33",
+      "pages": 22,
+      "images": 9,
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "section_refs": 10,
+      "section_refs_unresolved": 0,
+      "limitations_items": 12,
+      "limitations_item_refs_resolve": true,
+      "abstract_words": 250,
+      "body_words": 6950,
+      "make_test": "9 passed",
+      "verify_citations": "11 / 0 / 5 / 0 / 16 -- full baseline"
+    },
+    "manuscript_changed": false,
+    "numbers_changed": "none",
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
