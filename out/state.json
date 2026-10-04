@@ -4476,5 +4476,97 @@
       "leakage_end": "ALL 6 PASSED",
       "provenance_end": "0 orphans, 177 files"
     }
+  },
+  "gate_34": {
+    "date_run": "2026-10-03",
+    "outcome": "PASS",
+    "first_line": "supplements 3, 4 and 5 are untracked, explicitly gitignored and still on disk; the Zenodo archive DOES contain all five -- record 23051835 is a 134.59 MB GitHub snapshot of commit 2079b29 whose central directory lists them. No takedown attempted.",
+    "task1": {
+      "step1_already_staged": true,
+      "state": {
+        "supplement-3": "untracked, gitignored, on disk 8.4 MB",
+        "supplement-4": "untracked, gitignored, on disk 5.4 MB",
+        "supplement-5": "untracked, gitignored, on disk 7.6 MB",
+        "supplement-6": "tracked, 46 KB",
+        "supplement-7": "tracked, 14 KB"
+      },
+      "gitignore": "explicit entries added for 3/4/5; comment rewritten so the stated policy matches tracked contents, and records that the three were tracked until this commit, remain in earlier commits and in the v1.0.0 Zenodo archive, and that history was deliberately not rewritten because it would break the DOI correspondence",
+      "readme": "new section 'Publisher material not redistributed' before Reproducibility: names the three files with sizes, both retrieval routes (PMC6065261 and doi:10.1038/nmeth.4633), that only reproduce-full needs them, and the three scripts that read them",
+      "local_readability_verified": "all five on disk; pd.read_excel on supplement-5's 'Robust RSs' sheet succeeds, which is what scripts/72 does",
+      "make_reproduce": "exit 0, zero supplement references in the log, no tracked output changed -- run rather than argued from the dependency graph",
+      "correction_to_old_gitignore_wording": "it said to obtain the files before reproduce-full's Gate-1/2 stage; scripts/02_build_core_tables.py, the script that most needs them, is not invoked by ANY Makefile target -- it is a from-raw bootstrap run by hand. The README names the scripts instead of implying a target covers them."
+    },
+    "zenodo": {
+      "contains_supplements": true,
+      "concept_doi": "10.5281/zenodo.23051834",
+      "record": "23051835",
+      "title": "gabeykim/crosshost: CROSSHOST benchmark v1.0.0",
+      "published": "2026-09-30",
+      "files": "one: gabeykim/crosshost-v1.0.0.zip, 134.59 MB",
+      "built_from_commit": "2079b29",
+      "method": "HTTP range request for the last 3 MB of the zip, reading its central directory -- no 134 MB download",
+      "entries_found": [
+        "gabeykim-crosshost-2079b29/raw/NIHMS945382-supplement-3.xlsx",
+        "-4",
+        "-5",
+        "-6",
+        "-7"
+      ],
+      "takedown_attempted": false
+    },
+    "finding_zenodo_license": {
+      "issue": "the deposit's metadata declares cc-by-4.0, while the root LICENSE is MIT and the manuscript now says 'Code and benchmark artifacts are released under the MIT license' -- three statements, two licences",
+      "cause": "Zenodo defaults to CC-BY-4.0 when a GitHub release has no detected licence; at 2079b29 there was no root LICENSE, the gap Gate 33 closed",
+      "remedy": "a new release would pick up MIT, and a new deposit version would both carry the correct licence and omit the three supplements",
+      "needs_decision": true
+    },
+    "finding_full_article_pdf": {
+      "issue": "raw/nihms945382.pdf (1.15 MB, the full PMC author manuscript) and raw/nihms945382.nxml (108 KB) are tracked but are NOT named in the .gitignore policy, which lists only bodytext.txt, main-text figure thumbnails and the two smallest xlsx supplements",
+      "not_acted_on": "the instruction named three files, and whether a PMC author manuscript is redistributable is a different question from the Springer Nature supplementary tables -- NIHMS deposits are public under the NIH Public Access Policy, which is not the same as a redistribution licence",
+      "contrast": "raw/drafts/msb198875_* is Molecular Systems Biology, fully open access, already cited as the PMC6692573 open-access package -- nothing to do there"
+    },
+    "task2_copyright": {
+      "applied": true,
+      "change": "package/LICENSE: 'Copyright (c) 2026 CROSSHOST contributors' -> 'Copyright (c) 2026 Gabriel Kim'",
+      "both_files_match": true
+    },
+    "task3_verification": {
+      "supplements_untracked_gitignored_on_disk": true,
+      "supplements_6_7_still_tracked": true,
+      "gitignore_comment_matches_tracked": true,
+      "readme_documents_retrieval": true,
+      "both_licenses_same_holder": true,
+      "make_reproduce": "exit 0, no manual download required for the fast path",
+      "make_test": "9 passed",
+      "leakage": "ALL 6 PASSED",
+      "provenance": "0 orphans, 177 files",
+      "verify_citations": "11 / 0 / 5 / 0 / 16 full baseline; an earlier run in this gate showed 2 skips and a clean re-run returned zero, confirming transient network as in Gates 29-32",
+      "pdf_newer_than_both_copies": true,
+      "copies_identical": true,
+      "md5": "6e5bce0c3ea0dd27b99c0a68e1b4aac6 -- unchanged from Gate 33",
+      "pages": 22,
+      "images": 9,
+      "glyphs": {
+        "rho": 17,
+        "leq": 3,
+        "gamma": 2,
+        "beta": 2,
+        "approx": 1
+      },
+      "table_renders": true,
+      "bs_15848_intact": true,
+      "email_placeholder": 0,
+      "section_refs": 10,
+      "section_refs_unresolved": 0,
+      "abstract_words": 250,
+      "body_words": 6950,
+      "manuscript_changed": false
+    },
+    "audits": {
+      "leakage_start": "ALL 6 PASSED",
+      "provenance_start": "0 orphans, 177 files",
+      "leakage_end": "ALL 6 PASSED",
+      "provenance_end": "0 orphans, 177 files"
+    }
   }
 }
