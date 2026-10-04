@@ -29,22 +29,24 @@ Run `make help` for the same list with one-line descriptions.
 
 ## Publisher material not redistributed
 
-Three Johns et al. (2018) supplementary tables are **not** included in this repository, because they are Springer Nature / Nature Methods copyright and this project does not hold redistribution rights:
+Five Johns et al. (2018) files are **not** included in this repository, because they are Springer Nature / Nature Methods copyright and this project does not hold redistribution rights. Availability on PMC under the NIH Public Access Policy is not a redistribution licence.
 
-| file | size |
-|---|---|
-| `raw/NIHMS945382-supplement-3.xlsx` | 8.4 MB |
-| `raw/NIHMS945382-supplement-4.xlsx` | 5.4 MB |
-| `raw/NIHMS945382-supplement-5.xlsx` | 7.6 MB |
+| file | size | what it is |
+|---|---|---|
+| `raw/nihms945382.pdf` | 1.2 MB | the full author manuscript |
+| `raw/nihms945382.nxml` | 108 KB | its full text in XML |
+| `raw/NIHMS945382-supplement-3.xlsx` | 8.4 MB | supplementary table |
+| `raw/NIHMS945382-supplement-4.xlsx` | 5.4 MB | supplementary table |
+| `raw/NIHMS945382-supplement-5.xlsx` | 7.6 MB | supplementary table |
 
 Download them from the publisher and place them in `raw/` under exactly those filenames:
 
 - PMC open-access package: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065261/> (the supplementary files are listed on that page)
 - or Nature Methods: <https://doi.org/10.1038/nmeth.4633>
 
-**You only need them for `make reproduce-full`.** `make audit`, `make test`, `make verify-citations` and `make reproduce` (the fast path) all run from shipped intermediate results and do not read these files. The scripts that do are `scripts/01_inspect_supplements.py`, `scripts/02_build_core_tables.py` (supplements 3 and 4) and `scripts/72_attenuation_analysis.py` (supplement 5).
+**You only need the three supplements for `make reproduce-full`.** `make audit`, `make test`, `make verify-citations` and `make reproduce` (the fast path) all run from shipped intermediate results and read none of these files. The scripts that do are `scripts/01_inspect_supplements.py`, `scripts/02_build_core_tables.py` (supplements 3 and 4) and `scripts/72_attenuation_analysis.py` (supplement 5). **No script reads the pdf or the nxml** — they were present for reference only.
 
-The two smallest supplements (`-6`, 46 KB and `-7`, 14 KB) *are* included, for provenance-audit purposes.
+Kept for provenance-audit purposes: `nihms945382_bodytext.txt` (the extracted body text, used as a unit-test fixture by `scripts/03` and `scripts/15`), the five main-text figure thumbnails, and the two smallest supplements (`-6`, 46 KB and `-7`, 14 KB).
 
 ## Reproducibility
 
